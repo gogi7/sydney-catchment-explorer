@@ -133,7 +133,157 @@ This document describes all data sources and schemas used in the Sydney Catchmen
 
 ---
 
-## 3. Data Relationships
+## 3. NSW Property Sales Data
+
+**Source**: NSW Valuer General - Property Sales Information (PSI)  
+**Portal**: https://valuation.property.nsw.gov.au/embed/propertySalesInformation  
+**Format**: DAT (semicolon-delimited text files)  
+**Database**: SQLite (`/data/property_sales.db`)  
+**Exports**: JSON (`/public/data/sales/`)  
+**Update Frequency**: Weekly data releases, Annual data available
+
+### Data Files
+
+The PSI data comes in ZIP files containing multiple `.DAT` files, one per Local Government Area (LGA):
+
+```
+20251215.zip
+├── 001_SALES_DATA_NNME_15122025.DAT  (Albury City)
+├── 008_SALES_DATA_NNME_15122025.DAT  (Bayside)
+├── 214_SALES_DATA_NNME_15122025.DAT  (The Hills/Ku-ring-gai)
+└── ...
+```
+
+### DAT File Record Types
+
+| Record | Description | Example |
+|--------|-------------|---------|
+| `A` | Header | `A;RTSALEDATA;214;20251215 01:08;VALNET;` |
+| `B` | Sale details | `B;214;2876965;1;...;84;MERRIVILLE RD;KELLYVILLE RIDGE;2155;456.1;M;20251025;20251208;1565000;R2;R;RESIDENCE;...` |
+| `C` | Legal description | `C;214;2876965;1;...;13/1032686;` |
+| `D` | Interest (Purchaser/Vendor) | `D;214;2876965;1;...;P;;;;;;` |
+
+### Database Schema (SQLite)
+
+```
+┌─────────────────────────┐     ┌─────────────────────────┐
+│    property_sales       │     │   legal_descriptions    │
+├─────────────────────────┤     ├─────────────────────────┤
+│ id (PK)                 │◀────│ sale_id (FK)            │
+│ district_code           │     │ legal_description       │
+│ property_id             │     │ lot_number              │
+│ suburb                  │     │ plan_number             │
+│ postcode                │     └─────────────────────────┘
+│ street_name             │
+│ house_number            │     ┌─────────────────────────┐
+│ purchase_price          │     │    sale_interests       │
+│ contract_date           │     ├─────────────────────────┤
+│ settlement_date         │◀────│ sale_id (FK)            │
+│ area                    │     │ interest_type (P/V)     │
+│ zone_code               │     │ interest_detail         │
+│ property_type           │     └─────────────────────────┘
+└─────────────────────────┘
+```
+
+### Property Sales Schema
+
+| Field | Type | Description | Example |
+|-------|------|-------------|---------|
+| `district_code` | TEXT | LGA code | `"214"` |
+| `property_id` | TEXT | Property identifier | `"2876965"` |
+| `suburb` | TEXT | Suburb name | `"KELLYVILLE RIDGE"` |
+| `postcode` | TEXT | Postcode | `"2155"` |
+| `street_name` | TEXT | Street name | `"MERRIVILLE RD"` |
+| `house_number` | TEXT | House/unit number | `"84"` |
+| `purchase_price` | INTEGER | Sale price in AUD | `1565000` |
+| `contract_date` | DATE | Contract exchange date | `"2025-10-25"` |
+| `settlement_date` | DATE | Settlement date | `"2025-12-08"` |
+| `area` | REAL | Land/floor area | `456.1` |
+| `area_unit` | TEXT | `M` (sqm) or `H` (hectares) | `"M"` |
+| `zone_code` | TEXT | Zoning code | `"R2"` |
+| `property_type` | TEXT | Property classification | `"RESIDENCE"` |
+
+### Zone Codes
+
+| Code | Description | Category |
+|------|-------------|----------|
+| `R1` | General Residential | Residential |
+| `R2` | Low Density Residential | Residential |
+| `R3` | Medium Density Residential | Residential |
+| `R4` | High Density Residential | Residential |
+| `B1` | Neighbourhood Centre | Commercial |
+| `B2` | Local Centre | Commercial |
+| `IN1` | General Industrial | Industrial |
+| `RU1` | Primary Production | Rural |
+
+### Exported JSON Files
+
+| File | Description | Records |
+|------|-------------|---------|
+| `recent_sales.json` | Individual sales (last 12 months) | ~5,500 |
+| `suburb_stats.json` | Aggregated suburb statistics | ~1,400 |
+| `postcode_stats.json` | Aggregated postcode statistics | ~500 |
+| `metadata.json` | Database summary and import log | - |
+
+### Recent Sales JSON Schema
+
+```json
+{
+  "id": 1234,
+  "suburb": "KELLYVILLE RIDGE",
+  "postcode": "2155",
+  "streetName": "MERRIVILLE RD",
+  "houseNumber": "84",
+  "price": 1565000,
+  "contractDate": "2025-10-25",
+  "settlementDate": "2025-12-08",
+  "area": 456.1,
+  "areaUnit": "M",
+  "zoneCode": "R2",
+  "propertyType": "RESIDENCE",
+  "pricePerSqm": 3431
+}
+```
+
+### Data Ingestion Pipeline
+
+```
+Download ZIP from NSW VG Portal
+        │
+        ▼
+Extract DAT files
+        │
+        ▼
+Parse DAT records (A, B, C, D)
+        │
+        ▼
+Insert into SQLite database
+        │
+        ▼
+Export to JSON for frontend
+```
+
+**Scripts:**
+- `scripts/ingestPropertySales.js` - Import DAT files to SQLite
+- `scripts/exportSalesData.js` - Export JSON for frontend
+- `scripts/parsers/datParser.js` - Parse DAT file format
+- `scripts/db/schema.sql` - Database schema
+
+**Commands:**
+```bash
+# Ingest weekly data
+npm run data:ingest -- --source "C:/path/to/weekly/20251215"
+
+# Ingest annual data
+npm run data:ingest -- --source "C:/path/to/annual/2024" --type annual
+
+# Export to JSON
+npm run data:export -- --months 12
+```
+
+---
+
+## 4. Data Relationships
 
 ```
 ┌─────────────────────────┐
@@ -142,19 +292,32 @@ This document describes all data sources and schemas used in the Sydney Catchmen
 ├─────────────────────────┤
 │ School_code (PK)        │◀────────────┐
 │ School_name             │             │
-│ Latitude                │             │ USE_ID matches
-│ Longitude               │             │ School_code
-│ Level_of_schooling      │             │
-│ ...                     │             │
-└─────────────────────────┘             │
-                                        │
-┌─────────────────────────┐             │
-│  catchments_*.geojson   │             │
-├─────────────────────────┤             │
-│ USE_ID ─────────────────┼─────────────┘
-│ USE_DESC                │
-│ CATCH_TYPE              │
-│ geometry                │
+│ Town_suburb ────────────┼─────────┐   │ USE_ID matches
+│ Postcode                │         │   │ School_code
+│ Latitude                │         │   │
+│ Longitude               │         │   │
+│ Level_of_schooling      │         │   │
+│ ...                     │         │   │
+└─────────────────────────┘         │   │
+                                    │   │
+┌─────────────────────────┐         │   │
+│  catchments_*.geojson   │         │   │
+├─────────────────────────┤         │   │
+│ USE_ID ─────────────────┼─────────┼───┘
+│ USE_DESC                │         │
+│ CATCH_TYPE              │         │
+│ geometry                │         │
+└─────────────────────────┘         │
+                                    │
+┌─────────────────────────┐         │
+│   property_sales        │         │
+│   (suburb_stats.json)   │         │
+├─────────────────────────┤         │
+│ suburb ──────────────────┼─────────┘
+│ postcode                │   Suburb/Postcode
+│ avgPrice                │   matches school
+│ totalSales              │   location
+│ ...                     │
 └─────────────────────────┘
 ```
 
@@ -241,6 +404,28 @@ const isValidSchool = (school) => {
 2. Validate GeoJSON structure
 3. Replace `/public/data/catchments_*.geojson`
 4. Test boundary rendering on map
+
+### Property Sales Data
+
+**Weekly Updates:**
+1. Download latest weekly ZIP from [NSW Valuer General Portal](https://valuation.property.nsw.gov.au/embed/propertySalesInformation)
+2. Extract to a folder (e.g., `C:\data\nsw weekly\20251215\`)
+3. Run ingestion: `npm run data:ingest -- --source "C:\data\nsw weekly\20251215" --type weekly`
+4. Export for frontend: `npm run data:export -- --months 12`
+
+**Annual Updates:**
+1. Download annual ZIP from NSW Valuer General Portal
+2. Extract to a folder (e.g., `C:\data\nsw annual\2024\`)
+3. Run ingestion: `npm run data:ingest -- --source "C:\data\nsw annual\2024" --type annual`
+4. Export for frontend: `npm run data:export`
+
+**Re-importing Data:**
+- Use `--force` flag to re-import already processed files
+- The system tracks imported files to prevent duplicates
+
+**Database Location:**
+- SQLite database: `/data/property_sales.db`
+- Can be queried directly for custom analysis
 
 ---
 

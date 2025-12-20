@@ -4,6 +4,7 @@ import { useAppStore } from '../stores/appStore';
 export function useDataLoader() {
   const setSchools = useAppStore((state) => state.setSchools);
   const setCatchments = useAppStore((state) => state.setCatchments);
+  const setPropertySales = useAppStore((state) => state.setPropertySales);
   const setError = useAppStore((state) => state.setError);
   const setLoading = useAppStore((state) => state.setLoading);
 
@@ -45,6 +46,9 @@ export function useDataLoader() {
         console.log(`Loaded ${secondary.features?.length || 0} secondary catchments`);
         console.log(`Loaded ${future.features?.length || 0} future catchments`);
         
+        // Load property sales data (non-blocking - don't fail if not available)
+        loadPropertySalesData(setPropertySales);
+        
       } catch (error) {
         console.error('Error loading data:', error);
         setError(error.message);
@@ -52,6 +56,46 @@ export function useDataLoader() {
     }
 
     loadData();
-  }, [setSchools, setCatchments, setError, setLoading]);
+  }, [setSchools, setCatchments, setPropertySales, setError, setLoading]);
+}
+
+/**
+ * Load property sales data in the background
+ * This is loaded separately so the main app doesn't fail if sales data is missing
+ */
+async function loadPropertySalesData(setPropertySales) {
+  try {
+    const [recentSalesRes, suburbStatsRes, postcodeStatsRes, metadataRes] = await Promise.all([
+      fetch('/data/sales/recent_sales.json'),
+      fetch('/data/sales/suburb_stats.json'),
+      fetch('/data/sales/postcode_stats.json'),
+      fetch('/data/sales/metadata.json'),
+    ]);
+
+    const salesData = {};
+
+    if (recentSalesRes.ok) {
+      salesData.recentSales = await recentSalesRes.json();
+      console.log(`Loaded ${salesData.recentSales.length} recent property sales`);
+    }
+
+    if (suburbStatsRes.ok) {
+      salesData.suburbStats = await suburbStatsRes.json();
+      console.log(`Loaded stats for ${salesData.suburbStats.length} suburbs`);
+    }
+
+    if (postcodeStatsRes.ok) {
+      salesData.postcodeStats = await postcodeStatsRes.json();
+      console.log(`Loaded stats for ${salesData.postcodeStats.length} postcodes`);
+    }
+
+    if (metadataRes.ok) {
+      salesData.metadata = await metadataRes.json();
+    }
+
+    setPropertySales(salesData);
+  } catch (error) {
+    console.warn('Property sales data not available:', error.message);
+  }
 }
 

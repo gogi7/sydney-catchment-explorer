@@ -13,6 +13,7 @@ An interactive web application for exploring NSW public school catchment areas. 
 - 📍 **Catchment Layers** - Toggle primary, secondary, and future catchment boundaries
 - 🔍 **Search & Filter** - Find schools by name, suburb, or school level
 - 📊 **School Details** - Enrolment stats, ICSEA scores, demographics, and contact info
+- 🏠 **Property Sales** - View recent property sales data for school suburbs (NSW Valuer General data)
 
 ## Quick Start
 
@@ -64,6 +65,7 @@ sydney-catchment-explorer/
 
 - **School Data**: NSW Department of Education Public Schools Master Dataset
 - **Catchment Data**: NSW School Finder GeoJSON boundaries
+- **Property Sales**: [NSW Valuer General](https://valuation.property.nsw.gov.au/embed/propertySalesInformation) Property Sales Information (PSI)
 
 ## Development
 
@@ -74,6 +76,21 @@ npm run lint
 # Preview production build
 npm run preview
 ```
+
+### Property Sales Data Pipeline
+
+```bash
+# Ingest weekly sales data from NSW Valuer General
+npm run data:ingest -- --source "C:/path/to/weekly/20251215" --type weekly
+
+# Ingest annual sales data
+npm run data:ingest -- --source "C:/path/to/annual/2024" --type annual
+
+# Export data to JSON for frontend
+npm run data:export -- --months 12
+```
+
+Download sales data from [NSW Valuer General Portal](https://valuation.property.nsw.gov.au/embed/propertySalesInformation).
 
 ## Documentation
 

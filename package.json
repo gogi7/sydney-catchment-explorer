@@ -1,13 +1,17 @@
 {
   "name": "sydney-catchment-explorer",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "data:ingest": "node scripts/ingestPropertySales.js",
+    "data:export": "node scripts/exportSalesData.js",
+    "data:ingest-weekly": "node scripts/ingestPropertySales.js --type weekly",
+    "data:ingest-annual": "node scripts/ingestPropertySales.js --type annual"
   },
   "dependencies": {
     "@react-leaflet/core": "^3.0.0",
@@ -22,6 +26,7 @@
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react": "^4.4.1",
+    "better-sqlite3": "^11.7.0",
     "eslint": "^9.25.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",

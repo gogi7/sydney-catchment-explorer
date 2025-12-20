@@ -1,5 +1,5 @@
 import { MapView } from './components/Map';
-import { ControlPanel, SchoolInfoPanel, SelectiveSchoolsPanel } from './components/Panels';
+import { ControlPanel, SchoolInfoPanel, SelectiveSchoolsPanel, PropertySalesPanel } from './components/Panels';
 import { useDataLoader } from './hooks/useDataLoader';
 import { useAppStore } from './stores/appStore';
 import './App.css';
@@ -48,6 +48,7 @@ function App() {
       <ControlPanel />
       <SchoolInfoPanel />
       <SelectiveSchoolsPanel />
+      <PropertySalesPanel />
     </div>
   );
 }

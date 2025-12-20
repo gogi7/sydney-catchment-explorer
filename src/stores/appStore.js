@@ -36,6 +36,13 @@ export const useAppStore = create((set, get) => ({
     secondary: null,
     future: null,
   },
+  // Property sales data
+  propertySales: {
+    recentSales: [],
+    suburbStats: [],
+    postcodeStats: [],
+    metadata: null,
+  },
   isLoading: true,
   error: null,
   
@@ -121,6 +128,14 @@ export const useAppStore = create((set, get) => ({
   setLoading: (isLoading) => set({ isLoading }),
   
   setError: (error) => set({ error, isLoading: false }),
+  
+  // Property sales actions
+  setPropertySales: (salesData) => set((state) => ({
+    propertySales: {
+      ...state.propertySales,
+      ...salesData,
+    },
+  })),
   
   // ============ SELECTORS ============
   getFilteredSchools: () => {
@@ -213,6 +228,35 @@ export const useAppStore = create((set, get) => ({
       .slice(0, maxResults);
     
     return suggestions;
+  },
+  
+  // Get property sales for a suburb
+  getSalesBySuburb: (suburb) => {
+    if (!suburb) return [];
+    const { propertySales } = get();
+    const upperSuburb = suburb.toUpperCase();
+    return propertySales.recentSales.filter(
+      (sale) => sale.suburb && sale.suburb.toUpperCase() === upperSuburb
+    );
+  },
+  
+  // Get suburb stats for a suburb
+  getSuburbStats: (suburb) => {
+    if (!suburb) return null;
+    const { propertySales } = get();
+    const upperSuburb = suburb.toUpperCase();
+    return propertySales.suburbStats.find(
+      (stat) => stat.suburb && stat.suburb.toUpperCase() === upperSuburb
+    );
+  },
+  
+  // Get postcode stats
+  getPostcodeStats: (postcode) => {
+    if (!postcode) return null;
+    const { propertySales } = get();
+    return propertySales.postcodeStats.find(
+      (stat) => stat.postcode === String(postcode)
+    );
   },
 }));
 

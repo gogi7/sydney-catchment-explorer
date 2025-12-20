@@ -1,0 +1,6567 @@
+[
+  {
+    "postcode": "2000",
+    "totalSales": 24,
+    "avgPrice": 3198458,
+    "minPrice": 645000,
+    "maxPrice": 7750000,
+    "suburbs": [
+      "HAYMARKET",
+      "SYDNEY",
+      "MILLERS POINT",
+      "THE ROCKS",
+      "BARANGAROO"
+    ],
+    "latestSale": "2025-11-20"
+  },
+  {
+    "postcode": "2007",
+    "totalSales": 4,
+    "avgPrice": 1048750,
+    "minPrice": 770000,
+    "maxPrice": 1445000,
+    "suburbs": [
+      "ULTIMO"
+    ],
+    "latestSale": "2025-11-12"
+  },
+  {
+    "postcode": "2008",
+    "totalSales": 13,
+    "avgPrice": 1885692,
+    "minPrice": 13500,
+    "maxPrice": 5880000,
+    "suburbs": [
+      "CHIPPENDALE",
+      "DARLINGTON"
+    ],
+    "latestSale": "2025-12-05"
+  },
+  {
+    "postcode": "2009",
+    "totalSales": 4,
+    "avgPrice": 1946250,
+    "minPrice": 115000,
+    "maxPrice": 4150000,
+    "suburbs": [
+      "PYRMONT"
+    ],
+    "latestSale": "2025-11-14"
+  },
+  {
+    "postcode": "2010",
+    "totalSales": 24,
+    "avgPrice": 2070721,
+    "minPrice": 100000,
+    "maxPrice": 16500000,
+    "suburbs": [
+      "DARLINGHURST",
+      "SURRY HILLS"
+    ],
+    "latestSale": "2025-11-12"
+  },
+  {
+    "postcode": "2011",
+    "totalSales": 27,
+    "avgPrice": 1928870,
+    "minPrice": 110000,
+    "maxPrice": 11000000,
+    "suburbs": [
+      "POTTS POINT",
+      "WOOLLOOMOOLOO",
+      "ELIZABETH BAY",
+      "RUSHCUTTERS BAY"
+    ],
+    "latestSale": "2025-11-20"
+  },
+  {
+    "postcode": "2015",
+    "totalSales": 12,
+    "avgPrice": 2112833,
+    "minPrice": 1120000,
+    "maxPrice": 4285000,
+    "suburbs": [
+      "ALEXANDRIA",
+      "BEACONSFIELD"
+    ],
+    "latestSale": "2025-11-12"
+  },
+  {
+    "postcode": "2016",
+    "totalSales": 10,
+    "avgPrice": 2415300,
+    "minPrice": 645000,
+    "maxPrice": 3930000,
+    "suburbs": [
+      "REDFERN"
+    ],
+    "latestSale": "2025-11-25"
+  },
+  {
+    "postcode": "2017",
+    "totalSales": 14,
+    "avgPrice": 1145036,
+    "minPrice": 640000,
+    "maxPrice": 4300000,
+    "suburbs": [
+      "WATERLOO",
+      "ZETLAND"
+    ],
+    "latestSale": "2025-11-27"
+  },
+  {
+    "postcode": "2018",
+    "totalSales": 27,
+    "avgPrice": 1104593,
+    "minPrice": 517500,
+    "maxPrice": 3800000,
+    "suburbs": [
+      "ROSEBERY",
+      "EASTLAKES"
+    ],
+    "latestSale": "2025-11-26"
+  },
+  {
+    "postcode": "2019",
+    "totalSales": 14,
+    "avgPrice": 1389643,
+    "minPrice": 675000,
+    "maxPrice": 2440000,
+    "suburbs": [
+      "BOTANY",
+      "BANKSMEADOW"
+    ],
+    "latestSale": "2025-11-13"
+  },
+  {
+    "postcode": "2020",
+    "totalSales": 15,
+    "avgPrice": 1058326,
+    "minPrice": 32000,
+    "maxPrice": 2525000,
+    "suburbs": [
+      "MASCOT"
+    ],
+    "latestSale": "2025-11-28"
+  },
+  {
+    "postcode": "2021",
+    "totalSales": 12,
+    "avgPrice": 3318458,
+    "minPrice": 785000,
+    "maxPrice": 6615000,
+    "suburbs": [
+      "PADDINGTON",
+      "CENTENNIAL PARK"
+    ],
+    "latestSale": "2025-12-10"
+  },
+  {
+    "postcode": "2022",
+    "totalSales": 16,
+    "avgPrice": 1541625,
+    "minPrice": 70000,
+    "maxPrice": 3300000,
+    "suburbs": [
+      "QUEENS PARK",
+      "BONDI JUNCTION"
+    ],
+    "latestSale": "2025-11-20"
+  },
+  {
+    "postcode": "2023",
+    "totalSales": 2,
+    "avgPrice": 14835000,
+    "minPrice": 2670000,
+    "maxPrice": 27000000,
+    "suburbs": [
+      "BELLEVUE HILL"
+    ],
+    "latestSale": "2025-10-28"
+  },
+  {
+    "postcode": "2024",
+    "totalSales": 7,
+    "avgPrice": 3615714,
+    "minPrice": 650000,
+    "maxPrice": 7100000,
+    "suburbs": [
+      "WAVERLEY",
+      "BRONTE"
+    ],
+    "latestSale": "2025-11-13"
+  },
+  {
+    "postcode": "2025",
+    "totalSales": 6,
+    "avgPrice": 9810000,
+    "minPrice": 2610000,
+    "maxPrice": 22500000,
+    "suburbs": [
+      "WOOLLAHRA"
+    ],
+    "latestSale": "2025-10-30"
+  },
+  {
+    "postcode": "2026",
+    "totalSales": 27,
+    "avgPrice": 2818890,
+    "minPrice": 780000,
+    "maxPrice": 8960000,
+    "suburbs": [
+      "BONDI",
+      "BONDI BEACH",
+      "TAMARAMA",
+      "NORTH BONDI"
+    ],
+    "latestSale": "2025-12-09"
+  },
+  {
+    "postcode": "2027",
+    "totalSales": 1,
+    "avgPrice": 6300000,
+    "minPrice": 6300000,
+    "maxPrice": 6300000,
+    "suburbs": [
+      "DARLING POINT"
+    ],
+    "latestSale": "2025-09-16"
+  },
+  {
+    "postcode": "2028",
+    "totalSales": 4,
+    "avgPrice": 5268750,
+    "minPrice": 1030000,
+    "maxPrice": 12425000,
+    "suburbs": [
+      "DOUBLE BAY"
+    ],
+    "latestSale": "2025-11-14"
+  },
+  {
+    "postcode": "2029",
+    "totalSales": 9,
+    "avgPrice": 5281111,
+    "minPrice": 2275000,
+    "maxPrice": 11620000,
+    "suburbs": [
+      "ROSE BAY"
+    ],
+    "latestSale": "2025-11-21"
+  },
+  {
+    "postcode": "2030",
+    "totalSales": 11,
+    "avgPrice": 4578899,
+    "minPrice": 1152000,
+    "maxPrice": 16988888,
+    "suburbs": [
+      "VAUCLUSE",
+      "DOVER HEIGHTS"
+    ],
+    "latestSale": "2025-11-12"
+  },
+  {
+    "postcode": "2031",
+    "totalSales": 29,
+    "avgPrice": 3592586,
+    "minPrice": 250000,
+    "maxPrice": 8050000,
+    "suburbs": [
+      "RANDWICK",
+      "CLOVELLY"
+    ],
+    "latestSale": "2025-11-18"
+  },
+  {
+    "postcode": "2032",
+    "totalSales": 6,
+    "avgPrice": 2050333,
+    "minPrice": 800000,
+    "maxPrice": 4620000,
+    "suburbs": [
+      "KINGSFORD",
+      "DACEYVILLE"
+    ],
+    "latestSale": "2025-11-17"
+  },
+  {
+    "postcode": "2033",
+    "totalSales": 7,
+    "avgPrice": 1542000,
+    "minPrice": 500000,
+    "maxPrice": 5400000,
+    "suburbs": [
+      "KENSINGTON"
+    ],
+    "latestSale": "2025-12-11"
+  },
+  {
+    "postcode": "2034",
+    "totalSales": 10,
+    "avgPrice": 2433000,
+    "minPrice": 1050000,
+    "maxPrice": 8000000,
+    "suburbs": [
+      "COOGEE",
+      "SOUTH COOGEE"
+    ],
+    "latestSale": "2025-11-13"
+  },
+  {
+    "postcode": "2035",
+    "totalSales": 23,
+    "avgPrice": 2043709,
+    "minPrice": 720000,
+    "maxPrice": 3300000,
+    "suburbs": [
+      "MAROUBRA",
+      "PAGEWOOD"
+    ],
+    "latestSale": "2025-11-14"
+  },
+  {
+    "postcode": "2036",
+    "totalSales": 38,
+    "avgPrice": 1883492,
+    "minPrice": 775000,
+    "maxPrice": 5500000,
+    "suburbs": [
+      "MATRAVILLE",
+      "MALABAR",
+      "CHIFLEY",
+      "LITTLE BAY",
+      "PHILLIP BAY",
+      "EASTGARDENS",
+      "HILLSDALE"
+    ],
+    "latestSale": "2025-11-28"
+  },
+  {
+    "postcode": "2037",
+    "totalSales": 11,
+    "avgPrice": 2486000,
+    "minPrice": 730000,
+    "maxPrice": 8700000,
+    "suburbs": [
+      "GLEBE",
+      "FOREST LODGE"
+    ],
+    "latestSale": "2025-11-10"
+  },
+  {
+    "postcode": "2038",
+    "totalSales": 6,
+    "avgPrice": 970667,
+    "minPrice": 564000,
+    "maxPrice": 2455000,
+    "suburbs": [
+      "ANNANDALE"
+    ],
+    "latestSale": "2025-12-08"
+  },
+  {
+    "postcode": "2039",
+    "totalSales": 9,
+    "avgPrice": 1942778,
+    "minPrice": 575000,
+    "maxPrice": 3500000,
+    "suburbs": [
+      "ROZELLE"
+    ],
+    "latestSale": "2025-11-21"
+  },
+  {
+    "postcode": "2040",
+    "totalSales": 18,
+    "avgPrice": 2094500,
+    "minPrice": 730000,
+    "maxPrice": 5200000,
+    "suburbs": [
+      "LILYFIELD",
+      "LEICHHARDT"
+    ],
+    "latestSale": "2025-11-21"
+  },
+  {
+    "postcode": "2041",
+    "totalSales": 12,
+    "avgPrice": 2350000,
+    "minPrice": 1020000,
+    "maxPrice": 4945000,
+    "suburbs": [
+      "BALMAIN",
+      "BIRCHGROVE",
+      "BALMAIN EAST"
+    ],
+    "latestSale": "2025-11-07"
+  },
+  {
+    "postcode": "2042",
+    "totalSales": 12,
+    "avgPrice": 2251750,
+    "minPrice": 750000,
+    "maxPrice": 4400000,
+    "suburbs": [
+      "ENMORE",
+      "NEWTOWN"
+    ],
+    "latestSale": "2025-11-20"
+  },
+  {
+    "postcode": "2043",
+    "totalSales": 7,
+    "avgPrice": 1181429,
+    "minPrice": 600000,
+    "maxPrice": 2680000,
+    "suburbs": [
+      "ERSKINEVILLE"
+    ],
+    "latestSale": "2025-11-05"
+  },
+  {
+    "postcode": "2044",
+    "totalSales": 4,
+    "avgPrice": 1650000,
+    "minPrice": 680000,
+    "maxPrice": 2210000,
+    "suburbs": [
+      "ST PETERS",
+      "SYDENHAM"
+    ],
+    "latestSale": "2025-11-14"
+  },
+  {
+    "postcode": "2045",
+    "totalSales": 9,
+    "avgPrice": 2251944,
+    "minPrice": 537500,
+    "maxPrice": 3635000,
+    "suburbs": [
+      "HABERFIELD"
+    ],
+    "latestSale": "2025-11-12"
+  },
+  {
+    "postcode": "2046",
+    "totalSales": 12,
+    "avgPrice": 2453083,
+    "minPrice": 580000,
+    "maxPrice": 5600000,
+    "suburbs": [
+      "FIVE DOCK",
+      "RUSSELL LEA",
+      "RODD POINT",
+      "WAREEMBA",
+      "CHISWICK"
+    ],
+    "latestSale": "2025-11-07"
+  },
+  {
+    "postcode": "2047",
+    "totalSales": 11,
+    "avgPrice": 5110000,
+    "minPrice": 1020000,
+    "maxPrice": 28950000,
+    "suburbs": [
+      "DRUMMOYNE"
+    ],
+    "latestSale": "2025-11-12"
+  },
+  {
+    "postcode": "2048",
+    "totalSales": 2,
+    "avgPrice": 2125000,
+    "minPrice": 2000000,
+    "maxPrice": 2250000,
+    "suburbs": [
+      "STANMORE"
+    ],
+    "latestSale": "2025-11-11"
+  },
+  {
+    "postcode": "2049",
+    "totalSales": 6,
+    "avgPrice": 2555000,
+    "minPrice": 1000000,
+    "maxPrice": 4125000,
+    "suburbs": [
+      "PETERSHAM",
+      "LEWISHAM"
+    ],
+    "latestSale": "2025-12-02"
+  },
+  {
+    "postcode": "2050",
+    "totalSales": 5,
+    "avgPrice": 899360,
+    "minPrice": 630000,
+    "maxPrice": 1025000,
+    "suburbs": [
+      "CAMPERDOWN"
+    ],
+    "latestSale": "2025-10-30"
+  },
+  {
+    "postcode": "2060",
+    "totalSales": 18,
+    "avgPrice": 1892222,
+    "minPrice": 710000,
+    "maxPrice": 6075000,
+    "suburbs": [
+      "MCMAHONS POINT",
+      "WAVERTON",
+      "NORTH SYDNEY",
+      "LAVENDER BAY"
+    ],
+    "latestSale": "2025-11-20"
+  },
+  {
+    "postcode": "2061",
+    "totalSales": 1,
+    "avgPrice": 2000000,
+    "minPrice": 2000000,
+    "maxPrice": 2000000,
+    "suburbs": [
+      "MILSONS POINT"
+    ],
+    "latestSale": "2025-10-30"
+  },
+  {
+    "postcode": "2062",
+    "totalSales": 7,
+    "avgPrice": 2151857,
+    "minPrice": 600000,
+    "maxPrice": 4088000,
+    "suburbs": [
+      "CAMMERAY"
+    ],
+    "latestSale": "2025-11-04"
+  },
+  {
+    "postcode": "2063",
+    "totalSales": 3,
+    "avgPrice": 6819000,
+    "minPrice": 1227000,
+    "maxPrice": 13250000,
+    "suburbs": [
+      "NORTHBRIDGE"
+    ],
+    "latestSale": "2025-10-30"
+  },
+  {
+    "postcode": "2064",
+    "totalSales": 9,
+    "avgPrice": 23892074,
+    "minPrice": 725000,
+    "maxPrice": 195292170,
+    "suburbs": [
+      "ARTARMON"
+    ],
+    "latestSale": "2025-11-11"
+  },
+  {
+    "postcode": "2065",
+    "totalSales": 26,
+    "avgPrice": 3915765,
+    "minPrice": 510000,
+    "maxPrice": 57000888,
+    "suburbs": [
+      "GREENWICH",
+      "ST LEONARDS",
+      "CROWS NEST",
+      "WOLLSTONECRAFT",
+      "NAREMBURN"
+    ],
+    "latestSale": "2025-12-05"
+  },
+  {
+    "postcode": "2066",
+    "totalSales": 21,
+    "avgPrice": 1872988,
+    "minPrice": 422500,
+    "maxPrice": 4670000,
+    "suburbs": [
+      "RIVERVIEW",
+      "LANE COVE",
+      "LANE COVE NORTH",
+      "LONGUEVILLE",
+      "LINLEY POINT"
+    ],
+    "latestSale": "2025-11-15"
+  },
+  {
+    "postcode": "2067",
+    "totalSales": 16,
+    "avgPrice": 2639360,
+    "minPrice": 760000,
+    "maxPrice": 7090000,
+    "suburbs": [
+      "CHATSWOOD WEST",
+      "CHATSWOOD"
+    ],
+    "latestSale": "2025-12-02"
+  },
+  {
+    "postcode": "2068",
+    "totalSales": 15,
+    "avgPrice": 3033533,
+    "minPrice": 560000,
+    "maxPrice": 6930000,
+    "suburbs": [
+      "WILLOUGHBY EAST",
+      "WILLOUGHBY",
+      "NORTH WILLOUGHBY"
+    ],
+    "latestSale": "2025-11-28"
+  },
+  {
+    "postcode": "2069",
+    "totalSales": 8,
+    "avgPrice": 2722736,
+    "minPrice": 960000,
+    "maxPrice": 3755000,
+    "suburbs": [
+      "ROSEVILLE",
+      "CASTLE COVE"
+    ],
+    "latestSale": "2025-10-26"
+  },
+  {
+    "postcode": "2070",
+    "totalSales": 10,
+    "avgPrice": 2548400,
+    "minPrice": 840000,
+    "maxPrice": 4700000,
+    "suburbs": [
+      "LINDFIELD",
+      "EAST LINDFIELD"
+    ],
+    "latestSale": "2025-11-06"
+  },
+  {
+    "postcode": "2071",
+    "totalSales": 7,
+    "avgPrice": 2642857,
+    "minPrice": 660000,
+    "maxPrice": 4950000,
+    "suburbs": [
+      "KILLARA",
+      "EAST KILLARA"
+    ],
+    "latestSale": "2025-12-01"
+  },
+  {
+    "postcode": "2072",
+    "totalSales": 9,
+    "avgPrice": 2335111,
+    "minPrice": 780000,
+    "maxPrice": 5900000,
+    "suburbs": [
+      "GORDON"
+    ],
+    "latestSale": "2025-11-07"
+  },
+  {
+    "postcode": "2073",
+    "totalSales": 8,
+    "avgPrice": 3036500,
+    "minPrice": 820000,
+    "maxPrice": 4700000,
+    "suburbs": [
+      "PYMBLE",
+      "WEST PYMBLE"
+    ],
+    "latestSale": "2025-11-12"
+  },
+  {
+    "postcode": "2074",
+    "totalSales": 19,
+    "avgPrice": 2849000,
+    "minPrice": 606000,
+    "maxPrice": 5400000,
+    "suburbs": [
+      "TURRAMURRA",
+      "SOUTH TURRAMURRA",
+      "WARRAWEE",
+      "NORTH TURRAMURRA"
+    ],
+    "latestSale": "2025-11-25"
+  },
+  {
+    "postcode": "2075",
+    "totalSales": 18,
+    "avgPrice": 3226222,
+    "minPrice": 850000,
+    "maxPrice": 6150000,
+    "suburbs": [
+      "ST IVES"
+    ],
+    "latestSale": "2025-11-21"
+  },
+  {
+    "postcode": "2076",
+    "totalSales": 11,
+    "avgPrice": 3441546,
+    "minPrice": 1777500,
+    "maxPrice": 8300000,
+    "suburbs": [
+      "NORMANHURST",
+      "WAHROONGA",
+      "NORTH WAHROONGA"
+    ],
+    "latestSale": "2025-11-14"
+  },
+  {
+    "postcode": "2077",
+    "totalSales": 33,
+    "avgPrice": 1430926,
+    "minPrice": 550000,
+    "maxPrice": 4600000,
+    "suburbs": [
+      "HORNSBY",
+      "WAITARA",
+      "ASQUITH",
+      "HORNSBY HEIGHTS"
+    ],
+    "latestSale": "2025-11-30"
+  },
+  {
+    "postcode": "2079",
+    "totalSales": 8,
+    "avgPrice": 1644375,
+    "minPrice": 700000,
+    "maxPrice": 2510000,
+    "suburbs": [
+      "MOUNT COLAH"
+    ],
+    "latestSale": "2025-11-05"
+  },
+  {
+    "postcode": "2080",
+    "totalSales": 1,
+    "avgPrice": 630000,
+    "minPrice": 630000,
+    "maxPrice": 630000,
+    "suburbs": [
+      "MOUNT KURING-GAI"
+    ],
+    "latestSale": "2025-10-29"
+  },
+  {
+    "postcode": "2081",
+    "totalSales": 2,
+    "avgPrice": 1995000,
+    "minPrice": 1590000,
+    "maxPrice": 2400000,
+    "suburbs": [
+      "BEROWRA"
+    ],
+    "latestSale": "2025-10-16"
+  },
+  {
+    "postcode": "2082",
+    "totalSales": 1,
+    "avgPrice": 1505000,
+    "minPrice": 1505000,
+    "maxPrice": 1505000,
+    "suburbs": [
+      "BEROWRA HEIGHTS"
+    ],
+    "latestSale": "2025-10-28"
+  },
+  {
+    "postcode": "2083",
+    "totalSales": 1,
+    "avgPrice": 1300000,
+    "minPrice": 1300000,
+    "maxPrice": 1300000,
+    "suburbs": [
+      "DANGAR ISLAND"
+    ],
+    "latestSale": "2025-04-09"
+  },
+  {
+    "postcode": "2085",
+    "totalSales": 6,
+    "avgPrice": 1655667,
+    "minPrice": 740000,
+    "maxPrice": 2920000,
+    "suburbs": [
+      "BELROSE"
+    ],
+    "latestSale": "2025-11-30"
+  },
+  {
+    "postcode": "2086",
+    "totalSales": 10,
+    "avgPrice": 2563320,
+    "minPrice": 2025000,
+    "maxPrice": 3000000,
+    "suburbs": [
+      "FRENCHS FOREST"
+    ],
+    "latestSale": "2025-12-01"
+  },
+  {
+    "postcode": "2087",
+    "totalSales": 7,
+    "avgPrice": 2564257,
+    "minPrice": 1575000,
+    "maxPrice": 3665000,
+    "suburbs": [
+      "FORESTVILLE",
+      "KILLARNEY HEIGHTS"
+    ],
+    "latestSale": "2025-10-30"
+  },
+  {
+    "postcode": "2088",
+    "totalSales": 28,
+    "avgPrice": 4320929,
+    "minPrice": 641000,
+    "maxPrice": 18000000,
+    "suburbs": [
+      "MOSMAN"
+    ],
+    "latestSale": "2025-11-18"
+  },
+  {
+    "postcode": "2089",
+    "totalSales": 13,
+    "avgPrice": 1748538,
+    "minPrice": 620000,
+    "maxPrice": 4080000,
+    "suburbs": [
+      "NEUTRAL BAY",
+      "KURRABA POINT"
+    ],
+    "latestSale": "2025-11-11"
+  },
+  {
+    "postcode": "2090",
+    "totalSales": 16,
+    "avgPrice": 2648219,
+    "minPrice": 855000,
+    "maxPrice": 6550000,
+    "suburbs": [
+      "CREMORNE",
+      "CREMORNE POINT"
+    ],
+    "latestSale": "2025-11-17"
+  },
+  {
+    "postcode": "2092",
+    "totalSales": 1,
+    "avgPrice": 3300000,
+    "minPrice": 3300000,
+    "maxPrice": 3300000,
+    "suburbs": [
+      "SEAFORTH"
+    ],
+    "latestSale": "2025-10-13"
+  },
+  {
+    "postcode": "2093",
+    "totalSales": 14,
+    "avgPrice": 2863071,
+    "minPrice": 880000,
+    "maxPrice": 6538000,
+    "suburbs": [
+      "BALGOWLAH",
+      "MANLY VALE",
+      "NORTH BALGOWLAH",
+      "BALGOWLAH HEIGHTS",
+      "CLONTARF"
+    ],
+    "latestSale": "2025-11-19"
+  },
+  {
+    "postcode": "2094",
+    "totalSales": 3,
+    "avgPrice": 1451667,
+    "minPrice": 700000,
+    "maxPrice": 1850000,
+    "suburbs": [
+      "FAIRLIGHT"
+    ],
+    "latestSale": "2025-11-14"
+  },
+  {
+    "postcode": "2095",
+    "totalSales": 13,
+    "avgPrice": 2591923,
+    "minPrice": 760000,
+    "maxPrice": 5050000,
+    "suburbs": [
+      "MANLY"
+    ],
+    "latestSale": "2025-11-05"
+  },
+  {
+    "postcode": "2096",
+    "totalSales": 12,
+    "avgPrice": 2061750,
+    "minPrice": 260000,
+    "maxPrice": 4780000,
+    "suburbs": [
+      "QUEENSCLIFF",
+      "FRESHWATER",
+      "CURL CURL"
+    ],
+    "latestSale": "2025-11-20"
+  },
+  {
+    "postcode": "2097",
+    "totalSales": 13,
+    "avgPrice": 1786598,
+    "minPrice": 75000,
+    "maxPrice": 4750000,
+    "suburbs": [
+      "COLLAROY",
+      "COLLAROY PLATEAU",
+      "WHEELER HEIGHTS"
+    ],
+    "latestSale": "2025-11-17"
+  },
+  {
+    "postcode": "2099",
+    "totalSales": 26,
+    "avgPrice": 2042077,
+    "minPrice": 625000,
+    "maxPrice": 6025000,
+    "suburbs": [
+      "DEE WHY",
+      "NARRAWEENA",
+      "CROMER",
+      "NORTH CURL CURL"
+    ],
+    "latestSale": "2025-11-12"
+  },
+  {
+    "postcode": "2100",
+    "totalSales": 20,
+    "avgPrice": 1991175,
+    "minPrice": 320000,
+    "maxPrice": 3760000,
+    "suburbs": [
+      "BROOKVALE",
+      "NORTH MANLY",
+      "BEACON HILL",
+      "ALLAMBIE HEIGHTS"
+    ],
+    "latestSale": "2025-11-11"
+  },
+  {
+    "postcode": "2101",
+    "totalSales": 10,
+    "avgPrice": 2621500,
+    "minPrice": 700000,
+    "maxPrice": 5650000,
+    "suburbs": [
+      "NARRABEEN",
+      "ELANORA HEIGHTS",
+      "INGLESIDE",
+      "NORTH NARRABEEN"
+    ],
+    "latestSale": "2025-12-04"
+  },
+  {
+    "postcode": "2102",
+    "totalSales": 5,
+    "avgPrice": 2550000,
+    "minPrice": 2325000,
+    "maxPrice": 3150000,
+    "suburbs": [
+      "WARRIEWOOD"
+    ],
+    "latestSale": "2025-11-28"
+  },
+  {
+    "postcode": "2103",
+    "totalSales": 6,
+    "avgPrice": 2750000,
+    "minPrice": 1075000,
+    "maxPrice": 8200000,
+    "suburbs": [
+      "MONA VALE"
+    ],
+    "latestSale": "2025-12-05"
+  },
+  {
+    "postcode": "2104",
+    "totalSales": 1,
+    "avgPrice": 50000,
+    "minPrice": 50000,
+    "maxPrice": 50000,
+    "suburbs": [
+      "BAYVIEW"
+    ],
+    "latestSale": "2025-10-29"
+  },
+  {
+    "postcode": "2105",
+    "totalSales": 2,
+    "avgPrice": 3400000,
+    "minPrice": 3300000,
+    "maxPrice": 3500000,
+    "suburbs": [
+      "CHURCH POINT",
+      "LOVETT BAY"
+    ],
+    "latestSale": "2025-11-13"
+  },
+  {
+    "postcode": "2106",
+    "totalSales": 4,
+    "avgPrice": 2583750,
+    "minPrice": 1500000,
+    "maxPrice": 3500000,
+    "suburbs": [
+      "NEWPORT"
+    ],
+    "latestSale": "2025-10-30"
+  },
+  {
+    "postcode": "2107",
+    "totalSales": 13,
+    "avgPrice": 3058231,
+    "minPrice": 700000,
+    "maxPrice": 6100000,
+    "suburbs": [
+      "AVALON BEACH",
+      "BILGOLA PLATEAU",
+      "CLAREVILLE"
+    ],
+    "latestSale": "2025-12-01"
+  },
+  {
+    "postcode": "2108",
+    "totalSales": 3,
+    "avgPrice": 5616667,
+    "minPrice": 5100000,
+    "maxPrice": 6000000,
+    "suburbs": [
+      "PALM BEACH"
+    ],
+    "latestSale": "2025-11-20"
+  },
+  {
+    "postcode": "2110",
+    "totalSales": 5,
+    "avgPrice": 5770000,
+    "minPrice": 2385000,
+    "maxPrice": 8500000,
+    "suburbs": [
+      "HUNTERS HILL"
+    ],
+    "latestSale": "2025-11-12"
+  },
+  {
+    "postcode": "2111",
+    "totalSales": 13,
+    "avgPrice": 3108453,
+    "minPrice": 445000,
+    "maxPrice": 9908888,
+    "suburbs": [
+      "GLADESVILLE",
+      "TENNYSON POINT"
+    ],
+    "latestSale": "2025-11-24"
+  },
+  {
+    "postcode": "2112",
+    "totalSales": 33,
+    "avgPrice": 1551199,
+    "minPrice": 430000,
+    "maxPrice": 4500000,
+    "suburbs": [
+      "RYDE",
+      "DENISTONE EAST",
+      "PUTNEY"
+    ],
+    "latestSale": "2025-11-13"
+  },
+  {
+    "postcode": "2113",
+    "totalSales": 12,
+    "avgPrice": 1514417,
+    "minPrice": 570000,
+    "maxPrice": 3300000,
+    "suburbs": [
+      "NORTH RYDE",
+      "MACQUARIE PARK"
+    ],
+    "latestSale": "2025-11-18"
+  },
+  {
+    "postcode": "2114",
+    "totalSales": 7,
+    "avgPrice": 1269857,
+    "minPrice": 500000,
+    "maxPrice": 4000000,
+    "suburbs": [
+      "WEST RYDE",
+      "MEADOWBANK"
+    ],
+    "latestSale": "2025-11-12"
+  },
+  {
+    "postcode": "2115",
+    "totalSales": 4,
+    "avgPrice": 1568750,
+    "minPrice": 530000,
+    "maxPrice": 2400000,
+    "suburbs": [
+      "ERMINGTON"
+    ],
+    "latestSale": "2025-10-28"
+  },
+  {
+    "postcode": "2116",
+    "totalSales": 3,
+    "avgPrice": 1056667,
+    "minPrice": 525000,
+    "maxPrice": 2100000,
+    "suburbs": [
+      "RYDALMERE"
+    ],
+    "latestSale": "2025-10-24"
+  },
+  {
+    "postcode": "2117",
+    "totalSales": 10,
+    "avgPrice": 1940189,
+    "minPrice": 788888,
+    "maxPrice": 3000000,
+    "suburbs": [
+      "DUNDAS VALLEY",
+      "TELOPEA",
+      "DUNDAS",
+      "OATLANDS"
+    ],
+    "latestSale": "2025-11-08"
+  },
+  {
+    "postcode": "2118",
+    "totalSales": 13,
+    "avgPrice": 1135154,
+    "minPrice": 485000,
+    "maxPrice": 2310000,
+    "suburbs": [
+      "CARLINGFORD"
+    ],
+    "latestSale": "2025-11-17"
+  },
+  {
+    "postcode": "2119",
+    "totalSales": 5,
+    "avgPrice": 2524078,
+    "minPrice": 850000,
+    "maxPrice": 4500000,
+    "suburbs": [
+      "CHELTENHAM",
+      "BEECROFT"
+    ],
+    "latestSale": "2025-10-27"
+  },
+  {
+    "postcode": "2120",
+    "totalSales": 9,
+    "avgPrice": 1764167,
+    "minPrice": 687000,
+    "maxPrice": 3625000,
+    "suburbs": [
+      "PENNANT HILLS",
+      "THORNLEIGH"
+    ],
+    "latestSale": "2025-11-28"
+  },
+  {
+    "postcode": "2121",
+    "totalSales": 29,
+    "avgPrice": 1680134,
+    "minPrice": 608000,
+    "maxPrice": 4809000,
+    "suburbs": [
+      "NORTH EPPING",
+      "EPPING"
+    ],
+    "latestSale": "2025-11-06"
+  },
+  {
+    "postcode": "2122",
+    "totalSales": 14,
+    "avgPrice": 1729999,
+    "minPrice": 50000,
+    "maxPrice": 3678888,
+    "suburbs": [
+      "MARSFIELD",
+      "EASTWOOD"
+    ],
+    "latestSale": "2025-11-21"
+  },
+  {
+    "postcode": "2125",
+    "totalSales": 9,
+    "avgPrice": 3028778,
+    "minPrice": 1230000,
+    "maxPrice": 6050000,
+    "suburbs": [
+      "WEST PENNANT HILLS"
+    ],
+    "latestSale": "2025-10-30"
+  },
+  {
+    "postcode": "2126",
+    "totalSales": 6,
+    "avgPrice": 2118167,
+    "minPrice": 1650000,
+    "maxPrice": 2598000,
+    "suburbs": [
+      "CHERRYBROOK"
+    ],
+    "latestSale": "2025-11-08"
+  },
+  {
+    "postcode": "2127",
+    "totalSales": 24,
+    "avgPrice": 815208,
+    "minPrice": 525000,
+    "maxPrice": 1900000,
+    "suburbs": [
+      "WENTWORTH POINT",
+      "NEWINGTON",
+      "SYDNEY OLYMPIC PARK"
+    ],
+    "latestSale": "2025-11-21"
+  },
+  {
+    "postcode": "2128",
+    "totalSales": 2,
+    "avgPrice": 773750,
+    "minPrice": 557500,
+    "maxPrice": 990000,
+    "suburbs": [
+      "SILVERWATER"
+    ],
+    "latestSale": "2025-10-27"
+  },
+  {
+    "postcode": "2130",
+    "totalSales": 4,
+    "avgPrice": 1082515,
+    "minPrice": 399960,
+    "maxPrice": 2335000,
+    "suburbs": [
+      "SUMMER HILL"
+    ],
+    "latestSale": "2025-11-17"
+  },
+  {
+    "postcode": "2131",
+    "totalSales": 14,
+    "avgPrice": 2614036,
+    "minPrice": 613000,
+    "maxPrice": 12500000,
+    "suburbs": [
+      "ASHFIELD"
+    ],
+    "latestSale": "2025-11-12"
+  },
+  {
+    "postcode": "2132",
+    "totalSales": 5,
+    "avgPrice": 1938000,
+    "minPrice": 680000,
+    "maxPrice": 2900000,
+    "suburbs": [
+      "CROYDON"
+    ],
+    "latestSale": "2025-11-01"
+  },
+  {
+    "postcode": "2133",
+    "totalSales": 9,
+    "avgPrice": 1680444,
+    "minPrice": 638000,
+    "maxPrice": 3320000,
+    "suburbs": [
+      "CROYDON PARK"
+    ],
+    "latestSale": "2025-11-08"
+  },
+  {
+    "postcode": "2134",
+    "totalSales": 14,
+    "avgPrice": 1496214,
+    "minPrice": 645000,
+    "maxPrice": 4900000,
+    "suburbs": [
+      "BURWOOD"
+    ],
+    "latestSale": "2025-11-25"
+  },
+  {
+    "postcode": "2135",
+    "totalSales": 14,
+    "avgPrice": 1766429,
+    "minPrice": 60000,
+    "maxPrice": 6800000,
+    "suburbs": [
+      "STRATHFIELD"
+    ],
+    "latestSale": "2025-11-11"
+  },
+  {
+    "postcode": "2136",
+    "totalSales": 6,
+    "avgPrice": 1114983,
+    "minPrice": 700000,
+    "maxPrice": 2545000,
+    "suburbs": [
+      "ENFIELD",
+      "STRATHFIELD SOUTH"
+    ],
+    "latestSale": "2025-11-08"
+  },
+  {
+    "postcode": "2137",
+    "totalSales": 15,
+    "avgPrice": 1718927,
+    "minPrice": 640000,
+    "maxPrice": 3630000,
+    "suburbs": [
+      "MORTLAKE",
+      "BREAKFAST POINT",
+      "NORTH STRATHFIELD",
+      "CABARITA",
+      "CONCORD"
+    ],
+    "latestSale": "2025-11-08"
+  },
+  {
+    "postcode": "2138",
+    "totalSales": 8,
+    "avgPrice": 1297236,
+    "minPrice": 890000,
+    "maxPrice": 1665000,
+    "suburbs": [
+      "RHODES",
+      "LIBERTY GROVE"
+    ],
+    "latestSale": "2025-11-25"
+  },
+  {
+    "postcode": "2140",
+    "totalSales": 13,
+    "avgPrice": 1223846,
+    "minPrice": 550000,
+    "maxPrice": 4550000,
+    "suburbs": [
+      "HOMEBUSH",
+      "HOMEBUSH WEST"
+    ],
+    "latestSale": "2025-11-10"
+  },
+  {
+    "postcode": "2141",
+    "totalSales": 15,
+    "avgPrice": 2575333,
+    "minPrice": 400000,
+    "maxPrice": 26500000,
+    "suburbs": [
+      "LIDCOMBE",
+      "BERALA"
+    ],
+    "latestSale": "2025-12-05"
+  },
+  {
+    "postcode": "2142",
+    "totalSales": 21,
+    "avgPrice": 934071,
+    "minPrice": 435000,
+    "maxPrice": 1940000,
+    "suburbs": [
+      "GRANVILLE",
+      "CLYDE",
+      "ROSEHILL",
+      "HOLROYD",
+      "SOUTH GRANVILLE"
+    ],
+    "latestSale": "2025-11-19"
+  },
+  {
+    "postcode": "2143",
+    "totalSales": 7,
+    "avgPrice": 1222286,
+    "minPrice": 720000,
+    "maxPrice": 1650000,
+    "suburbs": [
+      "BIRRONG",
+      "POTTS HILL",
+      "REGENTS PARK"
+    ],
+    "latestSale": "2025-11-26"
+  },
+  {
+    "postcode": "2144",
+    "totalSales": 16,
+    "avgPrice": 1143493,
+    "minPrice": 432000,
+    "maxPrice": 2510500,
+    "suburbs": [
+      "AUBURN"
+    ],
+    "latestSale": "2025-11-29"
+  },
+  {
+    "postcode": "2145",
+    "totalSales": 40,
+    "avgPrice": 1059466,
+    "minPrice": 450000,
+    "maxPrice": 3750000,
+    "suburbs": [
+      "WESTMEAD",
+      "CONSTITUTION HILL",
+      "WENTWORTHVILLE",
+      "MAYS HILL",
+      "PENDLE HILL",
+      "GREYSTANES",
+      "SOUTH WENTWORTHVILLE",
+      "GIRRAWEEN",
+      "PEMULWUY"
+    ],
+    "latestSale": "2025-12-02"
+  },
+  {
+    "postcode": "2146",
+    "totalSales": 15,
+    "avgPrice": 1214167,
+    "minPrice": 435000,
+    "maxPrice": 2041000,
+    "suburbs": [
+      "TOONGABBIE",
+      "OLD TOONGABBIE"
+    ],
+    "latestSale": "2025-11-22"
+  },
+  {
+    "postcode": "2147",
+    "totalSales": 25,
+    "avgPrice": 3112164,
+    "minPrice": 272000,
+    "maxPrice": 24750000,
+    "suburbs": [
+      "SEVEN HILLS",
+      "KINGS LANGLEY",
+      "LALOR PARK"
+    ],
+    "latestSale": "2025-11-27"
+  },
+  {
+    "postcode": "2148",
+    "totalSales": 44,
+    "avgPrice": 3464243,
+    "minPrice": 400000,
+    "maxPrice": 14083901,
+    "suburbs": [
+      "BLACKTOWN",
+      "MARAYONG",
+      "KINGS PARK",
+      "PROSPECT"
+    ],
+    "latestSale": "2025-11-24"
+  },
+  {
+    "postcode": "2150",
+    "totalSales": 40,
+    "avgPrice": 1122646,
+    "minPrice": 262000,
+    "maxPrice": 12400000,
+    "suburbs": [
+      "HARRIS PARK",
+      "PARRAMATTA"
+    ],
+    "latestSale": "2025-12-04"
+  },
+  {
+    "postcode": "2151",
+    "totalSales": 16,
+    "avgPrice": 1850250,
+    "minPrice": 510000,
+    "maxPrice": 3400000,
+    "suburbs": [
+      "NORTH PARRAMATTA",
+      "NORTH ROCKS"
+    ],
+    "latestSale": "2025-11-05"
+  },
+  {
+    "postcode": "2152",
+    "totalSales": 6,
+    "avgPrice": 936481,
+    "minPrice": 550000,
+    "maxPrice": 1800000,
+    "suburbs": [
+      "NORTHMEAD"
+    ],
+    "latestSale": "2025-11-07"
+  },
+  {
+    "postcode": "2153",
+    "totalSales": 34,
+    "avgPrice": 1767098,
+    "minPrice": 570000,
+    "maxPrice": 4100000,
+    "suburbs": [
+      "BAULKHAM HILLS",
+      "BELLA VISTA",
+      "NORWEST",
+      "WINSTON HILLS"
+    ],
+    "latestSale": "2025-12-05"
+  },
+  {
+    "postcode": "2154",
+    "totalSales": 21,
+    "avgPrice": 1807911,
+    "minPrice": 610000,
+    "maxPrice": 3775000,
+    "suburbs": [
+      "CASTLE HILL"
+    ],
+    "latestSale": "2025-11-13"
+  },
+  {
+    "postcode": "2155",
+    "totalSales": 65,
+    "avgPrice": 1472992,
+    "minPrice": 400000,
+    "maxPrice": 3807000,
+    "suburbs": [
+      "BEAUMONT HILLS",
+      "NORTH KELLYVILLE",
+      "KELLYVILLE",
+      "ROUSE HILL",
+      "KELLYVILLE RIDGE"
+    ],
+    "latestSale": "2025-12-08"
+  },
+  {
+    "postcode": "2156",
+    "totalSales": 3,
+    "avgPrice": 3783333,
+    "minPrice": 2925000,
+    "maxPrice": 4825000,
+    "suburbs": [
+      "ANNANGROVE",
+      "KENTHURST"
+    ],
+    "latestSale": "2025-10-29"
+  },
+  {
+    "postcode": "2157",
+    "totalSales": 1,
+    "avgPrice": 3960000,
+    "minPrice": 3960000,
+    "maxPrice": 3960000,
+    "suburbs": [
+      "CANOELANDS"
+    ],
+    "latestSale": "2023-10-20"
+  },
+  {
+    "postcode": "2158",
+    "totalSales": 5,
+    "avgPrice": 1580200,
+    "minPrice": 371000,
+    "maxPrice": 2850000,
+    "suburbs": [
+      "DURAL"
+    ],
+    "latestSale": "2025-10-29"
+  },
+  {
+    "postcode": "2159",
+    "totalSales": 2,
+    "avgPrice": 3562500,
+    "minPrice": 3225000,
+    "maxPrice": 3900000,
+    "suburbs": [
+      "ARCADIA",
+      "GALSTON"
+    ],
+    "latestSale": "2025-11-05"
+  },
+  {
+    "postcode": "2160",
+    "totalSales": 34,
+    "avgPrice": 906752,
+    "minPrice": 442000,
+    "maxPrice": 2660000,
+    "suburbs": [
+      "MERRYLANDS",
+      "MERRYLANDS WEST"
+    ],
+    "latestSale": "2025-11-26"
+  },
+  {
+    "postcode": "2161",
+    "totalSales": 20,
+    "avgPrice": 1000550,
+    "minPrice": 370000,
+    "maxPrice": 2225000,
+    "suburbs": [
+      "OLD GUILDFORD",
+      "GUILDFORD",
+      "GUILDFORD WEST"
+    ],
+    "latestSale": "2025-11-21"
+  },
+  {
+    "postcode": "2162",
+    "totalSales": 11,
+    "avgPrice": 1391455,
+    "minPrice": 1200000,
+    "maxPrice": 1600000,
+    "suburbs": [
+      "CHESTER HILL",
+      "SEFTON"
+    ],
+    "latestSale": "2025-11-08"
+  },
+  {
+    "postcode": "2163",
+    "totalSales": 1,
+    "avgPrice": 1350000,
+    "minPrice": 1350000,
+    "maxPrice": 1350000,
+    "suburbs": [
+      "VILLAWOOD"
+    ],
+    "latestSale": "2025-10-29"
+  },
+  {
+    "postcode": "2164",
+    "totalSales": 3,
+    "avgPrice": 1680000,
+    "minPrice": 1100000,
+    "maxPrice": 2400000,
+    "suburbs": [
+      "SMITHFIELD",
+      "WETHERILL PARK"
+    ],
+    "latestSale": "2025-11-13"
+  },
+  {
+    "postcode": "2165",
+    "totalSales": 13,
+    "avgPrice": 1863538,
+    "minPrice": 615000,
+    "maxPrice": 5950000,
+    "suburbs": [
+      "FAIRFIELD",
+      "FAIRFIELD HEIGHTS",
+      "FAIRFIELD WEST"
+    ],
+    "latestSale": "2025-11-29"
+  },
+  {
+    "postcode": "2166",
+    "totalSales": 16,
+    "avgPrice": 1451000,
+    "minPrice": 415000,
+    "maxPrice": 7400000,
+    "suburbs": [
+      "CANLEY HEIGHTS",
+      "CANLEY VALE",
+      "CABRAMATTA",
+      "LANSVALE",
+      "CABRAMATTA WEST"
+    ],
+    "latestSale": "2025-11-20"
+  },
+  {
+    "postcode": "2167",
+    "totalSales": 7,
+    "avgPrice": 1121429,
+    "minPrice": 820000,
+    "maxPrice": 1550000,
+    "suburbs": [
+      "GLENFIELD"
+    ],
+    "latestSale": "2025-11-12"
+  },
+  {
+    "postcode": "2168",
+    "totalSales": 14,
+    "avgPrice": 1058250,
+    "minPrice": 380000,
+    "maxPrice": 1740000,
+    "suburbs": [
+      "BUSBY",
+      "ASHCROFT",
+      "MILLER",
+      "GREEN VALLEY",
+      "CARTWRIGHT",
+      "HINCHINBROOK",
+      "SADLEIR"
+    ],
+    "latestSale": "2025-12-04"
+  },
+  {
+    "postcode": "2170",
+    "totalSales": 53,
+    "avgPrice": 883707,
+    "minPrice": 325000,
+    "maxPrice": 3305000,
+    "suburbs": [
+      "LIVERPOOL",
+      "CASULA",
+      "PRESTONS",
+      "CHIPPING NORTON",
+      "WARWICK FARM",
+      "LURNEA",
+      "MOOREBANK"
+    ],
+    "latestSale": "2025-12-08"
+  },
+  {
+    "postcode": "2171",
+    "totalSales": 21,
+    "avgPrice": 1330405,
+    "minPrice": 650000,
+    "maxPrice": 2315000,
+    "suburbs": [
+      "CECIL HILLS",
+      "WEST HOXTON",
+      "CARNES HILL",
+      "MIDDLETON GRANGE",
+      "HORNINGSEA PARK",
+      "ELIZABETH HILLS"
+    ],
+    "latestSale": "2025-11-19"
+  },
+  {
+    "postcode": "2172",
+    "totalSales": 3,
+    "avgPrice": 1725000,
+    "minPrice": 1160000,
+    "maxPrice": 2220000,
+    "suburbs": [
+      "SANDY POINT",
+      "VOYAGER POINT"
+    ],
+    "latestSale": "2025-10-27"
+  },
+  {
+    "postcode": "2173",
+    "totalSales": 1,
+    "avgPrice": 1300000,
+    "minPrice": 1300000,
+    "maxPrice": 1300000,
+    "suburbs": [
+      "WATTLE GROVE"
+    ],
+    "latestSale": "2025-10-30"
+  },
+  {
+    "postcode": "2174",
+    "totalSales": 8,
+    "avgPrice": 1272625,
+    "minPrice": 610000,
+    "maxPrice": 2000000,
+    "suburbs": [
+      "EDMONDSON PARK"
+    ],
+    "latestSale": "2025-11-12"
+  },
+  {
+    "postcode": "2176",
+    "totalSales": 16,
+    "avgPrice": 1586056,
+    "minPrice": 157399,
+    "maxPrice": 4171500,
+    "suburbs": [
+      "BOSSLEY PARK",
+      "PRAIRIEWOOD",
+      "WAKELEY",
+      "GREENFIELD PARK",
+      "EDENSOR PARK",
+      "ABBOTSBURY"
+    ],
+    "latestSale": "2025-12-04"
+  },
+  {
+    "postcode": "2177",
+    "totalSales": 1,
+    "avgPrice": 712800,
+    "minPrice": 712800,
+    "maxPrice": 712800,
+    "suburbs": [
+      "BONNYRIGG HEIGHTS"
+    ],
+    "latestSale": "2025-12-05"
+  },
+  {
+    "postcode": "2179",
+    "totalSales": 59,
+    "avgPrice": 1249399,
+    "minPrice": 600000,
+    "maxPrice": 22000000,
+    "suburbs": [
+      "LEPPINGTON",
+      "AUSTRAL"
+    ],
+    "latestSale": "2025-12-05"
+  },
+  {
+    "postcode": "2190",
+    "totalSales": 19,
+    "avgPrice": 1512184,
+    "minPrice": 505000,
+    "maxPrice": 3150000,
+    "suburbs": [
+      "CHULLORA",
+      "GREENACRE",
+      "MOUNT LEWIS"
+    ],
+    "latestSale": "2025-12-08"
+  },
+  {
+    "postcode": "2191",
+    "totalSales": 3,
+    "avgPrice": 2044000,
+    "minPrice": 982000,
+    "maxPrice": 3150000,
+    "suburbs": [
+      "BELFIELD"
+    ],
+    "latestSale": "2025-10-30"
+  },
+  {
+    "postcode": "2192",
+    "totalSales": 9,
+    "avgPrice": 753778,
+    "minPrice": 530000,
+    "maxPrice": 1330000,
+    "suburbs": [
+      "BELMORE"
+    ],
+    "latestSale": "2025-11-08"
+  },
+  {
+    "postcode": "2193",
+    "totalSales": 9,
+    "avgPrice": 1210000,
+    "minPrice": 460000,
+    "maxPrice": 2500000,
+    "suburbs": [
+      "CANTERBURY",
+      "ASHBURY",
+      "HURLSTONE PARK"
+    ],
+    "latestSale": "2025-11-19"
+  },
+  {
+    "postcode": "2194",
+    "totalSales": 12,
+    "avgPrice": 1084417,
+    "minPrice": 490000,
+    "maxPrice": 2723000,
+    "suburbs": [
+      "CAMPSIE"
+    ],
+    "latestSale": "2025-11-04"
+  },
+  {
+    "postcode": "2195",
+    "totalSales": 17,
+    "avgPrice": 904794,
+    "minPrice": 440000,
+    "maxPrice": 2265000,
+    "suburbs": [
+      "LAKEMBA",
+      "WILEY PARK"
+    ],
+    "latestSale": "2025-11-04"
+  },
+  {
+    "postcode": "2196",
+    "totalSales": 12,
+    "avgPrice": 1075833,
+    "minPrice": 380000,
+    "maxPrice": 2465000,
+    "suburbs": [
+      "ROSELANDS",
+      "PUNCHBOWL"
+    ],
+    "latestSale": "2025-11-25"
+  },
+  {
+    "postcode": "2197",
+    "totalSales": 3,
+    "avgPrice": 1323333,
+    "minPrice": 770000,
+    "maxPrice": 1630000,
+    "suburbs": [
+      "BASS HILL"
+    ],
+    "latestSale": "2025-10-27"
+  },
+  {
+    "postcode": "2198",
+    "totalSales": 3,
+    "avgPrice": 1495000,
+    "minPrice": 1270000,
+    "maxPrice": 1650000,
+    "suburbs": [
+      "GEORGES HALL"
+    ],
+    "latestSale": "2025-11-07"
+  },
+  {
+    "postcode": "2199",
+    "totalSales": 6,
+    "avgPrice": 1421667,
+    "minPrice": 585000,
+    "maxPrice": 2310000,
+    "suburbs": [
+      "YAGOONA"
+    ],
+    "latestSale": "2025-11-17"
+  },
+  {
+    "postcode": "2200",
+    "totalSales": 26,
+    "avgPrice": 1095602,
+    "minPrice": 420000,
+    "maxPrice": 3400000,
+    "suburbs": [
+      "BANKSTOWN",
+      "CONDELL PARK"
+    ],
+    "latestSale": "2025-12-10"
+  },
+  {
+    "postcode": "2203",
+    "totalSales": 13,
+    "avgPrice": 1426615,
+    "minPrice": 553000,
+    "maxPrice": 3200000,
+    "suburbs": [
+      "DULWICH HILL"
+    ],
+    "latestSale": "2025-12-02"
+  },
+  {
+    "postcode": "2204",
+    "totalSales": 13,
+    "avgPrice": 1659442,
+    "minPrice": 760000,
+    "maxPrice": 3100000,
+    "suburbs": [
+      "MARRICKVILLE"
+    ],
+    "latestSale": "2025-11-20"
+  },
+  {
+    "postcode": "2205",
+    "totalSales": 20,
+    "avgPrice": 1070675,
+    "minPrice": 620000,
+    "maxPrice": 2280000,
+    "suburbs": [
+      "WOLLI CREEK",
+      "ARNCLIFFE"
+    ],
+    "latestSale": "2025-11-14"
+  },
+  {
+    "postcode": "2206",
+    "totalSales": 6,
+    "avgPrice": 2399333,
+    "minPrice": 1440000,
+    "maxPrice": 3960000,
+    "suburbs": [
+      "EARLWOOD"
+    ],
+    "latestSale": "2025-10-25"
+  },
+  {
+    "postcode": "2207",
+    "totalSales": 14,
+    "avgPrice": 1336500,
+    "minPrice": 375000,
+    "maxPrice": 3385000,
+    "suburbs": [
+      "BEXLEY",
+      "BEXLEY NORTH"
+    ],
+    "latestSale": "2025-11-26"
+  },
+  {
+    "postcode": "2208",
+    "totalSales": 5,
+    "avgPrice": 1677000,
+    "minPrice": 100000,
+    "maxPrice": 2907000,
+    "suburbs": [
+      "KINGSGROVE"
+    ],
+    "latestSale": "2025-10-25"
+  },
+  {
+    "postcode": "2209",
+    "totalSales": 7,
+    "avgPrice": 1254071,
+    "minPrice": 690000,
+    "maxPrice": 1725000,
+    "suburbs": [
+      "BEVERLY HILLS",
+      "NARWEE"
+    ],
+    "latestSale": "2025-11-06"
+  },
+  {
+    "postcode": "2210",
+    "totalSales": 14,
+    "avgPrice": 1525714,
+    "minPrice": 640000,
+    "maxPrice": 2505000,
+    "suburbs": [
+      "RIVERWOOD",
+      "PEAKHURST",
+      "LUGARNO"
+    ],
+    "latestSale": "2025-11-26"
+  },
+  {
+    "postcode": "2211",
+    "totalSales": 4,
+    "avgPrice": 1608750,
+    "minPrice": 925000,
+    "maxPrice": 2730000,
+    "suburbs": [
+      "PADSTOW HEIGHTS",
+      "PADSTOW"
+    ],
+    "latestSale": "2025-11-25"
+  },
+  {
+    "postcode": "2212",
+    "totalSales": 8,
+    "avgPrice": 1759188,
+    "minPrice": 747500,
+    "maxPrice": 4800000,
+    "suburbs": [
+      "REVESBY"
+    ],
+    "latestSale": "2025-11-08"
+  },
+  {
+    "postcode": "2213",
+    "totalSales": 15,
+    "avgPrice": 1966200,
+    "minPrice": 1183000,
+    "maxPrice": 3753000,
+    "suburbs": [
+      "PANANIA",
+      "PICNIC POINT",
+      "EAST HILLS"
+    ],
+    "latestSale": "2025-11-20"
+  },
+  {
+    "postcode": "2214",
+    "totalSales": 6,
+    "avgPrice": 1666417,
+    "minPrice": 1474800,
+    "maxPrice": 1810000,
+    "suburbs": [
+      "MILPERRA"
+    ],
+    "latestSale": "2025-10-25"
+  },
+  {
+    "postcode": "2216",
+    "totalSales": 12,
+    "avgPrice": 1062917,
+    "minPrice": 565000,
+    "maxPrice": 2300000,
+    "suburbs": [
+      "ROCKDALE",
+      "BANKSIA",
+      "BRIGHTON-LE-SANDS"
+    ],
+    "latestSale": "2025-11-24"
+  },
+  {
+    "postcode": "2217",
+    "totalSales": 19,
+    "avgPrice": 1478079,
+    "minPrice": 610500,
+    "maxPrice": 6080000,
+    "suburbs": [
+      "KOGARAH BAY",
+      "KOGARAH",
+      "BEVERLEY PARK",
+      "RAMSGATE",
+      "RAMSGATE BEACH",
+      "MONTEREY"
+    ],
+    "latestSale": "2025-11-16"
+  },
+  {
+    "postcode": "2218",
+    "totalSales": 6,
+    "avgPrice": 937000,
+    "minPrice": 762000,
+    "maxPrice": 1400000,
+    "suburbs": [
+      "CARLTON",
+      "ALLAWAH"
+    ],
+    "latestSale": "2025-11-24"
+  },
+  {
+    "postcode": "2219",
+    "totalSales": 8,
+    "avgPrice": 2162375,
+    "minPrice": 864000,
+    "maxPrice": 4320000,
+    "suburbs": [
+      "SANS SOUCI",
+      "SANDRINGHAM"
+    ],
+    "latestSale": "2025-10-30"
+  },
+  {
+    "postcode": "2220",
+    "totalSales": 21,
+    "avgPrice": 1535339,
+    "minPrice": 578000,
+    "maxPrice": 3270000,
+    "suburbs": [
+      "HURSTVILLE",
+      "HURSTVILLE GROVE"
+    ],
+    "latestSale": "2025-11-19"
+  },
+  {
+    "postcode": "2221",
+    "totalSales": 16,
+    "avgPrice": 2322625,
+    "minPrice": 565000,
+    "maxPrice": 5225000,
+    "suburbs": [
+      "BLAKEHURST",
+      "CONNELLS POINT",
+      "SOUTH HURSTVILLE"
+    ],
+    "latestSale": "2025-11-21"
+  },
+  {
+    "postcode": "2222",
+    "totalSales": 9,
+    "avgPrice": 1207778,
+    "minPrice": 735000,
+    "maxPrice": 2050000,
+    "suburbs": [
+      "PENSHURST"
+    ],
+    "latestSale": "2025-10-28"
+  },
+  {
+    "postcode": "2223",
+    "totalSales": 14,
+    "avgPrice": 1552143,
+    "minPrice": 450000,
+    "maxPrice": 4275000,
+    "suburbs": [
+      "OATLEY",
+      "MORTDALE"
+    ],
+    "latestSale": "2025-11-13"
+  },
+  {
+    "postcode": "2224",
+    "totalSales": 10,
+    "avgPrice": 2772500,
+    "minPrice": 760000,
+    "maxPrice": 12000000,
+    "suburbs": [
+      "KANGAROO POINT",
+      "SYLVANIA WATERS",
+      "SYLVANIA"
+    ],
+    "latestSale": "2025-12-11"
+  },
+  {
+    "postcode": "2225",
+    "totalSales": 6,
+    "avgPrice": 2353333,
+    "minPrice": 1600000,
+    "maxPrice": 4200000,
+    "suburbs": [
+      "OYSTER BAY"
+    ],
+    "latestSale": "2025-11-11"
+  },
+  {
+    "postcode": "2226",
+    "totalSales": 3,
+    "avgPrice": 1421496,
+    "minPrice": 313488,
+    "maxPrice": 2190000,
+    "suburbs": [
+      "BONNET BAY",
+      "JANNALI",
+      "COMO"
+    ],
+    "latestSale": "2025-12-11"
+  },
+  {
+    "postcode": "2227",
+    "totalSales": 12,
+    "avgPrice": 1561250,
+    "minPrice": 765000,
+    "maxPrice": 2250000,
+    "suburbs": [
+      "GYMEA",
+      "GYMEA BAY"
+    ],
+    "latestSale": "2025-12-02"
+  },
+  {
+    "postcode": "2228",
+    "totalSales": 17,
+    "avgPrice": 1275676,
+    "minPrice": 723000,
+    "maxPrice": 2250000,
+    "suburbs": [
+      "MIRANDA"
+    ],
+    "latestSale": "2025-11-12"
+  },
+  {
+    "postcode": "2229",
+    "totalSales": 25,
+    "avgPrice": 1693440,
+    "minPrice": 490000,
+    "maxPrice": 3000000,
+    "suburbs": [
+      "CARINGBAH SOUTH",
+      "DOLANS BAY",
+      "CARINGBAH",
+      "TAREN POINT"
+    ],
+    "latestSale": "2025-11-13"
+  },
+  {
+    "postcode": "2230",
+    "totalSales": 37,
+    "avgPrice": 2689020,
+    "minPrice": 467500,
+    "maxPrice": 8750000,
+    "suburbs": [
+      "CRONULLA",
+      "BURRANEER",
+      "BUNDEENA",
+      "MAIANBAR",
+      "WOOLOOWARE"
+    ],
+    "latestSale": "2025-12-03"
+  },
+  {
+    "postcode": "2231",
+    "totalSales": 3,
+    "avgPrice": 1691667,
+    "minPrice": 1500000,
+    "maxPrice": 1840000,
+    "suburbs": [
+      "KURNELL"
+    ],
+    "latestSale": "2025-10-29"
+  },
+  {
+    "postcode": "2232",
+    "totalSales": 26,
+    "avgPrice": 1102673,
+    "minPrice": 360000,
+    "maxPrice": 2400000,
+    "suburbs": [
+      "KAREELA",
+      "KIRRAWEE",
+      "LOFTUS",
+      "SUTHERLAND",
+      "WORONORA",
+      "GRAYS POINT"
+    ],
+    "latestSale": "2025-11-21"
+  },
+  {
+    "postcode": "2233",
+    "totalSales": 15,
+    "avgPrice": 2338133,
+    "minPrice": 796000,
+    "maxPrice": 6350000,
+    "suburbs": [
+      "ENGADINE",
+      "HEATHCOTE"
+    ],
+    "latestSale": "2025-11-13"
+  },
+  {
+    "postcode": "2234",
+    "totalSales": 12,
+    "avgPrice": 1481244,
+    "minPrice": 645930,
+    "maxPrice": 2000000,
+    "suburbs": [
+      "ALFORDS POINT",
+      "BARDEN RIDGE",
+      "MENAI",
+      "ILLAWONG"
+    ],
+    "latestSale": "2025-11-16"
+  },
+  {
+    "postcode": "2250",
+    "totalSales": 52,
+    "avgPrice": 1090690,
+    "minPrice": 310000,
+    "maxPrice": 3225000,
+    "suburbs": [
+      "GOSFORD",
+      "EAST GOSFORD",
+      "KARIONG",
+      "NORTH GOSFORD",
+      "POINT FREDERICK",
+      "SPRINGFIELD",
+      "TASCOTT",
+      "NARARA",
+      "NIAGARA PARK",
+      "MOONEY MOONEY CREEK",
+      "ERINA",
+      "WYOMING",
+      "POINT CLARE",
+      "WEST GOSFORD",
+      "LISAROW"
+    ],
+    "latestSale": "2025-11-27"
+  },
+  {
+    "postcode": "2251",
+    "totalSales": 30,
+    "avgPrice": 1265317,
+    "minPrice": 585000,
+    "maxPrice": 2450000,
+    "suburbs": [
+      "KINCUMBER",
+      "SARATOGA",
+      "AVOCA BEACH",
+      "GREEN POINT",
+      "COPACABANA",
+      "DAVISTOWN",
+      "YATTALUNGA",
+      "MACMASTERS BEACH",
+      "BENSVILLE"
+    ],
+    "latestSale": "2025-12-08"
+  },
+  {
+    "postcode": "2256",
+    "totalSales": 11,
+    "avgPrice": 953573,
+    "minPrice": 600000,
+    "maxPrice": 1155000,
+    "suburbs": [
+      "KOOLEWONG",
+      "HORSFIELD BAY",
+      "WOY WOY",
+      "PHEGANS BAY",
+      "WOY WOY BAY"
+    ],
+    "latestSale": "2025-11-17"
+  },
+  {
+    "postcode": "2257",
+    "totalSales": 16,
+    "avgPrice": 1355313,
+    "minPrice": 855000,
+    "maxPrice": 2200000,
+    "suburbs": [
+      "ETTALONG BEACH",
+      "KILLCARE",
+      "UMINA BEACH",
+      "PRETTY BEACH",
+      "EMPIRE BAY",
+      "KILLCARE HEIGHTS",
+      "BOOKER BAY"
+    ],
+    "latestSale": "2025-11-17"
+  },
+  {
+    "postcode": "2259",
+    "totalSales": 57,
+    "avgPrice": 1135400,
+    "minPrice": 80000,
+    "maxPrice": 6500000,
+    "suburbs": [
+      "WYEE POINT",
+      "WYEE",
+      "SUMMERLAND POINT",
+      "LAKE MUNMORAH",
+      "HAMLYN TERRACE",
+      "CEDAR BRUSH CREEK",
+      "WYONG",
+      "KANWAL",
+      "GWANDALAN",
+      "CHAIN VALLEY BAY",
+      "JILLIBY",
+      "MARDI",
+      "WATANOBBI",
+      "WOONGARRAH",
+      "TUGGERAWONG",
+      "YARRAMALONG",
+      "WARNERVALE",
+      "TUGGERAH",
+      "WADALBA",
+      "CRANGAN BAY"
+    ],
+    "latestSale": "2025-12-04"
+  },
+  {
+    "postcode": "2260",
+    "totalSales": 19,
+    "avgPrice": 1780158,
+    "minPrice": 350000,
+    "maxPrice": 4250000,
+    "suburbs": [
+      "WAMBERAL",
+      "TERRIGAL",
+      "FORRESTERS BEACH"
+    ],
+    "latestSale": "2025-11-12"
+  },
+  {
+    "postcode": "2261",
+    "totalSales": 30,
+    "avgPrice": 1003180,
+    "minPrice": 13907,
+    "maxPrice": 2850000,
+    "suburbs": [
+      "BERKELEY VALE",
+      "BATEAU BAY",
+      "CHITTAWAY POINT",
+      "THE ENTRANCE",
+      "KILLARNEY VALE",
+      "GLENNING VALLEY",
+      "TOOWOON BAY",
+      "LONG JETTY"
+    ],
+    "latestSale": "2025-12-01"
+  },
+  {
+    "postcode": "2262",
+    "totalSales": 13,
+    "avgPrice": 782469,
+    "minPrice": 450000,
+    "maxPrice": 950000,
+    "suburbs": [
+      "SAN REMO",
+      "BLUE HAVEN",
+      "BUDGEWOI",
+      "BUFF POINT",
+      "HALEKULANI"
+    ],
+    "latestSale": "2025-11-27"
+  },
+  {
+    "postcode": "2263",
+    "totalSales": 25,
+    "avgPrice": 787812,
+    "minPrice": 240000,
+    "maxPrice": 1385000,
+    "suburbs": [
+      "NORAH HEAD",
+      "NORAVILLE",
+      "CHARMHAVEN",
+      "LAKE HAVEN",
+      "TOUKLEY",
+      "GOROKAN",
+      "CANTON BEACH"
+    ],
+    "latestSale": "2025-12-11"
+  },
+  {
+    "postcode": "2264",
+    "totalSales": 13,
+    "avgPrice": 1120384,
+    "minPrice": 420000,
+    "maxPrice": 3450000,
+    "suburbs": [
+      "MORISSET",
+      "DORA CREEK",
+      "BALCOLYN",
+      "SILVERWATER",
+      "BONNELLS BAY",
+      "MANDALONG",
+      "MORISSET PARK"
+    ],
+    "latestSale": "2025-11-09"
+  },
+  {
+    "postcode": "2265",
+    "totalSales": 2,
+    "avgPrice": 1274444,
+    "minPrice": 498888,
+    "maxPrice": 2050000,
+    "suburbs": [
+      "COORANBONG"
+    ],
+    "latestSale": "2025-11-20"
+  },
+  {
+    "postcode": "2278",
+    "totalSales": 2,
+    "avgPrice": 1060000,
+    "minPrice": 870000,
+    "maxPrice": 1250000,
+    "suburbs": [
+      "BARNSLEY",
+      "KILLINGWORTH"
+    ],
+    "latestSale": "2025-11-11"
+  },
+  {
+    "postcode": "2280",
+    "totalSales": 9,
+    "avgPrice": 1197500,
+    "minPrice": 700000,
+    "maxPrice": 1450000,
+    "suburbs": [
+      "BELMONT NORTH",
+      "BELMONT",
+      "BELMONT SOUTH",
+      "JEWELLS",
+      "MARKS POINT",
+      "VALENTINE"
+    ],
+    "latestSale": "2025-11-25"
+  },
+  {
+    "postcode": "2281",
+    "totalSales": 13,
+    "avgPrice": 1223538,
+    "minPrice": 631000,
+    "maxPrice": 1870000,
+    "suburbs": [
+      "MURRAYS BEACH",
+      "SWANSEA",
+      "BLACKSMITHS",
+      "CAMS WHARF",
+      "CAVES BEACH",
+      "SWANSEA HEADS"
+    ],
+    "latestSale": "2025-12-04"
+  },
+  {
+    "postcode": "2282",
+    "totalSales": 11,
+    "avgPrice": 1160909,
+    "minPrice": 550000,
+    "maxPrice": 2035000,
+    "suburbs": [
+      "WARNERS BAY",
+      "ELEEBANA",
+      "LAKELANDS"
+    ],
+    "latestSale": "2025-11-17"
+  },
+  {
+    "postcode": "2283",
+    "totalSales": 8,
+    "avgPrice": 1012563,
+    "minPrice": 580000,
+    "maxPrice": 1530000,
+    "suburbs": [
+      "RATHMINES",
+      "BUTTABA",
+      "BOLTON POINT",
+      "FASSIFERN",
+      "TORONTO"
+    ],
+    "latestSale": "2025-11-26"
+  },
+  {
+    "postcode": "2284",
+    "totalSales": 8,
+    "avgPrice": 976875,
+    "minPrice": 365000,
+    "maxPrice": 1530000,
+    "suburbs": [
+      "MARMONG POINT",
+      "ARGENTON",
+      "BOOLAROO",
+      "SPEERS POINT",
+      "BOORAGUL"
+    ],
+    "latestSale": "2025-11-14"
+  },
+  {
+    "postcode": "2285",
+    "totalSales": 31,
+    "avgPrice": 856979,
+    "minPrice": 459000,
+    "maxPrice": 1455000,
+    "suburbs": [
+      "CARDIFF",
+      "CAMERON PARK",
+      "EDGEWORTH",
+      "GLENDALE",
+      "CARDIFF SOUTH",
+      "MACQUARIE HILLS",
+      "CARDIFF HEIGHTS"
+    ],
+    "latestSale": "2025-11-28"
+  },
+  {
+    "postcode": "2286",
+    "totalSales": 2,
+    "avgPrice": 847500,
+    "minPrice": 800000,
+    "maxPrice": 895000,
+    "suburbs": [
+      "WEST WALLSEND"
+    ],
+    "latestSale": "2025-11-07"
+  },
+  {
+    "postcode": "2287",
+    "totalSales": 27,
+    "avgPrice": 994685,
+    "minPrice": 495000,
+    "maxPrice": 1405000,
+    "suburbs": [
+      "MARYLAND",
+      "FLETCHER",
+      "BIRMINGHAM GARDENS",
+      "WALLSEND",
+      "ELERMORE VALE",
+      "RANKIN PARK",
+      "MINMI"
+    ],
+    "latestSale": "2025-12-03"
+  },
+  {
+    "postcode": "2289",
+    "totalSales": 22,
+    "avgPrice": 1790909,
+    "minPrice": 685000,
+    "maxPrice": 5850000,
+    "suburbs": [
+      "KOTARA SOUTH",
+      "HIGHFIELDS",
+      "KOTARA",
+      "ADAMSTOWN",
+      "ADAMSTOWN HEIGHTS"
+    ],
+    "latestSale": "2025-12-04"
+  },
+  {
+    "postcode": "2290",
+    "totalSales": 16,
+    "avgPrice": 1020938,
+    "minPrice": 450000,
+    "maxPrice": 2000000,
+    "suburbs": [
+      "BENNETTS GREEN",
+      "CHARLESTOWN",
+      "GATESHEAD",
+      "DUDLEY",
+      "HILLSBOROUGH",
+      "KAHIBAH",
+      "REDHEAD"
+    ],
+    "latestSale": "2025-12-01"
+  },
+  {
+    "postcode": "2291",
+    "totalSales": 11,
+    "avgPrice": 2839091,
+    "minPrice": 1875000,
+    "maxPrice": 4850000,
+    "suburbs": [
+      "MEREWETHER",
+      "THE JUNCTION"
+    ],
+    "latestSale": "2025-12-03"
+  },
+  {
+    "postcode": "2292",
+    "totalSales": 2,
+    "avgPrice": 1552500,
+    "minPrice": 1380000,
+    "maxPrice": 1725000,
+    "suburbs": [
+      "BROADMEADOW"
+    ],
+    "latestSale": "2025-11-08"
+  },
+  {
+    "postcode": "2293",
+    "totalSales": 3,
+    "avgPrice": 1365000,
+    "minPrice": 670000,
+    "maxPrice": 1825000,
+    "suburbs": [
+      "MARYVILLE",
+      "WICKHAM"
+    ],
+    "latestSale": "2025-11-19"
+  },
+  {
+    "postcode": "2295",
+    "totalSales": 2,
+    "avgPrice": 866000,
+    "minPrice": 812000,
+    "maxPrice": 920000,
+    "suburbs": [
+      "STOCKTON"
+    ],
+    "latestSale": "2025-10-28"
+  },
+  {
+    "postcode": "2296",
+    "totalSales": 2,
+    "avgPrice": 960000,
+    "minPrice": 840000,
+    "maxPrice": 1080000,
+    "suburbs": [
+      "ISLINGTON"
+    ],
+    "latestSale": "2025-11-12"
+  },
+  {
+    "postcode": "2298",
+    "totalSales": 7,
+    "avgPrice": 980714,
+    "minPrice": 610000,
+    "maxPrice": 1325000,
+    "suburbs": [
+      "GEORGETOWN",
+      "WARATAH",
+      "WARATAH WEST"
+    ],
+    "latestSale": "2025-11-11"
+  },
+  {
+    "postcode": "2299",
+    "totalSales": 8,
+    "avgPrice": 895625,
+    "minPrice": 650000,
+    "maxPrice": 1210000,
+    "suburbs": [
+      "NORTH LAMBTON",
+      "LAMBTON",
+      "JESMOND"
+    ],
+    "latestSale": "2025-11-20"
+  },
+  {
+    "postcode": "2300",
+    "totalSales": 10,
+    "avgPrice": 1324823,
+    "minPrice": 615000,
+    "maxPrice": 2020000,
+    "suburbs": [
+      "COOKS HILL",
+      "NEWCASTLE",
+      "THE HILL"
+    ],
+    "latestSale": "2025-11-28"
+  },
+  {
+    "postcode": "2302",
+    "totalSales": 6,
+    "avgPrice": 817521,
+    "minPrice": 674300,
+    "maxPrice": 1158500,
+    "suburbs": [
+      "NEWCASTLE WEST"
+    ],
+    "latestSale": "2025-10-28"
+  },
+  {
+    "postcode": "2303",
+    "totalSales": 2,
+    "avgPrice": 1637500,
+    "minPrice": 540000,
+    "maxPrice": 2735000,
+    "suburbs": [
+      "HAMILTON",
+      "HAMILTON EAST"
+    ],
+    "latestSale": "2025-11-06"
+  },
+  {
+    "postcode": "2304",
+    "totalSales": 12,
+    "avgPrice": 989750,
+    "minPrice": 480000,
+    "maxPrice": 1310000,
+    "suburbs": [
+      "MAYFIELD",
+      "MAYFIELD WEST",
+      "MAYFIELD EAST"
+    ],
+    "latestSale": "2025-11-10"
+  },
+  {
+    "postcode": "2305",
+    "totalSales": 6,
+    "avgPrice": 1530000,
+    "minPrice": 930000,
+    "maxPrice": 1955000,
+    "suburbs": [
+      "NEW LAMBTON HEIGHTS",
+      "NEW LAMBTON"
+    ],
+    "latestSale": "2025-11-03"
+  },
+  {
+    "postcode": "2307",
+    "totalSales": 3,
+    "avgPrice": 948333,
+    "minPrice": 700000,
+    "maxPrice": 1280000,
+    "suburbs": [
+      "SHORTLAND"
+    ],
+    "latestSale": "2025-10-31"
+  },
+  {
+    "postcode": "2315",
+    "totalSales": 16,
+    "avgPrice": 941938,
+    "minPrice": 130000,
+    "maxPrice": 2011000,
+    "suburbs": [
+      "NELSON BAY",
+      "FINGAL BAY",
+      "CORLETTE"
+    ],
+    "latestSale": "2025-11-26"
+  },
+  {
+    "postcode": "2316",
+    "totalSales": 4,
+    "avgPrice": 1120000,
+    "minPrice": 435000,
+    "maxPrice": 2000000,
+    "suburbs": [
+      "ANNA BAY",
+      "TAYLORS BEACH"
+    ],
+    "latestSale": "2025-11-12"
+  },
+  {
+    "postcode": "2317",
+    "totalSales": 10,
+    "avgPrice": 1394800,
+    "minPrice": 688000,
+    "maxPrice": 2900000,
+    "suburbs": [
+      "SALAMANDER BAY",
+      "SOLDIERS POINT"
+    ],
+    "latestSale": "2025-11-20"
+  },
+  {
+    "postcode": "2318",
+    "totalSales": 7,
+    "avgPrice": 1123643,
+    "minPrice": 910000,
+    "maxPrice": 1350000,
+    "suburbs": [
+      "MEDOWIE",
+      "SALT ASH",
+      "FULLERTON COVE"
+    ],
+    "latestSale": "2025-11-14"
+  },
+  {
+    "postcode": "2319",
+    "totalSales": 1,
+    "avgPrice": 565000,
+    "minPrice": 565000,
+    "maxPrice": 565000,
+    "suburbs": [
+      "LEMON TREE PASSAGE"
+    ],
+    "latestSale": "2025-09-12"
+  },
+  {
+    "postcode": "2320",
+    "totalSales": 33,
+    "avgPrice": 3479166,
+    "minPrice": 265000,
+    "maxPrice": 25000000,
+    "suburbs": [
+      "POKOLBIN",
+      "ROTHBURY",
+      "ABERGLASSLYN",
+      "LORN",
+      "MAITLAND VALE",
+      "FARLEY",
+      "ANAMBAH",
+      "BOLWARRA",
+      "MAITLAND",
+      "RUTHERFORD",
+      "WINDELLA",
+      "TELARAH",
+      "BOLWARRA HEIGHTS",
+      "LOUTH PARK"
+    ],
+    "latestSale": "2025-12-08"
+  },
+  {
+    "postcode": "2321",
+    "totalSales": 19,
+    "avgPrice": 973363,
+    "minPrice": 468900,
+    "maxPrice": 2600000,
+    "suburbs": [
+      "CLIFTLEIGH",
+      "HEDDON GRETA",
+      "GLEN WILLIAM",
+      "MORPETH",
+      "GILLIESTON HEIGHTS",
+      "LOCHINVAR",
+      "PHOENIX PARK"
+    ],
+    "latestSale": "2025-11-21"
+  },
+  {
+    "postcode": "2322",
+    "totalSales": 20,
+    "avgPrice": 875480,
+    "minPrice": 480000,
+    "maxPrice": 1290000,
+    "suburbs": [
+      "THORNTON",
+      "CHISHOLM",
+      "WOODBERRY",
+      "BERESFIELD",
+      "TARRO"
+    ],
+    "latestSale": "2025-11-21"
+  },
+  {
+    "postcode": "2323",
+    "totalSales": 20,
+    "avgPrice": 784650,
+    "minPrice": 365000,
+    "maxPrice": 1325000,
+    "suburbs": [
+      "BUCHANAN",
+      "EAST MAITLAND",
+      "ASHTONFIELD",
+      "METFORD",
+      "TENAMBIT"
+    ],
+    "latestSale": "2025-11-26"
+  },
+  {
+    "postcode": "2324",
+    "totalSales": 28,
+    "avgPrice": 836500,
+    "minPrice": 30500,
+    "maxPrice": 2292500,
+    "suburbs": [
+      "RAYMOND TERRACE",
+      "NELSONS PLAINS",
+      "HEATHERBRAE",
+      "SEAHAM",
+      "NORTH ARM COVE",
+      "HAWKS NEST",
+      "TEA GARDENS"
+    ],
+    "latestSale": "2025-12-04"
+  },
+  {
+    "postcode": "2325",
+    "totalSales": 27,
+    "avgPrice": 773877,
+    "minPrice": 150000,
+    "maxPrice": 1850000,
+    "suburbs": [
+      "CESSNOCK",
+      "MILLFIELD",
+      "BELLBIRD",
+      "WOLLOMBI",
+      "PAXTON",
+      "ABERDARE",
+      "NULKABA",
+      "KITCHENER",
+      "ELLALONG"
+    ],
+    "latestSale": "2025-12-10"
+  },
+  {
+    "postcode": "2326",
+    "totalSales": 2,
+    "avgPrice": 1200000,
+    "minPrice": 820000,
+    "maxPrice": 1580000,
+    "suburbs": [
+      "ABERMAIN"
+    ],
+    "latestSale": "2025-11-07"
+  },
+  {
+    "postcode": "2327",
+    "totalSales": 3,
+    "avgPrice": 533667,
+    "minPrice": 305000,
+    "maxPrice": 670000,
+    "suburbs": [
+      "KURRI KURRI"
+    ],
+    "latestSale": "2025-12-09"
+  },
+  {
+    "postcode": "2328",
+    "totalSales": 3,
+    "avgPrice": 437500,
+    "minPrice": 322500,
+    "maxPrice": 500000,
+    "suburbs": [
+      "DENMAN",
+      "YARRAWA"
+    ],
+    "latestSale": "2025-11-10"
+  },
+  {
+    "postcode": "2329",
+    "totalSales": 4,
+    "avgPrice": 692375,
+    "minPrice": 300000,
+    "maxPrice": 1150000,
+    "suburbs": [
+      "MERRIWA"
+    ],
+    "latestSale": "2025-11-07"
+  },
+  {
+    "postcode": "2330",
+    "totalSales": 19,
+    "avgPrice": 728026,
+    "minPrice": 384000,
+    "maxPrice": 1500000,
+    "suburbs": [
+      "HUNTERVIEW",
+      "WATTLE PONDS",
+      "GOWRIE",
+      "MOUNT OLIVE",
+      "SINGLETON",
+      "DARLINGTON",
+      "SINGLETON HEIGHTS"
+    ],
+    "latestSale": "2025-11-13"
+  },
+  {
+    "postcode": "2333",
+    "totalSales": 13,
+    "avgPrice": 819462,
+    "minPrice": 310000,
+    "maxPrice": 2250000,
+    "suburbs": [
+      "MUSWELLBROOK"
+    ],
+    "latestSale": "2025-11-10"
+  },
+  {
+    "postcode": "2334",
+    "totalSales": 2,
+    "avgPrice": 935000,
+    "minPrice": 820000,
+    "maxPrice": 1050000,
+    "suburbs": [
+      "GRETA"
+    ],
+    "latestSale": "2025-10-29"
+  },
+  {
+    "postcode": "2335",
+    "totalSales": 7,
+    "avgPrice": 1069857,
+    "minPrice": 557000,
+    "maxPrice": 1865000,
+    "suburbs": [
+      "EAST BRANXTON",
+      "NORTH ROTHBURY",
+      "LAMBS VALLEY",
+      "BRANXTON",
+      "STANHOPE"
+    ],
+    "latestSale": "2025-11-07"
+  },
+  {
+    "postcode": "2336",
+    "totalSales": 4,
+    "avgPrice": 309100,
+    "minPrice": 63750,
+    "maxPrice": 560000,
+    "suburbs": [
+      "UPPER ROUCHEL",
+      "ABERDEEN"
+    ],
+    "latestSale": "2025-11-26"
+  },
+  {
+    "postcode": "2337",
+    "totalSales": 5,
+    "avgPrice": 530800,
+    "minPrice": 254000,
+    "maxPrice": 855000,
+    "suburbs": [
+      "SCONE"
+    ],
+    "latestSale": "2025-11-10"
+  },
+  {
+    "postcode": "2339",
+    "totalSales": 1,
+    "avgPrice": 220000,
+    "minPrice": 220000,
+    "maxPrice": 220000,
+    "suburbs": [
+      "WARRAH CREEK"
+    ],
+    "latestSale": "2025-06-04"
+  },
+  {
+    "postcode": "2340",
+    "totalSales": 47,
+    "avgPrice": 597202,
+    "minPrice": 50000,
+    "maxPrice": 1600000,
+    "suburbs": [
+      "CARROLL",
+      "MOORE CREEK",
+      "NEMINGHA",
+      "WEST TAMWORTH",
+      "HILLVUE",
+      "OXLEY VALE",
+      "KINGSWOOD",
+      "NORTH TAMWORTH",
+      "WESTDALE",
+      "EAST TAMWORTH",
+      "SOUTH TAMWORTH",
+      "CALALA",
+      "NUNDLE"
+    ],
+    "latestSale": "2025-12-05"
+  },
+  {
+    "postcode": "2341",
+    "totalSales": 1,
+    "avgPrice": 950000,
+    "minPrice": 950000,
+    "maxPrice": 950000,
+    "suburbs": [
+      "WERRIS CREEK"
+    ],
+    "latestSale": "2025-11-14"
+  },
+  {
+    "postcode": "2343",
+    "totalSales": 4,
+    "avgPrice": 3195000,
+    "minPrice": 420000,
+    "maxPrice": 11000000,
+    "suburbs": [
+      "QUIRINDI",
+      "WARRAH RIDGE"
+    ],
+    "latestSale": "2025-11-24"
+  },
+  {
+    "postcode": "2347",
+    "totalSales": 1,
+    "avgPrice": 335000,
+    "minPrice": 335000,
+    "maxPrice": 335000,
+    "suburbs": [
+      "BARRABA"
+    ],
+    "latestSale": "2025-10-29"
+  },
+  {
+    "postcode": "2350",
+    "totalSales": 32,
+    "avgPrice": 675000,
+    "minPrice": 169000,
+    "maxPrice": 2300000,
+    "suburbs": [
+      "ARMIDALE",
+      "PUDDLEDOCK"
+    ],
+    "latestSale": "2025-11-27"
+  },
+  {
+    "postcode": "2352",
+    "totalSales": 1,
+    "avgPrice": 749000,
+    "minPrice": 749000,
+    "maxPrice": 749000,
+    "suburbs": [
+      "KOOTINGAL"
+    ],
+    "latestSale": "2025-11-03"
+  },
+  {
+    "postcode": "2353",
+    "totalSales": 2,
+    "avgPrice": 487500,
+    "minPrice": 300000,
+    "maxPrice": 675000,
+    "suburbs": [
+      "MOONBI"
+    ],
+    "latestSale": "2025-11-07"
+  },
+  {
+    "postcode": "2357",
+    "totalSales": 4,
+    "avgPrice": 430000,
+    "minPrice": 240000,
+    "maxPrice": 890000,
+    "suburbs": [
+      "COONABARABRAN"
+    ],
+    "latestSale": "2025-11-25"
+  },
+  {
+    "postcode": "2358",
+    "totalSales": 1,
+    "avgPrice": 640000,
+    "minPrice": 640000,
+    "maxPrice": 640000,
+    "suburbs": [
+      "URALLA"
+    ],
+    "latestSale": "2025-11-11"
+  },
+  {
+    "postcode": "2360",
+    "totalSales": 14,
+    "avgPrice": 515071,
+    "minPrice": 240000,
+    "maxPrice": 1060000,
+    "suburbs": [
+      "INVERELL"
+    ],
+    "latestSale": "2025-11-28"
+  },
+  {
+    "postcode": "2361",
+    "totalSales": 1,
+    "avgPrice": 14800000,
+    "minPrice": 14800000,
+    "maxPrice": 14800000,
+    "suburbs": [
+      "PINDAROI"
+    ],
+    "latestSale": "2025-08-08"
+  },
+  {
+    "postcode": "2365",
+    "totalSales": 2,
+    "avgPrice": 377500,
+    "minPrice": 200000,
+    "maxPrice": 555000,
+    "suburbs": [
+      "GUYRA"
+    ],
+    "latestSale": "2025-11-17"
+  },
+  {
+    "postcode": "2370",
+    "totalSales": 6,
+    "avgPrice": 510083,
+    "minPrice": 104500,
+    "maxPrice": 1200000,
+    "suburbs": [
+      "KOOKABOOKRA",
+      "GLEN INNES",
+      "GLEN ELGIN"
+    ],
+    "latestSale": "2025-12-03"
+  },
+  {
+    "postcode": "2371",
+    "totalSales": 1,
+    "avgPrice": 6875,
+    "minPrice": 6875,
+    "maxPrice": 6875,
+    "suburbs": [
+      "EMMAVILLE"
+    ],
+    "latestSale": "2025-08-27"
+  },
+  {
+    "postcode": "2372",
+    "totalSales": 7,
+    "avgPrice": 574000,
+    "minPrice": 405000,
+    "maxPrice": 980000,
+    "suburbs": [
+      "TENTERFIELD"
+    ],
+    "latestSale": "2025-11-25"
+  },
+  {
+    "postcode": "2380",
+    "totalSales": 7,
+    "avgPrice": 555399,
+    "minPrice": 392790,
+    "maxPrice": 790000,
+    "suburbs": [
+      "GUNNEDAH"
+    ],
+    "latestSale": "2025-11-11"
+  },
+  {
+    "postcode": "2381",
+    "totalSales": 2,
+    "avgPrice": 105000,
+    "minPrice": 30000,
+    "maxPrice": 180000,
+    "suburbs": [
+      "PREMER"
+    ],
+    "latestSale": "2025-11-26"
+  },
+  {
+    "postcode": "2382",
+    "totalSales": 2,
+    "avgPrice": 235500,
+    "minPrice": 1000,
+    "maxPrice": 470000,
+    "suburbs": [
+      "BOGGABRI"
+    ],
+    "latestSale": "2025-12-11"
+  },
+  {
+    "postcode": "2388",
+    "totalSales": 1,
+    "avgPrice": 800000,
+    "minPrice": 800000,
+    "maxPrice": 800000,
+    "suburbs": [
+      "WEE WAA"
+    ],
+    "latestSale": "2025-11-07"
+  },
+  {
+    "postcode": "2390",
+    "totalSales": 7,
+    "avgPrice": 490143,
+    "minPrice": 290000,
+    "maxPrice": 842000,
+    "suburbs": [
+      "NARRABRI",
+      "BULLAWA CREEK"
+    ],
+    "latestSale": "2025-11-19"
+  },
+  {
+    "postcode": "2395",
+    "totalSales": 1,
+    "avgPrice": 310000,
+    "minPrice": 310000,
+    "maxPrice": 310000,
+    "suburbs": [
+      "BINNAWAY"
+    ],
+    "latestSale": "2025-11-12"
+  },
+  {
+    "postcode": "2396",
+    "totalSales": 1,
+    "avgPrice": 21000,
+    "minPrice": 21000,
+    "maxPrice": 21000,
+    "suburbs": [
+      "BARADINE"
+    ],
+    "latestSale": "2025-10-17"
+  },
+  {
+    "postcode": "2400",
+    "totalSales": 6,
+    "avgPrice": 379167,
+    "minPrice": 35000,
+    "maxPrice": 1250000,
+    "suburbs": [
+      "MOREE"
+    ],
+    "latestSale": "2025-11-25"
+  },
+  {
+    "postcode": "2402",
+    "totalSales": 2,
+    "avgPrice": 64000,
+    "minPrice": 50000,
+    "maxPrice": 78000,
+    "suburbs": [
+      "WARIALDA"
+    ],
+    "latestSale": "2025-11-13"
+  },
+  {
+    "postcode": "2403",
+    "totalSales": 1,
+    "avgPrice": 290000,
+    "minPrice": 290000,
+    "maxPrice": 290000,
+    "suburbs": [
+      "DELUNGRA"
+    ],
+    "latestSale": "2025-12-03"
+  },
+  {
+    "postcode": "2404",
+    "totalSales": 3,
+    "avgPrice": 281500,
+    "minPrice": 202500,
+    "maxPrice": 342000,
+    "suburbs": [
+      "BINGARA"
+    ],
+    "latestSale": "2025-11-25"
+  },
+  {
+    "postcode": "2405",
+    "totalSales": 1,
+    "avgPrice": 9100000,
+    "minPrice": 9100000,
+    "maxPrice": 9100000,
+    "suburbs": [
+      "BOOMI"
+    ],
+    "latestSale": "2025-08-05"
+  },
+  {
+    "postcode": "2406",
+    "totalSales": 5,
+    "avgPrice": 179738,
+    "minPrice": 16000,
+    "maxPrice": 392306,
+    "suburbs": [
+      "MUNGINDI"
+    ],
+    "latestSale": "2025-10-24"
+  },
+  {
+    "postcode": "2415",
+    "totalSales": 1,
+    "avgPrice": 1230000,
+    "minPrice": 1230000,
+    "maxPrice": 1230000,
+    "suburbs": [
+      "MONKERAI"
+    ],
+    "latestSale": "2025-11-13"
+  },
+  {
+    "postcode": "2420",
+    "totalSales": 2,
+    "avgPrice": 717500,
+    "minPrice": 615000,
+    "maxPrice": 820000,
+    "suburbs": [
+      "MARTINS CREEK",
+      "DUNGOG"
+    ],
+    "latestSale": "2025-10-29"
+  },
+  {
+    "postcode": "2422",
+    "totalSales": 3,
+    "avgPrice": 379145,
+    "minPrice": 202436,
+    "maxPrice": 535000,
+    "suburbs": [
+      "GLOUCESTER"
+    ],
+    "latestSale": "2025-11-18"
+  },
+  {
+    "postcode": "2423",
+    "totalSales": 2,
+    "avgPrice": 982500,
+    "minPrice": 515000,
+    "maxPrice": 1450000,
+    "suburbs": [
+      "BUNGWAHL",
+      "BULAHDELAH"
+    ],
+    "latestSale": "2025-11-11"
+  },
+  {
+    "postcode": "2424",
+    "totalSales": 1,
+    "avgPrice": 60000,
+    "minPrice": 60000,
+    "maxPrice": 60000,
+    "suburbs": [
+      "CUNDLE FLAT"
+    ],
+    "latestSale": "2025-10-28"
+  },
+  {
+    "postcode": "2425",
+    "totalSales": 2,
+    "avgPrice": 695000,
+    "minPrice": 590000,
+    "maxPrice": 800000,
+    "suburbs": [
+      "STROUD"
+    ],
+    "latestSale": "2025-11-11"
+  },
+  {
+    "postcode": "2427",
+    "totalSales": 7,
+    "avgPrice": 834143,
+    "minPrice": 525000,
+    "maxPrice": 1200000,
+    "suburbs": [
+      "HARRINGTON"
+    ],
+    "latestSale": "2025-11-07"
+  },
+  {
+    "postcode": "2428",
+    "totalSales": 22,
+    "avgPrice": 751136,
+    "minPrice": 200000,
+    "maxPrice": 1875000,
+    "suburbs": [
+      "COOMBA PARK",
+      "FORSTER",
+      "GREEN POINT",
+      "SMITHS LAKE",
+      "TUNCURRY",
+      "BLUEYS BEACH"
+    ],
+    "latestSale": "2025-11-28"
+  },
+  {
+    "postcode": "2429",
+    "totalSales": 4,
+    "avgPrice": 1092250,
+    "minPrice": 519000,
+    "maxPrice": 1550000,
+    "suburbs": [
+      "WINGHAM"
+    ],
+    "latestSale": "2025-11-13"
+  },
+  {
+    "postcode": "2430",
+    "totalSales": 33,
+    "avgPrice": 650030,
+    "minPrice": 42000,
+    "maxPrice": 1280000,
+    "suburbs": [
+      "RED HEAD",
+      "MONDROOK",
+      "OLD BAR",
+      "TAREE",
+      "DIAMOND BEACH",
+      "CUNDLETOWN",
+      "UPPER LANSDOWNE",
+      "TINONEE",
+      "TALLWOODS VILLAGE",
+      "BRIMBIN"
+    ],
+    "latestSale": "2025-12-04"
+  },
+  {
+    "postcode": "2431",
+    "totalSales": 7,
+    "avgPrice": 555571,
+    "minPrice": 170000,
+    "maxPrice": 850000,
+    "suburbs": [
+      "SOUTH WEST ROCKS"
+    ],
+    "latestSale": "2025-11-20"
+  },
+  {
+    "postcode": "2439",
+    "totalSales": 4,
+    "avgPrice": 1013750,
+    "minPrice": 745000,
+    "maxPrice": 1260000,
+    "suburbs": [
+      "KEW",
+      "KENDALL"
+    ],
+    "latestSale": "2025-11-17"
+  },
+  {
+    "postcode": "2440",
+    "totalSales": 7,
+    "avgPrice": 581071,
+    "minPrice": 375000,
+    "maxPrice": 770000,
+    "suburbs": [
+      "WEST KEMPSEY",
+      "DONDINGALONG",
+      "EAST KEMPSEY",
+      "SOUTH KEMPSEY"
+    ],
+    "latestSale": "2025-11-20"
+  },
+  {
+    "postcode": "2441",
+    "totalSales": 3,
+    "avgPrice": 608333,
+    "minPrice": 390000,
+    "maxPrice": 800000,
+    "suburbs": [
+      "KUNDABUNG",
+      "EUNGAI CREEK",
+      "TELEGRAPH POINT"
+    ],
+    "latestSale": "2025-11-12"
+  },
+  {
+    "postcode": "2443",
+    "totalSales": 6,
+    "avgPrice": 1105833,
+    "minPrice": 625000,
+    "maxPrice": 1625000,
+    "suburbs": [
+      "HANNAM VALE",
+      "LAURIETON",
+      "LAKEWOOD",
+      "NORTH HAVEN"
+    ],
+    "latestSale": "2025-11-08"
+  },
+  {
+    "postcode": "2444",
+    "totalSales": 36,
+    "avgPrice": 793843,
+    "minPrice": 144000,
+    "maxPrice": 1550000,
+    "suburbs": [
+      "PORT MACQUARIE",
+      "THRUMSTER"
+    ],
+    "latestSale": "2025-12-08"
+  },
+  {
+    "postcode": "2445",
+    "totalSales": 7,
+    "avgPrice": 1008571,
+    "minPrice": 810000,
+    "maxPrice": 1280000,
+    "suburbs": [
+      "LAKE CATHIE",
+      "BONNY HILLS"
+    ],
+    "latestSale": "2025-12-11"
+  },
+  {
+    "postcode": "2446",
+    "totalSales": 6,
+    "avgPrice": 819333,
+    "minPrice": 295000,
+    "maxPrice": 1500000,
+    "suburbs": [
+      "LONG FLAT",
+      "WAUCHOPE",
+      "CROSSLANDS",
+      "PEMBROOKE"
+    ],
+    "latestSale": "2025-12-11"
+  },
+  {
+    "postcode": "2447",
+    "totalSales": 5,
+    "avgPrice": 766600,
+    "minPrice": 530000,
+    "maxPrice": 1050000,
+    "suburbs": [
+      "MACKSVILLE",
+      "CONGARINNI NORTH",
+      "THUMB CREEK",
+      "WIRRIMBI"
+    ],
+    "latestSale": "2025-11-26"
+  },
+  {
+    "postcode": "2448",
+    "totalSales": 8,
+    "avgPrice": 492063,
+    "minPrice": 275000,
+    "maxPrice": 760000,
+    "suburbs": [
+      "NAMBUCCA HEADS",
+      "VALLA BEACH"
+    ],
+    "latestSale": "2025-11-18"
+  },
+  {
+    "postcode": "2449",
+    "totalSales": 3,
+    "avgPrice": 645000,
+    "minPrice": 460000,
+    "maxPrice": 950000,
+    "suburbs": [
+      "MISSABOTTI",
+      "BOWRAVILLE"
+    ],
+    "latestSale": "2025-11-10"
+  },
+  {
+    "postcode": "2450",
+    "totalSales": 37,
+    "avgPrice": 935397,
+    "minPrice": 170000,
+    "maxPrice": 3700000,
+    "suburbs": [
+      "COFFS HARBOUR",
+      "KORORA",
+      "BOAMBEE",
+      "CORAMBA",
+      "BUCCA",
+      "SAPPHIRE BEACH",
+      "MOONEE BEACH",
+      "NORTH BOAMBEE VALLEY"
+    ],
+    "latestSale": "2025-12-05"
+  },
+  {
+    "postcode": "2452",
+    "totalSales": 7,
+    "avgPrice": 1445286,
+    "minPrice": 765000,
+    "maxPrice": 4400000,
+    "suburbs": [
+      "TOORMINA",
+      "BOAMBEE EAST",
+      "SAWTELL"
+    ],
+    "latestSale": "2025-11-28"
+  },
+  {
+    "postcode": "2453",
+    "totalSales": 3,
+    "avgPrice": 485000,
+    "minPrice": 180000,
+    "maxPrice": 700000,
+    "suburbs": [
+      "MEGAN",
+      "EBOR"
+    ],
+    "latestSale": "2025-12-02"
+  },
+  {
+    "postcode": "2454",
+    "totalSales": 3,
+    "avgPrice": 1048333,
+    "minPrice": 555000,
+    "maxPrice": 1700000,
+    "suburbs": [
+      "BELLINGEN",
+      "REPTON"
+    ],
+    "latestSale": "2025-11-05"
+  },
+  {
+    "postcode": "2455",
+    "totalSales": 2,
+    "avgPrice": 812500,
+    "minPrice": 650000,
+    "maxPrice": 975000,
+    "suburbs": [
+      "URUNGA"
+    ],
+    "latestSale": "2025-11-11"
+  },
+  {
+    "postcode": "2456",
+    "totalSales": 6,
+    "avgPrice": 900667,
+    "minPrice": 685000,
+    "maxPrice": 1090000,
+    "suburbs": [
+      "EMERALD BEACH",
+      "SANDY BEACH",
+      "WOOLGOOLGA",
+      "CORINDI BEACH"
+    ],
+    "latestSale": "2025-11-28"
+  },
+  {
+    "postcode": "2460",
+    "totalSales": 33,
+    "avgPrice": 663318,
+    "minPrice": 10000,
+    "maxPrice": 1630000,
+    "suburbs": [
+      "GRAFTON",
+      "BARRETTS CREEK",
+      "LAWRENCE",
+      "SOUTH GRAFTON",
+      "CLIFDEN",
+      "WHITEMAN CREEK",
+      "SOUTH ARM",
+      "BRUSHGROVE",
+      "JUNCTION HILL",
+      "RAMORNIE",
+      "COUTTS CROSSING",
+      "BLAXLANDS CREEK",
+      "BRAUNSTONE",
+      "GLENUGIE",
+      "UPPER COPMANHURST",
+      "WATERVIEW HEIGHTS"
+    ],
+    "latestSale": "2025-11-26"
+  },
+  {
+    "postcode": "2462",
+    "totalSales": 2,
+    "avgPrice": 647500,
+    "minPrice": 500000,
+    "maxPrice": 795000,
+    "suburbs": [
+      "ULMARRA",
+      "PILLAR VALLEY"
+    ],
+    "latestSale": "2025-11-07"
+  },
+  {
+    "postcode": "2463",
+    "totalSales": 6,
+    "avgPrice": 679567,
+    "minPrice": 450000,
+    "maxPrice": 1070000,
+    "suburbs": [
+      "GULMARRAD",
+      "MACLEAN",
+      "ASHBY",
+      "TOWNSEND"
+    ],
+    "latestSale": "2025-11-19"
+  },
+  {
+    "postcode": "2464",
+    "totalSales": 12,
+    "avgPrice": 1630754,
+    "minPrice": 456000,
+    "maxPrice": 4170000,
+    "suburbs": [
+      "YAMBA"
+    ],
+    "latestSale": "2025-11-27"
+  },
+  {
+    "postcode": "2466",
+    "totalSales": 6,
+    "avgPrice": 728333,
+    "minPrice": 345000,
+    "maxPrice": 1200000,
+    "suburbs": [
+      "ILUKA"
+    ],
+    "latestSale": "2025-11-21"
+  },
+  {
+    "postcode": "2469",
+    "totalSales": 3,
+    "avgPrice": 295667,
+    "minPrice": 152000,
+    "maxPrice": 470000,
+    "suburbs": [
+      "TUNGLEBUNG",
+      "HOGARTH RANGE",
+      "DRAKE"
+    ],
+    "latestSale": "2025-11-25"
+  },
+  {
+    "postcode": "2470",
+    "totalSales": 13,
+    "avgPrice": 506538,
+    "minPrice": 320000,
+    "maxPrice": 780000,
+    "suburbs": [
+      "CASINO"
+    ],
+    "latestSale": "2025-11-27"
+  },
+  {
+    "postcode": "2471",
+    "totalSales": 1,
+    "avgPrice": 560000,
+    "minPrice": 560000,
+    "maxPrice": 560000,
+    "suburbs": [
+      "CORAKI"
+    ],
+    "latestSale": "2025-02-06"
+  },
+  {
+    "postcode": "2473",
+    "totalSales": 2,
+    "avgPrice": 1250000,
+    "minPrice": 1200000,
+    "maxPrice": 1300000,
+    "suburbs": [
+      "EVANS HEAD"
+    ],
+    "latestSale": "2025-11-27"
+  },
+  {
+    "postcode": "2474",
+    "totalSales": 4,
+    "avgPrice": 546250,
+    "minPrice": 469500,
+    "maxPrice": 740000,
+    "suburbs": [
+      "GENEVA",
+      "GREEN PIGEON",
+      "KYOGLE"
+    ],
+    "latestSale": "2025-12-11"
+  },
+  {
+    "postcode": "2475",
+    "totalSales": 1,
+    "avgPrice": 340000,
+    "minPrice": 340000,
+    "maxPrice": 340000,
+    "suburbs": [
+      "URBENVILLE"
+    ],
+    "latestSale": "2025-10-28"
+  },
+  {
+    "postcode": "2477",
+    "totalSales": 10,
+    "avgPrice": 1143400,
+    "minPrice": 537000,
+    "maxPrice": 1850000,
+    "suburbs": [
+      "ALSTONVILLE",
+      "URALBA",
+      "WOLLONGBAR",
+      "MEERSCHAUM VALE",
+      "PEARCES CREEK"
+    ],
+    "latestSale": "2025-12-08"
+  },
+  {
+    "postcode": "2478",
+    "totalSales": 23,
+    "avgPrice": 1046087,
+    "minPrice": 455000,
+    "maxPrice": 1725000,
+    "suburbs": [
+      "WEST BALLINA",
+      "BALLINA",
+      "EMPIRE VALE",
+      "KEITH HALL",
+      "LENNOX HEAD",
+      "EAST BALLINA",
+      "CUMBALUM"
+    ],
+    "latestSale": "2025-11-28"
+  },
+  {
+    "postcode": "2479",
+    "totalSales": 3,
+    "avgPrice": 4638333,
+    "minPrice": 1240000,
+    "maxPrice": 9400000,
+    "suburbs": [
+      "NASHUA",
+      "COORABELL",
+      "BANGALOW"
+    ],
+    "latestSale": "2025-11-07"
+  },
+  {
+    "postcode": "2480",
+    "totalSales": 26,
+    "avgPrice": 658404,
+    "minPrice": 310000,
+    "maxPrice": 1300000,
+    "suburbs": [
+      "LISMORE",
+      "EAST LISMORE",
+      "LISMORE HEIGHTS",
+      "GOONELLABAH",
+      "TULLERA",
+      "SOUTH LISMORE",
+      "MODANVILLE",
+      "LARNOOK",
+      "JIGGI"
+    ],
+    "latestSale": "2025-12-01"
+  },
+  {
+    "postcode": "2481",
+    "totalSales": 13,
+    "avgPrice": 1950654,
+    "minPrice": 730000,
+    "maxPrice": 4000000,
+    "suburbs": [
+      "MYOCUM",
+      "BYRON BAY",
+      "SUFFOLK PARK",
+      "EWINGSDALE"
+    ],
+    "latestSale": "2025-12-05"
+  },
+  {
+    "postcode": "2482",
+    "totalSales": 7,
+    "avgPrice": 1138143,
+    "minPrice": 630000,
+    "maxPrice": 1695000,
+    "suburbs": [
+      "MULLUMBIMBY",
+      "HUONBROOK",
+      "GOONENGERRY"
+    ],
+    "latestSale": "2025-12-02"
+  },
+  {
+    "postcode": "2483",
+    "totalSales": 8,
+    "avgPrice": 1469000,
+    "minPrice": 1005000,
+    "maxPrice": 2500000,
+    "suburbs": [
+      "OCEAN SHORES",
+      "MIDDLE POCKET",
+      "BRUNSWICK HEADS"
+    ],
+    "latestSale": "2025-12-05"
+  },
+  {
+    "postcode": "2484",
+    "totalSales": 14,
+    "avgPrice": 1036000,
+    "minPrice": 580000,
+    "maxPrice": 2500000,
+    "suburbs": [
+      "MURWILLUMBAH",
+      "BRAYS CREEK",
+      "CONDONG",
+      "SOUTH MURWILLUMBAH",
+      "KUNGHUR"
+    ],
+    "latestSale": "2025-12-02"
+  },
+  {
+    "postcode": "2485",
+    "totalSales": 12,
+    "avgPrice": 1003583,
+    "minPrice": 645000,
+    "maxPrice": 1575000,
+    "suburbs": [
+      "TWEED HEADS WEST",
+      "TWEED HEADS"
+    ],
+    "latestSale": "2025-12-02"
+  },
+  {
+    "postcode": "2486",
+    "totalSales": 26,
+    "avgPrice": 1207481,
+    "minPrice": 100000,
+    "maxPrice": 2500000,
+    "suburbs": [
+      "TWEED HEADS SOUTH",
+      "BANORA POINT",
+      "TERRANORA",
+      "BILAMBIL",
+      "BILAMBIL HEIGHTS"
+    ],
+    "latestSale": "2025-11-20"
+  },
+  {
+    "postcode": "2487",
+    "totalSales": 8,
+    "avgPrice": 2128438,
+    "minPrice": 662500,
+    "maxPrice": 4965000,
+    "suburbs": [
+      "DURANBAH",
+      "KINGSCLIFF",
+      "CASUARINA",
+      "CUDGEN"
+    ],
+    "latestSale": "2025-11-28"
+  },
+  {
+    "postcode": "2488",
+    "totalSales": 6,
+    "avgPrice": 1246667,
+    "minPrice": 925000,
+    "maxPrice": 1750000,
+    "suburbs": [
+      "BOGANGAR"
+    ],
+    "latestSale": "2025-11-14"
+  },
+  {
+    "postcode": "2489",
+    "totalSales": 2,
+    "avgPrice": 1119500,
+    "minPrice": 900000,
+    "maxPrice": 1339000,
+    "suburbs": [
+      "POTTSVILLE"
+    ],
+    "latestSale": "2025-11-28"
+  },
+  {
+    "postcode": "2490",
+    "totalSales": 1,
+    "avgPrice": 870000,
+    "minPrice": 870000,
+    "maxPrice": 870000,
+    "suburbs": [
+      "TUMBULGUM"
+    ],
+    "latestSale": "2025-10-18"
+  },
+  {
+    "postcode": "2500",
+    "totalSales": 33,
+    "avgPrice": 2386850,
+    "minPrice": 535000,
+    "maxPrice": 13640000,
+    "suburbs": [
+      "WOLLONGONG",
+      "MOUNT KEIRA",
+      "NORTH WOLLONGONG",
+      "MANGERTON",
+      "WEST WOLLONGONG",
+      "CONISTON",
+      "GWYNNEVILLE"
+    ],
+    "latestSale": "2025-12-01"
+  },
+  {
+    "postcode": "2502",
+    "totalSales": 6,
+    "avgPrice": 849583,
+    "minPrice": 570000,
+    "maxPrice": 1050000,
+    "suburbs": [
+      "CRINGILA",
+      "WARRAWONG",
+      "LAKE HEIGHTS"
+    ],
+    "latestSale": "2025-11-28"
+  },
+  {
+    "postcode": "2505",
+    "totalSales": 3,
+    "avgPrice": 906667,
+    "minPrice": 830000,
+    "maxPrice": 1010000,
+    "suburbs": [
+      "PORT KEMBLA"
+    ],
+    "latestSale": "2025-11-12"
+  },
+  {
+    "postcode": "2506",
+    "totalSales": 4,
+    "avgPrice": 931250,
+    "minPrice": 770000,
+    "maxPrice": 1230000,
+    "suburbs": [
+      "BERKELEY"
+    ],
+    "latestSale": "2025-12-10"
+  },
+  {
+    "postcode": "2508",
+    "totalSales": 6,
+    "avgPrice": 1141250,
+    "minPrice": 632500,
+    "maxPrice": 1685000,
+    "suburbs": [
+      "OTFORD",
+      "HELENSBURGH"
+    ],
+    "latestSale": "2025-11-18"
+  },
+  {
+    "postcode": "2515",
+    "totalSales": 6,
+    "avgPrice": 1721667,
+    "minPrice": 1100000,
+    "maxPrice": 2960000,
+    "suburbs": [
+      "AUSTINMER",
+      "THIRROUL",
+      "COLEDALE"
+    ],
+    "latestSale": "2025-11-13"
+  },
+  {
+    "postcode": "2516",
+    "totalSales": 4,
+    "avgPrice": 2247500,
+    "minPrice": 1690000,
+    "maxPrice": 2850000,
+    "suburbs": [
+      "BULLI"
+    ],
+    "latestSale": "2025-11-04"
+  },
+  {
+    "postcode": "2517",
+    "totalSales": 5,
+    "avgPrice": 1268040,
+    "minPrice": 720200,
+    "maxPrice": 1820000,
+    "suburbs": [
+      "WOONONA"
+    ],
+    "latestSale": "2025-11-07"
+  },
+  {
+    "postcode": "2518",
+    "totalSales": 8,
+    "avgPrice": 1444375,
+    "minPrice": 1200000,
+    "maxPrice": 1900000,
+    "suburbs": [
+      "CORRIMAL",
+      "TOWRADGI",
+      "EAST CORRIMAL"
+    ],
+    "latestSale": "2025-11-11"
+  },
+  {
+    "postcode": "2519",
+    "totalSales": 4,
+    "avgPrice": 1495000,
+    "minPrice": 900000,
+    "maxPrice": 2200000,
+    "suburbs": [
+      "MOUNT PLEASANT",
+      "FAIRY MEADOW",
+      "BALGOWNIE"
+    ],
+    "latestSale": "2025-11-14"
+  },
+  {
+    "postcode": "2525",
+    "totalSales": 6,
+    "avgPrice": 1365833,
+    "minPrice": 950000,
+    "maxPrice": 1830000,
+    "suburbs": [
+      "FIGTREE"
+    ],
+    "latestSale": "2025-11-14"
+  },
+  {
+    "postcode": "2526",
+    "totalSales": 7,
+    "avgPrice": 1285714,
+    "minPrice": 750000,
+    "maxPrice": 2700000,
+    "suburbs": [
+      "CORDEAUX HEIGHTS",
+      "FARMBOROUGH HEIGHTS",
+      "MOUNT KEMBLA",
+      "UNANDERRA"
+    ],
+    "latestSale": "2025-11-11"
+  },
+  {
+    "postcode": "2527",
+    "totalSales": 26,
+    "avgPrice": 913269,
+    "minPrice": 522000,
+    "maxPrice": 1425000,
+    "suburbs": [
+      "ALBION PARK RAIL",
+      "CALDERWOOD",
+      "TULLIMBAR",
+      "ALBION PARK"
+    ],
+    "latestSale": "2025-12-03"
+  },
+  {
+    "postcode": "2528",
+    "totalSales": 11,
+    "avgPrice": 856864,
+    "minPrice": 620000,
+    "maxPrice": 1170000,
+    "suburbs": [
+      "BARRACK HEIGHTS",
+      "WARILLA",
+      "BARRACK POINT",
+      "LAKE ILLAWARRA"
+    ],
+    "latestSale": "2025-12-04"
+  },
+  {
+    "postcode": "2529",
+    "totalSales": 26,
+    "avgPrice": 1421105,
+    "minPrice": 420000,
+    "maxPrice": 4099000,
+    "suburbs": [
+      "FLINDERS",
+      "OAK FLATS",
+      "SHELL COVE",
+      "SHELLHARBOUR CITY CENTRE",
+      "SHELLHARBOUR",
+      "DUNMORE"
+    ],
+    "latestSale": "2025-11-17"
+  },
+  {
+    "postcode": "2530",
+    "totalSales": 15,
+    "avgPrice": 1078733,
+    "minPrice": 530000,
+    "maxPrice": 4725000,
+    "suburbs": [
+      "KANAHOOKA",
+      "BROWNSVILLE",
+      "DAPTO",
+      "HAYWARDS BAY",
+      "WONGAWILLI",
+      "HUNTLEY",
+      "HORSLEY",
+      "AVONDALE"
+    ],
+    "latestSale": "2025-11-26"
+  },
+  {
+    "postcode": "2533",
+    "totalSales": 12,
+    "avgPrice": 1502500,
+    "minPrice": 800000,
+    "maxPrice": 3600000,
+    "suburbs": [
+      "KIAMA",
+      "JAMBEROO",
+      "KIAMA DOWNS"
+    ],
+    "latestSale": "2025-11-25"
+  },
+  {
+    "postcode": "2534",
+    "totalSales": 3,
+    "avgPrice": 1676667,
+    "minPrice": 1315000,
+    "maxPrice": 2185000,
+    "suburbs": [
+      "GERRINGONG"
+    ],
+    "latestSale": "2025-11-20"
+  },
+  {
+    "postcode": "2535",
+    "totalSales": 10,
+    "avgPrice": 1417020,
+    "minPrice": 350000,
+    "maxPrice": 2500000,
+    "suburbs": [
+      "BERRY",
+      "JASPERS BRUSH",
+      "SHOALHAVEN HEADS"
+    ],
+    "latestSale": "2025-11-10"
+  },
+  {
+    "postcode": "2536",
+    "totalSales": 27,
+    "avgPrice": 829593,
+    "minPrice": 490000,
+    "maxPrice": 1750000,
+    "suburbs": [
+      "SUNSHINE BAY",
+      "LILLI PILLI",
+      "MALUA BAY",
+      "BATEHAVEN",
+      "WOODLANDS",
+      "DENHAMS BEACH",
+      "SURF BEACH",
+      "NORTH BATEMANS BAY",
+      "JEREMADRA",
+      "BATEMANS BAY",
+      "LONG BEACH"
+    ],
+    "latestSale": "2025-11-20"
+  },
+  {
+    "postcode": "2537",
+    "totalSales": 12,
+    "avgPrice": 1027188,
+    "minPrice": 739000,
+    "maxPrice": 1500000,
+    "suburbs": [
+      "TUROSS HEAD",
+      "MORUYA",
+      "TOMAKIN",
+      "BROULEE",
+      "BERGALIA"
+    ],
+    "latestSale": "2025-11-20"
+  },
+  {
+    "postcode": "2538",
+    "totalSales": 3,
+    "avgPrice": 1456667,
+    "minPrice": 1225000,
+    "maxPrice": 1650000,
+    "suburbs": [
+      "MILTON"
+    ],
+    "latestSale": "2025-11-25"
+  },
+  {
+    "postcode": "2539",
+    "totalSales": 24,
+    "avgPrice": 2025083,
+    "minPrice": 360000,
+    "maxPrice": 9230000,
+    "suburbs": [
+      "ULLADULLA",
+      "FISHERMANS PARADISE",
+      "MOLLYMOOK",
+      "BURRILL LAKE",
+      "MOLLYMOOK BEACH",
+      "MANYANA",
+      "BAWLEY POINT",
+      "NARRAWALLEE",
+      "KINGS POINT"
+    ],
+    "latestSale": "2025-12-04"
+  },
+  {
+    "postcode": "2540",
+    "totalSales": 43,
+    "avgPrice": 1009523,
+    "minPrice": 300000,
+    "maxPrice": 3600000,
+    "suburbs": [
+      "ST GEORGES BASIN",
+      "WORRIGEE",
+      "SANCTUARY POINT",
+      "TOMERONG",
+      "HUSKISSON",
+      "BADAGARANG",
+      "NOWRA HILL",
+      "SUSSEX INLET",
+      "VINCENTIA",
+      "BASIN VIEW",
+      "CULBURRA BEACH",
+      "CALLALA BAY",
+      "CAMBEWARRA VILLAGE",
+      "CUDMIRRAH",
+      "GREENWELL POINT",
+      "TAPITALLEE"
+    ],
+    "latestSale": "2025-12-03"
+  },
+  {
+    "postcode": "2541",
+    "totalSales": 29,
+    "avgPrice": 807912,
+    "minPrice": 351950,
+    "maxPrice": 1960000,
+    "suburbs": [
+      "SOUTH NOWRA",
+      "WEST NOWRA",
+      "NOWRA",
+      "BOMADERRY",
+      "NORTH NOWRA"
+    ],
+    "latestSale": "2025-12-08"
+  },
+  {
+    "postcode": "2546",
+    "totalSales": 7,
+    "avgPrice": 846429,
+    "minPrice": 450000,
+    "maxPrice": 1179000,
+    "suburbs": [
+      "BERMAGUI",
+      "WALLAGA LAKE",
+      "DALMENY",
+      "NAROOMA"
+    ],
+    "latestSale": "2025-12-05"
+  },
+  {
+    "postcode": "2548",
+    "totalSales": 10,
+    "avgPrice": 968600,
+    "minPrice": 481000,
+    "maxPrice": 1450000,
+    "suburbs": [
+      "TURA BEACH",
+      "MERIMBULA",
+      "MIRADOR"
+    ],
+    "latestSale": "2025-11-25"
+  },
+  {
+    "postcode": "2549",
+    "totalSales": 3,
+    "avgPrice": 806333,
+    "minPrice": 519000,
+    "maxPrice": 1220000,
+    "suburbs": [
+      "PAMBULA",
+      "LOCHIEL"
+    ],
+    "latestSale": "2025-11-21"
+  },
+  {
+    "postcode": "2550",
+    "totalSales": 14,
+    "avgPrice": 982571,
+    "minPrice": 565000,
+    "maxPrice": 1500000,
+    "suburbs": [
+      "ANGLEDALE",
+      "TATHRA",
+      "KALARU",
+      "WANDELLA",
+      "MYRTLE MOUNTAIN",
+      "COBARGO",
+      "BEGA",
+      "WOLUMLA",
+      "CANDELO"
+    ],
+    "latestSale": "2025-12-02"
+  },
+  {
+    "postcode": "2551",
+    "totalSales": 6,
+    "avgPrice": 983333,
+    "minPrice": 300000,
+    "maxPrice": 2000000,
+    "suburbs": [
+      "WONBOYN",
+      "EDEN"
+    ],
+    "latestSale": "2025-11-11"
+  },
+  {
+    "postcode": "2557",
+    "totalSales": 35,
+    "avgPrice": 970594,
+    "minPrice": 599000,
+    "maxPrice": 1760000,
+    "suburbs": [
+      "GREGORY HILLS",
+      "GLEDSWOOD HILLS",
+      "CATHERINE FIELD"
+    ],
+    "latestSale": "2025-12-02"
+  },
+  {
+    "postcode": "2558",
+    "totalSales": 4,
+    "avgPrice": 1013625,
+    "minPrice": 931000,
+    "maxPrice": 1091000,
+    "suburbs": [
+      "ESCHOL PARK",
+      "EAGLE VALE"
+    ],
+    "latestSale": "2025-12-05"
+  },
+  {
+    "postcode": "2559",
+    "totalSales": 1,
+    "avgPrice": 590000,
+    "minPrice": 590000,
+    "maxPrice": 590000,
+    "suburbs": [
+      "CLAYMORE"
+    ],
+    "latestSale": "2025-10-24"
+  },
+  {
+    "postcode": "2560",
+    "totalSales": 44,
+    "avgPrice": 1027227,
+    "minPrice": 365000,
+    "maxPrice": 2205000,
+    "suburbs": [
+      "CAMPBELLTOWN",
+      "LEUMEAH",
+      "GILEAD",
+      "GLEN ALPINE",
+      "RUSE",
+      "BRADBURY",
+      "ROSEMEADOW",
+      "AMBARVALE",
+      "ST HELENS PARK",
+      "APPIN"
+    ],
+    "latestSale": "2025-12-02"
+  },
+  {
+    "postcode": "2563",
+    "totalSales": 4,
+    "avgPrice": 992000,
+    "minPrice": 628000,
+    "maxPrice": 1385000,
+    "suburbs": [
+      "MENANGLE PARK"
+    ],
+    "latestSale": "2025-10-27"
+  },
+  {
+    "postcode": "2564",
+    "totalSales": 7,
+    "avgPrice": 1021857,
+    "minPrice": 35000,
+    "maxPrice": 1300000,
+    "suburbs": [
+      "MACQUARIE FIELDS"
+    ],
+    "latestSale": "2025-11-18"
+  },
+  {
+    "postcode": "2565",
+    "totalSales": 21,
+    "avgPrice": 1191448,
+    "minPrice": 650000,
+    "maxPrice": 3380000,
+    "suburbs": [
+      "INGLEBURN",
+      "BARDIA",
+      "DENHAM COURT"
+    ],
+    "latestSale": "2025-12-03"
+  },
+  {
+    "postcode": "2566",
+    "totalSales": 16,
+    "avgPrice": 1005813,
+    "minPrice": 348000,
+    "maxPrice": 1500000,
+    "suburbs": [
+      "MINTO",
+      "ST ANDREWS",
+      "RABY",
+      "BOW BOWING"
+    ],
+    "latestSale": "2025-11-18"
+  },
+  {
+    "postcode": "2567",
+    "totalSales": 21,
+    "avgPrice": 1272595,
+    "minPrice": 522000,
+    "maxPrice": 2320000,
+    "suburbs": [
+      "HARRINGTON PARK",
+      "CURRANS HILL",
+      "MOUNT ANNAN",
+      "NARELLAN VALE",
+      "NARELLAN"
+    ],
+    "latestSale": "2025-11-19"
+  },
+  {
+    "postcode": "2568",
+    "totalSales": 4,
+    "avgPrice": 1042725,
+    "minPrice": 705900,
+    "maxPrice": 1340000,
+    "suburbs": [
+      "MENANGLE"
+    ],
+    "latestSale": "2025-10-29"
+  },
+  {
+    "postcode": "2570",
+    "totalSales": 42,
+    "avgPrice": 1238112,
+    "minPrice": 330000,
+    "maxPrice": 5150000,
+    "suburbs": [
+      "SPRING FARM",
+      "ORAN PARK",
+      "ELDERSLIE",
+      "COBBITTY",
+      "CAMDEN SOUTH",
+      "CAMDEN",
+      "BELIMBLA PARK",
+      "BROWNLOW HILL",
+      "CAWDOR",
+      "OAKDALE",
+      "THE OAKS",
+      "ORANGEVILLE",
+      "CAMDEN PARK"
+    ],
+    "latestSale": "2025-11-26"
+  },
+  {
+    "postcode": "2571",
+    "totalSales": 22,
+    "avgPrice": 1430591,
+    "minPrice": 530000,
+    "maxPrice": 7865000,
+    "suburbs": [
+      "RAZORBACK",
+      "BUXTON",
+      "PICTON",
+      "WILTON"
+    ],
+    "latestSale": "2025-11-13"
+  },
+  {
+    "postcode": "2572",
+    "totalSales": 2,
+    "avgPrice": 937500,
+    "minPrice": 935000,
+    "maxPrice": 940000,
+    "suburbs": [
+      "THIRLMERE"
+    ],
+    "latestSale": "2025-11-05"
+  },
+  {
+    "postcode": "2573",
+    "totalSales": 15,
+    "avgPrice": 753300,
+    "minPrice": 426504,
+    "maxPrice": 2300000,
+    "suburbs": [
+      "TAHMOOR"
+    ],
+    "latestSale": "2025-11-10"
+  },
+  {
+    "postcode": "2574",
+    "totalSales": 4,
+    "avgPrice": 1020000,
+    "minPrice": 820000,
+    "maxPrice": 1400000,
+    "suburbs": [
+      "BARGO",
+      "YANDERRA"
+    ],
+    "latestSale": "2025-10-29"
+  },
+  {
+    "postcode": "2575",
+    "totalSales": 9,
+    "avgPrice": 1044111,
+    "minPrice": 600000,
+    "maxPrice": 2250000,
+    "suburbs": [
+      "MITTAGONG",
+      "BRAEMAR",
+      "YERRINBOOL",
+      "HILL TOP"
+    ],
+    "latestSale": "2025-11-28"
+  },
+  {
+    "postcode": "2576",
+    "totalSales": 15,
+    "avgPrice": 1424367,
+    "minPrice": 500000,
+    "maxPrice": 2650000,
+    "suburbs": [
+      "BOWRAL",
+      "BURRADOO"
+    ],
+    "latestSale": "2025-11-21"
+  },
+  {
+    "postcode": "2577",
+    "totalSales": 12,
+    "avgPrice": 2305208,
+    "minPrice": 360000,
+    "maxPrice": 10200000,
+    "suburbs": [
+      "KANGAROO VALLEY",
+      "MOSS VALE",
+      "BURRAWANG",
+      "CANYONLEIGH",
+      "WERAI"
+    ],
+    "latestSale": "2025-11-11"
+  },
+  {
+    "postcode": "2578",
+    "totalSales": 5,
+    "avgPrice": 1121000,
+    "minPrice": 525000,
+    "maxPrice": 2425000,
+    "suburbs": [
+      "BUNDANOON"
+    ],
+    "latestSale": "2025-11-10"
+  },
+  {
+    "postcode": "2579",
+    "totalSales": 5,
+    "avgPrice": 1522000,
+    "minPrice": 330000,
+    "maxPrice": 4250000,
+    "suburbs": [
+      "WINGELLO",
+      "EXETER",
+      "BIG HILL",
+      "MARULAN"
+    ],
+    "latestSale": "2025-11-07"
+  },
+  {
+    "postcode": "2580",
+    "totalSales": 39,
+    "avgPrice": 693603,
+    "minPrice": 300000,
+    "maxPrice": 2050000,
+    "suburbs": [
+      "CURRAWANG",
+      "TARALGA",
+      "GOULBURN",
+      "QUIALIGO",
+      "GUNDARY",
+      "WAYO",
+      "RUN-O-WATERS"
+    ],
+    "latestSale": "2025-12-02"
+  },
+  {
+    "postcode": "2581",
+    "totalSales": 1,
+    "avgPrice": 275000,
+    "minPrice": 275000,
+    "maxPrice": 275000,
+    "suburbs": [
+      "COLLECTOR"
+    ],
+    "latestSale": "2025-11-07"
+  },
+  {
+    "postcode": "2582",
+    "totalSales": 9,
+    "avgPrice": 1407333,
+    "minPrice": 659000,
+    "maxPrice": 2400000,
+    "suburbs": [
+      "YASS",
+      "YASS RIVER",
+      "MURRUMBATEMAN"
+    ],
+    "latestSale": "2025-12-08"
+  },
+  {
+    "postcode": "2583",
+    "totalSales": 6,
+    "avgPrice": 820833,
+    "minPrice": 280000,
+    "maxPrice": 1800000,
+    "suburbs": [
+      "CROOKWELL",
+      "PEELWOOD",
+      "BINDA"
+    ],
+    "latestSale": "2025-11-21"
+  },
+  {
+    "postcode": "2584",
+    "totalSales": 1,
+    "avgPrice": 670000,
+    "minPrice": 670000,
+    "maxPrice": 670000,
+    "suburbs": [
+      "BINALONG"
+    ],
+    "latestSale": "2025-11-10"
+  },
+  {
+    "postcode": "2586",
+    "totalSales": 2,
+    "avgPrice": 675000,
+    "minPrice": 550000,
+    "maxPrice": 800000,
+    "suburbs": [
+      "TAYLORS FLAT",
+      "BOOROWA"
+    ],
+    "latestSale": "2025-11-07"
+  },
+  {
+    "postcode": "2587",
+    "totalSales": 1,
+    "avgPrice": 368000,
+    "minPrice": 368000,
+    "maxPrice": 368000,
+    "suburbs": [
+      "HARDEN"
+    ],
+    "latestSale": "2025-11-26"
+  },
+  {
+    "postcode": "2590",
+    "totalSales": 2,
+    "avgPrice": 269500,
+    "minPrice": 159000,
+    "maxPrice": 380000,
+    "suburbs": [
+      "ILLABO",
+      "COOTAMUNDRA"
+    ],
+    "latestSale": "2025-11-05"
+  },
+  {
+    "postcode": "2594",
+    "totalSales": 7,
+    "avgPrice": 521693,
+    "minPrice": 16849,
+    "maxPrice": 860000,
+    "suburbs": [
+      "BRIBBAREE",
+      "YOUNG"
+    ],
+    "latestSale": "2025-11-25"
+  },
+  {
+    "postcode": "2619",
+    "totalSales": 4,
+    "avgPrice": 1306250,
+    "minPrice": 625000,
+    "maxPrice": 2010000,
+    "suburbs": [
+      "JERRABOMBERRA"
+    ],
+    "latestSale": "2025-11-10"
+  },
+  {
+    "postcode": "2620",
+    "totalSales": 26,
+    "avgPrice": 880462,
+    "minPrice": 305000,
+    "maxPrice": 1840000,
+    "suburbs": [
+      "KARABAR",
+      "CRESTWOOD",
+      "QUEANBEYAN EAST",
+      "QUEANBEYAN",
+      "WAMBOIN",
+      "CARWOOLA",
+      "GREENLEIGH",
+      "GOOGONG",
+      "TRALEE",
+      "ENVIRONA",
+      "SUTTON"
+    ],
+    "latestSale": "2025-12-01"
+  },
+  {
+    "postcode": "2621",
+    "totalSales": 8,
+    "avgPrice": 910875,
+    "minPrice": 200000,
+    "maxPrice": 1910000,
+    "suburbs": [
+      "BYWONG",
+      "BUNGENDORE"
+    ],
+    "latestSale": "2025-12-11"
+  },
+  {
+    "postcode": "2622",
+    "totalSales": 7,
+    "avgPrice": 822143,
+    "minPrice": 665000,
+    "maxPrice": 1000000,
+    "suburbs": [
+      "ARALUEN",
+      "BRAIDWOOD",
+      "JINGERA"
+    ],
+    "latestSale": "2025-11-13"
+  },
+  {
+    "postcode": "2626",
+    "totalSales": 1,
+    "avgPrice": 930000,
+    "minPrice": 930000,
+    "maxPrice": 930000,
+    "suburbs": [
+      "BREDBO"
+    ],
+    "latestSale": "2025-06-11"
+  },
+  {
+    "postcode": "2627",
+    "totalSales": 8,
+    "avgPrice": 1001875,
+    "minPrice": 625000,
+    "maxPrice": 1610000,
+    "suburbs": [
+      "CRACKENBACK",
+      "JINDABYNE",
+      "EAST JINDABYNE",
+      "MOONBAH"
+    ],
+    "latestSale": "2025-12-05"
+  },
+  {
+    "postcode": "2628",
+    "totalSales": 1,
+    "avgPrice": 785000,
+    "minPrice": 785000,
+    "maxPrice": 785000,
+    "suburbs": [
+      "BERRIDALE"
+    ],
+    "latestSale": "2025-10-30"
+  },
+  {
+    "postcode": "2630",
+    "totalSales": 7,
+    "avgPrice": 638143,
+    "minPrice": 230000,
+    "maxPrice": 1094000,
+    "suburbs": [
+      "COOMA",
+      "SHANNONS FLAT",
+      "NUMERALLA",
+      "BINJURA",
+      "MURRUMBUCCA"
+    ],
+    "latestSale": "2025-12-02"
+  },
+  {
+    "postcode": "2632",
+    "totalSales": 2,
+    "avgPrice": 492500,
+    "minPrice": 440000,
+    "maxPrice": 545000,
+    "suburbs": [
+      "BOMBALA"
+    ],
+    "latestSale": "2025-11-07"
+  },
+  {
+    "postcode": "2640",
+    "totalSales": 30,
+    "avgPrice": 1761070,
+    "minPrice": 255000,
+    "maxPrice": 28510000,
+    "suburbs": [
+      "EAST ALBURY",
+      "WIRLINGA",
+      "THURGOONA",
+      "ALBURY",
+      "GLENROY",
+      "NORTH ALBURY",
+      "WEST ALBURY",
+      "TABLE TOP",
+      "ETTAMOGAH"
+    ],
+    "latestSale": "2025-11-21"
+  },
+  {
+    "postcode": "2641",
+    "totalSales": 15,
+    "avgPrice": 704517,
+    "minPrice": 5500,
+    "maxPrice": 3015000,
+    "suburbs": [
+      "LAVINGTON",
+      "SPRINGDALE HEIGHTS"
+    ],
+    "latestSale": "2025-11-11"
+  },
+  {
+    "postcode": "2642",
+    "totalSales": 2,
+    "avgPrice": 467500,
+    "minPrice": 235000,
+    "maxPrice": 700000,
+    "suburbs": [
+      "YERONG CREEK",
+      "JINDERA"
+    ],
+    "latestSale": "2025-11-27"
+  },
+  {
+    "postcode": "2643",
+    "totalSales": 3,
+    "avgPrice": 776667,
+    "minPrice": 400000,
+    "maxPrice": 1300000,
+    "suburbs": [
+      "HOWLONG"
+    ],
+    "latestSale": "2025-11-04"
+  },
+  {
+    "postcode": "2644",
+    "totalSales": 2,
+    "avgPrice": 948000,
+    "minPrice": 396000,
+    "maxPrice": 1500000,
+    "suburbs": [
+      "HOLBROOK",
+      "MULLENGANDRA"
+    ],
+    "latestSale": "2025-11-13"
+  },
+  {
+    "postcode": "2646",
+    "totalSales": 5,
+    "avgPrice": 512200,
+    "minPrice": 431000,
+    "maxPrice": 620000,
+    "suburbs": [
+      "COROWA"
+    ],
+    "latestSale": "2025-11-24"
+  },
+  {
+    "postcode": "2647",
+    "totalSales": 2,
+    "avgPrice": 359500,
+    "minPrice": 279000,
+    "maxPrice": 440000,
+    "suburbs": [
+      "MULWALA"
+    ],
+    "latestSale": "2025-11-07"
+  },
+  {
+    "postcode": "2648",
+    "totalSales": 3,
+    "avgPrice": 776667,
+    "minPrice": 265000,
+    "maxPrice": 1650000,
+    "suburbs": [
+      "WENTWORTH"
+    ],
+    "latestSale": "2025-10-31"
+  },
+  {
+    "postcode": "2649",
+    "totalSales": 1,
+    "avgPrice": 550000,
+    "minPrice": 550000,
+    "maxPrice": 550000,
+    "suburbs": [
+      "NURENMERENMONG"
+    ],
+    "latestSale": "2025-11-21"
+  },
+  {
+    "postcode": "2650",
+    "totalSales": 61,
+    "avgPrice": 626248,
+    "minPrice": 225000,
+    "maxPrice": 2220000,
+    "suburbs": [
+      "TURVEY PARK",
+      "LLOYD",
+      "BIG SPRINGS",
+      "ESTELLA",
+      "GOBBAGOMBALIN",
+      "WAGGA WAGGA",
+      "SPRINGVALE",
+      "TATTON",
+      "LAKE ALBERT",
+      "NORTH WAGGA WAGGA",
+      "MOUNT AUSTIN",
+      "ASHMONT",
+      "KOORINGAL",
+      "GLENFIELD PARK",
+      "EAST WAGGA WAGGA",
+      "TOLLAND",
+      "BELFRAYDEN"
+    ],
+    "latestSale": "2025-12-09"
+  },
+  {
+    "postcode": "2651",
+    "totalSales": 4,
+    "avgPrice": 477000,
+    "minPrice": 220000,
+    "maxPrice": 582000,
+    "suburbs": [
+      "FOREST HILL"
+    ],
+    "latestSale": "2025-11-19"
+  },
+  {
+    "postcode": "2652",
+    "totalSales": 3,
+    "avgPrice": 404667,
+    "minPrice": 150000,
+    "maxPrice": 689000,
+    "suburbs": [
+      "GRONG GRONG",
+      "BOREE CREEK",
+      "URANQUINTY"
+    ],
+    "latestSale": "2025-11-20"
+  },
+  {
+    "postcode": "2653",
+    "totalSales": 3,
+    "avgPrice": 476000,
+    "minPrice": 425000,
+    "maxPrice": 560000,
+    "suburbs": [
+      "TUMBARUMBA"
+    ],
+    "latestSale": "2025-11-11"
+  },
+  {
+    "postcode": "2655",
+    "totalSales": 1,
+    "avgPrice": 420000,
+    "minPrice": 420000,
+    "maxPrice": 420000,
+    "suburbs": [
+      "THE ROCK"
+    ],
+    "latestSale": "2025-11-12"
+  },
+  {
+    "postcode": "2656",
+    "totalSales": 1,
+    "avgPrice": 420000,
+    "minPrice": 420000,
+    "maxPrice": 420000,
+    "suburbs": [
+      "MILBRULONG"
+    ],
+    "latestSale": "2025-10-03"
+  },
+  {
+    "postcode": "2660",
+    "totalSales": 4,
+    "avgPrice": 1343750,
+    "minPrice": 385000,
+    "maxPrice": 3800000,
+    "suburbs": [
+      "CULCAIRN"
+    ],
+    "latestSale": "2025-11-05"
+  },
+  {
+    "postcode": "2663",
+    "totalSales": 4,
+    "avgPrice": 569500,
+    "minPrice": 495000,
+    "maxPrice": 765000,
+    "suburbs": [
+      "JUNEE"
+    ],
+    "latestSale": "2025-11-19"
+  },
+  {
+    "postcode": "2665",
+    "totalSales": 3,
+    "avgPrice": 408383,
+    "minPrice": 95150,
+    "maxPrice": 880000,
+    "suburbs": [
+      "ARDLETHAN",
+      "BINYA",
+      "BARELLAN"
+    ],
+    "latestSale": "2025-11-13"
+  },
+  {
+    "postcode": "2666",
+    "totalSales": 8,
+    "avgPrice": 454500,
+    "minPrice": 176000,
+    "maxPrice": 950000,
+    "suburbs": [
+      "TEMORA"
+    ],
+    "latestSale": "2025-12-03"
+  },
+  {
+    "postcode": "2669",
+    "totalSales": 1,
+    "avgPrice": 40000,
+    "minPrice": 40000,
+    "maxPrice": 40000,
+    "suburbs": [
+      "TALLIMBA"
+    ],
+    "latestSale": "2025-11-26"
+  },
+  {
+    "postcode": "2671",
+    "totalSales": 4,
+    "avgPrice": 668750,
+    "minPrice": 260000,
+    "maxPrice": 1100000,
+    "suburbs": [
+      "WYALONG",
+      "WEST WYALONG"
+    ],
+    "latestSale": "2025-12-03"
+  },
+  {
+    "postcode": "2675",
+    "totalSales": 1,
+    "avgPrice": 200000,
+    "minPrice": 200000,
+    "maxPrice": 200000,
+    "suburbs": [
+      "HILLSTON"
+    ],
+    "latestSale": "2025-08-29"
+  },
+  {
+    "postcode": "2680",
+    "totalSales": 11,
+    "avgPrice": 685182,
+    "minPrice": 175000,
+    "maxPrice": 1200000,
+    "suburbs": [
+      "GRIFFITH",
+      "BILBUL",
+      "HANWOOD"
+    ],
+    "latestSale": "2025-11-28"
+  },
+  {
+    "postcode": "2700",
+    "totalSales": 2,
+    "avgPrice": 463750,
+    "minPrice": 420000,
+    "maxPrice": 507500,
+    "suburbs": [
+      "NARRANDERA"
+    ],
+    "latestSale": "2025-11-12"
+  },
+  {
+    "postcode": "2701",
+    "totalSales": 1,
+    "avgPrice": 390000,
+    "minPrice": 390000,
+    "maxPrice": 390000,
+    "suburbs": [
+      "COOLAMON"
+    ],
+    "latestSale": "2025-10-16"
+  },
+  {
+    "postcode": "2705",
+    "totalSales": 3,
+    "avgPrice": 390000,
+    "minPrice": 330000,
+    "maxPrice": 510000,
+    "suburbs": [
+      "LEETON"
+    ],
+    "latestSale": "2025-11-13"
+  },
+  {
+    "postcode": "2706",
+    "totalSales": 3,
+    "avgPrice": 330667,
+    "minPrice": 300000,
+    "maxPrice": 350000,
+    "suburbs": [
+      "DARLINGTON POINT"
+    ],
+    "latestSale": "2025-11-25"
+  },
+  {
+    "postcode": "2707",
+    "totalSales": 1,
+    "avgPrice": 460000,
+    "minPrice": 460000,
+    "maxPrice": 460000,
+    "suburbs": [
+      "COLEAMBALLY"
+    ],
+    "latestSale": "2025-11-10"
+  },
+  {
+    "postcode": "2710",
+    "totalSales": 9,
+    "avgPrice": 501139,
+    "minPrice": 270000,
+    "maxPrice": 801250,
+    "suburbs": [
+      "DENILIQUIN",
+      "MATHOURA"
+    ],
+    "latestSale": "2025-12-01"
+  },
+  {
+    "postcode": "2711",
+    "totalSales": 1,
+    "avgPrice": 330000,
+    "minPrice": 330000,
+    "maxPrice": 330000,
+    "suburbs": [
+      "HAY"
+    ],
+    "latestSale": "2025-11-21"
+  },
+  {
+    "postcode": "2712",
+    "totalSales": 1,
+    "avgPrice": 300000,
+    "minPrice": 300000,
+    "maxPrice": 300000,
+    "suburbs": [
+      "BERRIGAN"
+    ],
+    "latestSale": "2025-11-06"
+  },
+  {
+    "postcode": "2713",
+    "totalSales": 2,
+    "avgPrice": 1310705,
+    "minPrice": 80000,
+    "maxPrice": 2541409,
+    "suburbs": [
+      "FINLEY",
+      "BLIGHTY"
+    ],
+    "latestSale": "2025-11-07"
+  },
+  {
+    "postcode": "2714",
+    "totalSales": 3,
+    "avgPrice": 296000,
+    "minPrice": 165000,
+    "maxPrice": 445000,
+    "suburbs": [
+      "TOCUMWAL"
+    ],
+    "latestSale": "2025-11-24"
+  },
+  {
+    "postcode": "2715",
+    "totalSales": 1,
+    "avgPrice": 1200000,
+    "minPrice": 1200000,
+    "maxPrice": 1200000,
+    "suburbs": [
+      "BALRANALD"
+    ],
+    "latestSale": "2023-09-28"
+  },
+  {
+    "postcode": "2716",
+    "totalSales": 1,
+    "avgPrice": 350000,
+    "minPrice": 350000,
+    "maxPrice": 350000,
+    "suburbs": [
+      "JERILDERIE"
+    ],
+    "latestSale": "2025-11-04"
+  },
+  {
+    "postcode": "2720",
+    "totalSales": 2,
+    "avgPrice": 7650609,
+    "minPrice": 501000,
+    "maxPrice": 14800217,
+    "suburbs": [
+      "TUMUT",
+      "TUMORRAMA"
+    ],
+    "latestSale": "2025-11-17"
+  },
+  {
+    "postcode": "2727",
+    "totalSales": 1,
+    "avgPrice": 7221770,
+    "minPrice": 7221770,
+    "maxPrice": 7221770,
+    "suburbs": [
+      "GOBARRALONG"
+    ],
+    "latestSale": "2025-05-03"
+  },
+  {
+    "postcode": "2729",
+    "totalSales": 4,
+    "avgPrice": 3793880,
+    "minPrice": 90000,
+    "maxPrice": 8745520,
+    "suburbs": [
+      "SHARPS CREEK",
+      "COOLEYS CREEK",
+      "ADELONG"
+    ],
+    "latestSale": "2025-11-13"
+  },
+  {
+    "postcode": "2730",
+    "totalSales": 1,
+    "avgPrice": 850000,
+    "minPrice": 850000,
+    "maxPrice": 850000,
+    "suburbs": [
+      "BATLOW"
+    ],
+    "latestSale": "2025-11-10"
+  },
+  {
+    "postcode": "2731",
+    "totalSales": 8,
+    "avgPrice": 554375,
+    "minPrice": 245000,
+    "maxPrice": 1040000,
+    "suburbs": [
+      "MOAMA"
+    ],
+    "latestSale": "2025-11-20"
+  },
+  {
+    "postcode": "2737",
+    "totalSales": 2,
+    "avgPrice": 125000,
+    "minPrice": 110000,
+    "maxPrice": 140000,
+    "suburbs": [
+      "EUSTON"
+    ],
+    "latestSale": "2025-11-24"
+  },
+  {
+    "postcode": "2738",
+    "totalSales": 3,
+    "avgPrice": 1350000,
+    "minPrice": 255000,
+    "maxPrice": 3200000,
+    "suburbs": [
+      "GOL GOL"
+    ],
+    "latestSale": "2025-11-07"
+  },
+  {
+    "postcode": "2739",
+    "totalSales": 2,
+    "avgPrice": 740500,
+    "minPrice": 616000,
+    "maxPrice": 865000,
+    "suburbs": [
+      "BURONGA"
+    ],
+    "latestSale": "2025-10-28"
+  },
+  {
+    "postcode": "2745",
+    "totalSales": 11,
+    "avgPrice": 1781636,
+    "minPrice": 925000,
+    "maxPrice": 6100000,
+    "suburbs": [
+      "GLENMORE PARK",
+      "WALLACIA"
+    ],
+    "latestSale": "2025-11-11"
+  },
+  {
+    "postcode": "2747",
+    "totalSales": 23,
+    "avgPrice": 1071391,
+    "minPrice": 450000,
+    "maxPrice": 2650000,
+    "suburbs": [
+      "KINGSWOOD",
+      "WERRINGTON",
+      "CAMBRIDGE PARK",
+      "WERRINGTON DOWNS",
+      "WERRINGTON COUNTY",
+      "LLANDILO",
+      "JORDAN SPRINGS",
+      "CADDENS",
+      "CLAREMONT MEADOWS"
+    ],
+    "latestSale": "2025-11-13"
+  },
+  {
+    "postcode": "2748",
+    "totalSales": 2,
+    "avgPrice": 3952500,
+    "minPrice": 905000,
+    "maxPrice": 7000000,
+    "suburbs": [
+      "ORCHARD HILLS"
+    ],
+    "latestSale": "2025-11-12"
+  },
+  {
+    "postcode": "2749",
+    "totalSales": 6,
+    "avgPrice": 1296767,
+    "minPrice": 1060000,
+    "maxPrice": 1625000,
+    "suburbs": [
+      "CRANEBROOK"
+    ],
+    "latestSale": "2025-10-29"
+  },
+  {
+    "postcode": "2750",
+    "totalSales": 34,
+    "avgPrice": 921347,
+    "minPrice": 200000,
+    "maxPrice": 2300000,
+    "suburbs": [
+      "PENRITH",
+      "SOUTH PENRITH",
+      "EMU PLAINS",
+      "EMU HEIGHTS",
+      "LEONAY"
+    ],
+    "latestSale": "2025-12-09"
+  },
+  {
+    "postcode": "2752",
+    "totalSales": 16,
+    "avgPrice": 1106750,
+    "minPrice": 540000,
+    "maxPrice": 2600000,
+    "suburbs": [
+      "SILVERDALE",
+      "WARRAGAMBA"
+    ],
+    "latestSale": "2025-11-20"
+  },
+  {
+    "postcode": "2753",
+    "totalSales": 8,
+    "avgPrice": 1849875,
+    "minPrice": 968000,
+    "maxPrice": 3500000,
+    "suburbs": [
+      "GROSE VALE",
+      "GROSE WOLD",
+      "HOBARTVILLE",
+      "RICHMOND",
+      "LONDONDERRY",
+      "AGNES BANKS"
+    ],
+    "latestSale": "2025-11-27"
+  },
+  {
+    "postcode": "2754",
+    "totalSales": 3,
+    "avgPrice": 1333333,
+    "minPrice": 1215000,
+    "maxPrice": 1485000,
+    "suburbs": [
+      "NORTH RICHMOND"
+    ],
+    "latestSale": "2025-11-18"
+  },
+  {
+    "postcode": "2756",
+    "totalSales": 20,
+    "avgPrice": 1295200,
+    "minPrice": 1000,
+    "maxPrice": 2595000,
+    "suburbs": [
+      "SOUTH WINDSOR",
+      "PITT TOWN",
+      "BLIGH PARK",
+      "FREEMANS REACH",
+      "EBENEZER",
+      "WINDSOR",
+      "WILBERFORCE",
+      "COLO",
+      "WINDSOR DOWNS"
+    ],
+    "latestSale": "2025-10-31"
+  },
+  {
+    "postcode": "2758",
+    "totalSales": 2,
+    "avgPrice": 1492500,
+    "minPrice": 1185000,
+    "maxPrice": 1800000,
+    "suburbs": [
+      "KURRAJONG HEIGHTS"
+    ],
+    "latestSale": "2025-10-30"
+  },
+  {
+    "postcode": "2759",
+    "totalSales": 5,
+    "avgPrice": 1252200,
+    "minPrice": 1190000,
+    "maxPrice": 1300000,
+    "suburbs": [
+      "ST CLAIR",
+      "ERSKINE PARK"
+    ],
+    "latestSale": "2025-11-10"
+  },
+  {
+    "postcode": "2760",
+    "totalSales": 25,
+    "avgPrice": 3308360,
+    "minPrice": 497000,
+    "maxPrice": 28050000,
+    "suburbs": [
+      "ROPES CROSSING",
+      "ST MARYS",
+      "COLYTON",
+      "OXLEY PARK"
+    ],
+    "latestSale": "2025-11-15"
+  },
+  {
+    "postcode": "2761",
+    "totalSales": 16,
+    "avgPrice": 1134438,
+    "minPrice": 800000,
+    "maxPrice": 1460000,
+    "suburbs": [
+      "PLUMPTON",
+      "OAKHURST",
+      "DEAN PARK",
+      "COLEBEE"
+    ],
+    "latestSale": "2025-11-14"
+  },
+  {
+    "postcode": "2762",
+    "totalSales": 28,
+    "avgPrice": 1008357,
+    "minPrice": 371000,
+    "maxPrice": 1600500,
+    "suburbs": [
+      "TALLAWONG",
+      "SCHOFIELDS"
+    ],
+    "latestSale": "2025-11-25"
+  },
+  {
+    "postcode": "2763",
+    "totalSales": 12,
+    "avgPrice": 1270708,
+    "minPrice": 870000,
+    "maxPrice": 1668000,
+    "suburbs": [
+      "QUAKERS HILL",
+      "NIRIMBA FIELDS"
+    ],
+    "latestSale": "2025-11-23"
+  },
+  {
+    "postcode": "2765",
+    "totalSales": 159,
+    "avgPrice": 1182192,
+    "minPrice": 300000,
+    "maxPrice": 4223490,
+    "suburbs": [
+      "BOX HILL",
+      "GABLES",
+      "MARAYLYA",
+      "MARSDEN PARK",
+      "RIVERSTONE",
+      "MELONBA",
+      "GRANTHAM FARM",
+      "ANGUS",
+      "VINEYARD",
+      "OAKVILLE",
+      "BERKSHIRE PARK"
+    ],
+    "latestSale": "2025-12-03"
+  },
+  {
+    "postcode": "2766",
+    "totalSales": 6,
+    "avgPrice": 948500,
+    "minPrice": 800000,
+    "maxPrice": 1187000,
+    "suburbs": [
+      "ROOTY HILL"
+    ],
+    "latestSale": "2025-12-04"
+  },
+  {
+    "postcode": "2767",
+    "totalSales": 10,
+    "avgPrice": 1215350,
+    "minPrice": 799000,
+    "maxPrice": 2165000,
+    "suburbs": [
+      "DOONSIDE",
+      "WOODCROFT",
+      "BUNGARRIBEE"
+    ],
+    "latestSale": "2025-12-08"
+  },
+  {
+    "postcode": "2768",
+    "totalSales": 7,
+    "avgPrice": 1768929,
+    "minPrice": 1500000,
+    "maxPrice": 2105500,
+    "suburbs": [
+      "PARKLEA",
+      "GLENWOOD"
+    ],
+    "latestSale": "2025-10-28"
+  },
+  {
+    "postcode": "2769",
+    "totalSales": 6,
+    "avgPrice": 1569333,
+    "minPrice": 893000,
+    "maxPrice": 2125000,
+    "suburbs": [
+      "THE PONDS"
+    ],
+    "latestSale": "2025-11-04"
+  },
+  {
+    "postcode": "2770",
+    "totalSales": 20,
+    "avgPrice": 1088934,
+    "minPrice": 290400,
+    "maxPrice": 5170000,
+    "suburbs": [
+      "BLACKETT",
+      "BIDWILL",
+      "MOUNT DRUITT",
+      "HEBERSHAM",
+      "LETHBRIDGE PARK",
+      "DHARRUK",
+      "TREGEAR",
+      "MINCHINBURY"
+    ],
+    "latestSale": "2025-11-17"
+  },
+  {
+    "postcode": "2773",
+    "totalSales": 3,
+    "avgPrice": 1416667,
+    "minPrice": 960000,
+    "maxPrice": 2300000,
+    "suburbs": [
+      "GLENBROOK"
+    ],
+    "latestSale": "2025-11-20"
+  },
+  {
+    "postcode": "2774",
+    "totalSales": 16,
+    "avgPrice": 1360250,
+    "minPrice": 475000,
+    "maxPrice": 2800000,
+    "suburbs": [
+      "BLAXLAND",
+      "MOUNT RIVERVIEW",
+      "WARRIMOO"
+    ],
+    "latestSale": "2025-11-27"
+  },
+  {
+    "postcode": "2775",
+    "totalSales": 5,
+    "avgPrice": 617000,
+    "minPrice": 135000,
+    "maxPrice": 855000,
+    "suburbs": [
+      "LOWER MACDONALD",
+      "SPENCER"
+    ],
+    "latestSale": "2025-11-11"
+  },
+  {
+    "postcode": "2776",
+    "totalSales": 3,
+    "avgPrice": 745396,
+    "minPrice": 400000,
+    "maxPrice": 960000,
+    "suburbs": [
+      "FAULCONBRIDGE"
+    ],
+    "latestSale": "2025-11-18"
+  },
+  {
+    "postcode": "2777",
+    "totalSales": 8,
+    "avgPrice": 1052250,
+    "minPrice": 890000,
+    "maxPrice": 1200000,
+    "suburbs": [
+      "SPRINGWOOD",
+      "WINMALEE"
+    ],
+    "latestSale": "2025-11-22"
+  },
+  {
+    "postcode": "2779",
+    "totalSales": 1,
+    "avgPrice": 960000,
+    "minPrice": 960000,
+    "maxPrice": 960000,
+    "suburbs": [
+      "HAZELBROOK"
+    ],
+    "latestSale": "2025-10-30"
+  },
+  {
+    "postcode": "2780",
+    "totalSales": 16,
+    "avgPrice": 902750,
+    "minPrice": 360000,
+    "maxPrice": 2250000,
+    "suburbs": [
+      "LEURA",
+      "KATOOMBA"
+    ],
+    "latestSale": "2025-11-17"
+  },
+  {
+    "postcode": "2782",
+    "totalSales": 6,
+    "avgPrice": 1126250,
+    "minPrice": 785000,
+    "maxPrice": 1400000,
+    "suburbs": [
+      "WENTWORTH FALLS"
+    ],
+    "latestSale": "2025-11-28"
+  },
+  {
+    "postcode": "2783",
+    "totalSales": 2,
+    "avgPrice": 885000,
+    "minPrice": 860000,
+    "maxPrice": 910000,
+    "suburbs": [
+      "LAWSON"
+    ],
+    "latestSale": "2025-11-12"
+  },
+  {
+    "postcode": "2784",
+    "totalSales": 2,
+    "avgPrice": 787500,
+    "minPrice": 625000,
+    "maxPrice": 950000,
+    "suburbs": [
+      "BULLABURRA"
+    ],
+    "latestSale": "2025-10-24"
+  },
+  {
+    "postcode": "2785",
+    "totalSales": 9,
+    "avgPrice": 1038444,
+    "minPrice": 650000,
+    "maxPrice": 1500000,
+    "suburbs": [
+      "BLACKHEATH"
+    ],
+    "latestSale": "2025-11-11"
+  },
+  {
+    "postcode": "2786",
+    "totalSales": 2,
+    "avgPrice": 850000,
+    "minPrice": 780000,
+    "maxPrice": 920000,
+    "suburbs": [
+      "MOUNT IRVINE",
+      "MOUNT VICTORIA"
+    ],
+    "latestSale": "2025-10-24"
+  },
+  {
+    "postcode": "2787",
+    "totalSales": 3,
+    "avgPrice": 561667,
+    "minPrice": 400000,
+    "maxPrice": 830000,
+    "suburbs": [
+      "OBERON"
+    ],
+    "latestSale": "2025-11-10"
+  },
+  {
+    "postcode": "2790",
+    "totalSales": 22,
+    "avgPrice": 656136,
+    "minPrice": 95000,
+    "maxPrice": 1410000,
+    "suburbs": [
+      "LITHGOW",
+      "MARRANGAROO",
+      "LITTLE HARTLEY",
+      "HAMPTON",
+      "BEN BULLEN",
+      "LIDSDALE",
+      "MORTS ESTATE"
+    ],
+    "latestSale": "2025-12-08"
+  },
+  {
+    "postcode": "2791",
+    "totalSales": 1,
+    "avgPrice": 1355000,
+    "minPrice": 1355000,
+    "maxPrice": 1355000,
+    "suburbs": [
+      "CARCOAR"
+    ],
+    "latestSale": "2025-09-03"
+  },
+  {
+    "postcode": "2793",
+    "totalSales": 1,
+    "avgPrice": 219000,
+    "minPrice": 219000,
+    "maxPrice": 219000,
+    "suburbs": [
+      "WOODSTOCK"
+    ],
+    "latestSale": "2025-11-11"
+  },
+  {
+    "postcode": "2794",
+    "totalSales": 14,
+    "avgPrice": 406557,
+    "minPrice": 163401,
+    "maxPrice": 950000,
+    "suburbs": [
+      "COWRA",
+      "BUMBALDRY"
+    ],
+    "latestSale": "2025-12-02"
+  },
+  {
+    "postcode": "2795",
+    "totalSales": 34,
+    "avgPrice": 693111,
+    "minPrice": 2000,
+    "maxPrice": 1730600,
+    "suburbs": [
+      "NEWBRIDGE",
+      "WEST BATHURST",
+      "ABERCROMBIE",
+      "BATHURST",
+      "KELSO",
+      "EGLINTON",
+      "GORMANS HILL",
+      "RAGLAN",
+      "ROBIN HILL",
+      "THE LAGOON",
+      "BRUINBUN",
+      "WINDRADYNE",
+      "MOUNT RANKIN",
+      "LLANARTH",
+      "SOFALA"
+    ],
+    "latestSale": "2025-12-03"
+  },
+  {
+    "postcode": "2797",
+    "totalSales": 1,
+    "avgPrice": 270000,
+    "minPrice": 270000,
+    "maxPrice": 270000,
+    "suburbs": [
+      "LYNDHURST"
+    ],
+    "latestSale": "2025-10-28"
+  },
+  {
+    "postcode": "2798",
+    "totalSales": 4,
+    "avgPrice": 1414375,
+    "minPrice": 2500,
+    "maxPrice": 3370000,
+    "suburbs": [
+      "GUYONG",
+      "TALLWOOD",
+      "MILLTHORPE"
+    ],
+    "latestSale": "2025-12-08"
+  },
+  {
+    "postcode": "2800",
+    "totalSales": 40,
+    "avgPrice": 882900,
+    "minPrice": 227500,
+    "maxPrice": 4450000,
+    "suburbs": [
+      "BORENORE",
+      "BOREE",
+      "ORANGE",
+      "CLIFTON GROVE",
+      "SPRING HILL"
+    ],
+    "latestSale": "2025-12-05"
+  },
+  {
+    "postcode": "2803",
+    "totalSales": 1,
+    "avgPrice": 760000,
+    "minPrice": 760000,
+    "maxPrice": 760000,
+    "suburbs": [
+      "CROWTHER"
+    ],
+    "latestSale": "2025-11-05"
+  },
+  {
+    "postcode": "2804",
+    "totalSales": 1,
+    "avgPrice": 14000,
+    "minPrice": 14000,
+    "maxPrice": 14000,
+    "suburbs": [
+      "BILLIMARI"
+    ],
+    "latestSale": "2025-11-19"
+  },
+  {
+    "postcode": "2805",
+    "totalSales": 1,
+    "avgPrice": 255000,
+    "minPrice": 255000,
+    "maxPrice": 255000,
+    "suburbs": [
+      "GOOLOOGONG"
+    ],
+    "latestSale": "2025-12-04"
+  },
+  {
+    "postcode": "2806",
+    "totalSales": 2,
+    "avgPrice": 97500,
+    "minPrice": 90000,
+    "maxPrice": 105000,
+    "suburbs": [
+      "EUGOWRA"
+    ],
+    "latestSale": "2025-10-30"
+  },
+  {
+    "postcode": "2810",
+    "totalSales": 2,
+    "avgPrice": 365000,
+    "minPrice": 350000,
+    "maxPrice": 380000,
+    "suburbs": [
+      "GRENFELL"
+    ],
+    "latestSale": "2025-11-07"
+  },
+  {
+    "postcode": "2817",
+    "totalSales": 1,
+    "avgPrice": 53000,
+    "minPrice": 53000,
+    "maxPrice": 53000,
+    "suburbs": [
+      "TOORAWEENAH"
+    ],
+    "latestSale": "2025-11-13"
+  },
+  {
+    "postcode": "2818",
+    "totalSales": 1,
+    "avgPrice": 850000,
+    "minPrice": 850000,
+    "maxPrice": 850000,
+    "suburbs": [
+      "GEURIE"
+    ],
+    "latestSale": "2025-09-18"
+  },
+  {
+    "postcode": "2820",
+    "totalSales": 6,
+    "avgPrice": 527417,
+    "minPrice": 225000,
+    "maxPrice": 1375000,
+    "suburbs": [
+      "STUART TOWN",
+      "BAKERS SWAMP",
+      "WELLINGTON",
+      "BODANGORA"
+    ],
+    "latestSale": "2025-11-11"
+  },
+  {
+    "postcode": "2821",
+    "totalSales": 2,
+    "avgPrice": 805000,
+    "minPrice": 240000,
+    "maxPrice": 1370000,
+    "suburbs": [
+      "NARROMINE"
+    ],
+    "latestSale": "2025-11-04"
+  },
+  {
+    "postcode": "2823",
+    "totalSales": 1,
+    "avgPrice": 81225,
+    "minPrice": 81225,
+    "maxPrice": 81225,
+    "suburbs": [
+      "CATHUNDRAL"
+    ],
+    "latestSale": "2024-11-01"
+  },
+  {
+    "postcode": "2824",
+    "totalSales": 1,
+    "avgPrice": 210000,
+    "minPrice": 210000,
+    "maxPrice": 210000,
+    "suburbs": [
+      "WARREN"
+    ],
+    "latestSale": "2025-11-13"
+  },
+  {
+    "postcode": "2825",
+    "totalSales": 1,
+    "avgPrice": 200000,
+    "minPrice": 200000,
+    "maxPrice": 200000,
+    "suburbs": [
+      "NYNGAN"
+    ],
+    "latestSale": "2025-11-12"
+  },
+  {
+    "postcode": "2826",
+    "totalSales": 1,
+    "avgPrice": 3700000,
+    "minPrice": 3700000,
+    "maxPrice": 3700000,
+    "suburbs": [
+      "NEVERTIRE"
+    ],
+    "latestSale": "2025-11-24"
+  },
+  {
+    "postcode": "2828",
+    "totalSales": 1,
+    "avgPrice": 1000000,
+    "minPrice": 1000000,
+    "maxPrice": 1000000,
+    "suburbs": [
+      "ARMATREE"
+    ],
+    "latestSale": "2025-11-07"
+  },
+  {
+    "postcode": "2829",
+    "totalSales": 2,
+    "avgPrice": 302500,
+    "minPrice": 195000,
+    "maxPrice": 410000,
+    "suburbs": [
+      "COONAMBLE"
+    ],
+    "latestSale": "2025-10-28"
+  },
+  {
+    "postcode": "2830",
+    "totalSales": 46,
+    "avgPrice": 663670,
+    "minPrice": 150000,
+    "maxPrice": 3400000,
+    "suburbs": [
+      "DUBBO"
+    ],
+    "latestSale": "2025-12-03"
+  },
+  {
+    "postcode": "2831",
+    "totalSales": 3,
+    "avgPrice": 468333,
+    "minPrice": 200000,
+    "maxPrice": 765000,
+    "suburbs": [
+      "QUAMBONE",
+      "BALLADORAN",
+      "WONGARBON"
+    ],
+    "latestSale": "2025-11-27"
+  },
+  {
+    "postcode": "2832",
+    "totalSales": 2,
+    "avgPrice": 79003,
+    "minPrice": 38006,
+    "maxPrice": 120000,
+    "suburbs": [
+      "WALGETT"
+    ],
+    "latestSale": "2025-10-30"
+  },
+  {
+    "postcode": "2834",
+    "totalSales": 3,
+    "avgPrice": 213333,
+    "minPrice": 200000,
+    "maxPrice": 240000,
+    "suburbs": [
+      "LIGHTNING RIDGE"
+    ],
+    "latestSale": "2025-11-06"
+  },
+  {
+    "postcode": "2835",
+    "totalSales": 1,
+    "avgPrice": 515000,
+    "minPrice": 515000,
+    "maxPrice": 515000,
+    "suburbs": [
+      "COBAR"
+    ],
+    "latestSale": "2025-11-10"
+  },
+  {
+    "postcode": "2840",
+    "totalSales": 2,
+    "avgPrice": 145000,
+    "minPrice": 130000,
+    "maxPrice": 160000,
+    "suburbs": [
+      "BOURKE"
+    ],
+    "latestSale": "2025-10-24"
+  },
+  {
+    "postcode": "2842",
+    "totalSales": 1,
+    "avgPrice": 4082000,
+    "minPrice": 4082000,
+    "maxPrice": 4082000,
+    "suburbs": [
+      "MENDOORAN"
+    ],
+    "latestSale": "2025-09-15"
+  },
+  {
+    "postcode": "2845",
+    "totalSales": 2,
+    "avgPrice": 454500,
+    "minPrice": 399000,
+    "maxPrice": 510000,
+    "suburbs": [
+      "WALLERAWANG"
+    ],
+    "latestSale": "2025-11-30"
+  },
+  {
+    "postcode": "2847",
+    "totalSales": 2,
+    "avgPrice": 1192500,
+    "minPrice": 1085000,
+    "maxPrice": 1300000,
+    "suburbs": [
+      "PORTLAND"
+    ],
+    "latestSale": "2025-10-24"
+  },
+  {
+    "postcode": "2850",
+    "totalSales": 37,
+    "avgPrice": 761905,
+    "minPrice": 80000,
+    "maxPrice": 3265000,
+    "suburbs": [
+      "MUDGEE",
+      "BARIGAN",
+      "CAERLEON",
+      "GALAMBINE",
+      "GREEN GULLY",
+      "HARGRAVES",
+      "PIAMBONG",
+      "WINDEYER",
+      "MULLAMUDDY"
+    ],
+    "latestSale": "2025-12-02"
+  },
+  {
+    "postcode": "2852",
+    "totalSales": 5,
+    "avgPrice": 534500,
+    "minPrice": 197500,
+    "maxPrice": 740000,
+    "suburbs": [
+      "GULGONG",
+      "MEROTHERIE",
+      "TALLAWANG"
+    ],
+    "latestSale": "2025-11-13"
+  },
+  {
+    "postcode": "2864",
+    "totalSales": 1,
+    "avgPrice": 5462736,
+    "minPrice": 5462736,
+    "maxPrice": 5462736,
+    "suburbs": [
+      "CUDAL"
+    ],
+    "latestSale": "2025-11-07"
+  },
+  {
+    "postcode": "2866",
+    "totalSales": 1,
+    "avgPrice": 1050000,
+    "minPrice": 1050000,
+    "maxPrice": 1050000,
+    "suburbs": [
+      "GARRA"
+    ],
+    "latestSale": "2025-11-04"
+  },
+  {
+    "postcode": "2868",
+    "totalSales": 1,
+    "avgPrice": 220000,
+    "minPrice": 220000,
+    "maxPrice": 220000,
+    "suburbs": [
+      "YEOVAL"
+    ],
+    "latestSale": "2025-11-13"
+  },
+  {
+    "postcode": "2870",
+    "totalSales": 10,
+    "avgPrice": 491060,
+    "minPrice": 155000,
+    "maxPrice": 1100000,
+    "suburbs": [
+      "PARKES"
+    ],
+    "latestSale": "2025-11-27"
+  },
+  {
+    "postcode": "2871",
+    "totalSales": 6,
+    "avgPrice": 472500,
+    "minPrice": 300000,
+    "maxPrice": 710000,
+    "suburbs": [
+      "FORBES"
+    ],
+    "latestSale": "2025-11-18"
+  },
+  {
+    "postcode": "2874",
+    "totalSales": 2,
+    "avgPrice": 275000,
+    "minPrice": 100000,
+    "maxPrice": 450000,
+    "suburbs": [
+      "TULLAMORE"
+    ],
+    "latestSale": "2025-11-06"
+  },
+  {
+    "postcode": "2875",
+    "totalSales": 2,
+    "avgPrice": 1578775,
+    "minPrice": 1100000,
+    "maxPrice": 2057550,
+    "suburbs": [
+      "TRUNDLE",
+      "OOTHA"
+    ],
+    "latestSale": "2025-10-23"
+  },
+  {
+    "postcode": "2877",
+    "totalSales": 2,
+    "avgPrice": 127500,
+    "minPrice": 15000,
+    "maxPrice": 240000,
+    "suburbs": [
+      "EUABALONG",
+      "CONDOBOLIN"
+    ],
+    "latestSale": "2025-11-07"
+  },
+  {
+    "postcode": "2878",
+    "totalSales": 1,
+    "avgPrice": 6890898,
+    "minPrice": 6890898,
+    "maxPrice": 6890898,
+    "suburbs": [
+      "MOSSGIEL"
+    ],
+    "latestSale": "2025-10-03"
+  },
+  {
+    "postcode": "2880",
+    "totalSales": 18,
+    "avgPrice": 211389,
+    "minPrice": 50000,
+    "maxPrice": 470000,
+    "suburbs": [
+      "BROKEN HILL"
+    ],
+    "latestSale": "2025-12-01"
+  },
+  {
+    "postcode": "3707",
+    "totalSales": 1,
+    "avgPrice": 1020000,
+    "minPrice": 1020000,
+    "maxPrice": 1020000,
+    "suburbs": [
+      "BRINGENBRONG"
+    ],
+    "latestSale": "2025-10-20"
+  }
+]

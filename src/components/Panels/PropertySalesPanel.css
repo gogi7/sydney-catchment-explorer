@@ -1,0 +1,283 @@
+/* Property Sales Panel Styles */
+.property-sales-panel {
+  position: fixed;
+  bottom: 20px;
+  left: 340px;
+  width: 380px;
+  max-height: 500px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.property-sales-panel.collapsed {
+  max-height: 50px;
+}
+
+/* Panel Header */
+.property-sales-panel .panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+.property-sales-panel .header-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.property-sales-panel .header-icon {
+  font-size: 1.2rem;
+}
+
+.property-sales-panel h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.property-sales-panel .sales-count {
+  font-size: 0.75rem;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.property-sales-panel .toggle-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 4px;
+}
+
+/* Panel Content */
+.property-sales-panel .panel-content {
+  max-height: 450px;
+  overflow-y: auto;
+  padding: 16px;
+}
+
+/* Suburb Header */
+.property-sales-panel .suburb-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.property-sales-panel .suburb-header h4 {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #1e293b;
+}
+
+.property-sales-panel .postcode {
+  font-size: 0.8rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* Suburb Stats */
+.suburb-stats {
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+.suburb-stats h4 {
+  margin: 0 0 8px 0;
+  font-size: 0.85rem;
+  color: #475569;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-label {
+  font-size: 0.7rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-value {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+/* Sort Controls */
+.sort-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: 0.8rem;
+}
+
+.sort-controls span {
+  color: #64748b;
+}
+
+.sort-controls button {
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.sort-controls button:hover {
+  background: #e2e8f0;
+}
+
+.sort-controls button.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+/* Sales List */
+.sales-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Sale Card */
+.sale-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px;
+  transition: box-shadow 0.2s;
+}
+
+.sale-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.sale-address {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.sale-street {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #1e293b;
+}
+
+.sale-suburb {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.sale-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sale-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #059669;
+}
+
+.sale-meta {
+  display: flex;
+  gap: 12px;
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.sale-type {
+  font-size: 0.7rem;
+  color: #64748b;
+  background: #f1f5f9;
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-block;
+  width: fit-content;
+}
+
+/* More Sales Note */
+.more-sales-note {
+  text-align: center;
+  padding: 12px;
+  font-size: 0.8rem;
+  color: #64748b;
+  border-top: 1px solid #e2e8f0;
+  margin-top: 8px;
+}
+
+/* No Sales Message */
+.no-sales {
+  text-align: center;
+  padding: 24px 16px;
+  color: #64748b;
+}
+
+.no-sales p {
+  margin: 0 0 8px 0;
+}
+
+.no-sales .hint {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+/* Data Source */
+.data-source {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid #e2e8f0;
+  font-size: 0.7rem;
+  color: #94a3b8;
+  text-align: center;
+}
+
+.data-source a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.data-source a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .property-sales-panel {
+    left: 10px;
+    right: 10px;
+    width: auto;
+    bottom: 10px;
+  }
+}
