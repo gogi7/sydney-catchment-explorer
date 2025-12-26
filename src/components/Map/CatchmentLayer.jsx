@@ -2,30 +2,106 @@ import { GeoJSON } from 'react-leaflet';
 import { useCallback, useMemo } from 'react';
 import { useAppStore } from '../../stores/appStore';
 import { CATCHMENT_COLORS, CATCHMENT_HOVER_COLORS } from '../../utils/constants';
+import { 
+  getPriceColor, 
+  getPriceOpacity, 
+  formatPriceShort,
+  getPriceTier 
+} from '../../utils/priceHeatMap';
 
 export function CatchmentLayer({ data, type }) {
   const selectSchool = useAppStore((state) => state.selectSchool);
   const getSchoolByCode = useAppStore((state) => state.getSchoolByCode);
   const setHoveredCatchment = useAppStore((state) => state.setHoveredCatchment);
+  const getCatchmentPriceData = useAppStore((state) => state.getCatchmentPriceData);
+  const priceRange = useAppStore((state) => state.priceRange);
+  const showHeatMap = useAppStore((state) => state.layers.priceHeatMap);
 
   const colors = CATCHMENT_COLORS[type] || CATCHMENT_COLORS.primary;
   const hoverColors = CATCHMENT_HOVER_COLORS[type] || CATCHMENT_HOVER_COLORS.primary;
 
-  const style = useCallback(() => ({
-    fillColor: colors.fill,
-    fillOpacity: colors.fillOpacity,
-    color: colors.stroke,
-    weight: colors.weight,
-    opacity: colors.strokeOpacity,
-  }), [colors]);
+  // Memoize price data lookup for all catchments
+  const priceDataMap = useMemo(() => {
+    if (!showHeatMap || !data?.features) return {};
+    
+    const map = {};
+    data.features.forEach(feature => {
+      const schoolCode = feature.properties?.USE_ID;
+      if (schoolCode) {
+        map[schoolCode] = getCatchmentPriceData(schoolCode);
+      }
+    });
+    return map;
+  }, [showHeatMap, data, getCatchmentPriceData]);
+
+  // Style function that applies heat map colors when enabled
+  const style = useCallback((feature) => {
+    if (!showHeatMap) {
+      return {
+        fillColor: colors.fill,
+        fillOpacity: colors.fillOpacity,
+        color: colors.stroke,
+        weight: colors.weight,
+        opacity: colors.strokeOpacity,
+      };
+    }
+
+    // Heat map mode - color by price
+    const schoolCode = feature.properties?.USE_ID;
+    const priceData = priceDataMap[schoolCode];
+    const avgPrice = priceData?.avgPrice;
+    const hasData = avgPrice && avgPrice > 0;
+
+    return {
+      fillColor: getPriceColor(avgPrice, priceRange),
+      fillOpacity: getPriceOpacity(hasData),
+      color: hasData ? '#1e293b' : '#94a3b8',
+      weight: hasData ? 1.5 : 1,
+      opacity: hasData ? 0.7 : 0.4,
+    };
+  }, [showHeatMap, colors, priceDataMap, priceRange]);
 
   const onEachFeature = useCallback((feature, layer) => {
     const props = feature.properties;
     const schoolName = props.USE_DESC || 'Unknown School';
     const schoolCode = props.USE_ID;
     const catchmentType = props.CATCH_TYPE || '';
+    
+    // Get price data for this catchment
+    const priceData = priceDataMap[schoolCode];
 
-    // Create popup content
+    // Create popup content with optional price info
+    let priceSection = '';
+    if (showHeatMap && priceData) {
+      const tier = getPriceTier(priceData.avgPrice, priceRange);
+      priceSection = `
+        <div style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #e5e7eb;">
+          <p style="margin: 0 0 4px 0; font-size: 11px; font-weight: 600; color: #374151; text-transform: uppercase; letter-spacing: 0.5px;">
+            Property Prices (${priceData.suburb})
+          </p>
+          <p style="margin: 0; font-size: 16px; font-weight: 700; color: #1f2937;">
+            ${formatPriceShort(priceData.avgPrice)} avg
+          </p>
+          <p style="margin: 4px 0 0 0; font-size: 11px; color: #6b7280;">
+            ${tier} • ${priceData.totalSales} sales
+          </p>
+          ${priceData.avgPricePerSqm ? `
+            <p style="margin: 2px 0 0 0; font-size: 11px; color: #6b7280;">
+              ${formatPriceShort(priceData.avgPricePerSqm)}/m² avg
+            </p>
+          ` : ''}
+        </div>
+      `;
+    } else if (showHeatMap) {
+      priceSection = `
+        <div style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #e5e7eb;">
+          <p style="margin: 0; font-size: 11px; color: #9ca3af; font-style: italic;">
+            No recent sales data available
+          </p>
+        </div>
+      `;
+    }
+
     const popupContent = `
       <div class="catchment-popup">
         <h3 style="margin: 0 0 8px 0; font-size: 14px; font-weight: 600; color: #1f2937;">
@@ -37,6 +113,7 @@ export function CatchmentLayer({ data, type }) {
         <p style="margin: 4px 0 0 0; font-size: 11px; color: #9ca3af;">
           School Code: ${schoolCode}
         </p>
+        ${priceSection}
       </div>
     `;
 
@@ -71,10 +148,13 @@ export function CatchmentLayer({ data, type }) {
         }
       },
     });
-  }, [colors, hoverColors, selectSchool, getSchoolByCode, setHoveredCatchment]);
+  }, [colors, hoverColors, selectSchool, getSchoolByCode, setHoveredCatchment, showHeatMap, priceDataMap, priceRange]);
 
-  // Memoize the key to force re-render when data changes
-  const key = useMemo(() => `${type}-${Date.now()}`, [type, data]);
+  // Memoize the key to force re-render when data or heat map mode changes
+  const key = useMemo(() => 
+    `${type}-${showHeatMap ? 'heat' : 'normal'}-${Date.now()}`, 
+    [type, data, showHeatMap, priceRange]
+  );
 
   if (!data || !data.features) {
     return null;

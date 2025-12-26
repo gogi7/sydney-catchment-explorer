@@ -1,0 +1,569 @@
+{
+  "generated": "2025-12-26T01:23:12.997Z",
+  "top_overall": [
+    {
+      "rank": 1,
+      "school_code": 8567,
+      "name": "Northern Beaches Secondary College Manly Campus",
+      "level": "Secondary School",
+      "suburb": "North Curl Curl",
+      "score": 79.56,
+      "icsea": 1221,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 2,
+      "school_code": 8542,
+      "name": "Smiths Hill High School",
+      "level": "Secondary School",
+      "suburb": "Wollongong",
+      "score": 79.56,
+      "icsea": 1186,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 3,
+      "school_code": 8504,
+      "name": "Fort Street High School",
+      "level": "Secondary School",
+      "suburb": "PETERSHAM",
+      "score": 78.89,
+      "icsea": 1177,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 4,
+      "school_code": 8510,
+      "name": "Merewether High School",
+      "level": "Secondary School",
+      "suburb": null,
+      "score": 78.89,
+      "icsea": 1203,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 5,
+      "school_code": 8137,
+      "name": "Sydney Boys High School",
+      "level": "Secondary School",
+      "suburb": "MOORE PARK",
+      "score": 78.22,
+      "icsea": 1184,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 6,
+      "school_code": 8138,
+      "name": "Sydney Girls High School",
+      "level": "Secondary School",
+      "suburb": "Surry Hills",
+      "score": 78.22,
+      "icsea": 1187,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 7,
+      "school_code": 8120,
+      "name": "Hornsby Girls High School",
+      "level": "Secondary School",
+      "suburb": "Hornsby",
+      "score": 78.22,
+      "icsea": 1208,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 8,
+      "school_code": 8132,
+      "name": "North Sydney Boys High School",
+      "level": "Secondary School",
+      "suburb": "North Sydney",
+      "score": 78.22,
+      "icsea": 1189,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 9,
+      "school_code": 8133,
+      "name": "North Sydney Girls High School",
+      "level": "Secondary School",
+      "suburb": "Crows Nest",
+      "score": 78.22,
+      "icsea": 1196,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 10,
+      "school_code": 8211,
+      "name": "Normanhurst Boys High School",
+      "level": "Secondary School",
+      "suburb": "Normanhurst",
+      "score": 78.22,
+      "icsea": 1203,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 11,
+      "school_code": 8163,
+      "name": "Penrith High School",
+      "level": "Secondary School",
+      "suburb": "Penrith",
+      "score": 78.22,
+      "icsea": 1182,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 12,
+      "school_code": 8464,
+      "name": "Baulkham Hills High School",
+      "level": "Secondary School",
+      "suburb": "Baulkham Hills",
+      "score": 78.22,
+      "icsea": 1196,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 13,
+      "school_code": 8500,
+      "name": "Girraween High School",
+      "level": "Secondary School",
+      "suburb": "GIRRAWEEN",
+      "score": 78.22,
+      "icsea": 1197,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 14,
+      "school_code": 8235,
+      "name": "James Ruse Agricultural High School",
+      "level": "Secondary School",
+      "suburb": "Carlingford",
+      "score": 77.78,
+      "icsea": 1231,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 15,
+      "school_code": 7442,
+      "name": "Woollahra Public School",
+      "level": "Primary School",
+      "suburb": "WOOLLAHRA",
+      "score": 76.89,
+      "icsea": 1189,
+      "selective": "Not Selective"
+    },
+    {
+      "rank": 16,
+      "school_code": 2730,
+      "name": "Neutral Bay Public School",
+      "level": "Primary School",
+      "suburb": "Neutral Bay",
+      "score": 76.89,
+      "icsea": 1177,
+      "selective": "Not Selective"
+    },
+    {
+      "rank": 17,
+      "school_code": 8240,
+      "name": "Caringbah High School",
+      "level": "Secondary School",
+      "suburb": "Caringbah",
+      "score": 76.67,
+      "icsea": 1174,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 18,
+      "school_code": 8115,
+      "name": "Gosford High School",
+      "level": "Secondary School",
+      "suburb": "Gosford",
+      "score": 76.67,
+      "icsea": 1151,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 19,
+      "school_code": 7404,
+      "name": "Balmain Public School",
+      "level": "Primary School",
+      "suburb": "BALMAIN",
+      "score": 76.22,
+      "icsea": 1182,
+      "selective": "Not Selective"
+    },
+    {
+      "rank": 20,
+      "school_code": 1166,
+      "name": "Beecroft Public School",
+      "level": "Primary School",
+      "suburb": "Beecroft",
+      "score": 76.22,
+      "icsea": 1184,
+      "selective": "Not Selective"
+    }
+  ],
+  "top_primary": [
+    {
+      "rank": 1,
+      "school_code": 7442,
+      "name": "Woollahra Public School",
+      "suburb": "WOOLLAHRA",
+      "score": 76.89,
+      "icsea": 1189,
+      "opportunity_class": "Y"
+    },
+    {
+      "rank": 2,
+      "school_code": 2730,
+      "name": "Neutral Bay Public School",
+      "suburb": "Neutral Bay",
+      "score": 76.89,
+      "icsea": 1177,
+      "opportunity_class": "Y"
+    },
+    {
+      "rank": 3,
+      "school_code": 7404,
+      "name": "Balmain Public School",
+      "suburb": "BALMAIN",
+      "score": 76.22,
+      "icsea": 1182,
+      "opportunity_class": "Y"
+    },
+    {
+      "rank": 4,
+      "school_code": 1166,
+      "name": "Beecroft Public School",
+      "suburb": "Beecroft",
+      "score": 76.22,
+      "icsea": 1184,
+      "opportunity_class": "Y"
+    },
+    {
+      "rank": 5,
+      "school_code": 3736,
+      "name": "Balgowlah Heights Public School",
+      "suburb": "Balgowlah",
+      "score": 76.22,
+      "icsea": 1180,
+      "opportunity_class": "Y"
+    },
+    {
+      "rank": 6,
+      "school_code": 4526,
+      "name": "Matthew Pearce Public School",
+      "suburb": "Baulkham Hills",
+      "score": 75.56,
+      "icsea": 1175,
+      "opportunity_class": "Y"
+    },
+    {
+      "rank": 7,
+      "school_code": 3129,
+      "name": "Summer Hill Public School",
+      "suburb": "Summer Hill",
+      "score": 74.67,
+      "icsea": 1165,
+      "opportunity_class": "Y"
+    },
+    {
+      "rank": 8,
+      "school_code": 3833,
+      "name": "Wahroonga Public School",
+      "suburb": "Wahroonga",
+      "score": 74.67,
+      "icsea": 1160,
+      "opportunity_class": "Y"
+    },
+    {
+      "rank": 9,
+      "school_code": 2404,
+      "name": "Lindfield East Public School",
+      "suburb": "EAST LINDFIELD",
+      "score": 74,
+      "icsea": 1168,
+      "opportunity_class": "Y"
+    },
+    {
+      "rank": 10,
+      "school_code": 2764,
+      "name": "North Rocks Public School",
+      "suburb": "North Rocks",
+      "score": 74,
+      "icsea": 1131,
+      "opportunity_class": "Y"
+    },
+    {
+      "rank": 11,
+      "school_code": 4638,
+      "name": "Ironbark Ridge Public School",
+      "suburb": "Rouse Hill",
+      "score": 74,
+      "icsea": 1145,
+      "opportunity_class": "Y"
+    },
+    {
+      "rank": 12,
+      "school_code": 1061,
+      "name": "Artarmon Public School",
+      "suburb": "Artarmon",
+      "score": 73.33,
+      "icsea": 1170,
+      "opportunity_class": "Y"
+    },
+    {
+      "rank": 13,
+      "school_code": 3334,
+      "name": "Waitara Public School",
+      "suburb": "WAHROONGA",
+      "score": 73.33,
+      "icsea": 1155,
+      "opportunity_class": "Y"
+    },
+    {
+      "rank": 14,
+      "school_code": 7409,
+      "name": "Chatswood Public School",
+      "suburb": "Chatswood",
+      "score": 73.33,
+      "icsea": 1144,
+      "opportunity_class": "Y"
+    },
+    {
+      "rank": 15,
+      "school_code": 4543,
+      "name": "Wilkins Public School",
+      "suburb": "Marrickville",
+      "score": 72.89,
+      "icsea": 1125,
+      "opportunity_class": "Y"
+    },
+    {
+      "rank": 16,
+      "school_code": 7427,
+      "name": "Maroubra Junction Public School",
+      "suburb": "Maroubra",
+      "score": 72.44,
+      "icsea": 1119,
+      "opportunity_class": "Y"
+    },
+    {
+      "rank": 17,
+      "school_code": 1807,
+      "name": "Earlwood Public School",
+      "suburb": "Earlwood",
+      "score": 70,
+      "icsea": 1104,
+      "opportunity_class": "Y"
+    },
+    {
+      "rank": 18,
+      "school_code": 3136,
+      "name": "Sutherland Public School",
+      "suburb": "Sutherland",
+      "score": 70,
+      "icsea": 1113,
+      "opportunity_class": "Y"
+    },
+    {
+      "rank": 19,
+      "school_code": 1860,
+      "name": "Ermington Public School",
+      "suburb": "West Ryde",
+      "score": 70,
+      "icsea": 1122,
+      "opportunity_class": "Y"
+    },
+    {
+      "rank": 20,
+      "school_code": 2593,
+      "name": "Mona Vale Public School",
+      "suburb": "Mona Vale",
+      "score": 70,
+      "icsea": 1092,
+      "opportunity_class": "Y"
+    }
+  ],
+  "top_secondary": [
+    {
+      "rank": 1,
+      "school_code": 8567,
+      "name": "Northern Beaches Secondary College Manly Campus",
+      "suburb": "North Curl Curl",
+      "score": 79.56,
+      "icsea": 1221,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 2,
+      "school_code": 8542,
+      "name": "Smiths Hill High School",
+      "suburb": "Wollongong",
+      "score": 79.56,
+      "icsea": 1186,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 3,
+      "school_code": 8504,
+      "name": "Fort Street High School",
+      "suburb": "PETERSHAM",
+      "score": 78.89,
+      "icsea": 1177,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 4,
+      "school_code": 8510,
+      "name": "Merewether High School",
+      "suburb": null,
+      "score": 78.89,
+      "icsea": 1203,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 5,
+      "school_code": 8137,
+      "name": "Sydney Boys High School",
+      "suburb": "MOORE PARK",
+      "score": 78.22,
+      "icsea": 1184,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 6,
+      "school_code": 8138,
+      "name": "Sydney Girls High School",
+      "suburb": "Surry Hills",
+      "score": 78.22,
+      "icsea": 1187,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 7,
+      "school_code": 8120,
+      "name": "Hornsby Girls High School",
+      "suburb": "Hornsby",
+      "score": 78.22,
+      "icsea": 1208,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 8,
+      "school_code": 8132,
+      "name": "North Sydney Boys High School",
+      "suburb": "North Sydney",
+      "score": 78.22,
+      "icsea": 1189,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 9,
+      "school_code": 8133,
+      "name": "North Sydney Girls High School",
+      "suburb": "Crows Nest",
+      "score": 78.22,
+      "icsea": 1196,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 10,
+      "school_code": 8211,
+      "name": "Normanhurst Boys High School",
+      "suburb": "Normanhurst",
+      "score": 78.22,
+      "icsea": 1203,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 11,
+      "school_code": 8163,
+      "name": "Penrith High School",
+      "suburb": "Penrith",
+      "score": 78.22,
+      "icsea": 1182,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 12,
+      "school_code": 8464,
+      "name": "Baulkham Hills High School",
+      "suburb": "Baulkham Hills",
+      "score": 78.22,
+      "icsea": 1196,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 13,
+      "school_code": 8500,
+      "name": "Girraween High School",
+      "suburb": "GIRRAWEEN",
+      "score": 78.22,
+      "icsea": 1197,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 14,
+      "school_code": 8235,
+      "name": "James Ruse Agricultural High School",
+      "suburb": "Carlingford",
+      "score": 77.78,
+      "icsea": 1231,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 15,
+      "school_code": 8240,
+      "name": "Caringbah High School",
+      "suburb": "Caringbah",
+      "score": 76.67,
+      "icsea": 1174,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 16,
+      "school_code": 8115,
+      "name": "Gosford High School",
+      "suburb": "Gosford",
+      "score": 76.67,
+      "icsea": 1151,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 17,
+      "school_code": 8136,
+      "name": "St George Girls High School",
+      "suburb": "Kogarah",
+      "score": 76,
+      "icsea": 1143,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 18,
+      "school_code": 8141,
+      "name": "Sydney Technical High School",
+      "suburb": "Bexley",
+      "score": 74.22,
+      "icsea": 1126,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 19,
+      "school_code": 8121,
+      "name": "Hurlstone Agricultural High School",
+      "suburb": "Glenfield",
+      "score": 71.56,
+      "icsea": 1136,
+      "selective": "Fully Selective"
+    },
+    {
+      "rank": 20,
+      "school_code": 8506,
+      "name": "Tempe High School",
+      "suburb": "Tempe",
+      "score": 71.33,
+      "icsea": 1090,
+      "selective": "Partially Selective"
+    }
+  ]
+}

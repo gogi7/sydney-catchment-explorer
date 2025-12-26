@@ -31,37 +31,56 @@ function ensureOutputDir() {
 }
 
 /**
- * Export recent sales (last N months)
+ * Export recent sales (last N months) with all useful fields
  */
 function exportRecentSales(db, months = 6) {
   console.log(`\nExporting sales from last ${months} months...`);
   
   const query = `
     SELECT 
-      id,
-      suburb,
-      postcode,
-      street_name as streetName,
-      house_number as houseNumber,
-      unit_number as unitNumber,
-      purchase_price as price,
-      contract_date as contractDate,
-      settlement_date as settlementDate,
-      area,
-      area_unit as areaUnit,
-      zone_code as zoneCode,
-      property_type as propertyType,
-      property_description as propertyDescription,
+      ps.id,
+      ps.district_code as districtCode,
+      d.district_name as districtName,
+      ps.property_id as propertyId,
+      ps.suburb,
+      ps.postcode,
+      ps.street_name as streetName,
+      ps.house_number as houseNumber,
+      ps.unit_number as unitNumber,
+      ps.purchase_price as price,
+      ps.contract_date as contractDate,
+      ps.settlement_date as settlementDate,
+      ps.area,
+      ps.area_unit as areaUnit,
+      ps.zone_code as zoneCode,
+      ps.zone_category as zoneCategory,
+      ps.property_type as propertyType,
+      ps.property_description as propertyDescription,
+      ps.nature_of_property as natureOfProperty,
+      ps.strata_lot_number as strataLotNumber,
+      ps.sale_code as saleCode,
+      ps.dealing_number as dealingNumber,
       -- Calculate price per sqm
       CASE 
-        WHEN area > 0 AND area_unit = 'M' 
-        THEN ROUND(purchase_price * 1.0 / area, 0)
+        WHEN ps.area > 0 AND ps.area_unit = 'M' 
+        THEN ROUND(ps.purchase_price * 1.0 / ps.area, 0)
         ELSE NULL 
-      END AS pricePerSqm
-    FROM property_sales
-    WHERE contract_date >= date('now', '-' || ? || ' months')
-      AND purchase_price > 0
-    ORDER BY contract_date DESC
+      END AS pricePerSqm,
+      -- Calculate days to settlement
+      CASE 
+        WHEN ps.settlement_date IS NOT NULL AND ps.contract_date IS NOT NULL
+        THEN julianday(ps.settlement_date) - julianday(ps.contract_date)
+        ELSE NULL
+      END AS daysToSettlement,
+      -- Legal descriptions (aggregated)
+      (SELECT GROUP_CONCAT(legal_description, '; ') 
+       FROM legal_descriptions ld 
+       WHERE ld.sale_id = ps.id) as legalDescriptions
+    FROM property_sales ps
+    LEFT JOIN districts d ON ps.district_code = d.district_code
+    WHERE ps.contract_date >= date('now', '-' || ? || ' months')
+      AND ps.purchase_price > 0
+    ORDER BY ps.contract_date DESC
   `;
   
   const sales = db.prepare(query).all(months);
@@ -74,7 +93,7 @@ function exportRecentSales(db, months = 6) {
 }
 
 /**
- * Export suburb statistics
+ * Export suburb statistics with enhanced metrics
  */
 function exportSuburbStats(db) {
   console.log('\nExporting suburb statistics...');
@@ -88,8 +107,23 @@ function exportSuburbStats(db) {
       MIN(purchase_price) as minPrice,
       MAX(purchase_price) as maxPrice,
       ROUND(AVG(area), 1) as avgArea,
+      MIN(area) as minArea,
+      MAX(area) as maxArea,
+      -- Price per sqm stats
+      ROUND(AVG(CASE WHEN area > 0 AND area_unit = 'M' THEN purchase_price / area ELSE NULL END), 0) as avgPricePerSqm,
+      -- Property type breakdown
+      COUNT(CASE WHEN property_type = 'RESIDENCE' THEN 1 END) as residenceCount,
+      COUNT(CASE WHEN property_type = 'STRATA' THEN 1 END) as strataCount,
+      COUNT(CASE WHEN property_type = 'VACANT LAND' THEN 1 END) as vacantLandCount,
+      COUNT(CASE WHEN property_type NOT IN ('RESIDENCE', 'STRATA', 'VACANT LAND') THEN 1 END) as otherCount,
+      -- Zone breakdown
+      GROUP_CONCAT(DISTINCT zone_code) as zoneCodes,
+      -- Date range
       MIN(contract_date) as earliestSale,
-      MAX(contract_date) as latestSale
+      MAX(contract_date) as latestSale,
+      -- Last 3 months metrics
+      COUNT(CASE WHEN contract_date >= date('now', '-3 months') THEN 1 END) as salesLast3Months,
+      ROUND(AVG(CASE WHEN contract_date >= date('now', '-3 months') THEN purchase_price ELSE NULL END), 0) as avgPriceLast3Months
     FROM property_sales
     WHERE purchase_price > 0
     GROUP BY suburb, postcode

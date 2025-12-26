@@ -1,6 +1,7 @@
-import { useState, useRef, useEffect, useCallback } from 'react';
+import { useState, useRef, useEffect, useCallback, useMemo } from 'react';
 import { useAppStore } from '../../stores/appStore';
 import { SCHOOL_LEVEL_OPTIONS } from '../../utils/constants';
+import { generateLegendStops, formatPriceShort } from '../../utils/priceHeatMap';
 import './ControlPanel.css';
 
 // Debounce helper for search input
@@ -29,8 +30,16 @@ export function ControlPanel() {
   const getSchoolSuggestions = useAppStore((state) => state.getSchoolSuggestions);
   const highlightedSchools = useAppStore((state) => state.highlightedSchools);
   const clearHighlightedSchools = useAppStore((state) => state.clearHighlightedSchools);
+  const priceRange = useAppStore((state) => state.priceRange);
+  const propertySales = useAppStore((state) => state.propertySales);
 
   const [showSuggestions, setShowSuggestions] = useState(false);
+  
+  // Generate heat map legend stops
+  const heatMapLegend = useMemo(() => {
+    if (!priceRange) return [];
+    return generateLegendStops(priceRange, 5);
+  }, [priceRange]);
   const [activeSuggestionIndex, setActiveSuggestionIndex] = useState(-1);
   const searchInputRef = useRef(null);
   const suggestionsRef = useRef(null);
@@ -241,6 +250,56 @@ export function ControlPanel() {
         </label>
       </div>
 
+      {/* Price Heat Map Toggle */}
+      <div className="control-section">
+        <label className="control-section__label">Property Pricing</label>
+        
+        <label className="layer-toggle layer-toggle--heatmap">
+          <input
+            type="checkbox"
+            checked={layers.priceHeatMap}
+            onChange={() => toggleLayer('priceHeatMap')}
+            disabled={!propertySales.suburbStats?.length}
+          />
+          <span className="layer-toggle__indicator layer-toggle__indicator--heatmap"></span>
+          <span className="layer-toggle__label">
+            Price Heat Map
+            {propertySales.suburbStats?.length > 0 ? (
+              <span className="layer-toggle__count">
+                {propertySales.suburbStats.length} suburbs
+              </span>
+            ) : (
+              <span className="layer-toggle__count layer-toggle__count--disabled">
+                No data
+              </span>
+            )}
+          </span>
+        </label>
+        
+        {layers.priceHeatMap && heatMapLegend.length > 0 && (
+          <div className="heatmap-legend">
+            <div className="heatmap-legend__gradient">
+              {heatMapLegend.map((stop, index) => (
+                <div 
+                  key={index}
+                  className="heatmap-legend__stop"
+                  style={{ backgroundColor: stop.color }}
+                  title={stop.label}
+                />
+              ))}
+            </div>
+            <div className="heatmap-legend__labels">
+              <span>{heatMapLegend[0]?.label}</span>
+              <span>Median</span>
+              <span>{heatMapLegend[heatMapLegend.length - 1]?.label}</span>
+            </div>
+            <p className="heatmap-legend__note">
+              Based on recent sales in school suburb
+            </p>
+          </div>
+        )}
+      </div>
+
       {/* Legend */}
       <div className="control-section">
         <label className="control-section__label">Legend</label>
@@ -266,6 +325,14 @@ export function ControlPanel() {
             <span>Highlighted (Alt+Click)</span>
           </div>
         </div>
+      </div>
+
+      {/* Data Explorer Link */}
+      <div className="control-section">
+        <a href="#/data" className="data-explorer-link">
+          📊 Data Explorer
+          <span className="data-explorer-link__hint">View all database tables & sample data</span>
+        </a>
       </div>
     </div>
   );

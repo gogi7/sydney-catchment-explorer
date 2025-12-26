@@ -1,0 +1,4300 @@
+{
+  "generated": "2025-12-20T11:47:58.249Z",
+  "databasePath": "C:\\Tools PHPC\\realestate_schools\\sydney-catchment-explorer\\data\\property_sales.db",
+  "tables": {
+    "districts": {
+      "columns": [
+        {
+          "name": "district_code",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": true
+        },
+        {
+          "name": "district_name",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "created_at",
+          "type": "DATETIME",
+          "nullable": true,
+          "defaultValue": "CURRENT_TIMESTAMP",
+          "isPrimaryKey": false
+        }
+      ],
+      "rowCount": 128,
+      "sampleRows": [
+        {
+          "district_code": "100",
+          "district_name": "Cobar",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "district_code": "101",
+          "district_name": "Coffs Harbour",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "district_code": "102",
+          "district_name": "Coolamon",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "district_code": "103",
+          "district_name": "Coonamble",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "district_code": "109",
+          "district_name": "Cowra",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "district_code": "116",
+          "district_name": "Cumberland",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "district_code": "117",
+          "district_name": "Dubbo Regional",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "district_code": "118",
+          "district_name": "Dungog",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "district_code": "123",
+          "district_name": "Edward River",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "district_code": "124",
+          "district_name": "Eurobodalla",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "district_code": "137",
+          "district_name": "Fairfield",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "district_code": "139",
+          "district_name": "Federation",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "district_code": "143",
+          "district_name": "Forbes",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "district_code": "144",
+          "district_name": "Georges River",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "district_code": "148",
+          "district_name": "Gilgandra",
+          "created_at": "2025-12-18 07:30:33"
+        }
+      ]
+    },
+    "import_log": {
+      "columns": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": true
+        },
+        {
+          "name": "filename",
+          "type": "TEXT",
+          "nullable": false,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "file_path",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "file_type",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "file_date",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "district_code",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "records_processed",
+          "type": "INTEGER",
+          "nullable": true,
+          "defaultValue": "0",
+          "isPrimaryKey": false
+        },
+        {
+          "name": "records_inserted",
+          "type": "INTEGER",
+          "nullable": true,
+          "defaultValue": "0",
+          "isPrimaryKey": false
+        },
+        {
+          "name": "records_skipped",
+          "type": "INTEGER",
+          "nullable": true,
+          "defaultValue": "0",
+          "isPrimaryKey": false
+        },
+        {
+          "name": "records_error",
+          "type": "INTEGER",
+          "nullable": true,
+          "defaultValue": "0",
+          "isPrimaryKey": false
+        },
+        {
+          "name": "status",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": "'pending'",
+          "isPrimaryKey": false
+        },
+        {
+          "name": "error_message",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "started_at",
+          "type": "DATETIME",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "completed_at",
+          "type": "DATETIME",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "created_at",
+          "type": "DATETIME",
+          "nullable": true,
+          "defaultValue": "CURRENT_TIMESTAMP",
+          "isPrimaryKey": false
+        }
+      ],
+      "rowCount": 125,
+      "sampleRows": [
+        {
+          "id": 1,
+          "filename": "001_SALES_DATA_NNME_15122025.DAT",
+          "file_path": "C:\\Tools PHPC\\realestate_schools_data\\nsw weekly\\20251215\\001_SALES_DATA_NNME_15122025.DAT",
+          "file_type": "weekly",
+          "file_date": "20251215",
+          "district_code": "001",
+          "records_processed": 50,
+          "records_inserted": 50,
+          "records_skipped": 0,
+          "records_error": 0,
+          "status": "completed",
+          "error_message": null,
+          "started_at": "2025-12-18 07:30:33",
+          "completed_at": "2025-12-18 07:30:33",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 2,
+          "filename": "002_SALES_DATA_NNME_15122025.DAT",
+          "file_path": "C:\\Tools PHPC\\realestate_schools_data\\nsw weekly\\20251215\\002_SALES_DATA_NNME_15122025.DAT",
+          "file_type": "weekly",
+          "file_date": "20251215",
+          "district_code": "002",
+          "records_processed": 4,
+          "records_inserted": 4,
+          "records_skipped": 0,
+          "records_error": 0,
+          "status": "completed",
+          "error_message": null,
+          "started_at": "2025-12-18 07:30:33",
+          "completed_at": "2025-12-18 07:30:33",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 3,
+          "filename": "004_SALES_DATA_NNME_15122025.DAT",
+          "file_path": "C:\\Tools PHPC\\realestate_schools_data\\nsw weekly\\20251215\\004_SALES_DATA_NNME_15122025.DAT",
+          "file_type": "weekly",
+          "file_date": "20251215",
+          "district_code": "004",
+          "records_processed": 122,
+          "records_inserted": 122,
+          "records_skipped": 0,
+          "records_error": 0,
+          "status": "completed",
+          "error_message": null,
+          "started_at": "2025-12-18 07:30:33",
+          "completed_at": "2025-12-18 07:30:33",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 4,
+          "filename": "005_SALES_DATA_NNME_15122025.DAT",
+          "file_path": "C:\\Tools PHPC\\realestate_schools_data\\nsw weekly\\20251215\\005_SALES_DATA_NNME_15122025.DAT",
+          "file_type": "weekly",
+          "file_date": "20251215",
+          "district_code": "005",
+          "records_processed": 74,
+          "records_inserted": 74,
+          "records_skipped": 0,
+          "records_error": 0,
+          "status": "completed",
+          "error_message": null,
+          "started_at": "2025-12-18 07:30:33",
+          "completed_at": "2025-12-18 07:30:33",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 5,
+          "filename": "007_SALES_DATA_NNME_15122025.DAT",
+          "file_path": "C:\\Tools PHPC\\realestate_schools_data\\nsw weekly\\20251215\\007_SALES_DATA_NNME_15122025.DAT",
+          "file_type": "weekly",
+          "file_date": "20251215",
+          "district_code": "007",
+          "records_processed": 16,
+          "records_inserted": 16,
+          "records_skipped": 0,
+          "records_error": 0,
+          "status": "completed",
+          "error_message": null,
+          "started_at": "2025-12-18 07:30:33",
+          "completed_at": "2025-12-18 07:30:33",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 6,
+          "filename": "008_SALES_DATA_NNME_15122025.DAT",
+          "file_path": "C:\\Tools PHPC\\realestate_schools_data\\nsw weekly\\20251215\\008_SALES_DATA_NNME_15122025.DAT",
+          "file_type": "weekly",
+          "file_date": "20251215",
+          "district_code": "008",
+          "records_processed": 124,
+          "records_inserted": 124,
+          "records_skipped": 0,
+          "records_error": 0,
+          "status": "completed",
+          "error_message": null,
+          "started_at": "2025-12-18 07:30:33",
+          "completed_at": "2025-12-18 07:30:33",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 7,
+          "filename": "010_SALES_DATA_NNME_15122025.DAT",
+          "file_path": "C:\\Tools PHPC\\realestate_schools_data\\nsw weekly\\20251215\\010_SALES_DATA_NNME_15122025.DAT",
+          "file_type": "weekly",
+          "file_date": "20251215",
+          "district_code": "010",
+          "records_processed": 53,
+          "records_inserted": 53,
+          "records_skipped": 0,
+          "records_error": 0,
+          "status": "completed",
+          "error_message": null,
+          "started_at": "2025-12-18 07:30:33",
+          "completed_at": "2025-12-18 07:30:33",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 8,
+          "filename": "012_SALES_DATA_NNME_15122025.DAT",
+          "file_path": "C:\\Tools PHPC\\realestate_schools_data\\nsw weekly\\20251215\\012_SALES_DATA_NNME_15122025.DAT",
+          "file_type": "weekly",
+          "file_date": "20251215",
+          "district_code": "012",
+          "records_processed": 21,
+          "records_inserted": 21,
+          "records_skipped": 0,
+          "records_error": 0,
+          "status": "completed",
+          "error_message": null,
+          "started_at": "2025-12-18 07:30:33",
+          "completed_at": "2025-12-18 07:30:33",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 9,
+          "filename": "018_SALES_DATA_NNME_15122025.DAT",
+          "file_path": "C:\\Tools PHPC\\realestate_schools_data\\nsw weekly\\20251215\\018_SALES_DATA_NNME_15122025.DAT",
+          "file_type": "weekly",
+          "file_date": "20251215",
+          "district_code": "018",
+          "records_processed": 36,
+          "records_inserted": 36,
+          "records_skipped": 0,
+          "records_error": 0,
+          "status": "completed",
+          "error_message": null,
+          "started_at": "2025-12-18 07:30:33",
+          "completed_at": "2025-12-18 07:30:33",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 10,
+          "filename": "042_SALES_DATA_NNME_15122025.DAT",
+          "file_path": "C:\\Tools PHPC\\realestate_schools_data\\nsw weekly\\20251215\\042_SALES_DATA_NNME_15122025.DAT",
+          "file_type": "weekly",
+          "file_date": "20251215",
+          "district_code": "042",
+          "records_processed": 16,
+          "records_inserted": 16,
+          "records_skipped": 0,
+          "records_error": 0,
+          "status": "completed",
+          "error_message": null,
+          "started_at": "2025-12-18 07:30:33",
+          "completed_at": "2025-12-18 07:30:33",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 11,
+          "filename": "043_SALES_DATA_NNME_15122025.DAT",
+          "file_path": "C:\\Tools PHPC\\realestate_schools_data\\nsw weekly\\20251215\\043_SALES_DATA_NNME_15122025.DAT",
+          "file_type": "weekly",
+          "file_date": "20251215",
+          "district_code": "043",
+          "records_processed": 4,
+          "records_inserted": 4,
+          "records_skipped": 0,
+          "records_error": 0,
+          "status": "completed",
+          "error_message": null,
+          "started_at": "2025-12-18 07:30:33",
+          "completed_at": "2025-12-18 07:30:33",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 12,
+          "filename": "050_SALES_DATA_NNME_15122025.DAT",
+          "file_path": "C:\\Tools PHPC\\realestate_schools_data\\nsw weekly\\20251215\\050_SALES_DATA_NNME_15122025.DAT",
+          "file_type": "weekly",
+          "file_date": "20251215",
+          "district_code": "050",
+          "records_processed": 45,
+          "records_inserted": 45,
+          "records_skipped": 0,
+          "records_error": 0,
+          "status": "completed",
+          "error_message": null,
+          "started_at": "2025-12-18 07:30:33",
+          "completed_at": "2025-12-18 07:30:33",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 13,
+          "filename": "051_SALES_DATA_NNME_15122025.DAT",
+          "file_path": "C:\\Tools PHPC\\realestate_schools_data\\nsw weekly\\20251215\\051_SALES_DATA_NNME_15122025.DAT",
+          "file_type": "weekly",
+          "file_date": "20251215",
+          "district_code": "051",
+          "records_processed": 5,
+          "records_inserted": 5,
+          "records_skipped": 0,
+          "records_error": 0,
+          "status": "completed",
+          "error_message": null,
+          "started_at": "2025-12-18 07:30:33",
+          "completed_at": "2025-12-18 07:30:33",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 14,
+          "filename": "052_SALES_DATA_NNME_15122025.DAT",
+          "file_path": "C:\\Tools PHPC\\realestate_schools_data\\nsw weekly\\20251215\\052_SALES_DATA_NNME_15122025.DAT",
+          "file_type": "weekly",
+          "file_date": "20251215",
+          "district_code": "052",
+          "records_processed": 1,
+          "records_inserted": 1,
+          "records_skipped": 0,
+          "records_error": 0,
+          "status": "completed",
+          "error_message": null,
+          "started_at": "2025-12-18 07:30:33",
+          "completed_at": "2025-12-18 07:30:33",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 15,
+          "filename": "054_SALES_DATA_NNME_15122025.DAT",
+          "file_path": "C:\\Tools PHPC\\realestate_schools_data\\nsw weekly\\20251215\\054_SALES_DATA_NNME_15122025.DAT",
+          "file_type": "weekly",
+          "file_date": "20251215",
+          "district_code": "054",
+          "records_processed": 2,
+          "records_inserted": 2,
+          "records_skipped": 0,
+          "records_error": 0,
+          "status": "completed",
+          "error_message": null,
+          "started_at": "2025-12-18 07:30:33",
+          "completed_at": "2025-12-18 07:30:33",
+          "created_at": "2025-12-18 07:30:33"
+        }
+      ]
+    },
+    "legal_descriptions": {
+      "columns": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": true
+        },
+        {
+          "name": "sale_id",
+          "type": "INTEGER",
+          "nullable": false,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "district_code",
+          "type": "TEXT",
+          "nullable": false,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "property_id",
+          "type": "TEXT",
+          "nullable": false,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "sale_sequence",
+          "type": "INTEGER",
+          "nullable": false,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "legal_description",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "lot_number",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "plan_number",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "plan_type",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "created_at",
+          "type": "DATETIME",
+          "nullable": true,
+          "defaultValue": "CURRENT_TIMESTAMP",
+          "isPrimaryKey": false
+        }
+      ],
+      "rowCount": 5651,
+      "sampleRows": [
+        {
+          "id": 1,
+          "sale_id": 1,
+          "district_code": "001",
+          "property_id": "3474431",
+          "sale_sequence": 1,
+          "legal_description": "3/SP82715",
+          "lot_number": null,
+          "plan_number": null,
+          "plan_type": "DP",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 2,
+          "sale_id": 2,
+          "district_code": "001",
+          "property_id": "3480870",
+          "sale_sequence": 2,
+          "legal_description": "420/1143641",
+          "lot_number": "420",
+          "plan_number": "1143641",
+          "plan_type": "DP",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 3,
+          "sale_id": 3,
+          "district_code": "001",
+          "property_id": "4160018",
+          "sale_sequence": 3,
+          "legal_description": "2425/1244097",
+          "lot_number": "2425",
+          "plan_number": "1244097",
+          "plan_type": "DP",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 4,
+          "sale_id": 4,
+          "district_code": "001",
+          "property_id": "6032630",
+          "sale_sequence": 4,
+          "legal_description": "20/13226",
+          "lot_number": "20",
+          "plan_number": "13226",
+          "plan_type": "DP",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 5,
+          "sale_id": 5,
+          "district_code": "001",
+          "property_id": "6015746",
+          "sale_sequence": 5,
+          "legal_description": "1/1319797",
+          "lot_number": "1",
+          "plan_number": "1319797",
+          "plan_type": "DP",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 6,
+          "sale_id": 6,
+          "district_code": "001",
+          "property_id": "6021286",
+          "sale_sequence": 6,
+          "legal_description": "1/1320669",
+          "lot_number": "1",
+          "plan_number": "1320669",
+          "plan_type": "DP",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 7,
+          "sale_id": 7,
+          "district_code": "001",
+          "property_id": "6021288",
+          "sale_sequence": 7,
+          "legal_description": "2/1320669",
+          "lot_number": "2",
+          "plan_number": "1320669",
+          "plan_type": "DP",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 8,
+          "sale_id": 8,
+          "district_code": "001",
+          "property_id": "6021291",
+          "sale_sequence": 8,
+          "legal_description": "3/1320669",
+          "lot_number": "3",
+          "plan_number": "1320669",
+          "plan_type": "DP",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 9,
+          "sale_id": 9,
+          "district_code": "001",
+          "property_id": "1730",
+          "sale_sequence": 9,
+          "legal_description": "37/C/4528",
+          "lot_number": null,
+          "plan_number": null,
+          "plan_type": "DP",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 10,
+          "sale_id": 10,
+          "district_code": "001",
+          "property_id": "6801",
+          "sale_sequence": 10,
+          "legal_description": "1/707476",
+          "lot_number": "1",
+          "plan_number": "707476",
+          "plan_type": "DP",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 11,
+          "sale_id": 11,
+          "district_code": "001",
+          "property_id": "206",
+          "sale_sequence": 11,
+          "legal_description": "B/313296",
+          "lot_number": null,
+          "plan_number": null,
+          "plan_type": "DP",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 12,
+          "sale_id": 12,
+          "district_code": "001",
+          "property_id": "2558",
+          "sale_sequence": 12,
+          "legal_description": "7/12924",
+          "lot_number": "7",
+          "plan_number": "12924",
+          "plan_type": "DP",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 13,
+          "sale_id": 13,
+          "district_code": "001",
+          "property_id": "7147",
+          "sale_sequence": 13,
+          "legal_description": "24/253077",
+          "lot_number": "24",
+          "plan_number": "253077",
+          "plan_type": "DP",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 14,
+          "sale_id": 14,
+          "district_code": "001",
+          "property_id": "7510",
+          "sale_sequence": 14,
+          "legal_description": "235/12878",
+          "lot_number": "235",
+          "plan_number": "12878",
+          "plan_type": "DP",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 15,
+          "sale_id": 15,
+          "district_code": "001",
+          "property_id": "3230",
+          "sale_sequence": 15,
+          "legal_description": "20/A/6264",
+          "lot_number": null,
+          "plan_number": null,
+          "plan_type": "DP",
+          "created_at": "2025-12-18 07:30:33"
+        }
+      ]
+    },
+    "property_sales": {
+      "columns": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": true
+        },
+        {
+          "name": "district_code",
+          "type": "TEXT",
+          "nullable": false,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "property_id",
+          "type": "TEXT",
+          "nullable": false,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "sale_sequence",
+          "type": "INTEGER",
+          "nullable": false,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "source_file",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "file_date",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "file_type",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "record_timestamp",
+          "type": "DATETIME",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "unit_number",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "house_number",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "street_name",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "suburb",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "postcode",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "area",
+          "type": "REAL",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "area_unit",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "contract_date",
+          "type": "DATE",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "settlement_date",
+          "type": "DATE",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "purchase_price",
+          "type": "INTEGER",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "zone_code",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "zone_category",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "property_type",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "property_description",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "nature_of_property",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "strata_lot_number",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "component_code",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "sale_code",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "dealing_number",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "created_at",
+          "type": "DATETIME",
+          "nullable": true,
+          "defaultValue": "CURRENT_TIMESTAMP",
+          "isPrimaryKey": false
+        }
+      ],
+      "rowCount": 5643,
+      "sampleRows": [
+        {
+          "id": 1,
+          "district_code": "001",
+          "property_id": "3474431",
+          "sale_sequence": 1,
+          "source_file": "001_SALES_DATA_NNME_15122025.DAT",
+          "file_date": "20251215",
+          "file_type": "weekly",
+          "record_timestamp": "20251215 01:06",
+          "unit_number": null,
+          "house_number": "195",
+          "street_name": "ABERDARE ST",
+          "suburb": "KURRI KURRI",
+          "postcode": "2327",
+          "area": null,
+          "area_unit": null,
+          "contract_date": "2025-10-17",
+          "settlement_date": "2025-12-08",
+          "purchase_price": 626000,
+          "zone_code": null,
+          "zone_category": "R",
+          "property_type": "RESIDENCE",
+          "property_description": "3",
+          "nature_of_property": null,
+          "strata_lot_number": null,
+          "component_code": null,
+          "sale_code": "AV689199",
+          "dealing_number": null,
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 2,
+          "district_code": "001",
+          "property_id": "3480870",
+          "sale_sequence": 2,
+          "source_file": "001_SALES_DATA_NNME_15122025.DAT",
+          "file_date": "20251215",
+          "file_type": "weekly",
+          "record_timestamp": "20251215 01:06",
+          "unit_number": null,
+          "house_number": "11 B",
+          "street_name": "KING ST",
+          "suburb": "CESSNOCK",
+          "postcode": "2325",
+          "area": 413,
+          "area_unit": "M",
+          "contract_date": "2025-11-13",
+          "settlement_date": "2025-12-11",
+          "purchase_price": 720000,
+          "zone_code": "R3",
+          "zone_category": "R",
+          "property_type": "RESIDENCE",
+          "property_description": null,
+          "nature_of_property": "MAA",
+          "strata_lot_number": null,
+          "component_code": null,
+          "sale_code": "AV703106",
+          "dealing_number": null,
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 3,
+          "district_code": "001",
+          "property_id": "4160018",
+          "sale_sequence": 3,
+          "source_file": "001_SALES_DATA_NNME_15122025.DAT",
+          "file_date": "20251215",
+          "file_type": "weekly",
+          "record_timestamp": "20251215 01:06",
+          "unit_number": null,
+          "house_number": "9",
+          "street_name": "DINTON ST",
+          "suburb": "GRETA",
+          "postcode": "2334",
+          "area": 604,
+          "area_unit": "M",
+          "contract_date": "2025-10-29",
+          "settlement_date": "2025-12-10",
+          "purchase_price": 1050000,
+          "zone_code": "R2",
+          "zone_category": "R",
+          "property_type": "RESIDENCE",
+          "property_description": null,
+          "nature_of_property": "AAJ",
+          "strata_lot_number": null,
+          "component_code": null,
+          "sale_code": "AV700750",
+          "dealing_number": null,
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 4,
+          "district_code": "001",
+          "property_id": "6032630",
+          "sale_sequence": 4,
+          "source_file": "001_SALES_DATA_NNME_15122025.DAT",
+          "file_date": "20251215",
+          "file_type": "weekly",
+          "record_timestamp": "20251215 01:06",
+          "unit_number": null,
+          "house_number": "95",
+          "street_name": "WOLLOMBI RD",
+          "suburb": "MILLFIELD",
+          "postcode": "2325",
+          "area": 834.7,
+          "area_unit": "M",
+          "contract_date": "2025-09-10",
+          "settlement_date": "2025-10-08",
+          "purchase_price": 495000,
+          "zone_code": null,
+          "zone_category": "R",
+          "property_type": "RESIDENCE",
+          "property_description": null,
+          "nature_of_property": null,
+          "strata_lot_number": null,
+          "component_code": null,
+          "sale_code": "AV492725",
+          "dealing_number": null,
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 5,
+          "district_code": "001",
+          "property_id": "6015746",
+          "sale_sequence": 5,
+          "source_file": "001_SALES_DATA_NNME_15122025.DAT",
+          "file_date": "20251215",
+          "file_type": "weekly",
+          "record_timestamp": "20251215 01:06",
+          "unit_number": null,
+          "house_number": "5 A",
+          "street_name": "PORTRUSH AVE",
+          "suburb": "CESSNOCK",
+          "postcode": "2325",
+          "area": 300.4,
+          "area_unit": "M",
+          "contract_date": "2025-10-28",
+          "settlement_date": "2025-12-09",
+          "purchase_price": 645000,
+          "zone_code": "R2",
+          "zone_category": "R",
+          "property_type": "RESIDENCE",
+          "property_description": null,
+          "nature_of_property": "AAF",
+          "strata_lot_number": null,
+          "component_code": null,
+          "sale_code": "AV693080",
+          "dealing_number": null,
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 6,
+          "district_code": "001",
+          "property_id": "6021286",
+          "sale_sequence": 6,
+          "source_file": "001_SALES_DATA_NNME_15122025.DAT",
+          "file_date": "20251215",
+          "file_type": "weekly",
+          "record_timestamp": "20251215 01:06",
+          "unit_number": null,
+          "house_number": "717",
+          "street_name": "DE BEYERS RD",
+          "suburb": "POKOLBIN",
+          "postcode": "2320",
+          "area": 9.716,
+          "area_unit": "H",
+          "contract_date": "2024-12-20",
+          "settlement_date": "2025-12-05",
+          "purchase_price": 25000000,
+          "zone_code": "RU4",
+          "zone_category": "3",
+          "property_type": "COMMERCIAL",
+          "property_description": null,
+          "nature_of_property": "RAO",
+          "strata_lot_number": null,
+          "component_code": null,
+          "sale_code": "AV685447",
+          "dealing_number": null,
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 7,
+          "district_code": "001",
+          "property_id": "6021288",
+          "sale_sequence": 7,
+          "source_file": "001_SALES_DATA_NNME_15122025.DAT",
+          "file_date": "20251215",
+          "file_type": "weekly",
+          "record_timestamp": "20251215 01:06",
+          "unit_number": null,
+          "house_number": "151 A",
+          "street_name": "MCDONALDS RD",
+          "suburb": "POKOLBIN",
+          "postcode": "2320",
+          "area": 16.15,
+          "area_unit": "H",
+          "contract_date": "2024-12-20",
+          "settlement_date": "2025-12-05",
+          "purchase_price": 25000000,
+          "zone_code": "RU4",
+          "zone_category": "3",
+          "property_type": "COMMERCIAL",
+          "property_description": null,
+          "nature_of_property": "RAO",
+          "strata_lot_number": null,
+          "component_code": null,
+          "sale_code": "AV685447",
+          "dealing_number": null,
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 8,
+          "district_code": "001",
+          "property_id": "6021291",
+          "sale_sequence": 8,
+          "source_file": "001_SALES_DATA_NNME_15122025.DAT",
+          "file_date": "20251215",
+          "file_type": "weekly",
+          "record_timestamp": "20251215 01:06",
+          "unit_number": null,
+          "house_number": "119",
+          "street_name": "MCDONALDS RD",
+          "suburb": "POKOLBIN",
+          "postcode": "2320",
+          "area": 40.69,
+          "area_unit": "H",
+          "contract_date": "2024-12-20",
+          "settlement_date": "2025-12-05",
+          "purchase_price": 25000000,
+          "zone_code": "RU4",
+          "zone_category": "3",
+          "property_type": "COMMERCIAL",
+          "property_description": null,
+          "nature_of_property": "RAO",
+          "strata_lot_number": null,
+          "component_code": null,
+          "sale_code": "AV685447",
+          "dealing_number": null,
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 9,
+          "district_code": "001",
+          "property_id": "1730",
+          "sale_sequence": 9,
+          "source_file": "001_SALES_DATA_NNME_15122025.DAT",
+          "file_date": "20251215",
+          "file_type": "weekly",
+          "record_timestamp": "20251215 01:06",
+          "unit_number": null,
+          "house_number": "20",
+          "street_name": "REGENT ST",
+          "suburb": "CESSNOCK",
+          "postcode": "2325",
+          "area": 809.4,
+          "area_unit": "M",
+          "contract_date": "2025-11-18",
+          "settlement_date": "2025-12-09",
+          "purchase_price": 790000,
+          "zone_code": "R3",
+          "zone_category": "R",
+          "property_type": "RESIDENCE",
+          "property_description": null,
+          "nature_of_property": "MAA",
+          "strata_lot_number": null,
+          "component_code": null,
+          "sale_code": "AV693353",
+          "dealing_number": null,
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 10,
+          "district_code": "001",
+          "property_id": "6801",
+          "sale_sequence": 10,
+          "source_file": "001_SALES_DATA_NNME_15122025.DAT",
+          "file_date": "20251215",
+          "file_type": "weekly",
+          "record_timestamp": "20251215 01:06",
+          "unit_number": null,
+          "house_number": "7",
+          "street_name": "GUEST ST",
+          "suburb": "CESSNOCK",
+          "postcode": "2325",
+          "area": 794.5,
+          "area_unit": "M",
+          "contract_date": "2025-10-24",
+          "settlement_date": "2025-12-05",
+          "purchase_price": 840000,
+          "zone_code": "R3",
+          "zone_category": "R",
+          "property_type": "RESIDENCE",
+          "property_description": null,
+          "nature_of_property": "MAA",
+          "strata_lot_number": null,
+          "component_code": null,
+          "sale_code": "AV681294",
+          "dealing_number": null,
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 11,
+          "district_code": "001",
+          "property_id": "206",
+          "sale_sequence": 11,
+          "source_file": "001_SALES_DATA_NNME_15122025.DAT",
+          "file_date": "20251215",
+          "file_type": "weekly",
+          "record_timestamp": "20251215 01:06",
+          "unit_number": null,
+          "house_number": "12",
+          "street_name": "BRIDGE ST",
+          "suburb": "CESSNOCK",
+          "postcode": "2325",
+          "area": 373.1,
+          "area_unit": "M",
+          "contract_date": "2025-11-11",
+          "settlement_date": "2025-12-09",
+          "purchase_price": 680000,
+          "zone_code": "R3",
+          "zone_category": "R",
+          "property_type": "RESIDENCE",
+          "property_description": null,
+          "nature_of_property": "MAA",
+          "strata_lot_number": null,
+          "component_code": null,
+          "sale_code": "AV693473",
+          "dealing_number": null,
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 12,
+          "district_code": "001",
+          "property_id": "2558",
+          "sale_sequence": 12,
+          "source_file": "001_SALES_DATA_NNME_15122025.DAT",
+          "file_date": "20251215",
+          "file_type": "weekly",
+          "record_timestamp": "20251215 01:06",
+          "unit_number": null,
+          "house_number": "19",
+          "street_name": "LISMORE ST",
+          "suburb": "ABERMAIN",
+          "postcode": "2326",
+          "area": 1663,
+          "area_unit": "M",
+          "contract_date": "2025-11-07",
+          "settlement_date": "2025-12-03",
+          "purchase_price": 820000,
+          "zone_code": "R2",
+          "zone_category": "R",
+          "property_type": "RESIDENCE",
+          "property_description": null,
+          "nature_of_property": "AAM",
+          "strata_lot_number": null,
+          "component_code": null,
+          "sale_code": "AV675179",
+          "dealing_number": null,
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 13,
+          "district_code": "001",
+          "property_id": "7147",
+          "sale_sequence": 13,
+          "source_file": "001_SALES_DATA_NNME_15122025.DAT",
+          "file_date": "20251215",
+          "file_type": "weekly",
+          "record_timestamp": "20251215 01:06",
+          "unit_number": null,
+          "house_number": "24",
+          "street_name": "LEE-ANN CRES",
+          "suburb": "CESSNOCK",
+          "postcode": "2325",
+          "area": 672.2,
+          "area_unit": "M",
+          "contract_date": "2025-10-27",
+          "settlement_date": "2025-12-10",
+          "purchase_price": 765000,
+          "zone_code": "R2",
+          "zone_category": "R",
+          "property_type": "RESIDENCE",
+          "property_description": null,
+          "nature_of_property": "AAB",
+          "strata_lot_number": null,
+          "component_code": null,
+          "sale_code": "AV698632",
+          "dealing_number": null,
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 14,
+          "district_code": "001",
+          "property_id": "7510",
+          "sale_sequence": 14,
+          "source_file": "001_SALES_DATA_NNME_15122025.DAT",
+          "file_date": "20251215",
+          "file_type": "weekly",
+          "record_timestamp": "20251215 01:06",
+          "unit_number": null,
+          "house_number": "47",
+          "street_name": "MACLEAN ST",
+          "suburb": "CESSNOCK",
+          "postcode": "2325",
+          "area": 613.11,
+          "area_unit": "M",
+          "contract_date": "2025-10-28",
+          "settlement_date": "2025-12-09",
+          "purchase_price": 615000,
+          "zone_code": "R2",
+          "zone_category": "R",
+          "property_type": "RESIDENCE",
+          "property_description": null,
+          "nature_of_property": "AAB",
+          "strata_lot_number": null,
+          "component_code": null,
+          "sale_code": "AV693933",
+          "dealing_number": null,
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 15,
+          "district_code": "001",
+          "property_id": "3230",
+          "sale_sequence": 15,
+          "source_file": "001_SALES_DATA_NNME_15122025.DAT",
+          "file_date": "20251215",
+          "file_type": "weekly",
+          "record_timestamp": "20251215 01:06",
+          "unit_number": null,
+          "house_number": "17",
+          "street_name": "CRUICKSHANK ST",
+          "suburb": "BELLBIRD",
+          "postcode": "2325",
+          "area": 828,
+          "area_unit": "M",
+          "contract_date": "2025-12-08",
+          "settlement_date": "2025-12-10",
+          "purchase_price": 326666,
+          "zone_code": "R2",
+          "zone_category": "R",
+          "property_type": "RESIDENCE",
+          "property_description": null,
+          "nature_of_property": "AAC",
+          "strata_lot_number": null,
+          "component_code": null,
+          "sale_code": "AV698238",
+          "dealing_number": null,
+          "created_at": "2025-12-18 07:30:33"
+        }
+      ]
+    },
+    "property_types": {
+      "columns": [
+        {
+          "name": "type_code",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": true
+        },
+        {
+          "name": "type_description",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        }
+      ],
+      "rowCount": 0,
+      "sampleRows": []
+    },
+    "sale_interests": {
+      "columns": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": true
+        },
+        {
+          "name": "sale_id",
+          "type": "INTEGER",
+          "nullable": false,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "district_code",
+          "type": "TEXT",
+          "nullable": false,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "property_id",
+          "type": "TEXT",
+          "nullable": false,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "sale_sequence",
+          "type": "INTEGER",
+          "nullable": false,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "interest_type",
+          "type": "TEXT",
+          "nullable": false,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "interest_detail",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "created_at",
+          "type": "DATETIME",
+          "nullable": true,
+          "defaultValue": "CURRENT_TIMESTAMP",
+          "isPrimaryKey": false
+        }
+      ],
+      "rowCount": 17093,
+      "sampleRows": [
+        {
+          "id": 1,
+          "sale_id": 1,
+          "district_code": "001",
+          "property_id": "3474431",
+          "sale_sequence": 1,
+          "interest_type": "P",
+          "interest_detail": ";;;;;",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 2,
+          "sale_id": 1,
+          "district_code": "001",
+          "property_id": "3474431",
+          "sale_sequence": 1,
+          "interest_type": "V",
+          "interest_detail": ";;;;;",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 3,
+          "sale_id": 1,
+          "district_code": "001",
+          "property_id": "3474431",
+          "sale_sequence": 1,
+          "interest_type": "V",
+          "interest_detail": ";;;;;",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 4,
+          "sale_id": 2,
+          "district_code": "001",
+          "property_id": "3480870",
+          "sale_sequence": 2,
+          "interest_type": "P",
+          "interest_detail": ";;;;;",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 5,
+          "sale_id": 2,
+          "district_code": "001",
+          "property_id": "3480870",
+          "sale_sequence": 2,
+          "interest_type": "P",
+          "interest_detail": ";;;;;",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 6,
+          "sale_id": 2,
+          "district_code": "001",
+          "property_id": "3480870",
+          "sale_sequence": 2,
+          "interest_type": "V",
+          "interest_detail": ";;;;;",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 7,
+          "sale_id": 3,
+          "district_code": "001",
+          "property_id": "4160018",
+          "sale_sequence": 3,
+          "interest_type": "P",
+          "interest_detail": ";;;;;",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 8,
+          "sale_id": 3,
+          "district_code": "001",
+          "property_id": "4160018",
+          "sale_sequence": 3,
+          "interest_type": "V",
+          "interest_detail": ";;;;;",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 9,
+          "sale_id": 3,
+          "district_code": "001",
+          "property_id": "4160018",
+          "sale_sequence": 3,
+          "interest_type": "V",
+          "interest_detail": ";;;;;",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 10,
+          "sale_id": 4,
+          "district_code": "001",
+          "property_id": "6032630",
+          "sale_sequence": 4,
+          "interest_type": "P",
+          "interest_detail": ";;;;;",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 11,
+          "sale_id": 4,
+          "district_code": "001",
+          "property_id": "6032630",
+          "sale_sequence": 4,
+          "interest_type": "V",
+          "interest_detail": ";;;;;",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 12,
+          "sale_id": 5,
+          "district_code": "001",
+          "property_id": "6015746",
+          "sale_sequence": 5,
+          "interest_type": "P",
+          "interest_detail": ";;;;;",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 13,
+          "sale_id": 5,
+          "district_code": "001",
+          "property_id": "6015746",
+          "sale_sequence": 5,
+          "interest_type": "P",
+          "interest_detail": ";;;;;",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 14,
+          "sale_id": 5,
+          "district_code": "001",
+          "property_id": "6015746",
+          "sale_sequence": 5,
+          "interest_type": "V",
+          "interest_detail": ";;;;;",
+          "created_at": "2025-12-18 07:30:33"
+        },
+        {
+          "id": 15,
+          "sale_id": 5,
+          "district_code": "001",
+          "property_id": "6015746",
+          "sale_sequence": 5,
+          "interest_type": "V",
+          "interest_detail": ";;;;;",
+          "created_at": "2025-12-18 07:30:33"
+        }
+      ]
+    },
+    "zone_codes": {
+      "columns": [
+        {
+          "name": "zone_code",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": true
+        },
+        {
+          "name": "zone_description",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        },
+        {
+          "name": "zone_category",
+          "type": "TEXT",
+          "nullable": true,
+          "defaultValue": null,
+          "isPrimaryKey": false
+        }
+      ],
+      "rowCount": 35,
+      "sampleRows": [
+        {
+          "zone_code": "R1",
+          "zone_description": "General Residential",
+          "zone_category": "Residential"
+        },
+        {
+          "zone_code": "R2",
+          "zone_description": "Low Density Residential",
+          "zone_category": "Residential"
+        },
+        {
+          "zone_code": "R3",
+          "zone_description": "Medium Density Residential",
+          "zone_category": "Residential"
+        },
+        {
+          "zone_code": "R4",
+          "zone_description": "High Density Residential",
+          "zone_category": "Residential"
+        },
+        {
+          "zone_code": "R5",
+          "zone_description": "Large Lot Residential",
+          "zone_category": "Residential"
+        },
+        {
+          "zone_code": "B1",
+          "zone_description": "Neighbourhood Centre",
+          "zone_category": "Commercial"
+        },
+        {
+          "zone_code": "B2",
+          "zone_description": "Local Centre",
+          "zone_category": "Commercial"
+        },
+        {
+          "zone_code": "B3",
+          "zone_description": "Commercial Core",
+          "zone_category": "Commercial"
+        },
+        {
+          "zone_code": "B4",
+          "zone_description": "Mixed Use",
+          "zone_category": "Commercial"
+        },
+        {
+          "zone_code": "B5",
+          "zone_description": "Business Development",
+          "zone_category": "Commercial"
+        },
+        {
+          "zone_code": "B6",
+          "zone_description": "Enterprise Corridor",
+          "zone_category": "Commercial"
+        },
+        {
+          "zone_code": "B7",
+          "zone_description": "Business Park",
+          "zone_category": "Commercial"
+        },
+        {
+          "zone_code": "B8",
+          "zone_description": "Metropolitan Centre",
+          "zone_category": "Commercial"
+        },
+        {
+          "zone_code": "IN1",
+          "zone_description": "General Industrial",
+          "zone_category": "Industrial"
+        },
+        {
+          "zone_code": "IN2",
+          "zone_description": "Light Industrial",
+          "zone_category": "Industrial"
+        }
+      ]
+    }
+  },
+  "views": {
+    "v_recent_sales": {
+      "sql": "CREATE VIEW v_recent_sales AS\r\nSELECT \r\n    ps.id,\r\n    ps.suburb,\r\n    ps.postcode,\r\n    ps.street_name,\r\n    ps.house_number,\r\n    ps.unit_number,\r\n    ps.purchase_price,\r\n    ps.contract_date,\r\n    ps.area,\r\n    ps.area_unit,\r\n    ps.zone_code,\r\n    ps.property_type,\r\n    d.district_name,\r\n    -- Calculate price per sqm for residential\r\n    CASE \r\n        WHEN ps.area > 0 AND ps.area_unit = 'M' \r\n        THEN ROUND(ps.purchase_price * 1.0 / ps.area, 2)\r\n        ELSE NULL \r\n    END AS price_per_sqm\r\nFROM property_sales ps\r\nLEFT JOIN districts d ON ps.district_code = d.district_code\r\nORDER BY ps.contract_date DESC",
+      "columns": [
+        {
+          "name": "id",
+          "type": "derived"
+        },
+        {
+          "name": "suburb",
+          "type": "derived"
+        },
+        {
+          "name": "postcode",
+          "type": "derived"
+        },
+        {
+          "name": "street_name",
+          "type": "derived"
+        },
+        {
+          "name": "house_number",
+          "type": "derived"
+        },
+        {
+          "name": "unit_number",
+          "type": "derived"
+        },
+        {
+          "name": "purchase_price",
+          "type": "derived"
+        },
+        {
+          "name": "contract_date",
+          "type": "derived"
+        },
+        {
+          "name": "area",
+          "type": "derived"
+        },
+        {
+          "name": "area_unit",
+          "type": "derived"
+        },
+        {
+          "name": "zone_code",
+          "type": "derived"
+        },
+        {
+          "name": "property_type",
+          "type": "derived"
+        },
+        {
+          "name": "district_name",
+          "type": "derived"
+        },
+        {
+          "name": "price_per_sqm",
+          "type": "derived"
+        }
+      ],
+      "sampleRows": [
+        {
+          "id": 5362,
+          "suburb": "LAKE CATHIE",
+          "postcode": "2445",
+          "street_name": "SEASIDE DR",
+          "house_number": "13",
+          "unit_number": null,
+          "purchase_price": 1035000,
+          "contract_date": "2025-12-11",
+          "area": 480,
+          "area_unit": "M",
+          "zone_code": "R1",
+          "property_type": "RESIDENCE",
+          "district_name": "Willoughby",
+          "price_per_sqm": 2156.25
+        },
+        {
+          "id": 5359,
+          "suburb": "WAUCHOPE",
+          "postcode": "2446",
+          "street_name": "HIGH ST",
+          "house_number": "127",
+          "unit_number": null,
+          "purchase_price": 551000,
+          "contract_date": "2025-12-11",
+          "area": 513.6,
+          "area_unit": "M",
+          "zone_code": "R1",
+          "property_type": "RESIDENCE",
+          "district_name": "Willoughby",
+          "price_per_sqm": 1072.82
+        },
+        {
+          "id": 4812,
+          "suburb": "BUNGENDORE",
+          "postcode": "2621",
+          "street_name": "FORSTER ST",
+          "house_number": "18",
+          "unit_number": null,
+          "purchase_price": 630000,
+          "contract_date": "2025-12-11",
+          "area": 719,
+          "area_unit": "M",
+          "zone_code": "R2",
+          "property_type": "RESIDENCE",
+          "district_name": "Snowy Valleys",
+          "price_per_sqm": 876.22
+        },
+        {
+          "id": 3749,
+          "suburb": "CANTON BEACH",
+          "postcode": "2263",
+          "street_name": "OLEANDER ST",
+          "house_number": "12",
+          "unit_number": null,
+          "purchase_price": 454300,
+          "contract_date": "2025-12-11",
+          "area": 537.5,
+          "area_unit": "M",
+          "zone_code": "R1",
+          "property_type": "RESIDENCE",
+          "district_name": "Parkes",
+          "price_per_sqm": 845.21
+        },
+        {
+          "id": 3442,
+          "suburb": "BOGGABRI",
+          "postcode": "2382",
+          "street_name": "NANDEWAR ST",
+          "house_number": "19",
+          "unit_number": null,
+          "purchase_price": 1000,
+          "contract_date": "2025-12-11",
+          "area": 4047,
+          "area_unit": "M",
+          "zone_code": "R1",
+          "property_type": "FARM",
+          "district_name": "Narrabri",
+          "price_per_sqm": 0.25
+        },
+        {
+          "id": 2214,
+          "suburb": "KENSINGTON",
+          "postcode": "2033",
+          "street_name": "TODMAN AVE",
+          "house_number": "58",
+          "unit_number": null,
+          "purchase_price": 500000,
+          "contract_date": "2025-12-11",
+          "area": 392,
+          "area_unit": "M",
+          "zone_code": "R2",
+          "property_type": "RESIDENCE",
+          "district_name": "Junee",
+          "price_per_sqm": 1275.51
+        },
+        {
+          "id": 2033,
+          "suburb": "GENEVA",
+          "postcode": "2474",
+          "street_name": "WILLIAM ST",
+          "house_number": "28",
+          "unit_number": null,
+          "purchase_price": 475500,
+          "contract_date": "2025-12-11",
+          "area": 844.8,
+          "area_unit": "M",
+          "zone_code": "R1",
+          "property_type": "RESIDENCE",
+          "district_name": "Gwydir",
+          "price_per_sqm": 562.86
+        },
+        {
+          "id": 1823,
+          "suburb": "SYLVANIA",
+          "postcode": "2224",
+          "street_name": "SYLVAN ST",
+          "house_number": "20 B",
+          "unit_number": null,
+          "purchase_price": 1000000,
+          "contract_date": "2025-12-11",
+          "area": 296.3,
+          "area_unit": "M",
+          "zone_code": "R2",
+          "property_type": "RESIDENCE",
+          "district_name": "Georges River",
+          "price_per_sqm": 3374.96
+        },
+        {
+          "id": 1783,
+          "suburb": "JANNALI",
+          "postcode": "2226",
+          "street_name": "RAILWAY CRES",
+          "house_number": "28",
+          "unit_number": null,
+          "purchase_price": 313488,
+          "contract_date": "2025-12-11",
+          "area": null,
+          "area_unit": null,
+          "zone_code": null,
+          "property_type": "RESIDENCE",
+          "district_name": "Georges River",
+          "price_per_sqm": null
+        },
+        {
+          "id": 3548,
+          "suburb": "CONDELL PARK",
+          "postcode": "2200",
+          "street_name": "GLEESON AVE",
+          "house_number": "7",
+          "unit_number": null,
+          "purchase_price": 750000,
+          "contract_date": "2025-12-10",
+          "area": 1024,
+          "area_unit": "M",
+          "zone_code": "R2",
+          "property_type": "RESIDENCE",
+          "district_name": "Orange",
+          "price_per_sqm": 732.42
+        }
+      ]
+    },
+    "v_suburb_stats": {
+      "sql": "CREATE VIEW v_suburb_stats AS\r\nSELECT \r\n    suburb,\r\n    postcode,\r\n    COUNT(*) as total_sales,\r\n    AVG(purchase_price) as avg_price,\r\n    MIN(purchase_price) as min_price,\r\n    MAX(purchase_price) as max_price,\r\n    AVG(area) as avg_area,\r\n    MIN(contract_date) as earliest_sale,\r\n    MAX(contract_date) as latest_sale\r\nFROM property_sales\r\nWHERE purchase_price > 0\r\nGROUP BY suburb, postcode",
+      "columns": [
+        {
+          "name": "suburb",
+          "type": "derived"
+        },
+        {
+          "name": "postcode",
+          "type": "derived"
+        },
+        {
+          "name": "total_sales",
+          "type": "derived"
+        },
+        {
+          "name": "avg_price",
+          "type": "derived"
+        },
+        {
+          "name": "min_price",
+          "type": "derived"
+        },
+        {
+          "name": "max_price",
+          "type": "derived"
+        },
+        {
+          "name": "avg_area",
+          "type": "derived"
+        },
+        {
+          "name": "earliest_sale",
+          "type": "derived"
+        },
+        {
+          "name": "latest_sale",
+          "type": "derived"
+        }
+      ],
+      "sampleRows": [
+        {
+          "suburb": "ABBOTSBURY",
+          "postcode": "2176",
+          "total_sales": 1,
+          "avg_price": 1830000,
+          "min_price": 1830000,
+          "max_price": 1830000,
+          "avg_area": 567.2,
+          "earliest_sale": "2025-10-05",
+          "latest_sale": "2025-10-05"
+        },
+        {
+          "suburb": "ABERCROMBIE",
+          "postcode": "2795",
+          "total_sales": 2,
+          "avg_price": 597500,
+          "min_price": 470000,
+          "max_price": 725000,
+          "avg_area": 984.6,
+          "earliest_sale": "2025-11-07",
+          "latest_sale": "2025-11-11"
+        },
+        {
+          "suburb": "ABERDARE",
+          "postcode": "2325",
+          "total_sales": 2,
+          "avg_price": 350000,
+          "min_price": 150000,
+          "max_price": 550000,
+          "avg_area": 506,
+          "earliest_sale": "2025-11-21",
+          "latest_sale": "2025-12-10"
+        },
+        {
+          "suburb": "ABERDEEN",
+          "postcode": "2336",
+          "total_sales": 3,
+          "avg_price": 229166.66666666666,
+          "min_price": 63750,
+          "max_price": 560000,
+          "avg_area": 1678.1000000000001,
+          "earliest_sale": "2025-07-25",
+          "latest_sale": "2025-11-26"
+        },
+        {
+          "suburb": "ABERGLASSLYN",
+          "postcode": "2320",
+          "total_sales": 3,
+          "avg_price": 840000,
+          "min_price": 705000,
+          "max_price": 970000,
+          "avg_area": 659.1333333333333,
+          "earliest_sale": "2025-10-28",
+          "latest_sale": "2025-11-14"
+        },
+        {
+          "suburb": "ABERMAIN",
+          "postcode": "2326",
+          "total_sales": 2,
+          "avg_price": 1200000,
+          "min_price": 820000,
+          "max_price": 1580000,
+          "avg_area": 4328,
+          "earliest_sale": "2025-11-07",
+          "latest_sale": "2025-11-07"
+        },
+        {
+          "suburb": "ADAMSTOWN",
+          "postcode": "2289",
+          "total_sales": 13,
+          "avg_price": 2308076.923076923,
+          "min_price": 820000,
+          "max_price": 5850000,
+          "avg_area": 387.45,
+          "earliest_sale": "2025-10-21",
+          "latest_sale": "2025-12-04"
+        },
+        {
+          "suburb": "ADAMSTOWN HEIGHTS",
+          "postcode": "2289",
+          "total_sales": 3,
+          "avg_price": 1298333.3333333333,
+          "min_price": 1275000,
+          "max_price": 1320000,
+          "avg_area": 503.7,
+          "earliest_sale": "2025-10-30",
+          "latest_sale": "2025-11-13"
+        },
+        {
+          "suburb": "ADELONG",
+          "postcode": "2729",
+          "total_sales": 1,
+          "avg_price": 340000,
+          "min_price": 340000,
+          "max_price": 340000,
+          "avg_area": 796.7,
+          "earliest_sale": "2025-09-16",
+          "latest_sale": "2025-09-16"
+        },
+        {
+          "suburb": "AGNES BANKS",
+          "postcode": "2753",
+          "total_sales": 1,
+          "avg_price": 3500000,
+          "min_price": 3500000,
+          "max_price": 3500000,
+          "avg_area": 4.721,
+          "earliest_sale": "2025-10-13",
+          "latest_sale": "2025-10-13"
+        }
+      ]
+    }
+  },
+  "statistics": {
+    "propertySales": {
+      "totalRecords": 5643,
+      "dateRange": {
+        "earliest": "2002-10-23",
+        "latest": "2025-12-11"
+      },
+      "priceStats": {
+        "minPrice": 1000,
+        "maxPrice": 195292170,
+        "avgPrice": 1500599,
+        "avgPricePerSqm": 5147
+      },
+      "areaStats": {
+        "minArea": 1,
+        "maxArea": 9654,
+        "avgArea": 719
+      },
+      "byPropertyType": [
+        {
+          "property_type": "RESIDENCE",
+          "count": 5033,
+          "avgPrice": 1409184
+        },
+        {
+          "property_type": "VACANT LAND",
+          "count": 329,
+          "avgPrice": 722209
+        },
+        {
+          "property_type": "COMMERCIAL",
+          "count": 133,
+          "avgPrice": 5381732
+        },
+        {
+          "property_type": "FARM",
+          "count": 60,
+          "avgPrice": 2331135
+        },
+        {
+          "property_type": "SHOP",
+          "count": 22,
+          "avgPrice": 6001282
+        },
+        {
+          "property_type": "WAREHOUSE",
+          "count": 21,
+          "avgPrice": 3787024
+        },
+        {
+          "property_type": "OFFICE",
+          "count": 19,
+          "avgPrice": 1265474
+        },
+        {
+          "property_type": "FACTORY",
+          "count": 16,
+          "avgPrice": 2018738
+        },
+        {
+          "property_type": "CARSPACE",
+          "count": 5,
+          "avgPrice": 71800
+        },
+        {
+          "property_type": "GARAGE & VACAN",
+          "count": 1,
+          "avgPrice": 95150
+        },
+        {
+          "property_type": "COMMERICAL",
+          "count": 1,
+          "avgPrice": 9230000
+        }
+      ],
+      "byZoneCode": [
+        {
+          "zone_code": "R2",
+          "zone_category": "R",
+          "count": 1801,
+          "avgPrice": 1743584
+        },
+        {
+          "zone_code": "R1",
+          "zone_category": "R",
+          "count": 718,
+          "avgPrice": 926835
+        },
+        {
+          "zone_code": "R3",
+          "zone_category": "R",
+          "count": 220,
+          "avgPrice": 2036317
+        },
+        {
+          "zone_code": "R2",
+          "zone_category": "V",
+          "count": 136,
+          "avgPrice": 867980
+        },
+        {
+          "zone_code": "C4",
+          "zone_category": "R",
+          "count": 117,
+          "avgPrice": 2356036
+        },
+        {
+          "zone_code": "RU5",
+          "zone_category": "R",
+          "count": 88,
+          "avgPrice": 577010
+        },
+        {
+          "zone_code": "R1",
+          "zone_category": "V",
+          "count": 81,
+          "avgPrice": 408839
+        },
+        {
+          "zone_code": "R5",
+          "zone_category": "R",
+          "count": 75,
+          "avgPrice": 1372353
+        },
+        {
+          "zone_code": "RU1",
+          "zone_category": "R",
+          "count": 72,
+          "avgPrice": 1329726
+        },
+        {
+          "zone_code": "RU1",
+          "zone_category": "3",
+          "count": 45,
+          "avgPrice": 2349084
+        },
+        {
+          "zone_code": "RU2",
+          "zone_category": "R",
+          "count": 45,
+          "avgPrice": 1751844
+        },
+        {
+          "zone_code": "E4",
+          "zone_category": "3",
+          "count": 27,
+          "avgPrice": 13087043
+        },
+        {
+          "zone_code": "R5",
+          "zone_category": "V",
+          "count": 25,
+          "avgPrice": 555036
+        },
+        {
+          "zone_code": "R4",
+          "zone_category": "R",
+          "count": 22,
+          "avgPrice": 1763250
+        },
+        {
+          "zone_code": "C3",
+          "zone_category": "R",
+          "count": 20,
+          "avgPrice": 3286922
+        },
+        {
+          "zone_code": "E2",
+          "zone_category": "3",
+          "count": 19,
+          "avgPrice": 4273605
+        },
+        {
+          "zone_code": "E1",
+          "zone_category": "3",
+          "count": 18,
+          "avgPrice": 2352333
+        },
+        {
+          "zone_code": "RU1",
+          "zone_category": "V",
+          "count": 18,
+          "avgPrice": 586463
+        },
+        {
+          "zone_code": "E1",
+          "zone_category": "R",
+          "count": 17,
+          "avgPrice": 1272056
+        },
+        {
+          "zone_code": "MU1",
+          "zone_category": "R",
+          "count": 17,
+          "avgPrice": 1822618
+        },
+        {
+          "zone_code": "RU4",
+          "zone_category": "R",
+          "count": 17,
+          "avgPrice": 2230977
+        },
+        {
+          "zone_code": "MU1",
+          "zone_category": "3",
+          "count": 16,
+          "avgPrice": 11711319
+        },
+        {
+          "zone_code": "RU5",
+          "zone_category": "V",
+          "count": 15,
+          "avgPrice": 208000
+        },
+        {
+          "zone_code": "A",
+          "zone_category": "R",
+          "count": 11,
+          "avgPrice": 1158636
+        },
+        {
+          "zone_code": "E3",
+          "zone_category": "3",
+          "count": 9,
+          "avgPrice": 5046667
+        },
+        {
+          "zone_code": "R3",
+          "zone_category": "V",
+          "count": 9,
+          "avgPrice": 1263432
+        },
+        {
+          "zone_code": "C2",
+          "zone_category": "R",
+          "count": 7,
+          "avgPrice": 917857
+        },
+        {
+          "zone_code": "RU2",
+          "zone_category": "V",
+          "count": 7,
+          "avgPrice": 425429
+        },
+        {
+          "zone_code": "UD",
+          "zone_category": "R",
+          "count": 7,
+          "avgPrice": 725357
+        },
+        {
+          "zone_code": "RU2",
+          "zone_category": "3",
+          "count": 6,
+          "avgPrice": 1150833
+        },
+        {
+          "zone_code": "UR",
+          "zone_category": "R",
+          "count": 6,
+          "avgPrice": 1099333
+        },
+        {
+          "zone_code": "C3",
+          "zone_category": "3",
+          "count": 5,
+          "avgPrice": 1287900
+        },
+        {
+          "zone_code": "C4",
+          "zone_category": "V",
+          "count": 5,
+          "avgPrice": 852200
+        },
+        {
+          "zone_code": "E4",
+          "zone_category": "R",
+          "count": 5,
+          "avgPrice": 619000
+        },
+        {
+          "zone_code": "R1",
+          "zone_category": "3",
+          "count": 5,
+          "avgPrice": 1545200
+        },
+        {
+          "zone_code": "RU4",
+          "zone_category": "3",
+          "count": 5,
+          "avgPrice": 16189000
+        },
+        {
+          "zone_code": "E2",
+          "zone_category": "R",
+          "count": 4,
+          "avgPrice": 10582500
+        },
+        {
+          "zone_code": "E3",
+          "zone_category": "R",
+          "count": 4,
+          "avgPrice": 4137500
+        },
+        {
+          "zone_code": "R3",
+          "zone_category": "3",
+          "count": 4,
+          "avgPrice": 1437500
+        },
+        {
+          "zone_code": "RU4",
+          "zone_category": "V",
+          "count": 4,
+          "avgPrice": 416701
+        },
+        {
+          "zone_code": "RU5",
+          "zone_category": "3",
+          "count": 4,
+          "avgPrice": 1682538
+        },
+        {
+          "zone_code": "RU6",
+          "zone_category": "R",
+          "count": 4,
+          "avgPrice": 3557500
+        },
+        {
+          "zone_code": "SP3",
+          "zone_category": "R",
+          "count": 4,
+          "avgPrice": 2092500
+        },
+        {
+          "zone_code": "B4",
+          "zone_category": "3",
+          "count": 3,
+          "avgPrice": 1666667
+        },
+        {
+          "zone_code": "SP2",
+          "zone_category": "R",
+          "count": 3,
+          "avgPrice": 2463333
+        },
+        {
+          "zone_code": "SP3",
+          "zone_category": "3",
+          "count": 3,
+          "avgPrice": 7728333
+        },
+        {
+          "zone_code": "E4",
+          "zone_category": "V",
+          "count": 2,
+          "avgPrice": 525500
+        },
+        {
+          "zone_code": "MU1",
+          "zone_category": "V",
+          "count": 2,
+          "avgPrice": 976000
+        },
+        {
+          "zone_code": "R2",
+          "zone_category": "3",
+          "count": 2,
+          "avgPrice": 2985000
+        },
+        {
+          "zone_code": "R4",
+          "zone_category": "V",
+          "count": 2,
+          "avgPrice": 1377500
+        },
+        {
+          "zone_code": "B3",
+          "zone_category": "V",
+          "count": 1,
+          "avgPrice": 22000000
+        },
+        {
+          "zone_code": "B4",
+          "zone_category": "R",
+          "count": 1,
+          "avgPrice": 980000
+        },
+        {
+          "zone_code": "C2",
+          "zone_category": "V",
+          "count": 1,
+          "avgPrice": 135000
+        },
+        {
+          "zone_code": "IN1",
+          "zone_category": "3",
+          "count": 1,
+          "avgPrice": 2350000
+        },
+        {
+          "zone_code": "RE1",
+          "zone_category": "V",
+          "count": 1,
+          "avgPrice": 710160
+        },
+        {
+          "zone_code": "RE2",
+          "zone_category": "R",
+          "count": 1,
+          "avgPrice": 1050000
+        },
+        {
+          "zone_code": "RU6",
+          "zone_category": "V",
+          "count": 1,
+          "avgPrice": 1875000
+        },
+        {
+          "zone_code": "SP1",
+          "zone_category": "3",
+          "count": 1,
+          "avgPrice": 140000
+        },
+        {
+          "zone_code": "UD",
+          "zone_category": "V",
+          "count": 1,
+          "avgPrice": 530000
+        }
+      ],
+      "topSuburbs": [
+        {
+          "suburb": "MELONBA",
+          "postcode": "2765",
+          "count": 61,
+          "avgPrice": 1205376,
+          "minPrice": 654000,
+          "maxPrice": 4223490
+        },
+        {
+          "suburb": "DUBBO",
+          "postcode": "2830",
+          "count": 46,
+          "avgPrice": 663670,
+          "minPrice": 150000,
+          "maxPrice": 3400000
+        },
+        {
+          "suburb": "ORANGE",
+          "postcode": "2800",
+          "count": 36,
+          "avgPrice": 696417,
+          "minPrice": 227500,
+          "maxPrice": 3100000
+        },
+        {
+          "suburb": "BLACKTOWN",
+          "postcode": "2148",
+          "count": 35,
+          "avgPrice": 3919935,
+          "minPrice": 400000,
+          "maxPrice": 14083901
+        },
+        {
+          "suburb": "LEPPINGTON",
+          "postcode": "2179",
+          "count": 34,
+          "avgPrice": 1453332,
+          "minPrice": 600000,
+          "maxPrice": 22000000
+        },
+        {
+          "suburb": "PORT MACQUARIE",
+          "postcode": "2444",
+          "count": 33,
+          "avgPrice": 796939,
+          "minPrice": 144000,
+          "maxPrice": 1550000
+        },
+        {
+          "suburb": "ARMIDALE",
+          "postcode": "2350",
+          "count": 31,
+          "avgPrice": 682258,
+          "minPrice": 169000,
+          "maxPrice": 2300000
+        },
+        {
+          "suburb": "GOULBURN",
+          "postcode": "2580",
+          "count": 31,
+          "avgPrice": 628565,
+          "minPrice": 300000,
+          "maxPrice": 1380000
+        },
+        {
+          "suburb": "RYDE",
+          "postcode": "2112",
+          "count": 31,
+          "avgPrice": 1404968,
+          "minPrice": 430000,
+          "maxPrice": 4100000
+        },
+        {
+          "suburb": "MERRYLANDS",
+          "postcode": "2160",
+          "count": 30,
+          "avgPrice": 909652,
+          "minPrice": 442000,
+          "maxPrice": 2660000
+        },
+        {
+          "suburb": "PARRAMATTA",
+          "postcode": "2150",
+          "count": 29,
+          "avgPrice": 1178414,
+          "minPrice": 262000,
+          "maxPrice": 12400000
+        },
+        {
+          "suburb": "MOSMAN",
+          "postcode": "2088",
+          "count": 28,
+          "avgPrice": 4320929,
+          "minPrice": 641000,
+          "maxPrice": 18000000
+        },
+        {
+          "suburb": "EPPING",
+          "postcode": "2121",
+          "count": 27,
+          "avgPrice": 1659292,
+          "minPrice": 608000,
+          "maxPrice": 4809000
+        },
+        {
+          "suburb": "COFFS HARBOUR",
+          "postcode": "2450",
+          "count": 26,
+          "avgPrice": 846719,
+          "minPrice": 170000,
+          "maxPrice": 3700000
+        },
+        {
+          "suburb": "RANDWICK",
+          "postcode": "2031",
+          "count": 26,
+          "avgPrice": 3742885,
+          "minPrice": 250000,
+          "maxPrice": 8050000
+        },
+        {
+          "suburb": "AUSTRAL",
+          "postcode": "2179",
+          "count": 25,
+          "avgPrice": 972051,
+          "minPrice": 610000,
+          "maxPrice": 1340000
+        },
+        {
+          "suburb": "CRONULLA",
+          "postcode": "2230",
+          "count": 25,
+          "avgPrice": 3028030,
+          "minPrice": 467500,
+          "maxPrice": 8750000
+        },
+        {
+          "suburb": "GLEDSWOOD HILLS",
+          "postcode": "2557",
+          "count": 25,
+          "avgPrice": 878960,
+          "minPrice": 599000,
+          "maxPrice": 1760000
+        },
+        {
+          "suburb": "MARSDEN PARK",
+          "postcode": "2765",
+          "count": 25,
+          "avgPrice": 1138343,
+          "minPrice": 645000,
+          "maxPrice": 1666616
+        },
+        {
+          "suburb": "LIVERPOOL",
+          "postcode": "2170",
+          "count": 24,
+          "avgPrice": 761708,
+          "minPrice": 325000,
+          "maxPrice": 3305000
+        },
+        {
+          "suburb": "MUDGEE",
+          "postcode": "2850",
+          "count": 24,
+          "avgPrice": 813979,
+          "minPrice": 259500,
+          "maxPrice": 3265000
+        },
+        {
+          "suburb": "WOLLONGONG",
+          "postcode": "2500",
+          "count": 24,
+          "avgPrice": 2983835,
+          "minPrice": 535000,
+          "maxPrice": 13640000
+        },
+        {
+          "suburb": "ROSEBERY",
+          "postcode": "2018",
+          "count": 23,
+          "avgPrice": 985304,
+          "minPrice": 517500,
+          "maxPrice": 3800000
+        },
+        {
+          "suburb": "BAULKHAM HILLS",
+          "postcode": "2153",
+          "count": 21,
+          "avgPrice": 1700921,
+          "minPrice": 570000,
+          "maxPrice": 2650000
+        },
+        {
+          "suburb": "BOX HILL",
+          "postcode": "2765",
+          "count": 21,
+          "avgPrice": 1136571,
+          "minPrice": 735000,
+          "maxPrice": 2000000
+        },
+        {
+          "suburb": "CASTLE HILL",
+          "postcode": "2154",
+          "count": 21,
+          "avgPrice": 1807911,
+          "minPrice": 610000,
+          "maxPrice": 3775000
+        },
+        {
+          "suburb": "ROUSE HILL",
+          "postcode": "2155",
+          "count": 21,
+          "avgPrice": 928086,
+          "minPrice": 505000,
+          "maxPrice": 1810000
+        },
+        {
+          "suburb": "NORTH KELLYVILLE",
+          "postcode": "2155",
+          "count": 20,
+          "avgPrice": 1811341,
+          "minPrice": 600000,
+          "maxPrice": 3807000
+        },
+        {
+          "suburb": "HORNSBY",
+          "postcode": "2077",
+          "count": 19,
+          "avgPrice": 1189456,
+          "minPrice": 550000,
+          "maxPrice": 2910000
+        },
+        {
+          "suburb": "HURSTVILLE",
+          "postcode": "2220",
+          "count": 19,
+          "avgPrice": 1402217,
+          "minPrice": 578000,
+          "maxPrice": 3138118
+        }
+      ],
+      "monthlyTrends": [
+        {
+          "month": "2024-12",
+          "count": 9,
+          "avgPrice": 11148993
+        },
+        {
+          "month": "2025-01",
+          "count": 6,
+          "avgPrice": 2129500
+        },
+        {
+          "month": "2025-02",
+          "count": 11,
+          "avgPrice": 884335
+        },
+        {
+          "month": "2025-03",
+          "count": 19,
+          "avgPrice": 4157601
+        },
+        {
+          "month": "2025-04",
+          "count": 22,
+          "avgPrice": 775925
+        },
+        {
+          "month": "2025-05",
+          "count": 13,
+          "avgPrice": 3835845
+        },
+        {
+          "month": "2025-06",
+          "count": 38,
+          "avgPrice": 2796852
+        },
+        {
+          "month": "2025-07",
+          "count": 73,
+          "avgPrice": 2201198
+        },
+        {
+          "month": "2025-08",
+          "count": 183,
+          "avgPrice": 3104186
+        },
+        {
+          "month": "2025-09",
+          "count": 608,
+          "avgPrice": 2236937
+        },
+        {
+          "month": "2025-10",
+          "count": 2620,
+          "avgPrice": 1343195
+        },
+        {
+          "month": "2025-11",
+          "count": 1840,
+          "avgPrice": 1202707
+        },
+        {
+          "month": "2025-12",
+          "count": 118,
+          "avgPrice": 965202
+        }
+      ]
+    }
+  },
+  "columnValues": {
+    "zone_code": [
+      {
+        "zone_code": "R2",
+        "count": 1939
+      },
+      {
+        "zone_code": "R1",
+        "count": 804
+      },
+      {
+        "zone_code": "R3",
+        "count": 233
+      },
+      {
+        "zone_code": "RU1",
+        "count": 135
+      },
+      {
+        "zone_code": "C4",
+        "count": 122
+      },
+      {
+        "zone_code": "RU5",
+        "count": 107
+      },
+      {
+        "zone_code": "R5",
+        "count": 100
+      },
+      {
+        "zone_code": "RU2",
+        "count": 58
+      },
+      {
+        "zone_code": "E1",
+        "count": 35
+      },
+      {
+        "zone_code": "MU1",
+        "count": 35
+      },
+      {
+        "zone_code": "E4",
+        "count": 34
+      },
+      {
+        "zone_code": "RU4",
+        "count": 26
+      },
+      {
+        "zone_code": "C3",
+        "count": 25
+      },
+      {
+        "zone_code": "R4",
+        "count": 24
+      },
+      {
+        "zone_code": "E2",
+        "count": 23
+      },
+      {
+        "zone_code": "E3",
+        "count": 13
+      },
+      {
+        "zone_code": "A",
+        "count": 11
+      },
+      {
+        "zone_code": "C2",
+        "count": 8
+      },
+      {
+        "zone_code": "UD",
+        "count": 8
+      },
+      {
+        "zone_code": "SP3",
+        "count": 7
+      },
+      {
+        "zone_code": "UR",
+        "count": 6
+      },
+      {
+        "zone_code": "RU6",
+        "count": 5
+      },
+      {
+        "zone_code": "B4",
+        "count": 4
+      },
+      {
+        "zone_code": "SP2",
+        "count": 3
+      },
+      {
+        "zone_code": "B3",
+        "count": 1
+      },
+      {
+        "zone_code": "IN1",
+        "count": 1
+      },
+      {
+        "zone_code": "RE1",
+        "count": 1
+      },
+      {
+        "zone_code": "RE2",
+        "count": 1
+      },
+      {
+        "zone_code": "SP1",
+        "count": 1
+      }
+    ],
+    "zone_category": [
+      {
+        "zone_category": "R",
+        "count": 5033
+      },
+      {
+        "zone_category": "V",
+        "count": 329
+      },
+      {
+        "zone_category": "3",
+        "count": 281
+      }
+    ],
+    "property_type": [
+      {
+        "property_type": "RESIDENCE",
+        "count": 5033
+      },
+      {
+        "property_type": "VACANT LAND",
+        "count": 329
+      },
+      {
+        "property_type": "COMMERCIAL",
+        "count": 133
+      },
+      {
+        "property_type": "FARM",
+        "count": 60
+      },
+      {
+        "property_type": "SHOP",
+        "count": 22
+      },
+      {
+        "property_type": "WAREHOUSE",
+        "count": 21
+      },
+      {
+        "property_type": "OFFICE",
+        "count": 19
+      },
+      {
+        "property_type": "FACTORY",
+        "count": 16
+      },
+      {
+        "property_type": "CARSPACE",
+        "count": 5
+      },
+      {
+        "property_type": "GARAGE & VACAN",
+        "count": 1
+      },
+      {
+        "property_type": "COMMERICAL",
+        "count": 1
+      }
+    ],
+    "nature_of_property": [
+      {
+        "nature_of_property": "RMP",
+        "count": 73
+      },
+      {
+        "nature_of_property": "AAA",
+        "count": 37
+      },
+      {
+        "nature_of_property": "RRB",
+        "count": 36
+      },
+      {
+        "nature_of_property": "AAB",
+        "count": 32
+      },
+      {
+        "nature_of_property": "AAE",
+        "count": 28
+      },
+      {
+        "nature_of_property": "AAF",
+        "count": 27
+      },
+      {
+        "nature_of_property": "AAC",
+        "count": 27
+      },
+      {
+        "nature_of_property": "LEW",
+        "count": 26
+      },
+      {
+        "nature_of_property": "GHN",
+        "count": 23
+      },
+      {
+        "nature_of_property": "ACC",
+        "count": 23
+      },
+      {
+        "nature_of_property": "AAS",
+        "count": 23
+      },
+      {
+        "nature_of_property": "AUS",
+        "count": 22
+      },
+      {
+        "nature_of_property": "ESR",
+        "count": 20
+      },
+      {
+        "nature_of_property": "AWA",
+        "count": 20
+      },
+      {
+        "nature_of_property": "AAP",
+        "count": 20
+      },
+      {
+        "nature_of_property": "RAC",
+        "count": 19
+      },
+      {
+        "nature_of_property": "AAW",
+        "count": 19
+      },
+      {
+        "nature_of_property": "RAA",
+        "count": 18
+      },
+      {
+        "nature_of_property": "AAL",
+        "count": 18
+      },
+      {
+        "nature_of_property": "AAD",
+        "count": 18
+      },
+      {
+        "nature_of_property": "AAG",
+        "count": 17
+      },
+      {
+        "nature_of_property": "RSC",
+        "count": 16
+      },
+      {
+        "nature_of_property": "RRC",
+        "count": 15
+      },
+      {
+        "nature_of_property": "EAA",
+        "count": 15
+      },
+      {
+        "nature_of_property": "AAI",
+        "count": 15
+      },
+      {
+        "nature_of_property": "RSH",
+        "count": 14
+      },
+      {
+        "nature_of_property": "RAB",
+        "count": 14
+      },
+      {
+        "nature_of_property": "BHR",
+        "count": 14
+      },
+      {
+        "nature_of_property": "AAN",
+        "count": 14
+      },
+      {
+        "nature_of_property": "AAH",
+        "count": 14
+      },
+      {
+        "nature_of_property": "RAT",
+        "count": 13
+      },
+      {
+        "nature_of_property": "RAE",
+        "count": 13
+      },
+      {
+        "nature_of_property": "AMA",
+        "count": 13
+      },
+      {
+        "nature_of_property": "AAV",
+        "count": 13
+      },
+      {
+        "nature_of_property": "AAJ",
+        "count": 13
+      },
+      {
+        "nature_of_property": "RRD",
+        "count": 12
+      },
+      {
+        "nature_of_property": "RAG",
+        "count": 12
+      },
+      {
+        "nature_of_property": "ARC",
+        "count": 12
+      },
+      {
+        "nature_of_property": "ABT",
+        "count": 12
+      },
+      {
+        "nature_of_property": "WGT",
+        "count": 11
+      },
+      {
+        "nature_of_property": "MUA",
+        "count": 11
+      },
+      {
+        "nature_of_property": "MAA",
+        "count": 11
+      },
+      {
+        "nature_of_property": "EBB",
+        "count": 11
+      },
+      {
+        "nature_of_property": "ABG",
+        "count": 11
+      },
+      {
+        "nature_of_property": "ABB",
+        "count": 11
+      },
+      {
+        "nature_of_property": "ABA",
+        "count": 11
+      },
+      {
+        "nature_of_property": "AAT",
+        "count": 11
+      },
+      {
+        "nature_of_property": "AAK",
+        "count": 11
+      },
+      {
+        "nature_of_property": "XKK",
+        "count": 10
+      },
+      {
+        "nature_of_property": "TAE",
+        "count": 10
+      }
+    ],
+    "sale_code": [
+      {
+        "sale_code": "AV682155",
+        "count": 8
+      },
+      {
+        "sale_code": "AV677040",
+        "count": 6
+      },
+      {
+        "sale_code": "AV666273",
+        "count": 6
+      },
+      {
+        "sale_code": "AV687691",
+        "count": 4
+      },
+      {
+        "sale_code": "AV386383",
+        "count": 4
+      },
+      {
+        "sale_code": "AV691155",
+        "count": 3
+      },
+      {
+        "sale_code": "AV686579",
+        "count": 3
+      },
+      {
+        "sale_code": "AV685447",
+        "count": 3
+      },
+      {
+        "sale_code": "AV679142",
+        "count": 3
+      },
+      {
+        "sale_code": "AV672562",
+        "count": 3
+      },
+      {
+        "sale_code": "AV668877",
+        "count": 3
+      },
+      {
+        "sale_code": "AV696154",
+        "count": 2
+      },
+      {
+        "sale_code": "AV696153",
+        "count": 2
+      },
+      {
+        "sale_code": "AV692842",
+        "count": 2
+      },
+      {
+        "sale_code": "AV692416",
+        "count": 2
+      },
+      {
+        "sale_code": "AV692247",
+        "count": 2
+      },
+      {
+        "sale_code": "AV690811",
+        "count": 2
+      },
+      {
+        "sale_code": "AV689564",
+        "count": 2
+      },
+      {
+        "sale_code": "AV688808",
+        "count": 2
+      },
+      {
+        "sale_code": "AV688651",
+        "count": 2
+      },
+      {
+        "sale_code": "AV686734",
+        "count": 2
+      },
+      {
+        "sale_code": "AV686586",
+        "count": 2
+      },
+      {
+        "sale_code": "AV684505",
+        "count": 2
+      },
+      {
+        "sale_code": "AV683975",
+        "count": 2
+      },
+      {
+        "sale_code": "AV683622",
+        "count": 2
+      },
+      {
+        "sale_code": "AV682419",
+        "count": 2
+      },
+      {
+        "sale_code": "AV681485",
+        "count": 2
+      },
+      {
+        "sale_code": "AV681073",
+        "count": 2
+      },
+      {
+        "sale_code": "AV680881",
+        "count": 2
+      },
+      {
+        "sale_code": "AV680223",
+        "count": 2
+      },
+      {
+        "sale_code": "AV678483",
+        "count": 2
+      },
+      {
+        "sale_code": "AV678115",
+        "count": 2
+      },
+      {
+        "sale_code": "AV678059",
+        "count": 2
+      },
+      {
+        "sale_code": "AV678039",
+        "count": 2
+      },
+      {
+        "sale_code": "AV677843",
+        "count": 2
+      },
+      {
+        "sale_code": "AV676914",
+        "count": 2
+      },
+      {
+        "sale_code": "AV676823",
+        "count": 2
+      },
+      {
+        "sale_code": "AV676620",
+        "count": 2
+      },
+      {
+        "sale_code": "AV676351",
+        "count": 2
+      },
+      {
+        "sale_code": "AV676324",
+        "count": 2
+      },
+      {
+        "sale_code": "AV674943",
+        "count": 2
+      },
+      {
+        "sale_code": "AV674917",
+        "count": 2
+      },
+      {
+        "sale_code": "AV673361",
+        "count": 2
+      },
+      {
+        "sale_code": "AV673139",
+        "count": 2
+      },
+      {
+        "sale_code": "AV672684",
+        "count": 2
+      },
+      {
+        "sale_code": "AV672624",
+        "count": 2
+      },
+      {
+        "sale_code": "AV672549",
+        "count": 2
+      },
+      {
+        "sale_code": "AV672101",
+        "count": 2
+      },
+      {
+        "sale_code": "AV670196",
+        "count": 2
+      },
+      {
+        "sale_code": "AV670148",
+        "count": 2
+      }
+    ],
+    "area_unit": [
+      {
+        "area_unit": "M",
+        "count": 4210
+      },
+      {
+        "area_unit": "H",
+        "count": 292
+      }
+    ],
+    "district_code": [
+      {
+        "district_code": "214",
+        "count": 323
+      },
+      {
+        "district_code": "259",
+        "count": 253
+      },
+      {
+        "district_code": "260",
+        "count": 196
+      },
+      {
+        "district_code": "708",
+        "count": 186
+      },
+      {
+        "district_code": "258",
+        "count": 183
+      },
+      {
+        "district_code": "271",
+        "count": 169
+      },
+      {
+        "district_code": "144",
+        "count": 168
+      },
+      {
+        "district_code": "081",
+        "count": 135
+      },
+      {
+        "district_code": "223",
+        "count": 126
+      },
+      {
+        "district_code": "008",
+        "count": 124
+      },
+      {
+        "district_code": "267",
+        "count": 124
+      },
+      {
+        "district_code": "004",
+        "count": 122
+      },
+      {
+        "district_code": "276",
+        "count": 119
+      },
+      {
+        "district_code": "217",
+        "count": 118
+      },
+      {
+        "district_code": "261",
+        "count": 116
+      },
+      {
+        "district_code": "101",
+        "count": 110
+      },
+      {
+        "district_code": "103",
+        "count": 107
+      },
+      {
+        "district_code": "224",
+        "count": 105
+      },
+      {
+        "district_code": "218",
+        "count": 100
+      },
+      {
+        "district_code": "264",
+        "count": 95
+      },
+      {
+        "district_code": "207",
+        "count": 93
+      },
+      {
+        "district_code": "268",
+        "count": 89
+      },
+      {
+        "district_code": "084",
+        "count": 83
+      },
+      {
+        "district_code": "082",
+        "count": 79
+      },
+      {
+        "district_code": "226",
+        "count": 78
+      },
+      {
+        "district_code": "090",
+        "count": 76
+      },
+      {
+        "district_code": "005",
+        "count": 74
+      },
+      {
+        "district_code": "171",
+        "count": 69
+      },
+      {
+        "district_code": "216",
+        "count": 68
+      },
+      {
+        "district_code": "575",
+        "count": 67
+      },
+      {
+        "district_code": "100",
+        "count": 63
+      },
+      {
+        "district_code": "088",
+        "count": 61
+      },
+      {
+        "district_code": "092",
+        "count": 59
+      },
+      {
+        "district_code": "209",
+        "count": 59
+      },
+      {
+        "district_code": "303",
+        "count": 59
+      },
+      {
+        "district_code": "656",
+        "count": 59
+      },
+      {
+        "district_code": "275",
+        "count": 54
+      },
+      {
+        "district_code": "010",
+        "count": 53
+      },
+      {
+        "district_code": "139",
+        "count": 51
+      },
+      {
+        "district_code": "220",
+        "count": 51
+      },
+      {
+        "district_code": "001",
+        "count": 50
+      },
+      {
+        "district_code": "152",
+        "count": 50
+      },
+      {
+        "district_code": "666",
+        "count": 50
+      },
+      {
+        "district_code": "050",
+        "count": 45
+      },
+      {
+        "district_code": "272",
+        "count": 44
+      },
+      {
+        "district_code": "097",
+        "count": 43
+      },
+      {
+        "district_code": "102",
+        "count": 43
+      },
+      {
+        "district_code": "620",
+        "count": 43
+      },
+      {
+        "district_code": "124",
+        "count": 38
+      },
+      {
+        "district_code": "219",
+        "count": 38
+      }
+    ]
+  },
+  "fullSampleData": [
+    {
+      "id": 1783,
+      "district_code": "144",
+      "property_id": "1621250",
+      "sale_sequence": 72,
+      "source_file": "144_SALES_DATA_NNME_15122025.DAT",
+      "file_date": "20251215",
+      "file_type": "weekly",
+      "record_timestamp": "20251215 01:08",
+      "unit_number": null,
+      "house_number": "28",
+      "street_name": "RAILWAY CRES",
+      "suburb": "JANNALI",
+      "postcode": "2226",
+      "area": null,
+      "area_unit": null,
+      "contract_date": "2025-12-11",
+      "settlement_date": "2025-12-11",
+      "purchase_price": 313488,
+      "zone_code": null,
+      "zone_category": "R",
+      "property_type": "RESIDENCE",
+      "property_description": "18",
+      "nature_of_property": null,
+      "strata_lot_number": null,
+      "component_code": null,
+      "sale_code": "AV705242",
+      "dealing_number": null,
+      "created_at": "2025-12-18 07:30:33",
+      "district_name": "Georges River",
+      "legal_descriptions": "18/SP15835",
+      "interest_types": "P,V"
+    },
+    {
+      "id": 1823,
+      "district_code": "144",
+      "property_id": "4510336",
+      "sale_sequence": 112,
+      "source_file": "144_SALES_DATA_NNME_15122025.DAT",
+      "file_date": "20251215",
+      "file_type": "weekly",
+      "record_timestamp": "20251215 01:08",
+      "unit_number": null,
+      "house_number": "20 B",
+      "street_name": "SYLVAN ST",
+      "suburb": "SYLVANIA",
+      "postcode": "2224",
+      "area": 296.3,
+      "area_unit": "M",
+      "contract_date": "2025-12-11",
+      "settlement_date": "2025-12-11",
+      "purchase_price": 1000000,
+      "zone_code": "R2",
+      "zone_category": "R",
+      "property_type": "RESIDENCE",
+      "property_description": null,
+      "nature_of_property": "HAA",
+      "strata_lot_number": null,
+      "component_code": null,
+      "sale_code": "AV704731",
+      "dealing_number": null,
+      "created_at": "2025-12-18 07:30:33",
+      "district_name": "Georges River",
+      "legal_descriptions": "74/1251251",
+      "interest_types": "P,V"
+    },
+    {
+      "id": 2033,
+      "district_code": "158",
+      "property_id": "1741880",
+      "sale_sequence": 3,
+      "source_file": "158_SALES_DATA_NNME_15122025.DAT",
+      "file_date": "20251215",
+      "file_type": "weekly",
+      "record_timestamp": "20251215 01:08",
+      "unit_number": null,
+      "house_number": "28",
+      "street_name": "WILLIAM ST",
+      "suburb": "GENEVA",
+      "postcode": "2474",
+      "area": 844.8,
+      "area_unit": "M",
+      "contract_date": "2025-12-11",
+      "settlement_date": "2025-12-11",
+      "purchase_price": 475500,
+      "zone_code": "R1",
+      "zone_category": "R",
+      "property_type": "RESIDENCE",
+      "property_description": null,
+      "nature_of_property": "AAB",
+      "strata_lot_number": null,
+      "component_code": null,
+      "sale_code": "AV701884",
+      "dealing_number": null,
+      "created_at": "2025-12-18 07:30:34",
+      "district_name": "Gwydir",
+      "legal_descriptions": "346/808154",
+      "interest_types": "P,V"
+    },
+    {
+      "id": 2214,
+      "district_code": "207",
+      "property_id": "2017739",
+      "sale_sequence": 28,
+      "source_file": "207_SALES_DATA_NNME_15122025.DAT",
+      "file_date": "20251215",
+      "file_type": "weekly",
+      "record_timestamp": "20251215 01:08",
+      "unit_number": null,
+      "house_number": "58",
+      "street_name": "TODMAN AVE",
+      "suburb": "KENSINGTON",
+      "postcode": "2033",
+      "area": 392,
+      "area_unit": "M",
+      "contract_date": "2025-12-11",
+      "settlement_date": "2025-12-11",
+      "purchase_price": 500000,
+      "zone_code": "R2",
+      "zone_category": "R",
+      "property_type": "RESIDENCE",
+      "property_description": null,
+      "nature_of_property": "ALC",
+      "strata_lot_number": null,
+      "component_code": null,
+      "sale_code": "AV704748",
+      "dealing_number": null,
+      "created_at": "2025-12-18 07:30:34",
+      "district_name": "Junee",
+      "legal_descriptions": "5/8883",
+      "interest_types": "P,V"
+    },
+    {
+      "id": 3442,
+      "district_code": "247",
+      "property_id": "2653872",
+      "sale_sequence": 1,
+      "source_file": "247_SALES_DATA_NNME_15122025.DAT",
+      "file_date": "20251215",
+      "file_type": "weekly",
+      "record_timestamp": "20251215 01:09",
+      "unit_number": null,
+      "house_number": "19",
+      "street_name": "NANDEWAR ST",
+      "suburb": "BOGGABRI",
+      "postcode": "2382",
+      "area": 4047,
+      "area_unit": "M",
+      "contract_date": "2025-12-11",
+      "settlement_date": "2025-12-11",
+      "purchase_price": 1000,
+      "zone_code": "R1",
+      "zone_category": "3",
+      "property_type": "FARM",
+      "property_description": null,
+      "nature_of_property": "ABA",
+      "strata_lot_number": null,
+      "component_code": null,
+      "sale_code": "AV702239",
+      "dealing_number": null,
+      "created_at": "2025-12-18 07:30:34",
+      "district_name": "Narrabri",
+      "legal_descriptions": "24, 25/A/6432",
+      "interest_types": "P,V"
+    },
+    {
+      "id": 3749,
+      "district_code": "259",
+      "property_id": "370171",
+      "sale_sequence": 51,
+      "source_file": "259_SALES_DATA_NNME_15122025.DAT",
+      "file_date": "20251215",
+      "file_type": "weekly",
+      "record_timestamp": "20251215 01:10",
+      "unit_number": null,
+      "house_number": "12",
+      "street_name": "OLEANDER ST",
+      "suburb": "CANTON BEACH",
+      "postcode": "2263",
+      "area": 537.5,
+      "area_unit": "M",
+      "contract_date": "2025-12-11",
+      "settlement_date": "2025-12-11",
+      "purchase_price": 454300,
+      "zone_code": "R1",
+      "zone_category": "R",
+      "property_type": "RESIDENCE",
+      "property_description": null,
+      "nature_of_property": "WFX",
+      "strata_lot_number": null,
+      "component_code": null,
+      "sale_code": "AV705911",
+      "dealing_number": null,
+      "created_at": "2025-12-18 07:30:34",
+      "district_name": "Parkes",
+      "legal_descriptions": "6/27001",
+      "interest_types": "P,V"
+    },
+    {
+      "id": 4812,
+      "district_code": "272",
+      "property_id": "3600505",
+      "sale_sequence": 25,
+      "source_file": "272_SALES_DATA_NNME_15122025.DAT",
+      "file_date": "20251215",
+      "file_type": "weekly",
+      "record_timestamp": "20251215 01:10",
+      "unit_number": null,
+      "house_number": "18",
+      "street_name": "FORSTER ST",
+      "suburb": "BUNGENDORE",
+      "postcode": "2621",
+      "area": 719,
+      "area_unit": "M",
+      "contract_date": "2025-12-11",
+      "settlement_date": "2025-12-11",
+      "purchase_price": 630000,
+      "zone_code": "R2",
+      "zone_category": "R",
+      "property_type": "RESIDENCE",
+      "property_description": null,
+      "nature_of_property": "RBN",
+      "strata_lot_number": null,
+      "component_code": null,
+      "sale_code": "AV704137",
+      "dealing_number": null,
+      "created_at": "2025-12-18 07:30:34",
+      "district_name": "Snowy Valleys",
+      "legal_descriptions": "2/1168135",
+      "interest_types": "P,V"
+    },
+    {
+      "id": 5359,
+      "district_code": "656",
+      "property_id": "4101114",
+      "sale_sequence": 11,
+      "source_file": "656_SALES_DATA_NNME_15122025.DAT",
+      "file_date": "20251215",
+      "file_type": "weekly",
+      "record_timestamp": "20251215 01:11",
+      "unit_number": null,
+      "house_number": "127",
+      "street_name": "HIGH ST",
+      "suburb": "WAUCHOPE",
+      "postcode": "2446",
+      "area": 513.6,
+      "area_unit": "M",
+      "contract_date": "2025-12-11",
+      "settlement_date": "2025-12-11",
+      "purchase_price": 551000,
+      "zone_code": "R1",
+      "zone_category": "R",
+      "property_type": "RESIDENCE",
+      "property_description": null,
+      "nature_of_property": "AGA",
+      "strata_lot_number": null,
+      "component_code": null,
+      "sale_code": "AV703326",
+      "dealing_number": null,
+      "created_at": "2025-12-18 07:30:34",
+      "district_name": "Willoughby",
+      "legal_descriptions": "3/1239923",
+      "interest_types": "P,V"
+    },
+    {
+      "id": 5362,
+      "district_code": "656",
+      "property_id": "4038551",
+      "sale_sequence": 14,
+      "source_file": "656_SALES_DATA_NNME_15122025.DAT",
+      "file_date": "20251215",
+      "file_type": "weekly",
+      "record_timestamp": "20251215 01:11",
+      "unit_number": null,
+      "house_number": "13",
+      "street_name": "SEASIDE DR",
+      "suburb": "LAKE CATHIE",
+      "postcode": "2445",
+      "area": 480,
+      "area_unit": "M",
+      "contract_date": "2025-12-11",
+      "settlement_date": "2025-12-11",
+      "purchase_price": 1035000,
+      "zone_code": "R1",
+      "zone_category": "R",
+      "property_type": "RESIDENCE",
+      "property_description": null,
+      "nature_of_property": "ABT",
+      "strata_lot_number": null,
+      "component_code": null,
+      "sale_code": "AV704039",
+      "dealing_number": null,
+      "created_at": "2025-12-18 07:30:34",
+      "district_name": "Willoughby",
+      "legal_descriptions": "206/1232146",
+      "interest_types": "P,V"
+    },
+    {
+      "id": 28,
+      "district_code": "001",
+      "property_id": "3525872",
+      "sale_sequence": 28,
+      "source_file": "001_SALES_DATA_NNME_15122025.DAT",
+      "file_date": "20251215",
+      "file_type": "weekly",
+      "record_timestamp": "20251215 01:06",
+      "unit_number": null,
+      "house_number": "56",
+      "street_name": "CESSNOCK ST",
+      "suburb": "ABERDARE",
+      "postcode": "2325",
+      "area": 506,
+      "area_unit": "M",
+      "contract_date": "2025-12-10",
+      "settlement_date": "2025-12-11",
+      "purchase_price": 150000,
+      "zone_code": "R2",
+      "zone_category": "R",
+      "property_type": "RESIDENCE",
+      "property_description": null,
+      "nature_of_property": "AAD",
+      "strata_lot_number": null,
+      "component_code": null,
+      "sale_code": "AV705459",
+      "dealing_number": null,
+      "created_at": "2025-12-18 07:30:33",
+      "district_name": "Albury City",
+      "legal_descriptions": "111/1153598",
+      "interest_types": "P,V"
+    },
+    {
+      "id": 1449,
+      "district_code": "103",
+      "property_id": "1183824",
+      "sale_sequence": 19,
+      "source_file": "103_SALES_DATA_NNME_15122025.DAT",
+      "file_date": "20251215",
+      "file_type": "weekly",
+      "record_timestamp": "20251215 01:08",
+      "unit_number": null,
+      "house_number": "15",
+      "street_name": "RHONDDA ST",
+      "suburb": "BERKELEY",
+      "postcode": "2506",
+      "area": 701.9,
+      "area_unit": "M",
+      "contract_date": "2025-12-10",
+      "settlement_date": "2025-12-10",
+      "purchase_price": 770000,
+      "zone_code": "R2",
+      "zone_category": "R",
+      "property_type": "RESIDENCE",
+      "property_description": null,
+      "nature_of_property": "ABE",
+      "strata_lot_number": null,
+      "component_code": null,
+      "sale_code": "AV698028",
+      "dealing_number": null,
+      "created_at": "2025-12-18 07:30:33",
+      "district_name": "Coonamble",
+      "legal_descriptions": "416/36770",
+      "interest_types": "P,V"
+    },
+    {
+      "id": 2360,
+      "district_code": "210",
+      "property_id": "2103919",
+      "sale_sequence": 22,
+      "source_file": "210_SALES_DATA_NNME_15122025.DAT",
+      "file_date": "20251215",
+      "file_type": "weekly",
+      "record_timestamp": "20251215 01:08",
+      "unit_number": null,
+      "house_number": "13",
+      "street_name": "WENTWORTH ST",
+      "suburb": "PADDINGTON",
+      "postcode": "2021",
+      "area": 78.47,
+      "area_unit": "M",
+      "contract_date": "2025-12-10",
+      "settlement_date": "2025-12-10",
+      "purchase_price": 2150000,
+      "zone_code": "R2",
+      "zone_category": "R",
+      "property_type": "RESIDENCE",
+      "property_description": null,
+      "nature_of_property": "ALE",
+      "strata_lot_number": null,
+      "component_code": null,
+      "sale_code": "AV696982",
+      "dealing_number": null,
+      "created_at": "2025-12-18 07:30:34",
+      "district_name": "Kiama",
+      "legal_descriptions": "A/33688",
+      "interest_types": "P,V"
+    },
+    {
+      "id": 3548,
+      "district_code": "258",
+      "property_id": "1349102",
+      "sale_sequence": 33,
+      "source_file": "258_SALES_DATA_NNME_15122025.DAT",
+      "file_date": "20251215",
+      "file_type": "weekly",
+      "record_timestamp": "20251215 01:09",
+      "unit_number": null,
+      "house_number": "7",
+      "street_name": "GLEESON AVE",
+      "suburb": "CONDELL PARK",
+      "postcode": "2200",
+      "area": 1024,
+      "area_unit": "M",
+      "contract_date": "2025-12-10",
+      "settlement_date": "2025-12-11",
+      "purchase_price": 750000,
+      "zone_code": "R2",
+      "zone_category": "R",
+      "property_type": "RESIDENCE",
+      "property_description": null,
+      "nature_of_property": "WLG",
+      "strata_lot_number": null,
+      "component_code": null,
+      "sale_code": "AV706069",
+      "dealing_number": null,
+      "created_at": "2025-12-18 07:30:34",
+      "district_name": "Orange",
+      "legal_descriptions": "9/13074",
+      "interest_types": "P,V"
+    },
+    {
+      "id": 21,
+      "district_code": "001",
+      "property_id": "11565",
+      "sale_sequence": 21,
+      "source_file": "001_SALES_DATA_NNME_15122025.DAT",
+      "file_date": "20251215",
+      "file_type": "weekly",
+      "record_timestamp": "20251215 01:06",
+      "unit_number": null,
+      "house_number": "83",
+      "street_name": "EDWARD ST",
+      "suburb": "KURRI KURRI",
+      "postcode": "2327",
+      "area": 1012,
+      "area_unit": "M",
+      "contract_date": "2025-12-09",
+      "settlement_date": "2025-12-11",
+      "purchase_price": 305000,
+      "zone_code": "R3",
+      "zone_category": "R",
+      "property_type": "RESIDENCE",
+      "property_description": null,
+      "nature_of_property": "MAD",
+      "strata_lot_number": null,
+      "component_code": null,
+      "sale_code": "AV702163",
+      "dealing_number": null,
+      "created_at": "2025-12-18 07:30:33",
+      "district_name": "Albury City",
+      "legal_descriptions": "14/113229",
+      "interest_types": "P,V"
+    },
+    {
+      "id": 2292,
+      "district_code": "209",
+      "property_id": "2060052",
+      "sale_sequence": 13,
+      "source_file": "209_SALES_DATA_NNME_15122025.DAT",
+      "file_date": "20251215",
+      "file_type": "weekly",
+      "record_timestamp": "20251215 01:08",
+      "unit_number": null,
+      "house_number": "59",
+      "street_name": "GOULD ST",
+      "suburb": "BONDI BEACH",
+      "postcode": "2026",
+      "area": null,
+      "area_unit": null,
+      "contract_date": "2025-12-09",
+      "settlement_date": "2025-12-10",
+      "purchase_price": 2800000,
+      "zone_code": null,
+      "zone_category": "R",
+      "property_type": "RESIDENCE",
+      "property_description": "1",
+      "nature_of_property": null,
+      "strata_lot_number": null,
+      "component_code": null,
+      "sale_code": "AV699882",
+      "dealing_number": null,
+      "created_at": "2025-12-18 07:30:34",
+      "district_name": "Kempsey",
+      "legal_descriptions": "1/SP57990",
+      "interest_types": "P,V"
+    },
+    {
+      "id": 3259,
+      "district_code": "224",
+      "property_id": "2576233",
+      "sale_sequence": 41,
+      "source_file": "224_SALES_DATA_NNME_15122025.DAT",
+      "file_date": "20251215",
+      "file_type": "weekly",
+      "record_timestamp": "20251215 01:09",
+      "unit_number": null,
+      "house_number": "88",
+      "street_name": "RUSSELL ST",
+      "suburb": "EMU PLAINS",
+      "postcode": "2750",
+      "area": 713.1,
+      "area_unit": "M",
+      "contract_date": "2025-12-09",
+      "settlement_date": "2025-12-09",
+      "purchase_price": 500000,
+      "zone_code": "R2",
+      "zone_category": "R",
+      "property_type": "RESIDENCE",
+      "property_description": null,
+      "nature_of_property": "RGL",
+      "strata_lot_number": null,
+      "component_code": null,
+      "sale_code": "AV692857",
+      "dealing_number": null,
+      "created_at": "2025-12-18 07:30:34",
+      "district_name": "Liverpool",
+      "legal_descriptions": "2/570722",
+      "interest_types": "P,V"
+    },
+    {
+      "id": 5244,
+      "district_code": "575",
+      "property_id": "2697262",
+      "sale_sequence": 38,
+      "source_file": "575_SALES_DATA_NNME_15122025.DAT",
+      "file_date": "20251215",
+      "file_type": "weekly",
+      "record_timestamp": "20251215 01:11",
+      "unit_number": null,
+      "house_number": "26",
+      "street_name": "CONDON AVE",
+      "suburb": "MOUNT AUSTIN",
+      "postcode": "2650",
+      "area": 575.4,
+      "area_unit": "M",
+      "contract_date": "2025-12-09",
+      "settlement_date": "2025-12-10",
+      "purchase_price": 225000,
+      "zone_code": "R1",
+      "zone_category": "R",
+      "property_type": "RESIDENCE",
+      "property_description": null,
+      "nature_of_property": "RDZ",
+      "strata_lot_number": null,
+      "component_code": null,
+      "sale_code": "AV698322",
+      "dealing_number": null,
+      "created_at": "2025-12-18 07:30:34",
+      "district_name": "Waverly",
+      "legal_descriptions": "52/207740",
+      "interest_types": "P,V"
+    },
+    {
+      "id": 15,
+      "district_code": "001",
+      "property_id": "3230",
+      "sale_sequence": 15,
+      "source_file": "001_SALES_DATA_NNME_15122025.DAT",
+      "file_date": "20251215",
+      "file_type": "weekly",
+      "record_timestamp": "20251215 01:06",
+      "unit_number": null,
+      "house_number": "17",
+      "street_name": "CRUICKSHANK ST",
+      "suburb": "BELLBIRD",
+      "postcode": "2325",
+      "area": 828,
+      "area_unit": "M",
+      "contract_date": "2025-12-08",
+      "settlement_date": "2025-12-10",
+      "purchase_price": 326666,
+      "zone_code": "R2",
+      "zone_category": "R",
+      "property_type": "RESIDENCE",
+      "property_description": null,
+      "nature_of_property": "AAC",
+      "strata_lot_number": null,
+      "component_code": null,
+      "sale_code": "AV698238",
+      "dealing_number": null,
+      "created_at": "2025-12-18 07:30:33",
+      "district_name": "Albury City",
+      "legal_descriptions": "20/A/6264",
+      "interest_types": "P,V"
+    },
+    {
+      "id": 218,
+      "district_code": "005",
+      "property_id": "173737",
+      "sale_sequence": 42,
+      "source_file": "005_SALES_DATA_NNME_15122025.DAT",
+      "file_date": "20251215",
+      "file_type": "weekly",
+      "record_timestamp": "20251215 01:06",
+      "unit_number": null,
+      "house_number": "64",
+      "street_name": "BONAR ST",
+      "suburb": "MAITLAND",
+      "postcode": "2320",
+      "area": 1.601,
+      "area_unit": "H",
+      "contract_date": "2025-12-08",
+      "settlement_date": "2025-12-10",
+      "purchase_price": 950000,
+      "zone_code": "RU1",
+      "zone_category": "R",
+      "property_type": "RESIDENCE",
+      "property_description": null,
+      "nature_of_property": "PPC",
+      "strata_lot_number": null,
+      "component_code": null,
+      "sale_code": "AV700443",
+      "dealing_number": null,
+      "created_at": "2025-12-18 07:30:33",
+      "district_name": "Balranald",
+      "legal_descriptions": "64/1137496",
+      "interest_types": "P,V"
+    },
+    {
+      "id": 649,
+      "district_code": "081",
+      "property_id": "4613574",
+      "sale_sequence": 49,
+      "source_file": "081_SALES_DATA_NNME_15122025.DAT",
+      "file_date": "20251215",
+      "file_type": "weekly",
+      "record_timestamp": "20251215 01:07",
+      "unit_number": null,
+      "house_number": "9",
+      "street_name": "HARE PL",
+      "suburb": "ROUSE HILL",
+      "postcode": "2155",
+      "area": 235,
+      "area_unit": "M",
+      "contract_date": "2025-12-08",
+      "settlement_date": "2025-12-09",
+      "purchase_price": 1342000,
+      "zone_code": null,
+      "zone_category": "R",
+      "property_type": "RESIDENCE",
+      "property_description": "7",
+      "nature_of_property": null,
+      "strata_lot_number": null,
+      "component_code": null,
+      "sale_code": "AV695927",
+      "dealing_number": null,
+      "created_at": "2025-12-18 07:30:33",
+      "district_name": "Cabonne",
+      "legal_descriptions": "7/SP109556",
+      "interest_types": "P,V"
+    }
+  ]
+}

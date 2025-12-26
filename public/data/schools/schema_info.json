@@ -1,0 +1,1072 @@
+{
+  "generated": "2025-12-26T01:23:12.998Z",
+  "dataSource": "schools.json",
+  "tables": {
+    "schools": {
+      "rowCount": 2216,
+      "columns": [
+        {
+          "name": "School_code",
+          "type": "REAL",
+          "nullable": true,
+          "isPrimaryKey": true,
+          "defaultValue": null
+        },
+        {
+          "name": "AgeID",
+          "type": "REAL",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "School_name",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Street",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Town_suburb",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Postcode",
+          "type": "REAL",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Phone",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "School_Email",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Website",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Fax",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "latest_year_enrolment_FTE",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Indigenous_pct",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "LBOTE_pct",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "ICSEA_value",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Level_of_schooling",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Selective_school",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Opportunity_class",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "School_specialty_type",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "School_subtype",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Support_classes",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Preschool_ind",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Distance_education",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Intensive_english_centre",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "School_gender",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Late_opening_school",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Date_1st_teacher",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "LGA",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "electorate_from_2023",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "electorate_2015_2022",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "fed_electorate_from_2025",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "fed_electorate_2016_2024",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Operational_directorate",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Principal_network",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Operational_directorate_office",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Operational_directorate_office_phone",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Operational_directorate_office_address",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "FACS_district",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Local_health_district",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "AECG_region",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "ASGS_remoteness",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Latitude",
+          "type": "REAL",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Longitude",
+          "type": "REAL",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Assets unit",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "SA4",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "FOEI_Value",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Date_extracted",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        },
+        {
+          "name": "propertyPrices",
+          "type": "TEXT",
+          "nullable": true,
+          "isPrimaryKey": false,
+          "defaultValue": null
+        }
+      ],
+      "sampleRows": [
+        {
+          "School_code": 5423,
+          "AgeID": 64742,
+          "School_name": "John Brotchie Nursery School",
+          "Street": "1361 Botany Rd",
+          "Town_suburb": "Botany",
+          "Postcode": 2019,
+          "Phone": "9316 8825",
+          "School_Email": "johnbrotch-p.school@det.nsw.edu.au",
+          "Website": "https://johnbrotch-p.schools.nsw.gov.au",
+          "Fax": "9316 4067",
+          "latest_year_enrolment_FTE": null,
+          "Indigenous_pct": null,
+          "LBOTE_pct": null,
+          "ICSEA_value": null,
+          "Level_of_schooling": "Other School",
+          "Selective_school": "Not Selective",
+          "Opportunity_class": "N",
+          "School_specialty_type": "Comprehensive",
+          "School_subtype": "Nursery school (similar to a Pre school)",
+          "Support_classes": null,
+          "Preschool_ind": "Y",
+          "Distance_education": "N",
+          "Intensive_english_centre": "N",
+          "School_gender": "Coed",
+          "Late_opening_school": "N",
+          "Date_1st_teacher": "1956-02-01",
+          "LGA": "Bayside (NSW)",
+          "electorate_from_2023": "Maroubra",
+          "electorate_2015_2022": "Maroubra",
+          "fed_electorate_from_2025": "Kingsford Smith",
+          "fed_electorate_2016_2024": "Kingsford Smith",
+          "Operational_directorate": "Metropolitan South",
+          "Principal_network": "Botany Bay",
+          "Operational_directorate_office": "St Peters",
+          "Operational_directorate_office_phone": "131 536",
+          "Operational_directorate_office_address": "St Peters Education Office, 93 Church Street",
+          "FACS_district": "South Eastern Sydney, Northern Sydney & Sydney",
+          "Local_health_district": "South Eastern Sydney",
+          "AECG_region": "Metropolitan East",
+          "ASGS_remoteness": "Major Cities of Australia",
+          "Latitude": -33.942627,
+          "Longitude": 151.196138,
+          "Assets unit": "Sydney",
+          "SA4": "Sydney - City and Inner South",
+          "FOEI_Value": "26",
+          "Date_extracted": "2025-12-12",
+          "propertyPrices": {
+            "suburb": "BOTANY",
+            "postcode": "2019",
+            "avgPrice": 1432308,
+            "avgPricePerSqm": 8951,
+            "totalSales": 13,
+            "minPrice": 675000,
+            "maxPrice": 2440000,
+            "avgPriceLast3Months": 1345455,
+            "salesLast3Months": 11,
+            "matchMethod": "exact"
+          }
+        },
+        {
+          "School_code": 8600,
+          "AgeID": 86659,
+          "School_name": "Secondary College of Languages",
+          "Street": "Level 11, 105 Phillip Street",
+          "Town_suburb": "Parramatta",
+          "Postcode": 2150,
+          "Phone": "02 7814 2115",
+          "School_Email": "SCLanguages.school@det.nsw.edu.au",
+          "Website": "https://sclanguages.schools.nsw.gov.au",
+          "Fax": null,
+          "latest_year_enrolment_FTE": null,
+          "Indigenous_pct": null,
+          "LBOTE_pct": null,
+          "ICSEA_value": null,
+          "Level_of_schooling": "Other School",
+          "Selective_school": "Not Selective",
+          "Opportunity_class": "N",
+          "School_specialty_type": "Language",
+          "School_subtype": "Year 7 to Year 12",
+          "Support_classes": null,
+          "Preschool_ind": "N",
+          "Distance_education": "N",
+          "Intensive_english_centre": "N",
+          "School_gender": "Coed",
+          "Late_opening_school": "N",
+          "Date_1st_teacher": "1978-01-27",
+          "LGA": "Parramatta",
+          "electorate_from_2023": "Parramatta",
+          "electorate_2015_2022": "Parramatta",
+          "fed_electorate_from_2025": "Parramatta",
+          "fed_electorate_2016_2024": "Parramatta",
+          "Operational_directorate": "Metropolitan North",
+          "Principal_network": "Gordon",
+          "Operational_directorate_office": "Macquarie Park",
+          "Operational_directorate_office_phone": "131 536",
+          "Operational_directorate_office_address": "Level 6, 22 Giffnock Avenue",
+          "FACS_district": "Unknown",
+          "Local_health_district": "Unknown",
+          "AECG_region": "Metropolitan North",
+          "ASGS_remoteness": "Major Cities of Australia",
+          "Latitude": -33.8137843,
+          "Longitude": 151.0086802,
+          "Assets unit": "Northern Sydney",
+          "SA4": null,
+          "FOEI_Value": null,
+          "Date_extracted": "2025-12-12",
+          "propertyPrices": {
+            "suburb": "PARRAMATTA",
+            "postcode": "2150",
+            "avgPrice": 1178414,
+            "avgPricePerSqm": 7331,
+            "totalSales": 29,
+            "minPrice": 262000,
+            "maxPrice": 12400000,
+            "avgPriceLast3Months": 1208111,
+            "salesLast3Months": 27,
+            "matchMethod": "exact"
+          }
+        },
+        {
+          "School_code": 8473,
+          "AgeID": 46360,
+          "School_name": "Chifley College Senior Campus",
+          "Street": "67 North Parade",
+          "Town_suburb": "MOUNT DRUITT",
+          "Postcode": 2770,
+          "Phone": "9625 9920",
+          "School_Email": "chifcolsnr-h.school@det.nsw.edu.au",
+          "Website": "https://chifcolsnr-h.schools.nsw.gov.au",
+          "Fax": "9832 2413",
+          "latest_year_enrolment_FTE": 499,
+          "Indigenous_pct": "23.0",
+          "LBOTE_pct": 46,
+          "ICSEA_value": 896,
+          "Level_of_schooling": "Secondary School",
+          "Selective_school": "Not Selective",
+          "Opportunity_class": "N",
+          "School_specialty_type": "Senior College",
+          "School_subtype": "Year 11 to Year 12",
+          "Support_classes": null,
+          "Preschool_ind": "N",
+          "Distance_education": "N",
+          "Intensive_english_centre": "N",
+          "School_gender": "Coed",
+          "Late_opening_school": "N",
+          "Date_1st_teacher": "1972-01-01",
+          "LGA": "Blacktown",
+          "electorate_from_2023": "Mount Druitt",
+          "electorate_2015_2022": "Mount Druitt",
+          "fed_electorate_from_2025": "Chifley",
+          "fed_electorate_2016_2024": "Chifley",
+          "Operational_directorate": "Metropolitan North",
+          "Principal_network": "Mount Druitt",
+          "Operational_directorate_office": "Quakers Hill",
+          "Operational_directorate_office_phone": "131 536",
+          "Operational_directorate_office_address": "Building T3C, Nirimba Education Precinct, Eastern Road",
+          "FACS_district": "Western Sydney & Nepean Blue Mountains",
+          "Local_health_district": "Western Sydney",
+          "AECG_region": "Metropolitan West",
+          "ASGS_remoteness": "Major Cities of Australia",
+          "Latitude": -33.769305,
+          "Longitude": 150.829855,
+          "Assets unit": "Western Sydney",
+          "SA4": "Sydney - Blacktown",
+          "FOEI_Value": "170",
+          "Date_extracted": "2025-12-12",
+          "propertyPrices": {
+            "suburb": "MOUNT DRUITT",
+            "postcode": "2770",
+            "avgPrice": 1294411,
+            "avgPricePerSqm": 2622,
+            "totalSales": 8,
+            "minPrice": 330000,
+            "maxPrice": 5170000,
+            "avgPriceLast3Months": 740755,
+            "salesLast3Months": 7,
+            "matchMethod": "exact"
+          }
+        },
+        {
+          "School_code": 8325,
+          "AgeID": 46407,
+          "School_name": "Moree Secondary College",
+          "Street": "Albert St",
+          "Town_suburb": "Moree",
+          "Postcode": 2400,
+          "Phone": "6752 1999",
+          "School_Email": "mscalberts-h.school@det.nsw.edu.au",
+          "Website": "https://moree-s.schools.nsw.gov.au/",
+          "Fax": "6752 1626",
+          "latest_year_enrolment_FTE": 359.29999999999995,
+          "Indigenous_pct": "61.0",
+          "LBOTE_pct": 5,
+          "ICSEA_value": 816,
+          "Level_of_schooling": "Secondary School",
+          "Selective_school": "Not Selective",
+          "Opportunity_class": "N",
+          "School_specialty_type": "Comprehensive",
+          "School_subtype": "Year 7 to Year 12",
+          "Support_classes": null,
+          "Preschool_ind": "N",
+          "Distance_education": "N",
+          "Intensive_english_centre": "N",
+          "School_gender": "Coed",
+          "Late_opening_school": "Y",
+          "Date_1st_teacher": "1961-01-01",
+          "LGA": "Moree Plains",
+          "electorate_from_2023": "Northern Tablelands",
+          "electorate_2015_2022": "Northern Tablelands",
+          "fed_electorate_from_2025": "Parkes",
+          "fed_electorate_2016_2024": "Parkes",
+          "Operational_directorate": "Regional South and Connected Communities",
+          "Principal_network": "Connected Communities Team 1",
+          "Operational_directorate_office": null,
+          "Operational_directorate_office_phone": null,
+          "Operational_directorate_office_address": null,
+          "FACS_district": "Hunter New England & Central Coast",
+          "Local_health_district": "Hunter New England",
+          "AECG_region": "North Western 1",
+          "ASGS_remoteness": "Outer Regional Australia",
+          "Latitude": -29.46645,
+          "Longitude": 149.842344,
+          "Assets unit": "North Western NSW",
+          "SA4": "New England and North West",
+          "FOEI_Value": "172",
+          "Date_extracted": "2025-12-12",
+          "propertyPrices": {
+            "suburb": "MOREE",
+            "postcode": "2400",
+            "avgPrice": 379167,
+            "avgPricePerSqm": 65,
+            "totalSales": 6,
+            "minPrice": 35000,
+            "maxPrice": 1250000,
+            "avgPriceLast3Months": 379167,
+            "salesLast3Months": 6,
+            "matchMethod": "exact"
+          }
+        },
+        {
+          "School_code": 8870,
+          "AgeID": 46426,
+          "School_name": "St Marys Senior High School",
+          "Street": "Kalang Ave",
+          "Town_suburb": "St Marys",
+          "Postcode": 2760,
+          "Phone": "9623 8333",
+          "School_Email": "stmaryssen-h.school@det.nsw.edu.au",
+          "Website": "https://stmaryssen-h.schools.nsw.gov.au",
+          "Fax": "9833 1304",
+          "latest_year_enrolment_FTE": 925.1,
+          "Indigenous_pct": "2.0",
+          "LBOTE_pct": 72,
+          "ICSEA_value": 1051,
+          "Level_of_schooling": "Secondary School",
+          "Selective_school": "Not Selective",
+          "Opportunity_class": "N",
+          "School_specialty_type": "Senior College",
+          "School_subtype": "Year 11 to Year 12",
+          "Support_classes": null,
+          "Preschool_ind": "N",
+          "Distance_education": "N",
+          "Intensive_english_centre": "N",
+          "School_gender": "Coed",
+          "Late_opening_school": "N",
+          "Date_1st_teacher": "1955-04-01",
+          "LGA": "Penrith",
+          "electorate_from_2023": "Londonderry",
+          "electorate_2015_2022": "Londonderry",
+          "fed_electorate_from_2025": "Lindsay",
+          "fed_electorate_2016_2024": "Lindsay",
+          "Operational_directorate": "Metropolitan North",
+          "Principal_network": "Cambridge Park",
+          "Operational_directorate_office": "Quakers Hill",
+          "Operational_directorate_office_phone": "131 536",
+          "Operational_directorate_office_address": "Building T3C, Nirimba Education Precinct, Eastern Road",
+          "FACS_district": "Western Sydney & Nepean Blue Mountains",
+          "Local_health_district": "Nepean Blue Mountains",
+          "AECG_region": "Metropolitan West",
+          "ASGS_remoteness": "Major Cities of Australia",
+          "Latitude": -33.763119,
+          "Longitude": 150.770024,
+          "Assets unit": "Western Sydney",
+          "SA4": "Sydney - Outer West and Blue Mountains",
+          "FOEI_Value": "52",
+          "Date_extracted": "2025-12-12",
+          "propertyPrices": {
+            "suburb": "ST MARYS",
+            "postcode": "2760",
+            "avgPrice": 4592688,
+            "avgPricePerSqm": 3144,
+            "totalSales": 16,
+            "minPrice": 497000,
+            "maxPrice": 28050000,
+            "avgPriceLast3Months": 1289462,
+            "salesLast3Months": 13,
+            "matchMethod": "exact"
+          }
+        },
+        {
+          "School_code": 8374,
+          "AgeID": 46489,
+          "School_name": "Brisbane Water Secondary College Woy Woy Campus",
+          "Street": "25 EDWARD STREET",
+          "Town_suburb": "WOY WOY",
+          "Postcode": 2256,
+          "Phone": "4341 1600",
+          "School_Email": "woywoy-h.school@det.nsw.edu.au",
+          "Website": "https://woywoy-h.schools.nsw.gov.au",
+          "Fax": "4344 3263",
+          "latest_year_enrolment_FTE": 639.4,
+          "Indigenous_pct": "12.0",
+          "LBOTE_pct": 13,
+          "ICSEA_value": 975,
+          "Level_of_schooling": "Secondary School",
+          "Selective_school": "Not Selective",
+          "Opportunity_class": "N",
+          "School_specialty_type": "Senior College",
+          "School_subtype": "Year 10 to Year 12",
+          "Support_classes": null,
+          "Preschool_ind": "N",
+          "Distance_education": "N",
+          "Intensive_english_centre": "N",
+          "School_gender": "Coed",
+          "Late_opening_school": "N",
+          "Date_1st_teacher": "1962-01-01",
+          "LGA": "Central Coast (NSW)",
+          "electorate_from_2023": "Gosford",
+          "electorate_2015_2022": "Gosford",
+          "fed_electorate_from_2025": "Robertson",
+          "fed_electorate_2016_2024": "Robertson",
+          "Operational_directorate": "Regional North",
+          "Principal_network": "Brisbane Water",
+          "Operational_directorate_office": "Tuggerah",
+          "Operational_directorate_office_phone": "131 536",
+          "Operational_directorate_office_address": "14 Pioneer Avenue",
+          "FACS_district": "Hunter New England & Central Coast",
+          "Local_health_district": "Central Coast",
+          "AECG_region": "Central Coast",
+          "ASGS_remoteness": "Major Cities of Australia",
+          "Latitude": -33.492687,
+          "Longitude": 151.323582,
+          "Assets unit": "Hunter/Central Coast",
+          "SA4": "Central Coast",
+          "FOEI_Value": "115",
+          "Date_extracted": "2025-12-12",
+          "propertyPrices": {
+            "suburb": "WOY WOY",
+            "postcode": "2256",
+            "avgPrice": 863717,
+            "avgPricePerSqm": 2482,
+            "totalSales": 6,
+            "minPrice": 600000,
+            "maxPrice": 1025000,
+            "avgPriceLast3Months": 863717,
+            "salesLast3Months": 6,
+            "matchMethod": "exact"
+          }
+        },
+        {
+          "School_code": 8539,
+          "AgeID": 6496,
+          "School_name": "Sydney Secondary College Blackwattle Bay Campus",
+          "Street": "Taylor St",
+          "Town_suburb": "Glebe",
+          "Postcode": 2037,
+          "Phone": "9660 5688",
+          "School_Email": "sscbwattle-h.school@det.nsw.edu.au",
+          "Website": "https://sscbwattle-h.schools.nsw.gov.au",
+          "Fax": "9552 1796",
+          "latest_year_enrolment_FTE": 786.9,
+          "Indigenous_pct": "3.0",
+          "LBOTE_pct": 40,
+          "ICSEA_value": 1102,
+          "Level_of_schooling": "Secondary School",
+          "Selective_school": "Partially Selective",
+          "Opportunity_class": "N",
+          "School_specialty_type": "Senior College",
+          "School_subtype": "Year 11 to Year 12",
+          "Support_classes": null,
+          "Preschool_ind": "N",
+          "Distance_education": "N",
+          "Intensive_english_centre": "N",
+          "School_gender": "Coed",
+          "Late_opening_school": "N",
+          "Date_1st_teacher": "1979-01-01",
+          "LGA": "Sydney",
+          "electorate_from_2023": "Balmain",
+          "electorate_2015_2022": "Balmain",
+          "fed_electorate_from_2025": "Sydney",
+          "fed_electorate_2016_2024": "Sydney",
+          "Operational_directorate": "Metropolitan South",
+          "Principal_network": "Iron Cove",
+          "Operational_directorate_office": "St Peters",
+          "Operational_directorate_office_phone": "131 536",
+          "Operational_directorate_office_address": "St Peters Education Office, 93 Church Street",
+          "FACS_district": "South Eastern Sydney, Northern Sydney & Sydney",
+          "Local_health_district": "Sydney",
+          "AECG_region": "Metropolitan East",
+          "ASGS_remoteness": "Major Cities of Australia",
+          "Latitude": -33.875142,
+          "Longitude": 151.188357,
+          "Assets unit": "Sydney",
+          "SA4": "Sydney - City and Inner South",
+          "FOEI_Value": "31",
+          "Date_extracted": "2025-12-12",
+          "propertyPrices": {
+            "suburb": "GLEBE",
+            "postcode": "2037",
+            "avgPrice": 2794286,
+            "avgPricePerSqm": 16622,
+            "totalSales": 7,
+            "minPrice": 730000,
+            "maxPrice": 8700000,
+            "avgPriceLast3Months": 1810000,
+            "salesLast3Months": 6,
+            "matchMethod": "exact"
+          }
+        },
+        {
+          "School_code": 5104,
+          "AgeID": 47590,
+          "School_name": "Australia Street Infants School",
+          "Street": "Australia St",
+          "Town_suburb": "Newtown",
+          "Postcode": 2042,
+          "Phone": "9557 5377",
+          "School_Email": "australist-p.school@det.nsw.edu.au",
+          "Website": "https://australist-p.schools.nsw.gov.au",
+          "Fax": "9550 1461",
+          "latest_year_enrolment_FTE": 104,
+          "Indigenous_pct": "0.0",
+          "LBOTE_pct": 30,
+          "ICSEA_value": 1142,
+          "Level_of_schooling": "Infants School",
+          "Selective_school": "Not Selective",
+          "Opportunity_class": "N",
+          "School_specialty_type": "Comprehensive",
+          "School_subtype": "Preschool to Year 2",
+          "Support_classes": null,
+          "Preschool_ind": "Y",
+          "Distance_education": "N",
+          "Intensive_english_centre": "N",
+          "School_gender": "Coed",
+          "Late_opening_school": "N",
+          "Date_1st_teacher": "1889-09-01",
+          "LGA": "Inner West",
+          "electorate_from_2023": "Newtown",
+          "electorate_2015_2022": "Newtown",
+          "fed_electorate_from_2025": "Sydney",
+          "fed_electorate_2016_2024": "Sydney",
+          "Operational_directorate": "Metropolitan South",
+          "Principal_network": "Marrickville",
+          "Operational_directorate_office": "Arncliffe",
+          "Operational_directorate_office_phone": "131 536",
+          "Operational_directorate_office_address": "Arncliffe Education Office, Corner Segenhoe and Avenal Streets",
+          "FACS_district": "South Eastern Sydney, Northern Sydney & Sydney",
+          "Local_health_district": "Sydney",
+          "AECG_region": "Metropolitan East",
+          "ASGS_remoteness": "Major Cities of Australia",
+          "Latitude": -33.895783,
+          "Longitude": 151.177607,
+          "Assets unit": "Sydney",
+          "SA4": "Sydney - City and Inner South",
+          "FOEI_Value": "2",
+          "Date_extracted": "2025-12-12",
+          "propertyPrices": {
+            "suburb": "NEWTOWN",
+            "postcode": "2042",
+            "avgPrice": 2092143,
+            "avgPricePerSqm": 17476,
+            "totalSales": 7,
+            "minPrice": 890000,
+            "maxPrice": 3300000,
+            "avgPriceLast3Months": 2092143,
+            "salesLast3Months": 7,
+            "matchMethod": "exact"
+          }
+        },
+        {
+          "School_code": 5132,
+          "AgeID": 47601,
+          "School_name": "Russell Lea Public School",
+          "Street": "Whittall Street",
+          "Town_suburb": "Russell Lea",
+          "Postcode": 2046,
+          "Phone": "9713 8267",
+          "School_Email": "russelllea-p.school@det.nsw.edu.au",
+          "Website": "https://russelllea-p.schools.nsw.gov.au",
+          "Fax": "9713 4673",
+          "latest_year_enrolment_FTE": 428,
+          "Indigenous_pct": "np",
+          "LBOTE_pct": 39,
+          "ICSEA_value": 1136,
+          "Level_of_schooling": "Primary School",
+          "Selective_school": "Not Selective",
+          "Opportunity_class": "N",
+          "School_specialty_type": "Comprehensive",
+          "School_subtype": "Kindergarten to Year 6",
+          "Support_classes": null,
+          "Preschool_ind": "N",
+          "Distance_education": "N",
+          "Intensive_english_centre": "N",
+          "School_gender": "Coed",
+          "Late_opening_school": "N",
+          "Date_1st_teacher": "1931-05-01",
+          "LGA": "Canada Bay",
+          "electorate_from_2023": "Drummoyne",
+          "electorate_2015_2022": "Drummoyne",
+          "fed_electorate_from_2025": "Reid",
+          "fed_electorate_2016_2024": "Reid",
+          "Operational_directorate": "Metropolitan South",
+          "Principal_network": "Iron Cove",
+          "Operational_directorate_office": "St Peters",
+          "Operational_directorate_office_phone": "131 536",
+          "Operational_directorate_office_address": "St Peters Education Office, 93 Church Street",
+          "FACS_district": "South Eastern Sydney, Northern Sydney & Sydney",
+          "Local_health_district": "Sydney",
+          "AECG_region": "Metropolitan East",
+          "ASGS_remoteness": "Major Cities of Australia",
+          "Latitude": -33.861418,
+          "Longitude": 151.142572,
+          "Assets unit": "Sydney",
+          "SA4": "Sydney - Inner West",
+          "FOEI_Value": "17",
+          "Date_extracted": "2025-12-12",
+          "propertyPrices": {
+            "suburb": "RUSSELL LEA",
+            "postcode": "2046",
+            "avgPrice": 3130000,
+            "avgPricePerSqm": 10648,
+            "totalSales": 3,
+            "minPrice": 1350000,
+            "maxPrice": 5100000,
+            "avgPriceLast3Months": 3130000,
+            "salesLast3Months": 3,
+            "matchMethod": "exact"
+          }
+        },
+        {
+          "School_code": 5112,
+          "AgeID": 47607,
+          "School_name": "Taverners Hill Infants School",
+          "Street": "Elswick St",
+          "Town_suburb": "Petersham",
+          "Postcode": 2049,
+          "Phone": "9569 6396",
+          "School_Email": "tavernersh-p.school@det.nsw.edu.au",
+          "Website": "https://tavernersh-p.schools.nsw.gov.au",
+          "Fax": "9564 2120",
+          "latest_year_enrolment_FTE": 20,
+          "Indigenous_pct": "np",
+          "LBOTE_pct": 29,
+          "ICSEA_value": 1139,
+          "Level_of_schooling": "Infants School",
+          "Selective_school": "Not Selective",
+          "Opportunity_class": "N",
+          "School_specialty_type": "Comprehensive",
+          "School_subtype": "Kindergarten to Year 2",
+          "Support_classes": null,
+          "Preschool_ind": "N",
+          "Distance_education": "N",
+          "Intensive_english_centre": "N",
+          "School_gender": "Coed",
+          "Late_opening_school": "N",
+          "Date_1st_teacher": "1903-08-01",
+          "LGA": "Inner West",
+          "electorate_from_2023": "Newtown",
+          "electorate_2015_2022": "Newtown",
+          "fed_electorate_from_2025": "Grayndler",
+          "fed_electorate_2016_2024": "Grayndler",
+          "Operational_directorate": "Metropolitan South",
+          "Principal_network": "Marrickville",
+          "Operational_directorate_office": "Arncliffe",
+          "Operational_directorate_office_phone": "131 536",
+          "Operational_directorate_office_address": "Arncliffe Education Office, Corner Segenhoe and Avenal Streets",
+          "FACS_district": "South Eastern Sydney, Northern Sydney & Sydney",
+          "Local_health_district": "Sydney",
+          "AECG_region": "Metropolitan East",
+          "ASGS_remoteness": "Major Cities of Australia",
+          "Latitude": -33.888955,
+          "Longitude": 151.157199,
+          "Assets unit": "Sydney",
+          "SA4": "Sydney - City and Inner South",
+          "FOEI_Value": "15",
+          "Date_extracted": "2025-12-12",
+          "propertyPrices": {
+            "suburb": "PETERSHAM",
+            "postcode": "2049",
+            "avgPrice": 2303750,
+            "avgPricePerSqm": 8495,
+            "totalSales": 4,
+            "minPrice": 1000000,
+            "maxPrice": 4125000,
+            "avgPriceLast3Months": 2121667,
+            "salesLast3Months": 3,
+            "matchMethod": "exact"
+          }
+        }
+      ]
+    }
+  },
+  "views": {},
+  "statistics": {
+    "schools": {
+      "totalRecords": 2216,
+      "withCoordinates": 2216,
+      "withICSEA": 2159
+    }
+  },
+  "columnValues": {
+    "Level_of_schooling": [
+      {
+        "Level_of_schooling": "Primary School",
+        "count": 1588
+      },
+      {
+        "Level_of_schooling": "Secondary School",
+        "count": 407
+      },
+      {
+        "Level_of_schooling": "Schools for Specific Purposes",
+        "count": 117
+      },
+      {
+        "Level_of_schooling": "Central/Community School",
+        "count": 66
+      },
+      {
+        "Level_of_schooling": "Environmental Education Centre",
+        "count": 22
+      },
+      {
+        "Level_of_schooling": "Infants School",
+        "count": 14
+      },
+      {
+        "Level_of_schooling": "Other School",
+        "count": 2
+      }
+    ],
+    "School_specialty_type": [
+      {
+        "School_specialty_type": "Comprehensive",
+        "count": 2139
+      },
+      {
+        "School_specialty_type": "Junior College",
+        "count": 17
+      },
+      {
+        "School_specialty_type": "Senior College",
+        "count": 15
+      },
+      {
+        "School_specialty_type": "Technology",
+        "count": 9
+      },
+      {
+        "School_specialty_type": "Performing Arts",
+        "count": 8
+      },
+      {
+        "School_specialty_type": "Language",
+        "count": 7
+      },
+      {
+        "School_specialty_type": "Sports",
+        "count": 7
+      },
+      {
+        "School_specialty_type": "Agricultural",
+        "count": 5
+      },
+      {
+        "School_specialty_type": "Distance Education",
+        "count": 3
+      },
+      {
+        "School_specialty_type": "Intensive English",
+        "count": 1
+      },
+      {
+        "School_specialty_type": "Visual Arts",
+        "count": 1
+      },
+      {
+        "School_specialty_type": "Creative Arts",
+        "count": 1
+      },
+      {
+        "School_specialty_type": "Marine Technology",
+        "count": 1
+      },
+      {
+        "School_specialty_type": "Rural Technology",
+        "count": 1
+      },
+      {
+        "School_specialty_type": "Other",
+        "count": 1
+      }
+    ],
+    "Selective_school": [
+      {
+        "Selective_school": "Not Selective",
+        "count": 2168
+      },
+      {
+        "Selective_school": "Partially Selective",
+        "count": 27
+      },
+      {
+        "Selective_school": "Fully Selective",
+        "count": 21
+      }
+    ],
+    "School_gender": [
+      {
+        "School_gender": "Coed",
+        "count": 2173
+      },
+      {
+        "School_gender": "Girls",
+        "count": 22
+      },
+      {
+        "School_gender": "Boys",
+        "count": 21
+      }
+    ]
+  }
+}

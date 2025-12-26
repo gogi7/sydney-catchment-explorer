@@ -28,12 +28,31 @@ function formatDate(dateStr) {
 }
 
 /**
+ * Format zone code to readable label
+ */
+function formatZone(zoneCode, zoneCategory) {
+  if (!zoneCode) return null;
+  const categories = {
+    'R': 'Residential',
+    'C': 'Commercial', 
+    'I': 'Industrial',
+    'B': 'Business',
+    'E': 'Environmental',
+    'RU': 'Rural'
+  };
+  const cat = categories[zoneCategory] || '';
+  return `${zoneCode}${cat ? ` (${cat})` : ''}`;
+}
+
+/**
  * Individual sale card
  */
 function SaleCard({ sale }) {
   const address = [sale.unitNumber, sale.houseNumber, sale.streetName]
     .filter(Boolean)
     .join(' ');
+
+  const zoneLabel = formatZone(sale.zoneCode, sale.zoneCategory);
 
   return (
     <div className="sale-card">
@@ -46,14 +65,39 @@ function SaleCard({ sale }) {
         <div className="sale-meta">
           <span className="sale-date">{formatDate(sale.contractDate)}</span>
           {sale.area && sale.areaUnit === 'M' && (
-            <span className="sale-area">{sale.area} m²</span>
+            <span className="sale-area">{Math.round(sale.area)} m²</span>
           )}
           {sale.pricePerSqm && (
             <span className="sale-ppsm">{formatPrice(sale.pricePerSqm)}/m²</span>
           )}
         </div>
-        {sale.propertyType && (
-          <span className="sale-type">{sale.propertyType}</span>
+        <div className="sale-tags">
+          {sale.propertyType && (
+            <span className="sale-type">{sale.propertyType}</span>
+          )}
+          {zoneLabel && (
+            <span className="sale-zone">{zoneLabel}</span>
+          )}
+          {sale.strataLotNumber && (
+            <span className="sale-strata">Lot {sale.strataLotNumber}</span>
+          )}
+        </div>
+        {(sale.settlementDate || sale.districtName) && (
+          <div className="sale-extra">
+            {sale.settlementDate && sale.daysToSettlement > 0 && (
+              <span className="sale-settlement">
+                Settlement: {formatDate(sale.settlementDate)} ({sale.daysToSettlement} days)
+              </span>
+            )}
+            {sale.districtName && (
+              <span className="sale-district">LGA: {sale.districtName}</span>
+            )}
+          </div>
+        )}
+        {sale.legalDescriptions && (
+          <div className="sale-legal">
+            <span className="legal-label">Lot/DP:</span> {sale.legalDescriptions}
+          </div>
         )}
       </div>
     </div>

@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "data:ingest": "node scripts/ingestPropertySales.js",
     "data:export": "node scripts/exportSalesData.js",
+    "data:export-schema": "node scripts/exportSchemaInfo.js",
     "data:ingest-weekly": "node scripts/ingestPropertySales.js --type weekly",
     "data:ingest-annual": "node scripts/ingestPropertySales.js --type annual"
   },

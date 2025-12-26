@@ -1,4 +1,5 @@
 import { create } from 'zustand';
+import { calculatePriceRange } from '../utils/priceHeatMap';
 
 // Sydney CBD coordinates
 const SYDNEY_CENTER = [-33.8688, 151.2093];
@@ -15,7 +16,11 @@ export const useAppStore = create((set, get) => ({
     secondary: true,
     future: false,
     schoolMarkers: true,
+    priceHeatMap: false, // Price heat map overlay
   },
+  
+  // ============ HEAT MAP STATE ============
+  priceRange: null, // Calculated from suburb stats { min, max }
   
   // ============ SELECTION STATE ============
   selectedSchool: null,
@@ -130,12 +135,21 @@ export const useAppStore = create((set, get) => ({
   setError: (error) => set({ error, isLoading: false }),
   
   // Property sales actions
-  setPropertySales: (salesData) => set((state) => ({
-    propertySales: {
-      ...state.propertySales,
-      ...salesData,
-    },
-  })),
+  setPropertySales: (salesData) => {
+    // Calculate price range when suburb stats are loaded
+    const suburbStats = salesData.suburbStats || get().propertySales.suburbStats;
+    const priceRange = suburbStats?.length > 0 
+      ? calculatePriceRange(suburbStats)
+      : null;
+    
+    set((state) => ({
+      propertySales: {
+        ...state.propertySales,
+        ...salesData,
+      },
+      priceRange,
+    }));
+  },
   
   // ============ SELECTORS ============
   getFilteredSchools: () => {
@@ -257,6 +271,46 @@ export const useAppStore = create((set, get) => ({
     return propertySales.postcodeStats.find(
       (stat) => stat.postcode === String(postcode)
     );
+  },
+  
+  // ============ HEAT MAP SELECTORS ============
+  
+  // Get price data for a catchment by school code
+  // Linkage: Catchment (USE_ID) → School (School_code) → School.Town_suburb → suburb_stats
+  getCatchmentPriceData: (schoolCode) => {
+    if (!schoolCode) return null;
+    
+    const { schools, propertySales } = get();
+    
+    // Find the school by code
+    const school = schools.find(s => 
+      String(s.School_code) === String(schoolCode)
+    );
+    
+    if (!school || !school.Town_suburb) return null;
+    
+    // Find suburb stats for the school's suburb
+    const suburbUpper = school.Town_suburb.toUpperCase();
+    const stats = propertySales.suburbStats?.find(
+      stat => stat.suburb && stat.suburb.toUpperCase() === suburbUpper
+    );
+    
+    if (!stats) return null;
+    
+    return {
+      suburb: school.Town_suburb,
+      avgPrice: stats.avgPrice,
+      avgPricePerSqm: stats.avgPricePerSqm,
+      totalSales: stats.totalSales,
+      salesLast3Months: stats.salesLast3Months,
+      minPrice: stats.minPrice,
+      maxPrice: stats.maxPrice,
+    };
+  },
+  
+  // Get price range for the heat map scale
+  getPriceRange: () => {
+    return get().priceRange;
   },
 }));
 

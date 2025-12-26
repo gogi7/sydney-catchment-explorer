@@ -91,38 +91,38 @@
 }
 
 /* Suburb Stats */
-.suburb-stats {
+.property-sales-panel .suburb-stats {
   background: #f8fafc;
   border-radius: 8px;
   padding: 12px;
   margin-bottom: 16px;
 }
 
-.suburb-stats h4 {
+.property-sales-panel .suburb-stats h4 {
   margin: 0 0 8px 0;
   font-size: 0.85rem;
   color: #475569;
 }
 
-.stats-grid {
+.property-sales-panel .stats-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 8px;
 }
 
-.stat-item {
+.property-sales-panel .stat-item {
   display: flex;
   flex-direction: column;
 }
 
-.stat-label {
+.property-sales-panel .stat-item .stat-label {
   font-size: 0.7rem;
   color: #64748b;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
-.stat-value {
+.property-sales-panel .stat-item .stat-value {
   font-size: 0.9rem;
   font-weight: 600;
   color: #1e293b;
@@ -217,6 +217,13 @@
   color: #64748b;
 }
 
+.sale-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
 .sale-type {
   font-size: 0.7rem;
   color: #64748b;
@@ -224,7 +231,55 @@
   padding: 2px 6px;
   border-radius: 4px;
   display: inline-block;
-  width: fit-content;
+}
+
+.sale-zone {
+  font-size: 0.7rem;
+  color: #0369a1;
+  background: #e0f2fe;
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.sale-strata {
+  font-size: 0.7rem;
+  color: #7c3aed;
+  background: #ede9fe;
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.sale-extra {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px dashed #e2e8f0;
+  font-size: 0.72rem;
+  color: #64748b;
+}
+
+.sale-settlement {
+  color: #059669;
+}
+
+.sale-district {
+  color: #6366f1;
+}
+
+.sale-legal {
+  margin-top: 4px;
+  font-size: 0.7rem;
+  color: #94a3b8;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.sale-legal .legal-label {
+  color: #64748b;
+  font-weight: 500;
 }
 
 /* More Sales Note */
