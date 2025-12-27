@@ -23,7 +23,7 @@ The ranking system uses a **two-tier weighting approach**:
 
 | Category | Description | Columns |
 |----------|-------------|---------|
-| 🎯 **Ranking Critical** | Direct quality/performance indicators | 6 columns |
+| 🎯 **Ranking Critical** | Direct quality/performance indicators | 10 columns |
 | 📊 **Contextual** | Useful context but not direct quality measures | 6 columns |
 | 🏷️ **Classification** | For filtering, not ranking | 8 columns |
 | 📍 **Location** | Geographic identifiers | 6 columns |
@@ -36,7 +36,81 @@ The ranking system uses a **two-tier weighting approach**:
 
 ## 🎯 RANKING CRITICAL COLUMNS
 
-### 1. ICSEA_value
+### 1. NAPLAN Performance (Primary Schools)
+| Attribute | Value |
+|-----------|-------|
+| **Type** | object |
+| **Description** | NAPLAN academic ranking data from MySchool 2025. Position-based ranking (1=best) of government schools based on standardized test results. |
+| **Source** | MySchool.edu.au / ACARA |
+| **Update Frequency** | Annually |
+| **Primary Weight** | **15** (Primary schools only) |
+| **Rationale** | Direct measure of academic achievement and teaching effectiveness. Essential indicator of educational quality. |
+
+**Secondary Weight (Ranking-Based Scoring):**
+| NAPLAN Ranking | Secondary Weight | Description |
+|----------------|------------------|-------------|
+| 1-10 | 10 | Elite Performance |
+| 11-25 | 9 | Excellent Performance |
+| 26-50 | 8 | Very Good Performance |
+| 51-75 | 7 | Good Performance |
+| 76-100 | 6 | Above Average Performance |
+| 101-150 | 5 | Average Performance |
+| 151-200 | 4 | Below Average Performance |
+| 200+ | 3 | Lower Performance |
+| No Data | 0 | No Academic Ranking Available |
+
+---
+
+### 2. HSC Performance (Secondary Schools)
+| Attribute | Value |
+|-----------|-------|
+| **Type** | object |
+| **Description** | HSC academic ranking data from MySchool 2025. Position-based ranking (1=best) of government high schools based on HSC results. |
+| **Source** | MySchool.edu.au / NESA |
+| **Update Frequency** | Annually |
+| **Primary Weight** | **15** (Secondary schools only) |
+| **Rationale** | Direct measure of senior academic achievement and university preparation effectiveness. Critical quality indicator. |
+
+**Secondary Weight (Ranking-Based Scoring):**
+| HSC Ranking | Secondary Weight | Description |
+|-------------|------------------|-------------|
+| 1-5 | 10 | Elite Performance |
+| 6-15 | 9 | Excellent Performance |
+| 16-30 | 8 | Very Good Performance |
+| 31-50 | 7 | Good Performance |
+| 51-75 | 6 | Above Average Performance |
+| 76-100 | 5 | Average Performance |
+| 101-150 | 4 | Below Average Performance |
+| 150+ | 3 | Lower Performance |
+| No Data | 0 | No Academic Ranking Available |
+
+---
+
+### 3. Teacher-Student Ratio
+| Attribute | Value |
+|-----------|-------|
+| **Type** | number |
+| **Description** | Percentage ratio of teachers to students, indicating class sizes and individual attention potential. |
+| **Source** | Academic ranking data (MySchool) |
+| **Update Frequency** | Annually |
+| **Primary Weight** | **7** |
+| **Rationale** | Lower ratios indicate smaller class sizes and more individual attention, correlating with better educational outcomes. |
+
+**Secondary Weight (Ratio-Based Scoring):**
+| Teacher-Student Ratio | Secondary Weight | Description |
+|-----------------------|------------------|-------------|
+| ≤ 5% | 8 | Excellent Ratio |
+| 6-10% | 7 | Very Good Ratio |
+| 11-15% | 6 | Good Ratio |
+| 16-20% | 5 | Average Ratio |
+| 21-30% | 4 | Below Average Ratio |
+| 31-50% | 3 | Poor Ratio |
+| 50%+ | 2 | Very Poor Ratio |
+| No Data | 0 | No Teacher Ratio Available |
+
+---
+
+### 4. ICSEA_value
 | Attribute | Value |
 |-----------|-------|
 | **Type** | integer |
@@ -459,19 +533,28 @@ These columns are used to **filter and categorize** schools, not to rank them.
 
 | Column | Primary Weight | Secondary Weight Range | Max Contribution |
 |--------|----------------|------------------------|------------------|
+| **Academic Performance** | | | |
+| NAPLAN_performance (Primary) | 15 | 0-10 | 150 |
+| HSC_performance (Secondary) | 15 | 0-10 | 150 |
+| Teacher_student_ratio | 7 | 0-8 | 56 |
+| **School Quality Indicators** | | | |
 | ICSEA_value | 10 | 0-10 | 100 |
-| Selective_school | 9 | 0-10 | 90 |
+| Selective_school (Secondary) | 9 | 0-10 | 90 |
 | FOEI_Value | 8 | 0-10 | 80 |
-| Opportunity_class | 7 | 0-10 | 70 |
+| Opportunity_class (Primary) | 7 | 0-10 | 70 |
+| **School Characteristics** | | | |
 | School_specialty_type | 6 | 3-8 | 48 |
-| latest_year_enrolment_FTE | 5 | 0-9 | 45 |
+| Student_diversity | 5 | 0-6 | 30 |
+| latest_year_enrolment_FTE | 0 | 0-9 | 0 |
 | ASGS_remoteness | 4 | 0-8 | 32 |
+| **Demographics** | | | |
 | LBOTE_pct | 3 | 3-7 | 21 |
 | Indigenous_pct | 2 | 0-5 | 10 |
-| Preschool_ind | 2 | 0-7 | 14 |
+| Preschool_ind (Primary) | 2 | 0-7 | 14 |
 | Intensive_english_centre | 2 | 0-7 | 14 |
 | Distance_education | 1 | 0-7 | 7 |
-| **TOTAL** | **59** | - | **531** |
+| **MAX POSSIBLE (Primary)** | **87** | - | **762** |
+| **MAX POSSIBLE (Secondary)** | **87** | - | **762** |
 
 ---
 

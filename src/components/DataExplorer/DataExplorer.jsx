@@ -1583,6 +1583,9 @@ function RankingsTab() {
                   <th>Suburb</th>
                   <th>Score</th>
                   <th>ICSEA</th>
+                  <th>Academic</th>
+                  <th>T/S Ratio</th>
+                  <th>English %</th>
                   <th>Enrollment</th>
                   <th>Avg Price</th>
                   <th>Selective</th>
@@ -1608,15 +1611,22 @@ function RankingsTab() {
                         <td>{school.suburb || '-'}</td>
                         <td className="score-cell">{school.score}%</td>
                         <td>{school.icsea || '-'}</td>
+                        <td className="academic-cell">
+                          {school.naplan_ranking ? `NAPLAN #${school.naplan_ranking}` : ''}
+                          {school.hsc_ranking ? `HSC #${school.hsc_ranking}` : ''}
+                          {!school.naplan_ranking && !school.hsc_ranking ? '-' : ''}
+                        </td>
+                        <td className="teacher-ratio-cell">{school.teacherStudentRatio != null ? Math.round(school.teacherStudentRatio) : '-'}</td>
+                        <td className="language-cell">{school.studentsEnglish != null ? Math.round(school.studentsEnglish) + '%' : '-'}</td>
                         <td className="enrollment-cell">{formatEnrollment(schoolDetails?.latest_year_enrolment_FTE)}</td>
-                        <td className="price-cell">{formatPrice(schoolDetails?.propertyPrices?.avgPrice)}</td>
+                        <td className="price-cell">{formatPrice(school.propertyPrices?.avgPrice)}</td>
                         <td className={`selective-${school.selective?.toLowerCase().replace(' ', '-') || 'not'}`}>
                           {school.selective || '-'}
                         </td>
                       </tr>
                       {isExpanded && schoolDetails && (
                         <tr className="breakdown-row">
-                          <td colSpan="9">
+                          <td colSpan="12">
                             <SchoolRankingBreakdown 
                               school={schoolDetails} 
                               onClose={() => toggleSchoolDetails(school.school_code)}
@@ -1661,6 +1671,9 @@ function RankingsTab() {
                   <th>Suburb</th>
                   <th>Score</th>
                   <th>ICSEA</th>
+                  <th>NAPLAN</th>
+                  <th>T/S Ratio</th>
+                  <th>English %</th>
                   <th>Enrollment</th>
                   <th>Avg Price</th>
                   <th>Opportunity Class</th>
@@ -1685,15 +1698,20 @@ function RankingsTab() {
                         <td>{school.suburb || '-'}</td>
                         <td className="score-cell">{school.score}%</td>
                         <td>{school.icsea || '-'}</td>
+                        <td className="naplan-cell">
+                          {school.naplan_ranking ? `#${school.naplan_ranking}` : '-'}
+                        </td>
+                        <td className="teacher-ratio-cell">{school.teacherStudentRatio != null ? Math.round(school.teacherStudentRatio) : '-'}</td>
+                        <td className="language-cell">{school.studentsEnglish != null ? Math.round(school.studentsEnglish) + '%' : '-'}</td>
                         <td className="enrollment-cell">{formatEnrollment(schoolDetails?.latest_year_enrolment_FTE)}</td>
-                        <td className="price-cell">{formatPrice(schoolDetails?.propertyPrices?.avgPrice)}</td>
+                        <td className="price-cell">{formatPrice(school.propertyPrices?.avgPrice)}</td>
                         <td className={`oc-${school.opportunity_class?.toLowerCase()}`}>
                           {school.opportunity_class === 'Y' ? 'Yes' : 'No'}
                         </td>
                       </tr>
                       {isExpanded && schoolDetails && (
                         <tr className="breakdown-row">
-                          <td colSpan="8">
+                          <td colSpan="11">
                             <SchoolRankingBreakdown 
                               school={schoolDetails} 
                               onClose={() => toggleSchoolDetails(school.school_code)}
@@ -1722,6 +1740,9 @@ function RankingsTab() {
                   <th>Suburb</th>
                   <th>Score</th>
                   <th>ICSEA</th>
+                  <th>HSC</th>
+                  <th>T/S Ratio</th>
+                  <th>English %</th>
                   <th>Enrollment</th>
                   <th>Avg Price</th>
                   <th>Selective Status</th>
@@ -1746,15 +1767,20 @@ function RankingsTab() {
                         <td>{school.suburb || '-'}</td>
                         <td className="score-cell">{school.score}%</td>
                         <td>{school.icsea || '-'}</td>
+                        <td className="hsc-cell">
+                          {school.hsc_ranking ? `#${school.hsc_ranking}` : '-'}
+                        </td>
+                        <td className="teacher-ratio-cell">{school.teacherStudentRatio != null ? Math.round(school.teacherStudentRatio) : '-'}</td>
+                        <td className="language-cell">{school.studentsEnglish != null ? Math.round(school.studentsEnglish) + '%' : '-'}</td>
                         <td className="enrollment-cell">{formatEnrollment(schoolDetails?.latest_year_enrolment_FTE)}</td>
-                        <td className="price-cell">{formatPrice(schoolDetails?.propertyPrices?.avgPrice)}</td>
+                        <td className="price-cell">{formatPrice(school.propertyPrices?.avgPrice)}</td>
                         <td className={`selective-${school.selective?.toLowerCase().replace(' ', '-') || 'not'}`}>
                           {school.selective}
                         </td>
                       </tr>
                       {isExpanded && schoolDetails && (
                         <tr className="breakdown-row">
-                          <td colSpan="8">
+                          <td colSpan="11">
                             <SchoolRankingBreakdown 
                               school={schoolDetails} 
                               onClose={() => toggleSchoolDetails(school.school_code)}
@@ -1928,6 +1954,8 @@ function RankingsTab() {
                   <th onClick={() => handleSortChange('icsea')} className="sortable">
                     ICSEA {sortBy === 'icsea' && (sortOrder === 'asc' ? '↑' : '↓')}
                   </th>
+                  <th>T/S Ratio</th>
+                  <th>English %</th>
                   <th onClick={() => handleSortChange('enrollment')} className="sortable">
                     Enrollment {sortBy === 'enrollment' && (sortOrder === 'asc' ? '↑' : '↓')}
                   </th>
@@ -1957,6 +1985,8 @@ function RankingsTab() {
                         <td>{school.Town_suburb || '-'}</td>
                         <td className="score-cell">{school.ranking.percentage_score}%</td>
                         <td>{school.ICSEA_value || '-'}</td>
+                        <td className="teacher-ratio-cell">{school.teacherStudentRatio != null ? Math.round(school.teacherStudentRatio) : '-'}</td>
+                        <td className="language-cell">{school.demographics?.studentsEnglish != null ? Math.round(school.demographics.studentsEnglish) + '%' : '-'}</td>
                         <td className="enrollment-cell">{formatEnrollment(school.latest_year_enrolment_FTE)}</td>
                         <td className="price-cell">{formatPrice(school.propertyPrices?.avgPrice)}</td>
                         <td>{(school.Level_of_schooling || '').replace(' School', '')}</td>
@@ -1969,7 +1999,7 @@ function RankingsTab() {
                       </tr>
                       {isExpanded && (
                         <tr className="breakdown-row">
-                          <td colSpan="10">
+                          <td colSpan="12">
                             <SchoolRankingBreakdown 
                               school={school} 
                               onClose={() => toggleSchoolDetails(school.School_code)}

@@ -199,6 +199,85 @@ function getDistanceEducationWeight(distanceEd) {
 }
 
 /**
+ * Calculate NAPLAN Performance secondary weight
+ * @param {Object} naplanData - NAPLAN academic performance data
+ * @returns {number} Secondary weight (0-10)
+ */
+function getNAPLANWeight(naplanData) {
+  if (!naplanData || !naplanData.ranking) return 0;
+  
+  const ranking = naplanData.ranking;
+  // Convert ranking to score (top 10 get max weight, scale down from there)
+  if (ranking <= 10) return 10;
+  if (ranking <= 25) return 9;
+  if (ranking <= 50) return 8;
+  if (ranking <= 75) return 7;
+  if (ranking <= 100) return 6;
+  if (ranking <= 150) return 5;
+  if (ranking <= 200) return 4;
+  return 3; // Bottom tier
+}
+
+/**
+ * Calculate HSC Performance secondary weight
+ * @param {Object} hscData - HSC academic performance data
+ * @returns {number} Secondary weight (0-10)
+ */
+function getHSCWeight(hscData) {
+  if (!hscData || !hscData.ranking) return 0;
+  
+  const ranking = hscData.ranking;
+  // Convert ranking to score (top 10 get max weight, scale down from there)
+  if (ranking <= 5) return 10;
+  if (ranking <= 15) return 9;
+  if (ranking <= 30) return 8;
+  if (ranking <= 50) return 7;
+  if (ranking <= 75) return 6;
+  if (ranking <= 100) return 5;
+  if (ranking <= 150) return 4;
+  return 3; // Bottom tier
+}
+
+/**
+ * Calculate Teacher-Student Ratio secondary weight
+ * @param {number} ratio - Teacher to student ratio percentage
+ * @returns {number} Secondary weight (0-8)
+ */
+function getTeacherStudentRatioWeight(ratio) {
+  if (!ratio || ratio <= 0) return 0;
+  
+  // Better ratios (lower numbers) get higher weights
+  if (ratio <= 5) return 8;   // Excellent ratio
+  if (ratio <= 10) return 7;  // Very good ratio
+  if (ratio <= 15) return 6;  // Good ratio
+  if (ratio <= 20) return 5;  // Average ratio
+  if (ratio <= 30) return 4;  // Below average
+  if (ratio <= 50) return 3;  // Poor ratio
+  return 2; // Very poor ratio
+}
+
+/**
+ * Calculate Student Diversity secondary weight (non-English speaking background)
+ * @param {Object} demographics - Student demographic data
+ * @returns {number} Secondary weight (0-6)
+ */
+function getStudentDiversityWeight(demographics) {
+  if (!demographics) return 0;
+  
+  const nonEnglish = demographics.studentsNonEnglish || 0;
+  const indigenous = demographics.studentsIndigenous || 0;
+  const totalDiversity = nonEnglish + indigenous;
+  
+  // Balanced diversity gets highest score
+  if (totalDiversity >= 10 && totalDiversity <= 30) return 6;
+  if (totalDiversity >= 5 && totalDiversity < 10) return 5;
+  if (totalDiversity >= 30 && totalDiversity <= 50) return 5;
+  if (totalDiversity > 50) return 4;
+  if (totalDiversity > 0) return 3;
+  return 2; // No diversity data or very homogeneous
+}
+
+/**
  * Calculate school ranking score based on all weighted criteria
  * @param {Object} school - School data object
  * @returns {Object} Ranking result with score, breakdown, and metadata
@@ -212,21 +291,47 @@ function calculateSchoolRankingScore(school) {
                      schoolLevel.toLowerCase().includes('high') || 
                      schoolLevel.toLowerCase().includes('7-12');
 
-  // Define weights based on documentation
+  // Extract academic performance data
+  const academicPerformance = school.academicPerformance || {};
+  const naplanData = academicPerformance.naplan;
+  const hscData = academicPerformance.hsc;
+  const teacherRatio = school.teacherStudentRatio;
+  const demographics = school.demographics;
+
+  // Define weights based on documentation (updated with academic performance)
   const weights = {
+    // Academic Performance (High Priority)
+    NAPLAN_performance: { 
+      primary: isPrimary ? 15 : 0, // Only for primary schools
+      secondary: getNAPLANWeight(naplanData) 
+    },
+    HSC_performance: { 
+      primary: isSecondary ? 15 : 0, // Only for secondary schools
+      secondary: getHSCWeight(hscData) 
+    },
+    
+    // Existing high-priority weights (adjusted)
     ICSEA_value: { primary: 10, secondary: getICSEAWeight(school.ICSEA_value) },
     Selective_school: { 
       primary: isSecondary ? 9 : 0, // Only relevant for secondary schools
       secondary: getSelectiveWeight(school.Selective_school) 
     },
     FOEI_Value: { primary: 8, secondary: getFOEIWeight(school.FOEI_Value) },
+    
+    // Teacher quality and school environment
+    Teacher_student_ratio: { primary: 7, secondary: getTeacherStudentRatioWeight(teacherRatio) },
     Opportunity_class: { 
       primary: isPrimary ? 7 : 0, // Only relevant for primary schools
       secondary: getOpportunityClassWeight(school.Opportunity_class) 
     },
+    
+    // School characteristics
     School_specialty_type: { primary: 6, secondary: getSpecialtyTypeWeight(school.School_specialty_type) },
+    Student_diversity: { primary: 5, secondary: getStudentDiversityWeight(demographics) },
     latest_year_enrolment_FTE: { primary: 0, secondary: getEnrolmentWeight(school.latest_year_enrolment_FTE, schoolLevel) },
     ASGS_remoteness: { primary: 4, secondary: getRemoteness(school.ASGS_remoteness) },
+    
+    // Demographic factors (lower priority)
     LBOTE_pct: { primary: 3, secondary: getLBOTEWeight(school.LBOTE_pct) },
     Indigenous_pct: { primary: 2, secondary: getIndigenousWeight(school.Indigenous_pct) },
     Preschool_ind: { 
@@ -341,5 +446,9 @@ export {
   getLBOTEWeight,
   getIndigenousWeight,
   getYesNoWeight,
-  getDistanceEducationWeight
+  getDistanceEducationWeight,
+  getNAPLANWeight,
+  getHSCWeight,
+  getTeacherStudentRatioWeight,
+  getStudentDiversityWeight
 };
