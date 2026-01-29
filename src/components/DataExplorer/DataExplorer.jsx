@@ -16,12 +16,13 @@ export function DataExplorer() {
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
+    const base = import.meta.env.BASE_URL;
     Promise.all([
-      fetch('/data/sales/schema_info.json').then(res => {
+      fetch(`${base}data/sales/schema_info.json`).then(res => {
         if (!res.ok) throw new Error('Failed to load sales schema info');
         return res.json();
       }),
-      fetch('/data/schools/schema_info.json').then(res => {
+      fetch(`${base}data/schools/schema_info.json`).then(res => {
         if (!res.ok) throw new Error('Failed to load schools schema info');
         return res.json();
       })
@@ -1355,12 +1356,13 @@ function RankingsTab() {
   const [sortOrder, setSortOrder] = useState('asc');
 
   useEffect(() => {
+    const base = import.meta.env.BASE_URL;
     Promise.all([
-      fetch('/data/schools/top_schools.json').then(res => {
+      fetch(`${base}data/schools/top_schools.json`).then(res => {
         if (!res.ok) throw new Error('Failed to load top schools data');
         return res.json();
       }),
-      fetch('/data/schools/schools_ranked.json').then(res => {
+      fetch(`${base}data/schools/schools_ranked.json`).then(res => {
         if (!res.ok) throw new Error('Failed to load detailed rankings data');
         return res.json();
       })

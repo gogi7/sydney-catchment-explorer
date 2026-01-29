@@ -14,11 +14,12 @@ export function useDataLoader() {
       
       try {
         // Load all data in parallel
+        const base = import.meta.env.BASE_URL;
         const [schoolsRes, primaryRes, secondaryRes, futureRes] = await Promise.all([
-          fetch('/data/schools.json'),
-          fetch('/data/catchments_primary.geojson'),
-          fetch('/data/catchments_secondary.geojson'),
-          fetch('/data/catchments_future.geojson'),
+          fetch(`${base}data/schools.json`),
+          fetch(`${base}data/catchments_primary.geojson`),
+          fetch(`${base}data/catchments_secondary.geojson`),
+          fetch(`${base}data/catchments_future.geojson`),
         ]);
 
         // Check for errors
@@ -65,11 +66,12 @@ export function useDataLoader() {
  */
 async function loadPropertySalesData(setPropertySales) {
   try {
+    const base = import.meta.env.BASE_URL;
     const [recentSalesRes, suburbStatsRes, postcodeStatsRes, metadataRes] = await Promise.all([
-      fetch('/data/sales/recent_sales.json'),
-      fetch('/data/sales/suburb_stats.json'),
-      fetch('/data/sales/postcode_stats.json'),
-      fetch('/data/sales/metadata.json'),
+      fetch(`${base}data/sales/recent_sales.json`),
+      fetch(`${base}data/sales/suburb_stats.json`),
+      fetch(`${base}data/sales/postcode_stats.json`),
+      fetch(`${base}data/sales/metadata.json`),
     ]);
 
     const salesData = {};
