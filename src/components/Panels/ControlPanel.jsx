@@ -387,12 +387,12 @@ export function ControlPanel() {
               ))}
             </div>
             <div className="heatmap-legend__labels">
-              <span>{rankingLegend[0]?.label}</span>
-              <span>Average</span>
-              <span>{rankingLegend[rankingLegend.length - 1]?.label}</span>
+              <span>{rankingLegend[0]?.label} (Best)</span>
+              <span>→</span>
+              <span>{rankingLegend[rankingLegend.length - 1]?.label} (Worst)</span>
             </div>
             <p className="heatmap-legend__note">
-              Red = low score • Green = high score
+              Green = top ranked • Red = lowest ranked
             </p>
           </div>
         )}

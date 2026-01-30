@@ -1,7 +1,6 @@
-const DEFAULT_RANKING_RANGE = { min: 20, max: 80 };
 const NO_DATA_COLOR = '#94a3b8';
 
-// 16-stop color scale: red (low) → green (high) for maximum visual differentiation
+// 16-stop color scale: red (low rank) → green (high rank) for maximum visual differentiation
 const COLOR_STOPS = [
   { t: 0.000, r: 180, g: 20,  b: 20  }, // darkest red    #b41414
   { t: 0.067, r: 220, g: 38,  b: 38  }, // deep red       #dc2626
@@ -22,11 +21,9 @@ const COLOR_STOPS = [
 ];
 
 function interpolateColorStops(t) {
-  // Clamp
   if (t <= 0) return COLOR_STOPS[0];
   if (t >= 1) return COLOR_STOPS[COLOR_STOPS.length - 1];
 
-  // Find the two surrounding stops
   for (let i = 0; i < COLOR_STOPS.length - 1; i++) {
     const a = COLOR_STOPS[i];
     const b = COLOR_STOPS[i + 1];
@@ -46,13 +43,18 @@ function rgbToHex(r, g, b) {
   return `#${((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)}`;
 }
 
-export function getRankingColor(score, range = DEFAULT_RANKING_RANGE) {
-  if (score == null || score <= 0) return NO_DATA_COLOR;
+/**
+ * Get color for a school based on its rank position.
+ * Rank 1 (best) = green, highest rank (worst) = red.
+ * @param {number} rank - The school's rank (1 = best)
+ * @param {object} range - { totalRanked: number } total schools ranked
+ */
+export function getRankingColor(rank, range) {
+  if (rank == null || rank <= 0) return NO_DATA_COLOR;
 
-  const { min, max } = range;
-  const linear = Math.max(0, Math.min(1, (score - min) / (max - min)));
-  // Apply sqrt curve for better spread at lower end
-  const t = Math.pow(linear, 0.5);
+  const total = range?.totalRanked || 1;
+  // rank 1 → t=1.0 (green), rank total → t=0.0 (red)
+  const t = Math.max(0, Math.min(1, 1 - (rank - 1) / (total - 1)));
 
   const { r, g, b } = interpolateColorStops(t);
   return rgbToHex(r, g, b);
@@ -62,46 +64,50 @@ export function getRankingOpacity(hasData) {
   return hasData ? 0.55 : 0.15;
 }
 
+/**
+ * Calculate ranking range from rankings lookup.
+ * Returns { totalRanked } for use with getRankingColor.
+ */
 export function calculateRankingRange(rankings) {
-  if (!rankings || Object.keys(rankings).length === 0) return DEFAULT_RANKING_RANGE;
+  if (!rankings || Object.keys(rankings).length === 0) return { totalRanked: 1 };
 
-  const scores = Object.values(rankings)
-    .map(r => r.percentage_score)
-    .filter(s => s != null && s > 0)
-    .sort((a, b) => a - b);
+  const ranks = Object.values(rankings)
+    .map(r => r.rank)
+    .filter(r => r != null && r > 0);
 
-  if (scores.length === 0) return DEFAULT_RANKING_RANGE;
-
-  const lowIdx = Math.floor(0.05 * scores.length);
-  const highIdx = Math.ceil(0.95 * scores.length) - 1;
+  if (ranks.length === 0) return { totalRanked: 1 };
 
   return {
-    min: scores[Math.max(0, lowIdx)],
-    max: scores[Math.min(scores.length - 1, highIdx)],
+    totalRanked: Math.max(...ranks),
   };
 }
 
-export function generateRankingLegendStops(range = DEFAULT_RANKING_RANGE, stops = 16) {
-  const { min, max } = range;
+/**
+ * Generate legend stops for display.
+ * Shows rank positions evenly distributed.
+ */
+export function generateRankingLegendStops(range, stops = 16) {
+  const total = range?.totalRanked || 1;
   const result = [];
   for (let i = 0; i < stops; i++) {
-    const score = min + (max - min) * (i / (stops - 1));
+    // From rank 1 (best, green) to rank total (worst, red)
+    const rank = Math.round(1 + (total - 1) * (i / (stops - 1)));
     result.push({
-      score,
-      color: getRankingColor(score, range),
-      label: `${Math.round(score)}%`,
+      score: rank,
+      color: getRankingColor(rank, range),
+      label: `#${rank}`,
     });
   }
   return result;
 }
 
-export function getRankingTier(score, range = DEFAULT_RANKING_RANGE) {
-  if (score == null || score <= 0) return 'No data';
-  const { min, max } = range;
-  const normalized = (score - min) / (max - min);
-  if (normalized < 0.2) return 'Low';
-  if (normalized < 0.4) return 'Below Average';
-  if (normalized < 0.6) return 'Average';
-  if (normalized < 0.8) return 'Above Average';
-  return 'Top Ranked';
+export function getRankingTier(rank, range) {
+  if (rank == null || rank <= 0) return 'No data';
+  const total = range?.totalRanked || 1;
+  const normalized = 1 - (rank - 1) / (total - 1); // 1 = best, 0 = worst
+  if (normalized >= 0.8) return 'Top Ranked';
+  if (normalized >= 0.6) return 'Above Average';
+  if (normalized >= 0.4) return 'Average';
+  if (normalized >= 0.2) return 'Below Average';
+  return 'Low';
 }

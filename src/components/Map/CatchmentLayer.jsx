@@ -93,10 +93,10 @@ export function CatchmentLayer({ data, type }) {
     }
 
     const ranking = rankingDataMap[schoolCode];
-    const score = ranking?.percentage_score;
-    const hasData = score != null && score > 0;
+    const rank = ranking?.rank;
+    const hasData = rank != null && rank > 0;
     return {
-      fillColor: getRankingColor(score, rankingRange),
+      fillColor: getRankingColor(rank, rankingRange),
       fillOpacity: getRankingOpacity(hasData),
       color: hasData ? '#1e293b' : '#94a3b8',
       weight: hasData ? 1.5 : 1,
@@ -143,7 +143,7 @@ export function CatchmentLayer({ data, type }) {
         </div>
       `;
     } else if (showRankingHeatMap && rankingData) {
-      const tier = getRankingTier(rankingData.percentage_score, rankingRange);
+      const tier = getRankingTier(rankingData.rank, rankingRange);
       extraSection = `
         <div style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #e5e7eb;">
           <p style="margin: 0 0 4px 0; font-size: 11px; font-weight: 600; color: #374151; text-transform: uppercase; letter-spacing: 0.5px;">
@@ -200,9 +200,9 @@ export function CatchmentLayer({ data, type }) {
           });
         } else if (activeHeatMap === 'ranking') {
           const ranking = rankingDataMap[schoolCode];
-          const score = ranking?.percentage_score;
+          const rank = ranking?.rank;
           layer.setStyle({
-            fillColor: getRankingColor(score, rankingRange),
+            fillColor: getRankingColor(rank, rankingRange),
             fillOpacity: 0.8,
             weight: 3,
           });
@@ -231,10 +231,10 @@ export function CatchmentLayer({ data, type }) {
           });
         } else if (activeHeatMap === 'ranking') {
           const ranking = rankingDataMap[schoolCode];
-          const score = ranking?.percentage_score;
-          const hasData = score != null && score > 0;
+          const rank = ranking?.rank;
+          const hasData = rank != null && rank > 0;
           layer.setStyle({
-            fillColor: getRankingColor(score, rankingRange),
+            fillColor: getRankingColor(rank, rankingRange),
             fillOpacity: getRankingOpacity(hasData),
             weight: hasData ? 1.5 : 1,
           });
