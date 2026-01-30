@@ -1,23 +1,39 @@
 const NO_DATA_COLOR = '#94a3b8';
 
-// 16-stop color scale: red (low rank) → green (high rank) for maximum visual differentiation
+// 32-stop color scale: red (low rank) → green (high rank) for maximum visual differentiation
 const COLOR_STOPS = [
-  { t: 0.000, r: 180, g: 20,  b: 20  }, // darkest red    #b41414
-  { t: 0.067, r: 220, g: 38,  b: 38  }, // deep red       #dc2626
-  { t: 0.133, r: 239, g: 68,  b: 24  }, // red            #ef4418
-  { t: 0.200, r: 234, g: 88,  b: 12  }, // red-orange     #ea580c
-  { t: 0.267, r: 245, g: 124, b: 0   }, // dark orange    #f57c00
-  { t: 0.333, r: 245, g: 158, b: 11  }, // orange         #f59e0b
-  { t: 0.400, r: 245, g: 180, b: 0   }, // amber          #f5b400
-  { t: 0.467, r: 234, g: 197, b: 8   }, // gold           #eac508
-  { t: 0.533, r: 202, g: 210, b: 0   }, // yellow-green   #cad200
-  { t: 0.600, r: 160, g: 210, b: 20  }, // chartreuse     #a0d214
-  { t: 0.667, r: 132, g: 204, b: 22  }, // yellow-green   #84cc16
-  { t: 0.733, r: 74,  g: 204, b: 50  }, // light green    #4acc32
-  { t: 0.800, r: 34,  g: 197, b: 94  }, // lime           #22c55e
-  { t: 0.867, r: 22,  g: 175, b: 80  }, // green          #16af50
-  { t: 0.933, r: 22,  g: 163, b: 74  }, // med green      #16a34a
-  { t: 1.000, r: 14,  g: 120, b: 54  }, // dark green     #0e7836
+  { t: 0.000, r: 140, g: 10,  b: 10  }, // deepest red
+  { t: 0.032, r: 165, g: 15,  b: 15  },
+  { t: 0.065, r: 190, g: 25,  b: 25  },
+  { t: 0.097, r: 220, g: 38,  b: 38  }, // deep red
+  { t: 0.129, r: 230, g: 52,  b: 28  },
+  { t: 0.161, r: 239, g: 68,  b: 20  },
+  { t: 0.194, r: 236, g: 82,  b: 12  },
+  { t: 0.226, r: 240, g: 100, b: 0   }, // red-orange
+  { t: 0.258, r: 245, g: 118, b: 0   },
+  { t: 0.290, r: 245, g: 138, b: 0   },
+  { t: 0.323, r: 245, g: 158, b: 11  }, // orange
+  { t: 0.355, r: 245, g: 170, b: 0   },
+  { t: 0.387, r: 245, g: 182, b: 0   },
+  { t: 0.419, r: 240, g: 192, b: 0   }, // amber
+  { t: 0.452, r: 234, g: 200, b: 8   },
+  { t: 0.484, r: 220, g: 208, b: 0   }, // gold
+  { t: 0.516, r: 202, g: 212, b: 0   },
+  { t: 0.548, r: 182, g: 214, b: 0   }, // yellow-green
+  { t: 0.581, r: 160, g: 212, b: 15  },
+  { t: 0.613, r: 142, g: 208, b: 20  },
+  { t: 0.645, r: 120, g: 204, b: 25  }, // chartreuse
+  { t: 0.677, r: 100, g: 200, b: 35  },
+  { t: 0.710, r: 80,  g: 200, b: 48  },
+  { t: 0.742, r: 60,  g: 200, b: 65  }, // light green
+  { t: 0.774, r: 42,  g: 197, b: 82  },
+  { t: 0.806, r: 34,  g: 190, b: 90  }, // lime
+  { t: 0.839, r: 28,  g: 180, b: 82  },
+  { t: 0.871, r: 22,  g: 170, b: 76  }, // green
+  { t: 0.903, r: 20,  g: 158, b: 70  },
+  { t: 0.935, r: 18,  g: 145, b: 62  }, // med green
+  { t: 0.968, r: 16,  g: 132, b: 56  },
+  { t: 1.000, r: 10,  g: 110, b: 46  }, // darkest green
 ];
 
 function interpolateColorStops(t) {
@@ -86,7 +102,7 @@ export function calculateRankingRange(rankings) {
  * Generate legend stops for display.
  * Shows rank positions evenly distributed.
  */
-export function generateRankingLegendStops(range, stops = 16) {
+export function generateRankingLegendStops(range, stops = 32) {
   const total = range?.totalRanked || 1;
   const result = [];
   for (let i = 0; i < stops; i++) {
