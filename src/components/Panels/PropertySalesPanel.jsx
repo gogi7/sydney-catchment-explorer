@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
 import { useAppStore } from '../../stores/appStore';
+import { useIsMobile } from '../../hooks/useIsMobile';
 import './PropertySalesPanel.css';
 
 /**
@@ -150,8 +151,9 @@ export function PropertySalesPanel() {
   const getSalesBySuburb = useAppStore((state) => state.getSalesBySuburb);
   const getSuburbStats = useAppStore((state) => state.getSuburbStats);
   
-  const [isExpanded, setIsExpanded] = useState(true);
-  const [sortBy, setSortBy] = useState('date'); // 'date' | 'price' | 'area'
+  const isMobile = useIsMobile();
+  const [isExpanded, setIsExpanded] = useState(!isMobile);
+  const [sortBy, setSortBy] = useState('date');
 
   // Get suburb from selected school
   const suburb = selectedSchool?.Town_suburb;
@@ -203,9 +205,9 @@ export function PropertySalesPanel() {
           <h3>Property Sales</h3>
           {hasSales && <span className="sales-count">{sales.length} sales</span>}
         </div>
-        <button className="toggle-btn">
-          {isExpanded ? '▼' : '▲'}
-        </button>
+        <span className={`panel-chevron ${isExpanded ? 'panel-chevron--open' : ''}`}>
+          ‹
+        </span>
       </div>
 
       {isExpanded && (

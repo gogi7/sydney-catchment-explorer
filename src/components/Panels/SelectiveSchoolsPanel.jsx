@@ -1,10 +1,13 @@
 import { useState } from 'react';
 import { useAppStore } from '../../stores/appStore';
+import { useIsMobile } from '../../hooks/useIsMobile';
 import './SelectiveSchoolsPanel.css';
 
 export function SelectiveSchoolsPanel() {
+  const isMobile = useIsMobile();
   const [isOpen, setIsOpen] = useState(false);
-  const [filterType, setFilterType] = useState('all'); // 'all' | 'fully' | 'partially'
+  const [isCollapsed, setIsCollapsed] = useState(isMobile);
+  const [filterType, setFilterType] = useState('all');
   
   const getSelectiveSchools = useAppStore((state) => state.getSelectiveSchools);
   const selectSchool = useAppStore((state) => state.selectSchool);
@@ -49,19 +52,25 @@ export function SelectiveSchoolsPanel() {
 
       {/* Panel */}
       {isOpen && (
-        <div className="selective-panel">
-          <div className="selective-panel__header">
+        <div className={`selective-panel ${isCollapsed ? 'selective-panel--collapsed' : ''}`}>
+          <div className="selective-panel__header" onClick={() => setIsCollapsed(!isCollapsed)}>
             <h2 className="selective-panel__title">
               <span>🎓</span> Selective Schools
             </h2>
-            <button 
-              className="selective-panel__close"
-              onClick={() => setIsOpen(false)}
-            >
-              ✕
-            </button>
+            <div className="selective-panel__header-actions">
+              <span className={`selective-panel__chevron ${isCollapsed ? '' : 'selective-panel__chevron--open'}`}>
+                ‹
+              </span>
+              <button
+                className="selective-panel__close"
+                onClick={(e) => { e.stopPropagation(); setIsOpen(false); }}
+              >
+                ✕
+              </button>
+            </div>
           </div>
-          
+
+          <div className="selective-panel__body">
           <p className="selective-panel__subtitle">
             These schools have no catchment boundaries - admission is by selective test only.
           </p>
@@ -132,6 +141,7 @@ export function SelectiveSchoolsPanel() {
           <p className="selective-panel__hint">
             💡 Click to select • Alt+Click to highlight multiple
           </p>
+          </div>
         </div>
       )}
     </>

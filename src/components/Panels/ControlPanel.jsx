@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect, useCallback, useMemo } from 'react';
 import { useAppStore } from '../../stores/appStore';
+import { useIsMobile } from '../../hooks/useIsMobile';
 import { SCHOOL_LEVEL_OPTIONS } from '../../utils/constants';
 import { generateLegendStops, formatPriceShort } from '../../utils/priceHeatMap';
 import './ControlPanel.css';
@@ -20,6 +21,8 @@ function useDebounce(value, delay) {
 }
 
 export function ControlPanel() {
+  const isMobile = useIsMobile();
+  const [isCollapsed, setIsCollapsed] = useState(isMobile);
   const layers = useAppStore((state) => state.layers);
   const toggleLayer = useAppStore((state) => state.toggleLayer);
   const filters = useAppStore((state) => state.filters);
@@ -107,16 +110,23 @@ export function ControlPanel() {
   }, []);
 
   return (
-    <div className="control-panel">
-      <div className="control-panel__header">
-        <h1 className="control-panel__title">
-          <span className="control-panel__icon">🗺️</span>
-          Sydney Catchment Explorer
-        </h1>
-        <p className="control-panel__subtitle">
-          {schools.length.toLocaleString()} schools loaded
-        </p>
+    <div className={`control-panel ${isCollapsed ? 'control-panel--collapsed' : ''}`}>
+      <div className="control-panel__header" onClick={() => setIsCollapsed(!isCollapsed)}>
+        <div className="control-panel__header-content">
+          <h1 className="control-panel__title">
+            <span className="control-panel__icon">🗺️</span>
+            Sydney Catchment Explorer
+          </h1>
+          <p className="control-panel__subtitle">
+            {schools.length.toLocaleString()} schools loaded
+          </p>
+        </div>
+        <span className={`control-panel__chevron ${isCollapsed ? '' : 'control-panel__chevron--open'}`}>
+          ‹
+        </span>
       </div>
+
+      <div className="control-panel__body">
 
       {/* Search with Autocomplete */}
       <div className="control-section">
@@ -333,6 +343,8 @@ export function ControlPanel() {
           📊 Data Explorer
           <span className="data-explorer-link__hint">View all database tables & sample data</span>
         </a>
+      </div>
+
       </div>
     </div>
   );

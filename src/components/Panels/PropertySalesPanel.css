@@ -52,13 +52,16 @@
   border-radius: 12px;
 }
 
-.property-sales-panel .toggle-btn {
-  background: none;
-  border: none;
+.property-sales-panel .panel-chevron {
   color: white;
-  font-size: 0.8rem;
-  cursor: pointer;
-  padding: 4px;
+  font-size: 20px;
+  font-weight: 700;
+  transition: transform 0.3s ease;
+  transform: rotate(-90deg);
+}
+
+.property-sales-panel .panel-chevron--open {
+  transform: rotate(-270deg);
 }
 
 /* Panel Content */

@@ -34,6 +34,47 @@
   background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
   border-radius: 16px 16px 0 0;
   margin: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+.control-panel--collapsed .control-panel__header {
+  border-radius: 16px;
+  border-bottom: none;
+}
+
+.control-panel__header-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.control-panel__chevron {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  transition: transform 0.3s ease;
+  transform: rotate(-90deg);
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+
+.control-panel__chevron--open {
+  transform: rotate(-270deg);
+}
+
+.control-panel__body {
+  overflow: hidden;
+  transition: max-height 0.35s ease, opacity 0.25s ease;
+  max-height: 2000px;
+  opacity: 1;
+}
+
+.control-panel--collapsed .control-panel__body {
+  max-height: 0;
+  opacity: 0;
 }
 
 .control-panel__title {
@@ -440,5 +481,16 @@
 /* Heat map active state indicator in header */
 .control-panel.heatmap-active .control-panel__header {
   background: linear-gradient(135deg, #1e293b 0%, #4c1d95 100%);
+}
+
+/* Mobile responsive */
+@media (max-width: 767px) {
+  .control-panel {
+    left: 8px;
+    right: 8px;
+    top: 8px;
+    width: auto;
+    max-height: calc(100vh - 16px);
+  }
 }
 

@@ -1,46 +1,56 @@
+import { useState } from 'react';
 import { useAppStore } from '../../stores/appStore';
+import { useIsMobile } from '../../hooks/useIsMobile';
 import './SchoolInfoPanel.css';
 
 export function SchoolInfoPanel() {
   const selectedSchool = useAppStore((state) => state.selectedSchool);
   const clearSelection = useAppStore((state) => state.clearSelection);
+  const isMobile = useIsMobile();
+  const [isCollapsed, setIsCollapsed] = useState(isMobile);
 
   if (!selectedSchool) {
     return null;
   }
 
   const school = selectedSchool;
-  const enrolment = school.latest_year_enrolment_FTE 
+  const enrolment = school.latest_year_enrolment_FTE
     ? Math.round(school.latest_year_enrolment_FTE).toLocaleString()
     : 'N/A';
 
   return (
-    <div className="school-info-panel">
-      <button 
-        className="school-info-panel__close" 
+    <div className={`school-info-panel ${isCollapsed ? 'school-info-panel--collapsed' : ''}`}>
+      <button
+        className="school-info-panel__close"
         onClick={clearSelection}
         aria-label="Close panel"
       >
         ×
       </button>
 
-      <div className="school-info-panel__header">
-        <h2 className="school-info-panel__name">{school.School_name}</h2>
-        <div className="school-info-panel__type">
-          {school.Level_of_schooling}
-          {school.Selective_school !== 'Not Selective' && (
-            <span className="school-info-panel__badge school-info-panel__badge--selective">
-              {school.Selective_school}
-            </span>
-          )}
-          {school.Opportunity_class === 'Y' && (
-            <span className="school-info-panel__badge school-info-panel__badge--oc">
-              OC
-            </span>
-          )}
+      <div className="school-info-panel__header" onClick={() => setIsCollapsed(!isCollapsed)}>
+        <div className="school-info-panel__header-content">
+          <h2 className="school-info-panel__name">{school.School_name}</h2>
+          <div className="school-info-panel__type">
+            {school.Level_of_schooling}
+            {school.Selective_school !== 'Not Selective' && (
+              <span className="school-info-panel__badge school-info-panel__badge--selective">
+                {school.Selective_school}
+              </span>
+            )}
+            {school.Opportunity_class === 'Y' && (
+              <span className="school-info-panel__badge school-info-panel__badge--oc">
+                OC
+              </span>
+            )}
+          </div>
         </div>
+        <span className={`school-info-panel__chevron ${isCollapsed ? '' : 'school-info-panel__chevron--open'}`}>
+          ‹
+        </span>
       </div>
 
+      <div className="school-info-panel__body">
       <div className="school-info-panel__content">
         {/* Location */}
         <div className="info-section">
@@ -144,6 +154,7 @@ export function SchoolInfoPanel() {
             School Code: {school.School_code}
           </span>
         </div>
+      </div>
       </div>
     </div>
   );
