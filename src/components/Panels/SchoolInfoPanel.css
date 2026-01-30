@@ -149,6 +149,76 @@
   border-radius: 3px;
 }
 
+/* Ranking Banner */
+.ranking-banner {
+  padding: 14px 20px;
+  background: #f0f9ff;
+  border-bottom: 1px solid #e0f2fe;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.ranking-banner--gold {
+  background: linear-gradient(135deg, #fef9c3 0%, #fef3c7 100%);
+  border-bottom-color: #fde68a;
+}
+
+.ranking-banner--silver {
+  background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+  border-bottom-color: #cbd5e1;
+}
+
+.ranking-banner--bronze {
+  background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+  border-bottom-color: #fed7aa;
+}
+
+.ranking-banner__rank {
+  font-size: 20px;
+  font-weight: 800;
+  color: #1e293b;
+}
+
+.ranking-banner__total {
+  font-size: 12px;
+  font-weight: 400;
+  color: #64748b;
+}
+
+.ranking-banner__score {
+  font-size: 13px;
+  font-weight: 600;
+  color: #475569;
+  margin-left: auto;
+}
+
+.ranking-banner__badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.ranking-banner__badge--gold {
+  background: #f59e0b;
+  color: #fff;
+}
+
+.ranking-banner__badge--silver {
+  background: #64748b;
+  color: #fff;
+}
+
+.ranking-banner__badge--bronze {
+  background: #d97706;
+  color: #fff;
+}
+
 .info-section {
   padding: 16px 20px;
   border-bottom: 1px solid #f1f5f9;
@@ -307,6 +377,15 @@
   .school-info-panel__content {
     max-height: calc(50vh - 80px);
     overflow-y: auto;
+  }
+
+  .ranking-banner {
+    padding: 10px 14px;
+    gap: 8px;
+  }
+
+  .ranking-banner__rank {
+    font-size: 17px;
   }
 
   .info-section {

@@ -9,6 +9,9 @@ export function SchoolInfoPanel() {
   const isMobile = useIsMobile();
   const [isCollapsed, setIsCollapsed] = useState(isMobile);
 
+  const ranking = useAppStore((state) => state.schoolRankings[String(state.selectedSchool?.School_code)]);
+  const totalRanked = useAppStore((state) => state.totalRankedSchools);
+
   if (!selectedSchool) {
     return null;
   }
@@ -17,6 +20,15 @@ export function SchoolInfoPanel() {
   const enrolment = school.latest_year_enrolment_FTE
     ? Math.round(school.latest_year_enrolment_FTE).toLocaleString()
     : 'N/A';
+
+  const getRankTier = (rank) => {
+    if (rank <= 10) return { label: 'Top 10', cls: 'gold' };
+    if (rank <= 25) return { label: 'Top 25', cls: 'silver' };
+    if (rank <= 50) return { label: 'Top 50', cls: 'bronze' };
+    return null;
+  };
+
+  const tier = ranking ? getRankTier(ranking.rank) : null;
 
   return (
     <div className={`school-info-panel ${isCollapsed ? 'school-info-panel--collapsed' : ''}`}>
@@ -52,6 +64,23 @@ export function SchoolInfoPanel() {
 
       <div className="school-info-panel__body">
       <div className="school-info-panel__content">
+        {ranking && (
+          <div className={`ranking-banner ${tier ? `ranking-banner--${tier.cls}` : ''}`}>
+            <div className="ranking-banner__rank">
+              #{ranking.rank}
+              <span className="ranking-banner__total"> of {totalRanked} schools</span>
+            </div>
+            <div className="ranking-banner__score">
+              Score: {ranking.percentage_score}%
+            </div>
+            {tier && (
+              <span className={`ranking-banner__badge ranking-banner__badge--${tier.cls}`}>
+                {tier.label}
+              </span>
+            )}
+          </div>
+        )}
+
         {/* Location */}
         <div className="info-section">
           <h3 className="info-section__title">📍 Location</h3>

@@ -5,6 +5,7 @@ export function useDataLoader() {
   const setSchools = useAppStore((state) => state.setSchools);
   const setCatchments = useAppStore((state) => state.setCatchments);
   const setPropertySales = useAppStore((state) => state.setPropertySales);
+  const setSchoolRankings = useAppStore((state) => state.setSchoolRankings);
   const setError = useAppStore((state) => state.setError);
   const setLoading = useAppStore((state) => state.setLoading);
 
@@ -47,7 +48,8 @@ export function useDataLoader() {
         console.log(`Loaded ${secondary.features?.length || 0} secondary catchments`);
         console.log(`Loaded ${future.features?.length || 0} future catchments`);
         
-        // Load property sales data (non-blocking - don't fail if not available)
+        // Load rankings and property sales (non-blocking)
+        loadSchoolRankings(setSchoolRankings);
         loadPropertySalesData(setPropertySales);
         
       } catch (error) {
@@ -57,7 +59,31 @@ export function useDataLoader() {
     }
 
     loadData();
-  }, [setSchools, setCatchments, setPropertySales, setError, setLoading]);
+  }, [setSchools, setCatchments, setPropertySales, setSchoolRankings, setError, setLoading]);
+}
+
+async function loadSchoolRankings(setSchoolRankings) {
+  try {
+    const base = import.meta.env.BASE_URL;
+    const res = await fetch(`${base}data/schools/schools_ranked.json`);
+    if (!res.ok) return;
+    const ranked = await res.json();
+    const lookup = {};
+    for (const s of ranked) {
+      if (s.ranking) {
+        lookup[String(s.School_code)] = {
+          rank: s.ranking.rank,
+          percentage_score: s.ranking.percentage_score,
+          total_score: s.ranking.total_score,
+          max_possible_score: s.ranking.max_possible_score,
+        };
+      }
+    }
+    setSchoolRankings(lookup, ranked.length);
+    console.log(`Loaded rankings for ${Object.keys(lookup).length} schools`);
+  } catch (error) {
+    console.warn('School rankings not available:', error.message);
+  }
 }
 
 /**

@@ -41,6 +41,10 @@ export const useAppStore = create((set, get) => ({
     secondary: null,
     future: null,
   },
+  // School rankings lookup: { schoolCode: { rank, percentage_score, total_score, max_possible_score } }
+  schoolRankings: {},
+  totalRankedSchools: 0,
+
   // Property sales data
   propertySales: {
     recentSales: [],
@@ -134,6 +138,14 @@ export const useAppStore = create((set, get) => ({
   
   setError: (error) => set({ error, isLoading: false }),
   
+  // School rankings actions
+  setSchoolRankings: (rankings, total) => set({ schoolRankings: rankings, totalRankedSchools: total }),
+
+  getSchoolRanking: (schoolCode) => {
+    if (!schoolCode) return null;
+    return get().schoolRankings[String(schoolCode)] || null;
+  },
+
   // Property sales actions
   setPropertySales: (salesData) => {
     // Calculate price range when suburb stats are loaded
