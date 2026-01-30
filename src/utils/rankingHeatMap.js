@@ -1,16 +1,24 @@
 const DEFAULT_RANKING_RANGE = { min: 20, max: 80 };
 const NO_DATA_COLOR = '#94a3b8';
 
-// Multi-stop color scale: red (low) → green (high)
+// 16-stop color scale: red (low) → green (high) for maximum visual differentiation
 const COLOR_STOPS = [
-  { t: 0.0,  r: 220, g: 38,  b: 38  }, // deep red    #dc2626
-  { t: 0.15, r: 234, g: 88,  b: 12  }, // red-orange  #ea580c
-  { t: 0.3,  r: 245, g: 158, b: 11  }, // orange      #f59e0b
-  { t: 0.45, r: 234, g: 179, b: 8   }, // yellow      #eab308
-  { t: 0.6,  r: 132, g: 204, b: 22  }, // yellow-grn  #84cc16
-  { t: 0.75, r: 34,  g: 197, b: 94  }, // lime        #22c55e
-  { t: 0.9,  r: 22,  g: 163, b: 74  }, // green       #16a34a
-  { t: 1.0,  r: 21,  g: 128, b: 61  }, // dark green  #15803d
+  { t: 0.000, r: 180, g: 20,  b: 20  }, // darkest red    #b41414
+  { t: 0.067, r: 220, g: 38,  b: 38  }, // deep red       #dc2626
+  { t: 0.133, r: 239, g: 68,  b: 24  }, // red            #ef4418
+  { t: 0.200, r: 234, g: 88,  b: 12  }, // red-orange     #ea580c
+  { t: 0.267, r: 245, g: 124, b: 0   }, // dark orange    #f57c00
+  { t: 0.333, r: 245, g: 158, b: 11  }, // orange         #f59e0b
+  { t: 0.400, r: 245, g: 180, b: 0   }, // amber          #f5b400
+  { t: 0.467, r: 234, g: 197, b: 8   }, // gold           #eac508
+  { t: 0.533, r: 202, g: 210, b: 0   }, // yellow-green   #cad200
+  { t: 0.600, r: 160, g: 210, b: 20  }, // chartreuse     #a0d214
+  { t: 0.667, r: 132, g: 204, b: 22  }, // yellow-green   #84cc16
+  { t: 0.733, r: 74,  g: 204, b: 50  }, // light green    #4acc32
+  { t: 0.800, r: 34,  g: 197, b: 94  }, // lime           #22c55e
+  { t: 0.867, r: 22,  g: 175, b: 80  }, // green          #16af50
+  { t: 0.933, r: 22,  g: 163, b: 74  }, // med green      #16a34a
+  { t: 1.000, r: 14,  g: 120, b: 54  }, // dark green     #0e7836
 ];
 
 function interpolateColorStops(t) {
@@ -73,7 +81,7 @@ export function calculateRankingRange(rankings) {
   };
 }
 
-export function generateRankingLegendStops(range = DEFAULT_RANKING_RANGE, stops = 8) {
+export function generateRankingLegendStops(range = DEFAULT_RANKING_RANGE, stops = 16) {
   const { min, max } = range;
   const result = [];
   for (let i = 0; i < stops; i++) {
