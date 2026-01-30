@@ -490,7 +490,84 @@
     right: 8px;
     top: 8px;
     width: auto;
-    max-height: calc(100vh - 16px);
+    max-height: 50vh;
+    overflow-y: auto;
+  }
+
+  .control-panel__header {
+    padding: 12px 14px 10px;
+  }
+
+  .control-panel__title {
+    font-size: 15px;
+    gap: 6px;
+  }
+
+  .control-panel__icon {
+    font-size: 18px;
+  }
+
+  .control-panel__subtitle {
+    font-size: 11px;
+    margin-top: 4px;
+  }
+
+  .control-section {
+    padding: 10px 14px;
+  }
+
+  .control-section__label {
+    font-size: 10px;
+    margin-bottom: 6px;
+  }
+
+  .control-input {
+    padding: 10px 12px;
+    font-size: 13px;
+    min-height: 44px;
+    box-sizing: border-box;
+  }
+
+  .control-select {
+    padding: 10px 12px;
+    font-size: 13px;
+    min-height: 44px;
+    box-sizing: border-box;
+  }
+
+  .layer-toggle {
+    min-height: 44px;
+    padding: 6px 0;
+  }
+
+  .layer-toggle__label {
+    font-size: 12px;
+  }
+
+  .legend-item {
+    font-size: 11px;
+    gap: 8px;
+  }
+
+  .search-suggestion {
+    padding: 10px 14px;
+    min-height: 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .highlighted-info__clear {
+    min-height: 44px;
+    padding: 8px 14px;
+  }
+
+  .data-explorer-link {
+    padding: 12px 14px;
+    font-size: 13px;
+    min-height: 44px;
+    display: flex;
+    justify-content: center;
   }
 }
 

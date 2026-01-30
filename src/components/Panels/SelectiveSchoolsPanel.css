@@ -277,6 +277,7 @@
     right: 8px;
     padding: 8px 12px;
     font-size: 12px;
+    min-height: 44px;
   }
 
   .selective-panel {
@@ -284,6 +285,61 @@
     right: 8px;
     top: 56px;
     width: auto;
-    max-height: calc(100vh - 72px);
+    max-height: 50vh;
+  }
+
+  .selective-panel__header {
+    padding: 12px 14px;
+  }
+
+  .selective-panel__title {
+    font-size: 14px;
+    gap: 6px;
+  }
+
+  .selective-panel__subtitle {
+    padding: 8px 14px;
+    font-size: 11px;
+  }
+
+  .selective-panel__filters {
+    flex-direction: column;
+    padding: 8px 14px;
+    gap: 6px;
+  }
+
+  .selective-filter {
+    min-height: 44px;
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+
+  .selective-panel__list {
+    max-height: calc(50vh - 160px);
+    overflow-y: auto;
+    min-height: 100px;
+  }
+
+  .selective-school-item {
+    padding: 10px 14px;
+    min-height: 44px;
+  }
+
+  .selective-school-item__name {
+    font-size: 12px;
+  }
+
+  .selective-school-item__meta {
+    font-size: 10px;
+  }
+
+  .selective-panel__hint {
+    padding: 8px 14px;
+    font-size: 10px;
+  }
+
+  .selective-panel__close {
+    width: 44px;
+    height: 44px;
   }
 }

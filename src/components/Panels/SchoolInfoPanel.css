@@ -281,7 +281,70 @@
     top: auto;
     bottom: 8px;
     width: auto;
-    max-height: calc(100vh - 70px);
+    max-height: 50vh;
+  }
+
+  .school-info-panel__header {
+    padding: 14px;
+  }
+
+  .school-info-panel__name {
+    font-size: 15px;
+    margin-right: 24px;
+  }
+
+  .school-info-panel__type {
+    font-size: 12px;
+  }
+
+  .school-info-panel__close {
+    width: 44px;
+    height: 44px;
+    top: 6px;
+    right: 6px;
+  }
+
+  .school-info-panel__content {
+    max-height: calc(50vh - 80px);
+    overflow-y: auto;
+  }
+
+  .info-section {
+    padding: 10px 14px;
+  }
+
+  .info-section__title {
+    font-size: 11px;
+    margin-bottom: 6px;
+  }
+
+  .info-section__text {
+    font-size: 13px;
+  }
+
+  .stat-item {
+    padding: 8px;
+  }
+
+  .stat-item__label {
+    font-size: 9px;
+  }
+
+  .stat-item__value {
+    font-size: 15px;
+  }
+
+  .detail-item {
+    font-size: 12px;
+  }
+
+  .school-info-panel__website {
+    padding: 10px 16px;
+    font-size: 13px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
