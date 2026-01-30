@@ -2,7 +2,8 @@ import { useState, useRef, useEffect, useCallback, useMemo } from 'react';
 import { useAppStore } from '../../stores/appStore';
 import { useIsMobile } from '../../hooks/useIsMobile';
 import { SCHOOL_LEVEL_OPTIONS } from '../../utils/constants';
-import { generateLegendStops, formatPriceShort } from '../../utils/priceHeatMap';
+import { generateLegendStops } from '../../utils/priceHeatMap';
+import { generateRankingLegendStops } from '../../utils/rankingHeatMap';
 import './ControlPanel.css';
 
 // Debounce helper for search input
@@ -35,6 +36,10 @@ export function ControlPanel() {
   const clearHighlightedSchools = useAppStore((state) => state.clearHighlightedSchools);
   const priceRange = useAppStore((state) => state.priceRange);
   const propertySales = useAppStore((state) => state.propertySales);
+  const activeHeatMap = useAppStore((state) => state.activeHeatMap);
+  const setActiveHeatMap = useAppStore((state) => state.setActiveHeatMap);
+  const rankingRange = useAppStore((state) => state.rankingRange);
+  const totalRankedSchools = useAppStore((state) => state.totalRankedSchools);
 
   const [showSuggestions, setShowSuggestions] = useState(false);
   
@@ -43,6 +48,12 @@ export function ControlPanel() {
     if (!priceRange) return [];
     return generateLegendStops(priceRange, 5);
   }, [priceRange]);
+
+  const rankingLegend = useMemo(() => {
+    if (!rankingRange) return [];
+    return generateRankingLegendStops(rankingRange, 5);
+  }, [rankingRange]);
+
   const [activeSuggestionIndex, setActiveSuggestionIndex] = useState(-1);
   const searchInputRef = useRef(null);
   const suggestionsRef = useRef(null);
@@ -260,15 +271,27 @@ export function ControlPanel() {
         </label>
       </div>
 
-      {/* Price Heat Map Toggle */}
+      {/* Heat Map Overlays */}
       <div className="control-section">
-        <label className="control-section__label">Property Pricing</label>
-        
+        <label className="control-section__label">Heat Map Overlay</label>
+
+        <label className="layer-toggle">
+          <input
+            type="radio"
+            name="heatmap"
+            checked={activeHeatMap === 'none'}
+            onChange={() => setActiveHeatMap('none')}
+          />
+          <span className="layer-toggle__indicator layer-toggle__indicator--none"></span>
+          <span className="layer-toggle__label">None</span>
+        </label>
+
         <label className="layer-toggle layer-toggle--heatmap">
           <input
-            type="checkbox"
-            checked={layers.priceHeatMap}
-            onChange={() => toggleLayer('priceHeatMap')}
+            type="radio"
+            name="heatmap"
+            checked={activeHeatMap === 'price'}
+            onChange={() => setActiveHeatMap('price')}
             disabled={!propertySales.suburbStats?.length}
           />
           <span className="layer-toggle__indicator layer-toggle__indicator--heatmap"></span>
@@ -285,12 +308,50 @@ export function ControlPanel() {
             )}
           </span>
         </label>
-        
-        {layers.priceHeatMap && heatMapLegend.length > 0 && (
+
+        <label className="layer-toggle layer-toggle--ranking">
+          <input
+            type="radio"
+            name="heatmap"
+            checked={activeHeatMap === 'primaryRanking'}
+            onChange={() => setActiveHeatMap('primaryRanking')}
+            disabled={!totalRankedSchools}
+          />
+          <span className="layer-toggle__indicator layer-toggle__indicator--ranking-primary"></span>
+          <span className="layer-toggle__label">
+            Primary Ranking
+            {totalRankedSchools > 0 ? (
+              <span className="layer-toggle__count">{totalRankedSchools} schools</span>
+            ) : (
+              <span className="layer-toggle__count layer-toggle__count--disabled">No data</span>
+            )}
+          </span>
+        </label>
+
+        <label className="layer-toggle layer-toggle--ranking">
+          <input
+            type="radio"
+            name="heatmap"
+            checked={activeHeatMap === 'secondaryRanking'}
+            onChange={() => setActiveHeatMap('secondaryRanking')}
+            disabled={!totalRankedSchools}
+          />
+          <span className="layer-toggle__indicator layer-toggle__indicator--ranking-secondary"></span>
+          <span className="layer-toggle__label">
+            Secondary Ranking
+            {totalRankedSchools > 0 ? (
+              <span className="layer-toggle__count">{totalRankedSchools} schools</span>
+            ) : (
+              <span className="layer-toggle__count layer-toggle__count--disabled">No data</span>
+            )}
+          </span>
+        </label>
+
+        {activeHeatMap === 'price' && heatMapLegend.length > 0 && (
           <div className="heatmap-legend">
             <div className="heatmap-legend__gradient">
               {heatMapLegend.map((stop, index) => (
-                <div 
+                <div
                   key={index}
                   className="heatmap-legend__stop"
                   style={{ backgroundColor: stop.color }}
@@ -305,6 +366,29 @@ export function ControlPanel() {
             </div>
             <p className="heatmap-legend__note">
               Based on recent sales in school suburb
+            </p>
+          </div>
+        )}
+
+        {(activeHeatMap === 'primaryRanking' || activeHeatMap === 'secondaryRanking') && rankingLegend.length > 0 && (
+          <div className="heatmap-legend heatmap-legend--ranking">
+            <div className="heatmap-legend__gradient">
+              {rankingLegend.map((stop, index) => (
+                <div
+                  key={index}
+                  className="heatmap-legend__stop"
+                  style={{ backgroundColor: stop.color }}
+                  title={stop.label}
+                />
+              ))}
+            </div>
+            <div className="heatmap-legend__labels">
+              <span>{rankingLegend[0]?.label}</span>
+              <span>Average</span>
+              <span>{rankingLegend[rankingLegend.length - 1]?.label}</span>
+            </div>
+            <p className="heatmap-legend__note">
+              Red = low score • Green = high score
             </p>
           </div>
         )}

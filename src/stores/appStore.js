@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { calculatePriceRange } from '../utils/priceHeatMap';
+import { calculateRankingRange } from '../utils/rankingHeatMap';
 
 // Sydney CBD coordinates
 const SYDNEY_CENTER = [-33.8688, 151.2093];
@@ -16,11 +17,15 @@ export const useAppStore = create((set, get) => ({
     secondary: true,
     future: false,
     schoolMarkers: true,
-    priceHeatMap: false, // Price heat map overlay
+    priceHeatMap: false,
+    primaryRankingHeatMap: false,
+    secondaryRankingHeatMap: false,
   },
-  
+
   // ============ HEAT MAP STATE ============
-  priceRange: null, // Calculated from suburb stats { min, max }
+  activeHeatMap: 'none',
+  priceRange: null,
+  rankingRange: null,
   
   // ============ SELECTION STATE ============
   selectedSchool: null,
@@ -74,6 +79,16 @@ export const useAppStore = create((set, get) => ({
     },
   })),
   
+  setActiveHeatMap: (mode) => set((state) => ({
+    activeHeatMap: mode,
+    layers: {
+      ...state.layers,
+      priceHeatMap: mode === 'price',
+      primaryRankingHeatMap: mode === 'primaryRanking',
+      secondaryRankingHeatMap: mode === 'secondaryRanking',
+    },
+  })),
+
   setLayerVisibility: (layerName, visible) => set((state) => ({
     layers: {
       ...state.layers,
@@ -139,7 +154,11 @@ export const useAppStore = create((set, get) => ({
   setError: (error) => set({ error, isLoading: false }),
   
   // School rankings actions
-  setSchoolRankings: (rankings, total) => set({ schoolRankings: rankings, totalRankedSchools: total }),
+  setSchoolRankings: (rankings, total) => set({
+    schoolRankings: rankings,
+    totalRankedSchools: total,
+    rankingRange: calculateRankingRange(rankings),
+  }),
 
   getSchoolRanking: (schoolCode) => {
     if (!schoolCode) return null;

@@ -177,7 +177,8 @@
   opacity: 0.8;
 }
 
-.layer-toggle input[type="checkbox"] {
+.layer-toggle input[type="checkbox"],
+.layer-toggle input[type="radio"] {
   display: none;
 }
 
@@ -431,6 +432,42 @@
   box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
 }
 
+.layer-toggle__indicator--none {
+  border-color: #94a3b8;
+  background: #f1f5f9;
+  border-radius: 50%;
+}
+
+.layer-toggle input:checked + .layer-toggle__indicator--none {
+  background: #94a3b8;
+}
+
+.layer-toggle__indicator--ranking-primary {
+  border-color: #22c55e;
+  background: linear-gradient(135deg, #ef4444 0%, #facc15 50%, #22c55e 100%);
+  border-radius: 50%;
+}
+
+.layer-toggle input:checked + .layer-toggle__indicator--ranking-primary {
+  background: linear-gradient(135deg, #ef4444 0%, #facc15 50%, #22c55e 100%);
+  box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.3);
+}
+
+.layer-toggle__indicator--ranking-secondary {
+  border-color: #3b82f6;
+  background: linear-gradient(135deg, #ef4444 0%, #facc15 50%, #22c55e 100%);
+  border-radius: 50%;
+}
+
+.layer-toggle input:checked + .layer-toggle__indicator--ranking-secondary {
+  background: linear-gradient(135deg, #ef4444 0%, #facc15 50%, #22c55e 100%);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+.layer-toggle__indicator--heatmap {
+  border-radius: 50%;
+}
+
 .layer-toggle__count--disabled {
   background: #fee2e2;
   color: #dc2626;
@@ -468,6 +505,11 @@
   font-size: 10px;
   color: #64748b;
   font-weight: 500;
+}
+
+.heatmap-legend--ranking {
+  border-color: #bbf7d0;
+  background: #f0fdf4;
 }
 
 .heatmap-legend__note {
