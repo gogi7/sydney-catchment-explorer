@@ -349,9 +349,10 @@
     left: 8px;
     right: 8px;
     top: auto;
-    bottom: 8px;
+    bottom: 66px;
     width: auto;
-    max-height: 50vh;
+    max-height: calc(100vh - 82px);
+    z-index: 1001;
   }
 
   .school-info-panel__header {
@@ -375,7 +376,7 @@
   }
 
   .school-info-panel__content {
-    max-height: calc(50vh - 80px);
+    max-height: calc(100vh - 180px);
     overflow-y: auto;
   }
 
