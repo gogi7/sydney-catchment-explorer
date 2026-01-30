@@ -25,7 +25,6 @@ export const useAppStore = create((set, get) => ({
   // ============ HEAT MAP STATE ============
   activeHeatMap: 'none',
   priceRange: null,
-  rankingRange: null,
   
   // ============ SELECTION STATE ============
   selectedSchool: null,
@@ -47,8 +46,12 @@ export const useAppStore = create((set, get) => ({
     future: null,
   },
   // School rankings lookup: { schoolCode: { rank, percentage_score, total_score, max_possible_score } }
-  schoolRankings: {},
-  totalRankedSchools: 0,
+  primarySchoolRankings: {},
+  secondarySchoolRankings: {},
+  primaryRankingRange: null,
+  secondaryRankingRange: null,
+  totalPrimaryRankedSchools: 0,
+  totalSecondaryRankedSchools: 0,
 
   // Property sales data
   propertySales: {
@@ -154,15 +157,26 @@ export const useAppStore = create((set, get) => ({
   setError: (error) => set({ error, isLoading: false }),
   
   // School rankings actions
-  setSchoolRankings: (rankings, total) => set({
-    schoolRankings: rankings,
-    totalRankedSchools: total,
-    rankingRange: calculateRankingRange(rankings),
+  setPrimarySchoolRankings: (rankings, total) => set({
+    primarySchoolRankings: rankings,
+    totalPrimaryRankedSchools: total,
+    primaryRankingRange: calculateRankingRange(rankings),
   }),
 
-  getSchoolRanking: (schoolCode) => {
+  setSecondarySchoolRankings: (rankings, total) => set({
+    secondarySchoolRankings: rankings,
+    totalSecondaryRankedSchools: total,
+    secondaryRankingRange: calculateRankingRange(rankings),
+  }),
+
+  getSchoolRanking: (schoolCode, type) => {
     if (!schoolCode) return null;
-    return get().schoolRankings[String(schoolCode)] || null;
+    const state = get();
+    const key = String(schoolCode);
+    if (type === 'primary') return state.primarySchoolRankings[key] || null;
+    if (type === 'secondary') return state.secondarySchoolRankings[key] || null;
+    // If no type specified, check both (primary first)
+    return state.primarySchoolRankings[key] || state.secondarySchoolRankings[key] || null;
   },
 
   // Property sales actions

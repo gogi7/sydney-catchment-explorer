@@ -5,7 +5,8 @@ export function useDataLoader() {
   const setSchools = useAppStore((state) => state.setSchools);
   const setCatchments = useAppStore((state) => state.setCatchments);
   const setPropertySales = useAppStore((state) => state.setPropertySales);
-  const setSchoolRankings = useAppStore((state) => state.setSchoolRankings);
+  const setPrimarySchoolRankings = useAppStore((state) => state.setPrimarySchoolRankings);
+  const setSecondarySchoolRankings = useAppStore((state) => state.setSecondarySchoolRankings);
   const setError = useAppStore((state) => state.setError);
   const setLoading = useAppStore((state) => state.setLoading);
 
@@ -49,7 +50,7 @@ export function useDataLoader() {
         console.log(`Loaded ${future.features?.length || 0} future catchments`);
         
         // Load rankings and property sales (non-blocking)
-        loadSchoolRankings(setSchoolRankings);
+        loadSchoolRankings(setPrimarySchoolRankings, setSecondarySchoolRankings);
         loadPropertySalesData(setPropertySales);
         
       } catch (error) {
@@ -59,14 +60,15 @@ export function useDataLoader() {
     }
 
     loadData();
-  }, [setSchools, setCatchments, setPropertySales, setSchoolRankings, setError, setLoading]);
+  }, [setSchools, setCatchments, setPropertySales, setPrimarySchoolRankings, setSecondarySchoolRankings, setError, setLoading]);
 }
 
-async function loadSchoolRankings(setSchoolRankings) {
-  try {
-    const base = import.meta.env.BASE_URL;
-    const res = await fetch(`${base}data/schools/schools_ranked.json`);
-    if (!res.ok) return;
+async function loadSchoolRankings(setPrimarySchoolRankings, setSecondarySchoolRankings) {
+  const base = import.meta.env.BASE_URL;
+
+  const loadRankingFile = async (url) => {
+    const res = await fetch(url);
+    if (!res.ok) return null;
     const ranked = await res.json();
     const lookup = {};
     for (const s of ranked) {
@@ -79,8 +81,23 @@ async function loadSchoolRankings(setSchoolRankings) {
         };
       }
     }
-    setSchoolRankings(lookup, ranked.length);
-    console.log(`Loaded rankings for ${Object.keys(lookup).length} schools`);
+    return { lookup, total: ranked.length };
+  };
+
+  try {
+    const [primary, secondary] = await Promise.all([
+      loadRankingFile(`${base}data/schools/primary_schools_ranked.json`).catch(() => null),
+      loadRankingFile(`${base}data/schools/secondary_schools_ranked.json`).catch(() => null),
+    ]);
+
+    if (primary) {
+      setPrimarySchoolRankings(primary.lookup, primary.total);
+      console.log(`Loaded primary rankings for ${Object.keys(primary.lookup).length} schools`);
+    }
+    if (secondary) {
+      setSecondarySchoolRankings(secondary.lookup, secondary.total);
+      console.log(`Loaded secondary rankings for ${Object.keys(secondary.lookup).length} schools`);
+    }
   } catch (error) {
     console.warn('School rankings not available:', error.message);
   }

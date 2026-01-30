@@ -21,8 +21,16 @@ export function CatchmentLayer({ data, type }) {
   const getCatchmentPriceData = useAppStore((state) => state.getCatchmentPriceData);
   const priceRange = useAppStore((state) => state.priceRange);
   const showHeatMap = useAppStore((state) => state.layers.priceHeatMap);
-  const schoolRankings = useAppStore((state) => state.schoolRankings);
-  const rankingRange = useAppStore((state) => state.rankingRange);
+  const schoolRankings = useAppStore((state) => {
+    if (type === 'primary') return state.primarySchoolRankings;
+    if (type === 'secondary') return state.secondarySchoolRankings;
+    return {};
+  });
+  const rankingRange = useAppStore((state) => {
+    if (type === 'primary') return state.primaryRankingRange;
+    if (type === 'secondary') return state.secondaryRankingRange;
+    return null;
+  });
   const showRankingHeatMap = useAppStore((state) => {
     if (type === 'primary') return state.layers.primaryRankingHeatMap;
     if (type === 'secondary') return state.layers.secondaryRankingHeatMap;

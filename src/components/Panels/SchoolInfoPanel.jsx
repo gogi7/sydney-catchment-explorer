@@ -9,8 +9,17 @@ export function SchoolInfoPanel() {
   const isMobile = useIsMobile();
   const [isCollapsed, setIsCollapsed] = useState(isMobile);
 
-  const ranking = useAppStore((state) => state.schoolRankings[String(state.selectedSchool?.School_code)]);
-  const totalRanked = useAppStore((state) => state.totalRankedSchools);
+  const ranking = useAppStore((state) => {
+    const code = String(state.selectedSchool?.School_code);
+    const level = (state.selectedSchool?.Level_of_schooling || '').toLowerCase();
+    if (level.includes('secondary')) return state.secondarySchoolRankings[code] || null;
+    return state.primarySchoolRankings[code] || null;
+  });
+  const totalRanked = useAppStore((state) => {
+    const level = (state.selectedSchool?.Level_of_schooling || '').toLowerCase();
+    if (level.includes('secondary')) return state.totalSecondaryRankedSchools;
+    return state.totalPrimaryRankedSchools;
+  });
 
   if (!selectedSchool) {
     return null;

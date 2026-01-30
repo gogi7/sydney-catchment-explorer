@@ -38,8 +38,10 @@ export function ControlPanel() {
   const propertySales = useAppStore((state) => state.propertySales);
   const activeHeatMap = useAppStore((state) => state.activeHeatMap);
   const setActiveHeatMap = useAppStore((state) => state.setActiveHeatMap);
-  const rankingRange = useAppStore((state) => state.rankingRange);
-  const totalRankedSchools = useAppStore((state) => state.totalRankedSchools);
+  const primaryRankingRange = useAppStore((state) => state.primaryRankingRange);
+  const secondaryRankingRange = useAppStore((state) => state.secondaryRankingRange);
+  const totalPrimaryRankedSchools = useAppStore((state) => state.totalPrimaryRankedSchools);
+  const totalSecondaryRankedSchools = useAppStore((state) => state.totalSecondaryRankedSchools);
 
   const [showSuggestions, setShowSuggestions] = useState(false);
   
@@ -49,10 +51,12 @@ export function ControlPanel() {
     return generateLegendStops(priceRange, 5);
   }, [priceRange]);
 
+  const activeRankingRange = activeHeatMap === 'primaryRanking' ? primaryRankingRange : secondaryRankingRange;
+
   const rankingLegend = useMemo(() => {
-    if (!rankingRange) return [];
-    return generateRankingLegendStops(rankingRange, 5);
-  }, [rankingRange]);
+    if (!activeRankingRange) return [];
+    return generateRankingLegendStops(activeRankingRange);
+  }, [activeRankingRange]);
 
   const [activeSuggestionIndex, setActiveSuggestionIndex] = useState(-1);
   const searchInputRef = useRef(null);
@@ -315,13 +319,13 @@ export function ControlPanel() {
             name="heatmap"
             checked={activeHeatMap === 'primaryRanking'}
             onChange={() => setActiveHeatMap('primaryRanking')}
-            disabled={!totalRankedSchools}
+            disabled={!totalPrimaryRankedSchools}
           />
           <span className="layer-toggle__indicator layer-toggle__indicator--ranking-primary"></span>
           <span className="layer-toggle__label">
             Primary Ranking
-            {totalRankedSchools > 0 ? (
-              <span className="layer-toggle__count">{totalRankedSchools} schools</span>
+            {totalPrimaryRankedSchools > 0 ? (
+              <span className="layer-toggle__count">{totalPrimaryRankedSchools} schools</span>
             ) : (
               <span className="layer-toggle__count layer-toggle__count--disabled">No data</span>
             )}
@@ -334,13 +338,13 @@ export function ControlPanel() {
             name="heatmap"
             checked={activeHeatMap === 'secondaryRanking'}
             onChange={() => setActiveHeatMap('secondaryRanking')}
-            disabled={!totalRankedSchools}
+            disabled={!totalSecondaryRankedSchools}
           />
           <span className="layer-toggle__indicator layer-toggle__indicator--ranking-secondary"></span>
           <span className="layer-toggle__label">
             Secondary Ranking
-            {totalRankedSchools > 0 ? (
-              <span className="layer-toggle__count">{totalRankedSchools} schools</span>
+            {totalSecondaryRankedSchools > 0 ? (
+              <span className="layer-toggle__count">{totalSecondaryRankedSchools} schools</span>
             ) : (
               <span className="layer-toggle__count layer-toggle__count--disabled">No data</span>
             )}

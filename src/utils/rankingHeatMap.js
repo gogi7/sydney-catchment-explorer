@@ -1,13 +1,41 @@
 const DEFAULT_RANKING_RANGE = { min: 20, max: 80 };
 const NO_DATA_COLOR = '#94a3b8';
 
-function hslToHex(h, s, l) {
-  s /= 100;
-  l /= 100;
-  const k = (n) => (n + h / 30) % 12;
-  const a = s * Math.min(l, 1 - l);
-  const f = (n) => Math.round(255 * (l - a * Math.max(-1, Math.min(k(n) - 3, 9 - k(n), 1))));
-  return `#${((1 << 24) + (f(0) << 16) + (f(8) << 8) + f(4)).toString(16).slice(1)}`;
+// Multi-stop color scale: red (low) → green (high)
+const COLOR_STOPS = [
+  { t: 0.0,  r: 220, g: 38,  b: 38  }, // deep red    #dc2626
+  { t: 0.15, r: 234, g: 88,  b: 12  }, // red-orange  #ea580c
+  { t: 0.3,  r: 245, g: 158, b: 11  }, // orange      #f59e0b
+  { t: 0.45, r: 234, g: 179, b: 8   }, // yellow      #eab308
+  { t: 0.6,  r: 132, g: 204, b: 22  }, // yellow-grn  #84cc16
+  { t: 0.75, r: 34,  g: 197, b: 94  }, // lime        #22c55e
+  { t: 0.9,  r: 22,  g: 163, b: 74  }, // green       #16a34a
+  { t: 1.0,  r: 21,  g: 128, b: 61  }, // dark green  #15803d
+];
+
+function interpolateColorStops(t) {
+  // Clamp
+  if (t <= 0) return COLOR_STOPS[0];
+  if (t >= 1) return COLOR_STOPS[COLOR_STOPS.length - 1];
+
+  // Find the two surrounding stops
+  for (let i = 0; i < COLOR_STOPS.length - 1; i++) {
+    const a = COLOR_STOPS[i];
+    const b = COLOR_STOPS[i + 1];
+    if (t >= a.t && t <= b.t) {
+      const local = (t - a.t) / (b.t - a.t);
+      return {
+        r: Math.round(a.r + (b.r - a.r) * local),
+        g: Math.round(a.g + (b.g - a.g) * local),
+        b: Math.round(a.b + (b.b - a.b) * local),
+      };
+    }
+  }
+  return COLOR_STOPS[COLOR_STOPS.length - 1];
+}
+
+function rgbToHex(r, g, b) {
+  return `#${((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)}`;
 }
 
 export function getRankingColor(score, range = DEFAULT_RANKING_RANGE) {
@@ -15,13 +43,11 @@ export function getRankingColor(score, range = DEFAULT_RANKING_RANGE) {
 
   const { min, max } = range;
   const linear = Math.max(0, Math.min(1, (score - min) / (max - min)));
+  // Apply sqrt curve for better spread at lower end
   const t = Math.pow(linear, 0.5);
 
-  const hue = t * 145;
-  const saturation = 72 + t * 13;
-  const lightness = 38 + Math.sin(t * Math.PI) * 12;
-
-  return hslToHex(hue, saturation, lightness);
+  const { r, g, b } = interpolateColorStops(t);
+  return rgbToHex(r, g, b);
 }
 
 export function getRankingOpacity(hasData) {
@@ -47,7 +73,7 @@ export function calculateRankingRange(rankings) {
   };
 }
 
-export function generateRankingLegendStops(range = DEFAULT_RANKING_RANGE, stops = 5) {
+export function generateRankingLegendStops(range = DEFAULT_RANKING_RANGE, stops = 8) {
   const { min, max } = range;
   const result = [];
   for (let i = 0; i < stops; i++) {
