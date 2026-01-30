@@ -180,21 +180,63 @@ export function CatchmentLayer({ data, type }) {
     layer.on({
       mouseover: (e) => {
         const layer = e.target;
-        layer.setStyle({
-          fillColor: hoverColors.fill,
-          fillOpacity: hoverColors.fillOpacity,
-          weight: 3,
-        });
+        const schoolCode = feature.properties?.USE_ID;
+
+        if (activeHeatMap === 'price') {
+          const priceData = priceDataMap[schoolCode];
+          const avgPrice = priceData?.avgPrice;
+          layer.setStyle({
+            fillColor: getPriceColor(avgPrice, priceRange),
+            fillOpacity: 0.8,
+            weight: 3,
+          });
+        } else if (activeHeatMap === 'ranking') {
+          const ranking = rankingDataMap[schoolCode];
+          const score = ranking?.percentage_score;
+          layer.setStyle({
+            fillColor: getRankingColor(score, rankingRange),
+            fillOpacity: 0.8,
+            weight: 3,
+          });
+        } else {
+          layer.setStyle({
+            fillColor: hoverColors.fill,
+            fillOpacity: hoverColors.fillOpacity,
+            weight: 3,
+          });
+        }
         layer.bringToFront();
         setHoveredCatchment(props);
       },
       mouseout: (e) => {
         const layer = e.target;
-        layer.setStyle({
-          fillColor: colors.fill,
-          fillOpacity: colors.fillOpacity,
-          weight: colors.weight,
-        });
+        const schoolCode = feature.properties?.USE_ID;
+
+        if (activeHeatMap === 'price') {
+          const priceData = priceDataMap[schoolCode];
+          const avgPrice = priceData?.avgPrice;
+          const hasData = avgPrice && avgPrice > 0;
+          layer.setStyle({
+            fillColor: getPriceColor(avgPrice, priceRange),
+            fillOpacity: getPriceOpacity(hasData),
+            weight: hasData ? 1.5 : 1,
+          });
+        } else if (activeHeatMap === 'ranking') {
+          const ranking = rankingDataMap[schoolCode];
+          const score = ranking?.percentage_score;
+          const hasData = score != null && score > 0;
+          layer.setStyle({
+            fillColor: getRankingColor(score, rankingRange),
+            fillOpacity: getRankingOpacity(hasData),
+            weight: hasData ? 1.5 : 1,
+          });
+        } else {
+          layer.setStyle({
+            fillColor: colors.fill,
+            fillOpacity: colors.fillOpacity,
+            weight: colors.weight,
+          });
+        }
         setHoveredCatchment(null);
       },
       click: () => {
@@ -205,7 +247,7 @@ export function CatchmentLayer({ data, type }) {
         }
       },
     });
-  }, [colors, hoverColors, selectSchool, getSchoolByCode, setHoveredCatchment, showHeatMap, showRankingHeatMap, priceDataMap, rankingDataMap, priceRange, rankingRange]);
+  }, [colors, hoverColors, selectSchool, getSchoolByCode, setHoveredCatchment, activeHeatMap, showHeatMap, showRankingHeatMap, priceDataMap, rankingDataMap, priceRange, rankingRange]);
 
   const key = useMemo(() =>
     `${type}-${activeHeatMap}-${Date.now()}`,

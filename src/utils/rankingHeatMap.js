@@ -1,43 +1,27 @@
-const RANKING_COLORS = {
-  min: { r: 239, g: 68, b: 68 },    // Red - low score
-  low: { r: 249, g: 115, b: 22 },   // Orange
-  mid: { r: 250, g: 204, b: 21 },   // Yellow
-  high: { r: 132, g: 204, b: 22 },  // Lime
-  max: { r: 34, g: 197, b: 94 },    // Green - high score
-  noData: { r: 148, g: 163, b: 184 },
-};
-
 const DEFAULT_RANKING_RANGE = { min: 20, max: 80 };
+const NO_DATA_COLOR = '#94a3b8';
 
-function interpolateColor(c1, c2, f) {
-  return {
-    r: Math.round(c1.r + (c2.r - c1.r) * f),
-    g: Math.round(c1.g + (c2.g - c1.g) * f),
-    b: Math.round(c1.b + (c2.b - c1.b) * f),
-  };
-}
-
-function rgbToHex({ r, g, b }) {
-  return `#${((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)}`;
+function hslToHex(h, s, l) {
+  s /= 100;
+  l /= 100;
+  const k = (n) => (n + h / 30) % 12;
+  const a = s * Math.min(l, 1 - l);
+  const f = (n) => Math.round(255 * (l - a * Math.max(-1, Math.min(k(n) - 3, 9 - k(n), 1))));
+  return `#${((1 << 24) + (f(0) << 16) + (f(8) << 8) + f(4)).toString(16).slice(1)}`;
 }
 
 export function getRankingColor(score, range = DEFAULT_RANKING_RANGE) {
-  if (score == null || score <= 0) return rgbToHex(RANKING_COLORS.noData);
+  if (score == null || score <= 0) return NO_DATA_COLOR;
 
   const { min, max } = range;
-  const normalized = Math.max(0, Math.min(1, (score - min) / (max - min)));
+  const linear = Math.max(0, Math.min(1, (score - min) / (max - min)));
+  const t = Math.pow(linear, 0.5);
 
-  let color;
-  if (normalized < 0.25) {
-    color = interpolateColor(RANKING_COLORS.min, RANKING_COLORS.low, normalized / 0.25);
-  } else if (normalized < 0.5) {
-    color = interpolateColor(RANKING_COLORS.low, RANKING_COLORS.mid, (normalized - 0.25) / 0.25);
-  } else if (normalized < 0.75) {
-    color = interpolateColor(RANKING_COLORS.mid, RANKING_COLORS.high, (normalized - 0.5) / 0.25);
-  } else {
-    color = interpolateColor(RANKING_COLORS.high, RANKING_COLORS.max, (normalized - 0.75) / 0.25);
-  }
-  return rgbToHex(color);
+  const hue = t * 145;
+  const saturation = 72 + t * 13;
+  const lightness = 38 + Math.sin(t * Math.PI) * 12;
+
+  return hslToHex(hue, saturation, lightness);
 }
 
 export function getRankingOpacity(hasData) {
